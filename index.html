@@ -64,34 +64,14 @@
             <a href="#" class="logo me-auto"><img src="assets/img/navlogo.png" alt="logo" class="img-fluid"></a>
 
             <nav id="navbar" class="navbar">
-                <ul>
+                <menu xo-source="#menu" xo-stylesheet="templates/menu.xslt">
                     <li>
                         <a class="nav-link scrollto" href="#">Inicio</a>
                     </li>
                     <li>
-                        <a class="nav-link scrollto" href="#">Nosotros</a>
+                        ...
                     </li>
-                    <li class="dropdown">
-                        <a href="#"><span>Seguros agropecuarios</span> <i class="bi bi-chevron-down"></i>
-                        </a>
-                        <ul>
-                            <li><a href="multirriesgo.html">Multirriesgo</a></li>
-                            <li><a href="#">Comerciales Agropecuarios</a></li>
-                            <li><a href="#">Agrícola</a></li>
-                            <li><a href="#">Condiciones Generales</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="nav-link scrollto" href="#">Seguro de vida</a>
-                    </li>
-                    <li>
-                        <a class="nav-link   scrollto" href="#">Nuestros socios</a>
-                    </li>
-                    <li>
-                        <a class="nav-link scrollto" href="#">Novedades</a>
-                    </li>
-
-                </ul>
+                </menu>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
 
@@ -101,7 +81,7 @@
     <section id="hero" class="d-flex align-items-center">
         <div class="container">
             <div style="z-index: -1; position: absolute; inset: 0px; overflow: hidden;">
-                <video width="1349" height="759" autoplay muted loop style="position: absolute; top: -56px; left: 0px;"
+                <video width="1349" height="759" autoplay muted loop style=" min-width: 100%; min-height: 100%; height: auto; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"
                     src="assets/img/video1.mp4"></video>
             </div>
         </div>
@@ -109,8 +89,6 @@
     </section>
 
     <main id="main">
-
-
         <!-- ======= Section1 ======= -->
         <section id="about" class="about">
             <div class="container" data-aos="fade-up">
@@ -187,53 +165,13 @@
                 <div class="section-title">
                     <h2>Nuestros seguros</h2>
                 </div>
-                <div class="row g-4">
+                <div class="row g-4" xo-source="#menu" xo-stylesheet="seguros-tiles.xslt">
                     <div class="col-xs-6 col-sm-6 col-md-3">
                         <div class="position-relative banner-2">
                             <img src="assets/img/multi1.jpg" class="img-fluid rounded" alt="">
                             <div class="text-center banner-content-2">
                                 <h4 class="mb-2 fw-bold text-white">Seguro</h4>
                                 <p class="mb-2 h2 fw-bold text-white">Multirriesgo</p>
-                                <a href="#" class="btn btn-primary px-4">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-3">
-                        <div class="position-relative banner-2">
-                            <img src="assets/img/cat1.jpg" class="img-fluid rounded" alt="">
-                            <div class="text-center banner-content-2">
-                                <h4 class="mb-2 fw-bold text-white">Seguros</h4>
-                                <p class="mb-2 h2 fw-bold text-white">Catastróficos</p>
-                                <a href="#" class="btn btn-primary px-4">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-3">
-                        <div class="position-relative banner-2">
-                            <img src="assets/img/comagro1.jpg" class="img-fluid rounded" alt="">
-                            <div class="text-center banner-content-2">
-                                <h4 class="mb-2 fw-bold text-white">Seguros</h4>
-                                <p class="mb-2 h2 fw-bold text-white">Comerciales Agropecuarios</p>
-                                <a href="#" class="btn btn-primary px-4">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-3">
-                        <div class="position-relative banner-2">
-                            <img src="assets/img/agri1.jpg" class="img-fluid rounded" alt="">
-                            <div class="text-center banner-content-2">
-                                <h4 class="mb-2 fw-bold text-white">Seguro</h4>
-                                <p class="mb-2 h2 fw-bold text-white">Agrícola</p>
-                                <a href="#" class="btn btn-primary px-4">Ver más</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-3">
-                        <div class="position-relative banner-2">
-                            <img src="assets/img/vida1.jpg" class="img-fluid rounded" alt="">
-                            <div class="text-center banner-content-2">
-                                <h4 class="mb-2 fw-bold text-white">Seguro</h4>
-                                <p class="mb-2 h2 fw-bold text-white">De Vida</p>
                                 <a href="#" class="btn btn-primary px-4">Ver más</a>
                             </div>
                         </div>

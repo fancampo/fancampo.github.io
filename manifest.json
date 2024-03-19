@@ -1,0 +1,27 @@
+{
+  "sources": {
+    "^#(.+)$": "/assets/desarrollos/$1/info.resx",
+    "^#(.+):gallery$": "/assets/desarrollos/$1/gallery.resx",
+    "^#(.+)~edit$": "#$1",
+    "#iconos": "/assets/iconos.resx",
+    "#site": "/assets/site.resx",
+    "#menu": "menu.xml",
+    "#aviso_privacidad": "/assets/aviso_privacidad.resx",
+    "#caracteristicas": "/assets/caracteristicas.resx",
+    "#codigo_etica": "/assets/codigo_etica.resx",
+    "#terminos_condiciones": "/assets/terminos_condiciones.resx"
+  },
+  "session": {
+    "phone": "000-000-0000"
+  },
+  "state": {
+    "seguro": "${(xover.site.seed || '').replace(/^#/,'')}"
+  },
+  "settings": {
+    "~.xslt||~.html": {
+      "headers": {
+        "Cache-Control": "max-age=1800"
+      }
+    }
+  }
+}
