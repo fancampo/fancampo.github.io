@@ -47,10 +47,19 @@
   --polygon-bg-color: var(--fancampovida-silver-cloud);
 }
 
+iframe#chatbot {
+    position: fixed;
+    bottom: calc(var(--footer-height, 60px) - 30px);
+    right: 0;
+    height: 80vh;
+    width: 400px;
+    z-index: 1001;
+    /*box-shadow: -1px 5px 20px 0px rgba(0,0,0,.5);*/
+}
 
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
 }
 
 a {

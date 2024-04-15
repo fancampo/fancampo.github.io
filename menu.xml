@@ -6,14 +6,15 @@
 		<item title="Valores" href="#valores"/>
 	</item>
 	<item title="Seguros agropecuarios">
-		<item title="Multiriesgo" href="./multirriesgo.html" image="multi1.jpg"/>
+		<item title="Multirriesgo" href="./multirriesgo.html" image="multi1.jpg"/>
 		<item title="Catastróficos" href="./multirriesgo.html" image="cat1.jpg"/>
-		<item title="Comerciales Agropecuarios" href="./multiriesgo.html" image="comagro1.jpg"/>
-		<item title="Agrícola" href="./multiriesgo.html" image="agri1.jpg"/>
-		<item title="Condiciones Generales" href="./multiriesgo.html" image="cat1.jpg"/>
+		<item title="Comerciales Agropecuarios" href="./multirriesgo.html" image="comagro1.jpg"/>
+		<item title="Agrícola" href="./multirriesgo.html" image="agri1.jpg"/>
+		<item title="Condiciones Generales" href="./multirriesgo.html" image="cat1.jpg"/>
 	</item>
 	<item title="Seguros de vida">
 		<item title="Seguro de Vida" href="./seguros.html" image="vida1.jpg"/>
+		<item title="Seguro de Vida 2" href="./seguros.html" image="vida1.jpg"/>
 	</item>
 	<item title="Nuestros socios" href="./details.html#socios"/>
 	<item title="Novedades" href="./novedades.html"/>

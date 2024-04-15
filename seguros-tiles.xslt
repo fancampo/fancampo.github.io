@@ -21,7 +21,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 					<p class="mb-2 h2 fw-bold text-white">
 						<xsl:apply-templates select="@title"/>
 					</p>
-					<a href="#" class="btn btn-primary px-4">Ver más</a>
+					<a href="{@href}" class="btn btn-primary px-4">Ver más</a>
 				</div>
 			</div>
 		</div>
