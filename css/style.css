@@ -3,48 +3,49 @@
 # General Styles
 --------------------------------------------------------------*/
 :root {
-  --fancampovida-blue-smoke: #6C817A;
-  --fancampovida-silver-cloud: #A9B1B3;
-  --fancampovida-river-red: #444C57;
-  --fancampovida-creen-snow: #EDEDE3;
-  --main-color: var(--fancampovida-blue-smoke);
-  --secondary-color: var(--fancampovida-river-red);
-  --terciary-color: var(--fancampovida-silver-cloud);
-  --primary: #1c262f;
-  --primary-light: #212d37;
-  --secondary: var(--fancampovida-river-red);
-  --tertiary: var(--fancampovida-silver-cloud);
-  --gradient: linear-gradient(to right, #0ee951, #00dabf);
-  --bg-main-color: rgb(35, 52, 155);
-  --bg-title-color-text: #000;
-  --bg-subtitle-color: #A0A7AC;
-  --bg-text-color: #697477;
-  --bg-body-color: #f7f7f7;
-  --bg-body-primary: #214252;
-  --bg-border: #e3e6ed;
-  --bg-card-lote: #e7e7ff;
-  --bg-nav: var(--fancampovida-creen-snow);
-  --bg-nav-hover: white;
-  --bg-nav-active: var(--terciary-color);
-  --bg-section: #efeee9;
-  --bg-footer: var(--fancampovida-blue-smoke);
-  --bg-line-card: #979797;
-  --bg-listgroup: var(--fancampovida-creen-snow);
-  --bg-listgroup-content: #fff;
-  --z-index-footer: 1000;
-  --section-dark-bg-color: #efeee9;
-  --section-dark-color: black;
-  --main-bg-color: var(--main-color);
-  --title-bg-color: var(--main-color);
-  --bg-title-color: white;
-  --contactband-bg-color: var(--terciary-color);
-  --sitemap-scrollbar-color: var(--fancampovida-creen-snow);
-  --sitemap-scrollbar-border: var(--main-color);
-  --sitemap-scrollbar-background: var(--main-color);
-  --color-nav-hover: var(--main-color);
-  --footer-height: 80px;
-  --polygon-bg-color-active: #00aa55;
-  --polygon-bg-color: var(--fancampovida-silver-cloud);
+    --fancampovida-blue-smoke: #0E9842;
+    --fancampovida-silver-cloud: #51B15F;
+    --fancampovida-river-red: #836C57;
+    --fancampovida-creen-snow: #88CFE5;
+    --fancampovida-tone-5: #A98A6F;
+    --main-color: var(--fancampovida-blue-smoke);
+    --secondary-color: var(--fancampovida-river-red);
+    --terciary-color: var(--fancampovida-silver-cloud);
+    --primary: #1c262f;
+    --primary-light: #212d37;
+    --secondary: var(--fancampovida-river-red);
+    --tertiary: var(--fancampovida-silver-cloud);
+    --gradient: linear-gradient(to right, #0ee951, #00dabf);
+    --bg-main-color: rgb(35, 52, 155);
+    --bg-title-color-text: #000;
+    --bg-subtitle-color: #A0A7AC;
+    --bg-text-color: #697477;
+    --bg-body-color: #f7f7f7;
+    --bg-body-primary: #214252;
+    --bg-border: #e3e6ed;
+    --bg-card-lote: #e7e7ff;
+    --bg-nav: var(--fancampovida-creen-snow);
+    --bg-nav-hover: white;
+    --bg-nav-active: var(--terciary-color);
+    --bg-section: #efeee9;
+    --bg-footer: var(--fancampovida-blue-smoke);
+    --bg-line-card: #979797;
+    --bg-listgroup: var(--fancampovida-creen-snow);
+    --bg-listgroup-content: #fff;
+    --z-index-footer: 1000;
+    --section-dark-bg-color: #efeee9;
+    --section-dark-color: black;
+    --main-bg-color: var(--main-color);
+    --title-bg-color: var(--main-color);
+    --bg-title-color: white;
+    --contactband-bg-color: var(--terciary-color);
+    --sitemap-scrollbar-color: var(--fancampovida-creen-snow);
+    --sitemap-scrollbar-border: var(--main-color);
+    --sitemap-scrollbar-background: var(--main-color);
+    --color-nav-hover: var(--main-color);
+    --footer-height: 80px;
+    --polygon-bg-color-active: #00aa55;
+    --polygon-bg-color: var(--fancampovida-silver-cloud);
 }
 
 iframe#chatbot {
@@ -55,6 +56,28 @@ iframe#chatbot {
     width: 400px;
     z-index: 1001;
     /*box-shadow: -1px 5px 20px 0px rgba(0,0,0,.5);*/
+}
+
+.circle-btn {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes it a circle */
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text horizontally */
+    text-decoration: none; /* Remove underline */
+}
+
+.circle-btn:hover {
+    background: var(--fancampovida-creen-snow);
+}
+
+.cotizar.btn {
+    background-color: var(--fancampovida-creen-snow);
+    color: var(--fancampovida-river-red);
 }
 
 body {
@@ -144,7 +167,8 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 40px;
+    max-height: 40px;
+    filter: brightness(0) invert(1);
 }
 
 /*--------------------------------------------------------------
@@ -193,8 +217,8 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: var(--fancampovida-silver-cloud);
-  font-weight: 500;;
+  color: var(--fancampovida-creen-snow);
+  font-weight: 500;
 }
 
 .navbar .getstarted,
@@ -544,8 +568,8 @@ section {
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+  /*text-transform: uppercase;*/
+  /*margin-bottom: 20px;*/
   padding-bottom: 20px;
   position: relative;
   color: var(--fancampovida-river-red);
@@ -1892,14 +1916,14 @@ section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.6));
   z-index: 2;
 }
-.bg-primary{
-  background-color: var(--fancampovida-silver-cloud) !important;
-  border-color: var(--fancampovida-silver-cloud) !important;
+.bg-primary {
+    background-color: var(--fancampovida-silver-cloud) !important;
+    border-color: var(--fancampovida-silver-cloud) !important;
 }
 
-.btn-primary{
-  background-color: var(--fancampovida-river-red) !important;
-  border-color: var(--fancampovida-river-red) !important;
+.btn-primary {
+    background-color: var(--fancampovida-silver-cloud) !important;
+    border-color: var(--fancampovida-silver-cloud) !important;
 }
 
 .btn-primary:hover{
