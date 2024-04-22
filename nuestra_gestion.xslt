@@ -76,53 +76,50 @@ xmlns="http://www.w3.org/1999/xhtml"
 			</div>
 		</section>
 	</xsl:template>
-	
+
 	<xsl:template match="*">
 		<section style="background-image: url(assets/img/Imagen6-flipped.jpg);
-    background-size: cover; height: 90vh;">
-			<div class="container mx-2" data-aos="fade-up">
-				<div class="row content">
-					<div class="col-lg-8">
-					</div>
-					<div class="col-lg-4" style="background-color: white; padding-block: 2rem;
-    text-align: center; padding-inline: 0;">
-						<div class="h-100">
-							<div class="section-title" style="padding-inline: 1rem">
-								<h2>Nuestra gestión de riesgos</h2>
+    background-size: cover; height: 90vh; display: flex; justify-content: center;">
+			<div class="container row mx-2" data-aos="fade-up">
+				<div class="col-lg-7">
+				</div>
+				<div class="col-lg-5 col-12 info" style="background-color: white; padding-block: 2rem; text-align: center; padding-inline: 0;">
+					<div class="h-100">
+						<div class="section-title" style="padding-inline: 1rem">
+							<h2>Nuestra gestión de riesgos</h2>
+						</div>
+						<div class="row gy-4">
+							<div class="col-12">
+								<div class="d-flex">
+									<div class="">
+										<h4 style="background-color: var(--fancampovida-blue-smoke); color:white;">Protege el patrimonio</h4>
+										<span style="padding-inline: 1rem;">
+											de los productores agropecuarios de México y la continuidad operativa
+											de sus unidades de producción
+										</span>
+									</div>
+								</div>
 							</div>
-							<div class="row gy-4">
-								<div class="col-12">
-									<div class="d-flex">
-										<div class="">
-											<h4 style="background-color: var(--fancampovida-blue-smoke); color:white;">Protege el patrimonio</h4>
-											<span style="padding-inline: 1rem;">
-												de los productores agropecuarios de México y la continuidad operativa
-												de sus unidades de producción
-											</span>
-										</div>
+							<div class="col-12">
+								<div class="d-flex">
+									<div class="">
+										<h4 style="background-color: var(--fancampovida-creen-snow); color:white;">Consolida un sector agropecuario</h4>
+										<span style="padding-inline: 1rem;">
+											con capacidad, recursos y cultura para administrar los riesgos que
+											afectan a la actividad rural nacional
+										</span>
 									</div>
 								</div>
-								<div class="col-12">
-									<div class="d-flex">
-										<div class="">
-											<h4 style="background-color: var(--fancampovida-creen-snow); color:white;">Consolida un sector agropecuario</h4>
-											<span style="padding-inline: 1rem;">
-												con capacidad, recursos y cultura para administrar los riesgos que
-												afectan a la actividad rural nacional
-											</span>
-										</div>
-									</div>
-								</div>
-								<div class="col-12">
-									<div class="d-flex">
-										<div class="">
-											<h4 style="background-color: var(--fancampovida-blue-smoke); color:white;">Teniendo valores </h4>
-											<span style="padding-inline: 1rem;">
-												como la ética profesional, compromiso, responsabilidad, honestidad
-												para satisfacer las necesidades de administración de riesgos de los
-												productores.
-											</span>
-										</div>
+							</div>
+							<div class="col-12">
+								<div class="d-flex">
+									<div class="">
+										<h4 style="background-color: var(--fancampovida-blue-smoke); color:white;">Teniendo valores </h4>
+										<span style="padding-inline: 1rem;">
+											como la ética profesional, compromiso, responsabilidad, honestidad
+											para satisfacer las necesidades de administración de riesgos de los
+											productores.
+										</span>
 									</div>
 								</div>
 							</div>

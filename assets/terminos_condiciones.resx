@@ -117,12 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="icon_1" xml:space="preserve">
-    <value>https://www.facebook.com/FanCampoVida</value>
-    <comment>facebook-f</comment>
+  <data name="title" xml:space="preserve">
+    <value>Términos y condiciones</value>
   </data>
-  <data name="icon_3" xml:space="preserve">
-    <value>https://www.instagram.com/fan_campo_vida/</value>
-    <comment>instagram</comment>
+  <data name="paragraph" xml:space="preserve">
+    <value>Aliquam erat quam, accumsan vel malesuada luctus, euismod et nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed a tortor ipsum. Nam sit amet ullamcorper sapien. Mauris viverra vitae mi ac semper. Etiam et vulputate orci. Pellentesque id suscipit lectus, ut gravida sem. Quisque pretium magna sit amet justo pellentesque, sit amet sodales ante suscipit. Duis mollis ornare semper. Vestibulum ac lacus ut neque feugiat cursus in non nibh. Praesent in est id enim faucibus rhoncus.</value>
   </data>
 </root>

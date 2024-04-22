@@ -66,34 +66,32 @@
 
 <body>
 
-    <header id="header" class="fixed-top " xo-source="header.html">
+    <header id="header" class="fixed-top" xo-source="header.html">
     </header>
 
-    <section class="d-flex align-items-center" style="height: 200vh; background-color: var(--fancampovida-blue-smoke); z-index:1">
-        <div style=" width: 50vw; position: fixed; top: 20vh; color: white; max-width: 50vw; padding-inline-start: 100px; padding-inline-end: 20px; ">
+    <section id="video-container" class="d-flex" style="background-color: var(--fancampovida-blue-smoke); flex-wrap: wrap; flex-direction: column;">
+        <video class="col-md-6" autoplay muted loop style=" height: auto; right: 0; transition: transform 0.5s ease 0s; transform-origin: top right; z-index: 1;" src="assets/img/video1.mp4"></video>
+        <div class="col-md-6" style="top: 15vh; color: white; white-space: nowrap; padding-block: 3rem; padding-inline: 1rem;" data-aos="fade-up">
             <h1>Protección Integral para el</h1>
-            <h1 style="color: var(--fancampovida-creen-snow)">campo de México</h1>
+            <h1 class="accent">campo de México</h1>
             <p style="font-size: +18pt; max-width: 20vw">Brindamos servicio de cobertura de riesgos</p>
-            <div class="d-flex justify-content-end">
-                <a href="#cotizar" class="btn circle-btn cotizar active" style="width: 120px; height: 120px; font-size: larger; transform: translate(-60%, -80%);">
+        </div>
+        <div class="container cotizar" data-aos="fade-up" style="width: 100%; top: 25vh; display: flex; justify-content: center; z-index: 2; max-width: 100vw;">
+            <h2>
+                <a href="#cotizar" class="btn circle-btn active">
                     Cotizar
                 </a>
-            </div>
-        </div>
-        <div class="container">
-            <div style="position: absolute; inset: 0px; overflow: hidden;">
-                <video width="1349" height="759" autoplay muted loop style=" min-width: 100%; min-height: 100%; height: auto; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 100vw;" src="assets/img/video1.mp4"></video>
-            </div>
+            </h2>
         </div>
     </section>
 
-    <main id="main" style="background-color: white; position: relative; z-index=2">
+    <main id="main" style="background-color: white; position: relative; z-index: 2">
         <!-- ======= Section1 ======= -->
-        <section id="about" class="about" xo-source="#nuestra_gestion" xo-stylesheet="nuestra_gestion.xslt" xo-slot="state:version" onclick="scope.toggle('v2','v1')">
+        <section id="about" class="about" xo-source="#nuestra_gestion" xo-stylesheet="nuestra_gestion.xslt" xo-slot="state:version">
         </section>
 
         <!-- ======= Section2 ======= -->
-        <section id="why-us" class="why-us section-bg">
+        <section id="seguros" class="section-bg">
             <div class="container" data-aos="fade-up">
                 <div class="section-title">
                     <h2 style="text-transform: capitalize">Nuestros <span style="color: var(--fancampovida-creen-snow)">seguros</span></h2>
@@ -134,7 +132,7 @@
 
                             <div class="email">
                                 <i class="bi bi-envelope"></i>
-                                <p>vie 08:00 - 17:00</p>
+                                <p>lun-vie 08:00 - 17:00</p>
                             </div>
 
                             <div class="phone">

@@ -9,7 +9,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 	</xsl:template>
 
 	<xsl:attribute-set name="menu:dropdown">
-		<xsl:attribute name="class"></xsl:attribute>
+		<xsl:attribute name="class">dropdown-menu</xsl:attribute>
 	</xsl:attribute-set>
 
 	<xsl:attribute-set name="menu:icon-badge">
@@ -22,9 +22,9 @@ xmlns="http://www.w3.org/1999/xhtml"
 
 	<xsl:template match="@*|*" mode="menu:widget">
 		<xsl:param name="items" select="ancestor-or-self::*[1]/*"/>
-		<menu xo:use-attribute-sets="menu:dropdown">
+		<ul xo:use-attribute-sets="menu:dropdown">
 			<xsl:apply-templates mode="menu:item" select="$items"/>
-		</menu>
+		</ul>
 	</xsl:template>
 
 	<xsl:template match="@*|*" mode="menu:icon-badge"/>
