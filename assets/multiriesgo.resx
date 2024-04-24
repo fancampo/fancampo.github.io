@@ -117,16 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="icon_1" xml:space="preserve">
-    <value>https://www.facebook.com/FanCampoVida</value>
-    <comment>facebook-f</comment>
+  <data name="cobertura_1" xml:space="preserve">
+    <value>Muerte por enfermedad o accidente: Compensa al asegurado por la pérdida de animales debido a enfermedades o accidentes, incluyendo aquellos causados por fenómenos naturales</value>
   </data>
-  <data name="icon_2" xml:space="preserve">
-    <value>https://www.instagram.com/fan_campo_vida/</value>
-    <comment>instagram</comment>
+  <data name="cobertura_2" xml:space="preserve">
+    <value>Robo: Ofrece indemnización en caso de robo del ganado asegurado, un riesgo significativo en diversas regiones.</value>
   </data>
-  <data name="icon_3" xml:space="preserve">
-    <value>https://www.tiktok.com/@fancampofanvida</value>
-    <comment>tiktok</comment>
+  <data name="cobertura_3" xml:space="preserve">
+    <value>Gastos Veterinarios: Cubre los gastos generados por atención veterinaria en caso de enfermedad o accidente, promoviendo la recuperación del animal sin afectar significativamente la economía del ganadero.</value>
+  </data>
+  <data name="objetivo" xml:space="preserve">
+    <value>El seguro pecuario de FanCampo está diseñado para proteger el patrimonio de los ganaderos ante diversos riesgos que pueden afectar la salud y vida de sus animales. Este tipo de seguro cubre una amplia gama de especies, desde ganado bovino, porcino, ovino, hasta aves de corral y otros animales dedicados a la producción agropecuaria.</value>
+  </data>
+  <data name="titulo" xml:space="preserve">
+    <value>Seguro Pecuario</value>
   </data>
 </root>

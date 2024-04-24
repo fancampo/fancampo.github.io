@@ -56,6 +56,9 @@
 					</span>
 				</h1>
 				<blockquote>
+					<div class="quotes display-2 text-body-tertiary">
+						<i class="bi bi-quote"></i>
+					</div>
 					<xsl:value-of select="value"/>
 				</blockquote>
 			</div>

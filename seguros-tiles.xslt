@@ -13,7 +13,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 	</xsl:template>
 
 	<xsl:template mode="tile" match="*">
-		<div class="col-xs-6 col-sm-6 col-md-3 tile">
+		<div class="col-12 col-sm-6 col-lg-4 col-xl-3 tile">
 			<div class="position-relative banner-2">
 				<img src="./assets/img/{@image}" class="img-fluid rounded" alt=""/>
 				<div class="text-center banner-content-2">

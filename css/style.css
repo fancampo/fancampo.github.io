@@ -83,15 +83,20 @@
     padding-bottom: 10rem;
 }
 
-blockquote::before {
+.bi-quote::before {
+    content: "\f6b0";
+    color: var(--fancampovida-creen-snow);
+}
+
+/*blockquote::before {
     content: open-quote;
     width: 28px;
     height: 25px;
     display: flex;
-    color: var(--accent-fill-rest);
+    color: var(--fancampovida-creen-snow);
     font-size: 60px;
     font-family: 'Eb Garamond';
-}
+}*/
 
 blockquote {
     font-size: 24px;
@@ -152,6 +157,26 @@ video {
     .cotizar {
         margin-top: 100vh;
     }
+}
+
+p {
+    white-space: normal;
+}
+
+section {
+    font-size: clamp(1rem, 1rem, 2rem);
+}
+
+.offcanvas section:after {
+    content: '';
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.6));
+    pointer-events: none;
+    z-index: 1000;
 }
 
 #seguros .tile img {
@@ -678,12 +703,17 @@ h6 {
     }
 }
 
+.text-bg-primary {
+    color: #fff !important;
+    background-color: var(--fancampovida-blue-smoke) !important;
+}
+
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
     width: 100%;
-    padding: 60px 0;
+    padding: 30px 0;
 }
 
 .section-bg {

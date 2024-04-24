@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="socio_01" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/CAMPECHE-27cd35b.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs</value>
+  </data>
+  <data name="socio_02" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/LA%20LAGUNA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs</value>
+  </data>
+  <data name="socio_03" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/NAYARIT.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs</value>
+  </data>
+  <data name="socio_04" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/MICHOACAN.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs</value>
+  </data>
+  <data name="socio_05" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/TAMAULIPAS.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs</value>
+  </data>
+  <data name="socio_06" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/SAN%20LUIS%20POTOSI.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs</value>
+  </data>
+  <data name="socio_13" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/VERACRUZ%20CENTRO-a50c71e.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_14" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/ORIENTE%20DE%20YUCATAN-3dc84d7.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_15" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/SINALOA-4c99136.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_16" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/QUINTANA%20ROO-c4ab6d5.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_17" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/CHIAPAS-bee8567.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_18" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/PUEBLA%20ORIENTE.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_19" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/TLAXCALA-b9157da.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_20" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/TABASCO-f4a6b1a.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_21" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/QUERETARO-07e0280.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_22" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/GUERRERO-6f6b885.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_23" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/AGUASCALIENTES.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_24" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/BAJA%20CALIFORNIA%20SUR-3f71472.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_25" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/GUANANJUATO-4e7af9b.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_26" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/CHIHUAHUA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_27" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/TLAXCALA%20ESPECIALIZADA-3a495ac.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_28" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/PUEBLA%20CENTRO-876dc30.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_29" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/MORELOS.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_30" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/ESTADO%20DE%20MEXICO%20SUR-acfde99.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_31" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/CHIAPAS%20COSTA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_32" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/OAXACA%20COSTA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_33" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/HUASTECA%20POTOSINA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_34" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/JALISCO.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_35" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/COLIMA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_36" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/ZACATECAS.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_37" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/YUCATAN%20GENERAL.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_38" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/COAHUILA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_39" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/CATAZAJA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_40" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/ISTMO%20DE%20TEHUANTEPEC_OAXACA-54b12f3.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_41" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/DURANGO%20NORTE.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_42" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/VERACRUZ%20NORTE.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_43" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/YUCATAN%20ORIENTE.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_44" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/OAXACA%20NORTE.jpg/:/cr=t:0%25,l:0%25,w:99.3%25,h:99.3%25/rs=h:100,cg:true,m</value>
+  </data>
+  <data name="socio_46" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/HIDALGO-d90837c.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_47" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/SONORA.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_48" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/VERACRUZ%20SUR-67d7e01.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_49" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/NUEVO%20LEON.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_50" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/BAJA%20CALIFORNIA.PNG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_51" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/MORELOS%20GENERAL-eff73ae.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_52" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/blob-14c272d.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_53" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/Captura%20de%20pantalla%202022-05-25%20103519-0db801a.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+  <data name="socio_54" xml:space="preserve">
+    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/PUEBLA%20NORTE-ac4518a.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  </data>
+</root>

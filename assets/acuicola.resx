@@ -117,16 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="icon_1" xml:space="preserve">
-    <value>https://www.facebook.com/FanCampoVida</value>
-    <comment>facebook-f</comment>
+  <data name="cobertura_1" xml:space="preserve">
+    <value>Mortalidad de Especies: Compensación por la pérdida de stock debido a enfermedades, condiciones climáticas extremas, y otros riesgos específicos para el sector acuícola.</value>
   </data>
-  <data name="icon_2" xml:space="preserve">
-    <value>https://www.instagram.com/fan_campo_vida/</value>
-    <comment>instagram</comment>
+  <data name="cobertura_2" xml:space="preserve">
+    <value>Daño a Infraestructura: Cobertura para daños a jaulas, sistemas de recirculación, y otros equipos esenciales para la producción acuícola debido a eventos naturales o accidentes.</value>
   </data>
-  <data name="icon_3" xml:space="preserve">
-    <value>https://www.tiktok.com/@fancampofanvida</value>
-    <comment>tiktok</comment>
+  <data name="cobertura_3" xml:space="preserve">
+    <value>Interrupción del Negocio: Protección contra pérdidas económicas resultantes de una interrupción temporal de la producción acuícola, asegurando continuidad y estabilidad financiera.</value>
+  </data>
+  <data name="objetivo" xml:space="preserve">
+    <value>Los seguros acuícolas de FanCampo están diseñados específicamente para la industria acuícola, proporcionando cobertura a los productores de especies marinas y de agua dulce contra una amplia gama de riesgos. Estos seguros buscan proteger contra las pérdidas económicas derivadas de eventos como enfermedades, cambios ambientales adversos, contaminación, y ataques de depredadores, que pueden afectar significativamente la producción.</value>
+  </data>
+  <data name="titulo" xml:space="preserve">
+    <value>Seguro Acuícola</value>
   </data>
 </root>

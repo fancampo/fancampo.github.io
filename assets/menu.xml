@@ -6,16 +6,17 @@
 		<item title="Valores" href="#valores"/>
 	</item>
 	<item title="Seguros agropecuarios">
-		<item title="Multirriesgo" href="./multirriesgo.html" image="multi1.jpg"/>
-		<item title="Catastróficos" href="./multirriesgo.html" image="cat1.jpg"/>
-		<item title="Comerciales Agropecuarios" href="./multirriesgo.html" image="comagro1.jpg"/>
-		<item title="Agrícola" href="./multirriesgo.html" image="agri1.jpg"/>
-		<item title="Condiciones Generales" href="./multirriesgo.html" image="cat1.jpg"/>
+		<item title="Multirriesgo" href="./seguro.html#multiriesgo" image="multi1.jpg"/>
+		<item title="Catastróficos" href="./seguro.html#catastrofico" image="cat1.jpg"/>
+		<!--<item title="Comerciales Agropecuarios" href="./seguro.html#agropecuario" image="comagro1.jpg"/>-->
+		<item title="Acuícola" href="./seguro.html#acuicola" image="agri1.jpg"/>
+		<item title="Agrícola" href="./seguro.html#agricola" image="agri1.jpg"/>
+		<item title="Pecuario" href="./seguro.html#pecuario" image="agri1.jpg"/>
+		<item title="Condiciones Generales" href="./seguro.html#generales" image="cat1.jpg"/>
 	</item>
 	<item title="Seguros de vida">
-		<item title="Seguro de Vida" href="./seguros.html" image="vida1.jpg"/>
-		<item title="Seguro de Vida 2" href="./seguros.html" image="vida1.jpg"/>
+		<item title="Seguro de Vida" href="./seguros.html#vida" image="vida1.jpg"/>
 	</item>
-	<item title="Nuestros socios" href="./details.html#socios"/>
+	<item title="Nuestros socios" href="./socios.html"/>
 	<item title="Novedades" href="./novedades.html"/>
 </menu>
