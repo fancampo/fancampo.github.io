@@ -17,7 +17,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 			<div class="position-relative banner-2">
 				<img src="./assets/img/{@image}" class="img-fluid rounded" alt=""/>
 				<div class="text-center banner-content-2">
-					<h4 class="mb-2 fw-bold text-white">Seguro</h4>
+					<h4 class="mb-2 fw-bold text-accent">Seguro</h4>
 					<p class="mb-2 h2 fw-bold text-white">
 						<xsl:apply-templates select="@title"/>
 					</p>

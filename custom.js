@@ -101,3 +101,15 @@ function handleScroll(event) {
 
 // Add scroll event listener
 window.addEventListener('scroll', handleScroll);
+
+
+
+function initialize_carousel() {
+    for (let target_carousel of document.querySelectorAll(".carousel ")) {
+        target_carousel.carousel = target_carousel.carousel || new bootstrap.Carousel(target_carousel, {
+            interval: 5000
+        });
+
+        target_carousel.carousel.cycle();
+    }
+}

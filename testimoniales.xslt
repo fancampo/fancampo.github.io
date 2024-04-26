@@ -1,17 +1,4 @@
 ﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:env="http://panax.io/state/environment" xmlns:xo="http://panax.io/xover">
-	<xsl:key name="valid-model" match="root[@env:store='#aviso_privacidad']" use="generate-id()"/>
-	<xsl:key name="valid-model" match="root[@env:store='#codigo_etica']" use="generate-id()"/>
-	<xsl:key name="valid-model" match="root[@env:store='#mision']" use="generate-id()"/>
-	<xsl:key name="valid-model" match="root[@env:store='#vision']" use="generate-id()"/>
-	<xsl:key name="valid-model" match="root[@env:store='#valores']" use="generate-id()"/>
-	<xsl:key name="valid-model" match="root[@env:store='#terminos_condiciones']" use="generate-id()"/>
-
-	<xsl:key name="data" match="root[@env:store='#mision']/data" use="'mision_vision_valores'"/>
-	<xsl:key name="data" match="root[@env:store='#vision']/data" use="'mision_vision_valores'"/>
-	<xsl:key name="data" match="root[@env:store='#valores']/data" use="'mision_vision_valores'"/>
-
-	<xsl:key name="data" match="data[not(contains(@name,'title'))]" use="'body'"/>
-	<xsl:key name="data" match="data/@name" use="."/>
 
 	<xsl:template match="/">
 		<!-- src: https://codepen.io/codingyaar/pen/MWRjKqM -->
@@ -70,221 +57,12 @@
 				transform: translateY(-50%);
 				}
 			</style>
-			<script>
-				<![CDATA[const multipleItemCarousel = document.querySelector("#testimonialCarousel");
-
-if (window.matchMedia("(min-width:576px)").matches) {
-  const carousel = new bootstrap.Carousel(multipleItemCarousel, {
-    interval: false
-  });
-
-  var carouselWidth = document.querySelector(".carousel-inner").scrollWidth;
-  var cardWidth = document.querySelector(".carousel-item").style.width;
-
-  var scrollPosition = 0;
-
-  document.querySelector(".carousel-control-next").on("click", function () {
-    if (scrollPosition < carouselWidth - cardWidth * 3) {
-      console.log("next");
-      scrollPosition = scrollPosition + cardWidth;
-      document.querySelector(".carousel-inner").animate({ scrollLeft: scrollPosition }, 800);
-    }
-  });
-  $(".carousel-control-prev").on("click", function () {
-    if (scrollPosition > 0) {
-      scrollPosition = scrollPosition - cardWidth;
-      $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 800);
-    }
-  });
-} else {
-  $(multipleItemCarousel).addClass("slide");
-}
-]]>
-			</script>
 			<div class="section-title" style="padding-inline: 1rem">
 				<h2>Testimoniales</h2>
 			</div>
 			<div id="testimonialCarousel" class="carousel">
 				<div class="carousel-inner">
-					<div class="carousel-item active">
-						<div class="card shadow-sm rounded-3">
-							<div class="quotes display-2 text-body-tertiary">
-								<i class="bi bi-quote"></i>
-							</div>
-							<div class="card-body">
-								<p class="card-text">
-									"Some quick example text to build on the card title and make up the
-									bulk of
-									the card's content."
-								</p>
-								<div class="d-flex align-items-center pt-2">
-									<img src="https://codingyaar.com/wp-content/uploads/square-headshot-1.png" alt="bootstrap testimonial carousel slider 2"/>
-										<div>
-											<h5 class="card-title fw-bold">Jane Doe</h5>
-											<span class="text-secondary">CEO, Example Company</span>
-										</div>
-									</div>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="card shadow-sm rounded-3">
-							<div class="quotes display-2 text-body-tertiary">
-								<i class="bi bi-quote"></i>
-							</div>
-							<div class="card-body">
-								<p class="card-text">
-									"Some quick example text to build on the card title and make up the
-									bulk of
-									the card's content."
-								</p>
-								<div class="d-flex align-items-center pt-2">
-									<img src="https://codingyaar.com/wp-content/uploads/square-headshot-2.png" alt="bootstrap testimonial carousel slider 2"/>
-										<div>
-											<h5 class="card-title fw-bold">June Doe</h5>
-											<span class="text-secondary">CEO, Example Company</span>
-										</div>
-									</div>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="card shadow-sm rounded-3">
-							<div class="quotes display-2 text-body-tertiary">
-								<i class="bi bi-quote"></i>
-							</div>
-							<div class="card-body">
-								<p class="card-text">
-									"Some quick example text to build on the card title and make up the
-									bulk of
-									the card's content."
-								</p>
-								<div class="d-flex align-items-center pt-2">
-									<img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" alt="bootstrap testimonial carousel slider 2"/>
-										<div>
-											<h5 class="card-title fw-bold">John Doe</h5>
-											<span class="text-secondary">CEO, Example Company</span>
-										</div>
-									</div>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="card shadow-sm rounded-3">
-							<div class="quotes display-2 text-body-tertiary">
-								<i class="bi bi-quote"></i>
-							</div>
-							<div class="card-body">
-								<p class="card-text">
-									"Some quick example text to build on the card title and make up the
-									bulk of
-									the card's content."
-								</p>
-								<div class="d-flex align-items-center pt-2">
-									<img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" alt="bootstrap testimonial carousel slider 2"/>
-										<div>
-											<h5 class="card-title fw-bold">John Doe</h5>
-											<span class="text-secondary">CEO, Example Company</span>
-										</div>
-									</div>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="card shadow-sm rounded-3">
-							<div class="quotes display-2 text-body-tertiary">
-								<i class="bi bi-quote"></i>
-							</div>
-							<div class="card-body">
-								<p class="card-text">
-									"Un texto de ejemplo rápido para desarrollar el título de la tarjeta y componer el grueso de el contenido de la tarjeta."
-								</p>
-								<div class="d-flex align-items-center pt-2">
-									<img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" alt="bootstrap testimonial carousel slider 2"/>
-										<div>
-											<h5 class="card-title fw-bold">John Doe</h5>
-											<span class="text-secondary">CEO, Example Company</span>
-										</div>
-									</div>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="card shadow-sm rounded-3">
-							<div class="quotes display-2 text-body-tertiary">
-								<i class="bi bi-quote"></i>
-							</div>
-							<div class="card-body">
-								<p class="card-text">
-									"Un texto de ejemplo rápido para desarrollar el título de la tarjeta y componer el grueso de el contenido de la tarjeta."
-								</p>
-								<div class="d-flex align-items-center pt-2">
-									<img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" alt="bootstrap testimonial carousel slider 2"/>
-										<div>
-											<h5 class="card-title fw-bold">John Doe</h5>
-											<span class="text-secondary">CEO, Example Company</span>
-										</div>
-									</div>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="card shadow-sm rounded-3">
-							<div class="quotes display-2 text-body-tertiary">
-								<i class="bi bi-quote"></i>
-							</div>
-							<div class="card-body">
-								<p class="card-text">
-									"Un texto de ejemplo rápido para desarrollar el título de la tarjeta y componer el grueso de el contenido de la tarjeta."
-								</p>
-								<div class="d-flex align-items-center pt-2">
-									<img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" alt="bootstrap testimonial carousel slider 2"/>
-										<div>
-											<h5 class="card-title fw-bold">John Doe</h5>
-											<span class="text-secondary">CEO, Example Company</span>
-										</div>
-									</div>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="card shadow-sm rounded-3">
-							<div class="quotes display-2 text-body-tertiary">
-								<i class="bi bi-quote"></i>
-							</div>
-							<div class="card-body">
-								<p class="card-text">
-									"Un texto de ejemplo rápido para desarrollar el título de la tarjeta y componer el grueso de el contenido de la tarjeta."
-								</p>
-								<div class="d-flex align-items-center pt-2">
-									<img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" alt="bootstrap testimonial carousel slider 2"/>
-										<div>
-											<h5 class="card-title fw-bold">John Doe</h5>
-											<span class="text-secondary">CEO, Example Company</span>
-										</div>
-									</div>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<div class="card shadow-sm rounded-3">
-							<div class="quotes display-2 text-body-tertiary">
-								<i class="bi bi-quote"></i>
-							</div>
-							<div class="card-body">
-								<p class="card-text">
-									"Un texto de ejemplo rápido para desarrollar el título de la tarjeta y componer el grueso de el contenido de la tarjeta."
-								</p>
-								<div class="d-flex align-items-center pt-2">
-									<img src="https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg" alt="bootstrap testimonial carousel slider 2"/>
-										<div>
-											<h5 class="card-title fw-bold">John Doe</h5>
-											<span class="text-secondary">CEO, Example Company</span>
-										</div>
-									</div>
-							</div>
-						</div>
-					</div>
+					<xsl:apply-templates mode="carousel-item" select="data"/>
 				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
 					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -294,6 +72,99 @@ if (window.matchMedia("(min-width:576px)").matches) {
 					<span class="carousel-control-next-icon" aria-hidden="true"></span>
 					<span class="visually-hidden">Next</span>
 				</button>
+			</div>
+				<script defer="">
+					<![CDATA[
+			const multipleItemCarousel = $context.querySelector("#testimonialCarousel");
+
+if (window.matchMedia("(min-width:576px)").matches) {
+  const carousel = new bootstrap.Carousel(multipleItemCarousel, {
+    interval: false
+  });
+
+  const carouselInner = document.querySelector(".carousel-inner");
+  const carouselItems = document.querySelectorAll(".carousel-item");
+  const carouselControlNext = document.querySelector(".carousel-control-next");
+  const carouselControlPrev = document.querySelector(".carousel-control-prev");
+  
+  let carouselWidth = carouselInner.scrollWidth;
+  let cardWidth = carouselItems[0].offsetWidth;
+
+  let scrollPosition = 0;
+
+  carouselControlNext.addEventListener("click", function () {
+    if (scrollPosition < carouselWidth - cardWidth * 3) {
+      console.log("next");
+      scrollPosition = scrollPosition + cardWidth;
+      carouselInner.scrollTo({ left: scrollPosition, behavior: 'smooth' });
+    }
+  });
+
+  carouselControlPrev.addEventListener("click", function () {
+    if (scrollPosition > 0) {
+      scrollPosition = scrollPosition - cardWidth;
+      carouselInner.scrollTo({ left: scrollPosition, behavior: 'smooth' });
+    }
+  });
+} else {
+  multipleItemCarousel.classList.add("slide");
+}
+
+			]]>
+				</script>
+		</div>
+	</xsl:template>
+
+	<xsl:template mode="image" match="data">
+		<xsl:value-of select="normalize-space(comment)"/>
+	</xsl:template>
+
+	<xsl:template mode="subtitle" match="data">
+		<xsl:value-of select="normalize-space(substring-before(substring-after(value,','),':'))"/>
+	</xsl:template>
+
+	<xsl:template mode="title" match="data">
+		<xsl:value-of select="normalize-space(substring-before(value,','))"/>
+	</xsl:template>
+
+	<xsl:template mode="body" match="data">
+		<xsl:value-of select="normalize-space(substring-after(value,':'))"/>
+	</xsl:template>
+
+	<xsl:template mode="carousel-item" match="data">
+		<xsl:variable name="title">
+			<xsl:apply-templates mode="title" select="."/>
+		</xsl:variable>
+		<xsl:variable name="subtitle">
+			<xsl:apply-templates mode="subtitle" select="."/>
+		</xsl:variable>
+		<xsl:variable name="body">
+			<xsl:apply-templates mode="body" select="."/>
+		</xsl:variable>
+		<xsl:variable name="image">
+			<xsl:apply-templates mode="image" select="."/>
+		</xsl:variable>
+		<div class="carousel-item active">
+			<div class="card shadow-sm rounded-3 h-100">
+				<div class="quotes display-2 text-body-tertiary">
+					<i class="bi bi-quote"></i>
+				</div>
+				<div class="card-body d-flex flex-column">
+					<p class="card-text" style="flex: 1;">
+						<xsl:value-of select="$body"/>
+					</p>
+					<div class="d-flex align-items-center pt-2">
+						<img src="{$image}" alt="bootstrap testimonial carousel slider 2"/>
+						<div>
+							<h5 class="card-title fw-bold">
+								<xsl:value-of select="$title"/>
+							</h5>
+							<span class="text-secondary">
+								<xsl:value-of select="$subtitle"/>
+							</span>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</xsl:template>

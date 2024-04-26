@@ -104,7 +104,7 @@
 	</xsl:template>
 
 	<xsl:template match="root[key('valid-model', generate-id())]">
-		<script><![CDATA[bootstrap.Offcanvas.getOrCreateInstance(context.closest('.offcanvas')).show()]]></script>
+		<script><![CDATA[bootstrap.Offcanvas.getOrCreateInstance($context.closest('.offcanvas')).show()]]></script>
 		<div class="offcanvas-header">
 			<xsl:apply-templates select="data[@name='title']"/>
 			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
