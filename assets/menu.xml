@@ -18,5 +18,5 @@
 		<item title="Seguro de Vida" href="./seguros.html#vida" image="vida1.jpg"/>
 	</item>
 	<item title="Nuestros socios" href="./socios.html"/>
-	<item title="Novedades" href="./novedades.html"/>
+	<!--<item title="Novedades" href="./novedades.html"/>-->
 </menu>

@@ -1,14 +1,8 @@
 ﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:env="http://panax.io/state/environment" xmlns:xo="http://panax.io/xover">
 
-	<xsl:template match="/">
-		<!-- src: https://codepen.io/codingyaar/pen/MWRjKqM -->
-		<section id="testiomniales">
-			<xsl:apply-templates/>
-		</section>
-	</xsl:template>
-
 	<xsl:template match="/*">
-		<div class="container-fluid bg-body-tertiary py-3" data-aos="fade-up">
+		<!-- src: https://codepen.io/codingyaar/pen/MWRjKqM -->
+			<div class="container-fluid bg-body-tertiary py-3" data-aos="fade-up">
 			<style>
 				.carousel img {
 				width: 70px;
@@ -115,22 +109,6 @@ if (window.matchMedia("(min-width:576px)").matches) {
 		</div>
 	</xsl:template>
 
-	<xsl:template mode="image" match="data">
-		<xsl:value-of select="normalize-space(comment)"/>
-	</xsl:template>
-
-	<xsl:template mode="subtitle" match="data">
-		<xsl:value-of select="normalize-space(substring-before(substring-after(value,','),':'))"/>
-	</xsl:template>
-
-	<xsl:template mode="title" match="data">
-		<xsl:value-of select="normalize-space(substring-before(value,','))"/>
-	</xsl:template>
-
-	<xsl:template mode="body" match="data">
-		<xsl:value-of select="normalize-space(substring-after(value,':'))"/>
-	</xsl:template>
-
 	<xsl:template mode="carousel-item" match="data">
 		<xsl:variable name="title">
 			<xsl:apply-templates mode="title" select="."/>
@@ -169,4 +147,19 @@ if (window.matchMedia("(min-width:576px)").matches) {
 		</div>
 	</xsl:template>
 
+	<xsl:template mode="image" match="data">
+		<xsl:value-of select="normalize-space(comment)"/>
+	</xsl:template>
+
+	<xsl:template mode="subtitle" match="data">
+		<xsl:value-of select="normalize-space(substring-before(substring-after(value,','),':'))"/>
+	</xsl:template>
+
+	<xsl:template mode="title" match="data">
+		<xsl:value-of select="normalize-space(substring-before(value,','))"/>
+	</xsl:template>
+
+	<xsl:template mode="body" match="data">
+		<xsl:value-of select="normalize-space(substring-after(value,':'))"/>
+	</xsl:template>
 </xsl:stylesheet>

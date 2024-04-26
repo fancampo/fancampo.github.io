@@ -16,7 +16,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 		<div class="col-12 col-sm-6 col-lg-4 col-xl-3 tile">
 			<div class="position-relative banner-2">
 				<img src="./assets/img/{@image}" class="img-fluid rounded" alt=""/>
-				<div class="text-center banner-content-2">
+				<div class="text-center banner-content-2" style="gap: 15px;">
 					<h4 class="mb-2 fw-bold text-accent">Seguro</h4>
 					<p class="mb-2 h2 fw-bold text-white">
 						<xsl:apply-templates select="@title"/>
