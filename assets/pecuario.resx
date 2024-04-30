@@ -117,6 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="beneficio_1" xml:space="preserve">
+    <value>Asistencia Veterinaria: Algunas pólizas ofrecen servicios de asistencia veterinaria programada, contribuyendo al bienestar y mantenimiento preventivo de la salud del ganado.</value>
+  </data>
+  <data name="beneficio_2" xml:space="preserve">
+    <value>Gestión de Riesgos: FanCampo provee asesoramiento en gestión de riesgos agropecuarios, ayudando a los ganaderos a implementar prácticas que minimicen la posibilidad de siniestros.</value>
+  </data>
+  <data name="beneficio_3" xml:space="preserve">
+    <value>Indemnización Rápida: Compromiso con procesos ágiles de verificación y compensación, entendiendo la importancia de la continuidad operativa para el negocio agropecuario.</value>
+  </data>
   <data name="cobertura_1" xml:space="preserve">
     <value>Muerte por enfermedad o accidente: Compensa al asegurado por la pérdida de animales debido a enfermedades o accidentes, incluyendo aquellos causados por fenómenos naturales</value>
   </data>
@@ -126,10 +135,22 @@
   <data name="cobertura_3" xml:space="preserve">
     <value>Gastos Veterinarios: Cubre los gastos generados por atención veterinaria en caso de enfermedad o accidente, promoviendo la recuperación del animal sin afectar significativamente la economía del ganadero.</value>
   </data>
+  <data name="cover" xml:space="preserve">
+    <value>pecuario_cover.jpg</value>
+  </data>
   <data name="objetivo" xml:space="preserve">
     <value>El seguro pecuario de FanCampo está diseñado para proteger el patrimonio de los ganaderos ante diversos riesgos que pueden afectar la salud y vida de sus animales. Este tipo de seguro cubre una amplia gama de especies, desde ganado bovino, porcino, ovino, hasta aves de corral y otros animales dedicados a la producción agropecuaria.</value>
   </data>
   <data name="titulo" xml:space="preserve">
     <value>Seguro Pecuario</value>
+  </data>
+  <data name="ventaja_1" xml:space="preserve">
+    <value>Experiencia y Especialización: FanCampo cuenta con años de experiencia y un enfoque especializado en el sector agropecuario, lo que garantiza un profundo entendimiento de las necesidades y desafíos de los ganaderos.</value>
+  </data>
+  <data name="ventaja_2" xml:space="preserve">
+    <value>Personalización: Capacidad de adaptar las coberturas a las necesidades específicas de cada explotación, considerando el tipo de ganado, tamaño de la operación y riesgos particulares de la región.</value>
+  </data>
+  <data name="ventaja_3" xml:space="preserve">
+    <value>Soporte y Confianza: Más allá de una aseguradora, FanCampo se posiciona como un socio estratégico para los ganaderos, ofreciendo soporte continuo y asesoría experta.</value>
   </data>
 </root>

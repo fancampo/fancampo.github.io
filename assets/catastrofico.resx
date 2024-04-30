@@ -135,19 +135,22 @@
   <data name="cobertura_3" xml:space="preserve">
     <value>Gastos de Recuperación: Cobertura para los gastos necesarios para la recuperación y reinicio de las actividades agropecuarias, incluyendo limpieza de terrenos, reparación de infraestructuras y reposición de equipos dañados.</value>
   </data>
+  <data name="cover" xml:space="preserve">
+    <value>catastrofico_cover.jpeg</value>
+  </data>
   <data name="objetivo" xml:space="preserve">
     <value>Las coberturas contra eventos catastróficos de FanCampo están diseñadas para proteger a agricultores, ganaderos y productores acuícolas de las devastadoras consecuencias financieras que pueden resultar de desastres naturales de gran escala, como huracanes, terremotos, inundaciones extensas y sequías prolongadas. Estos seguros son vitales para garantizar la recuperación y continuidad de las operaciones agropecuarias después de eventos imprevistos y severos.</value>
   </data>
-  <data name="razon_1" xml:space="preserve">
-    <value>Experiencia en Riesgos Complejos: FanCampo tiene una profunda comprensión de la complejidad y el impacto de eventos catastróficos en el sector agropecuario, ofreciendo soluciones de seguros que reflejan esta experiencia.</value>
-  </data>
-  <data name="razon_2" xml:space="preserve">
-    <value>Personalización de Coberturas: La capacidad de FanCampo para personalizar las coberturas asegura que cada cliente reciba la protección más adecuada para sus necesidades específicas y su perfil de riesgo.</value>
-  </data>
-  <data name="razon_3" xml:space="preserve">
-    <value>Compromiso con la Resiliencia Agropecuaria: FanCampo no solo busca proteger financieramente a sus clientes, sino también contribuir a la construcción de un sector agropecuario más resiliente y preparado para enfrentar desafíos futuros.</value>
-  </data>
   <data name="titulo" xml:space="preserve">
     <value>Eventos Catastróficos</value>
+  </data>
+  <data name="ventaja_1" xml:space="preserve">
+    <value>Experiencia en Riesgos Complejos: FanCampo tiene una profunda comprensión de la complejidad y el impacto de eventos catastróficos en el sector agropecuario, ofreciendo soluciones de seguros que reflejan esta experiencia.</value>
+  </data>
+  <data name="ventaja_2" xml:space="preserve">
+    <value>Personalización de Coberturas: La capacidad de FanCampo para personalizar las coberturas asegura que cada cliente reciba la protección más adecuada para sus necesidades específicas y su perfil de riesgo.</value>
+  </data>
+  <data name="ventaja_3" xml:space="preserve">
+    <value>Compromiso con la Resiliencia Agropecuaria: FanCampo no solo busca proteger financieramente a sus clientes, sino también contribuir a la construcción de un sector agropecuario más resiliente y preparado para enfrentar desafíos futuros.</value>
   </data>
 </root>

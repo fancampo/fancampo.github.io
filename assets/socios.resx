@@ -258,4 +258,7 @@
   <data name="socio_54" xml:space="preserve">
     <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/PUEBLA%20NORTE-ac4518a.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
   </data>
+  <data name="titulo" xml:space="preserve">
+    <value>Nuestros Socios</value>
+  </data>
 </root>

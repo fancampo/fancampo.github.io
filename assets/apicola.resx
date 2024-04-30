@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="beneficio_1" xml:space="preserve">
+    <value>Asesoramiento en Gestión de Riesgos: FanCampo proporciona asesoramiento experto para ayudar a los apicultores a implementar medidas preventivas y reducir el riesgo de pérdidas.</value>
+  </data>
+  <data name="beneficio_2" xml:space="preserve">
+    <value>Apoyo en la Recuperación de Colmenas: Servicios de soporte para la recuperación o reconstrucción de colmenas afectadas, incluyendo asistencia técnica para la reintroducción de abejas.</value>
+  </data>
+  <data name="beneficio_3" xml:space="preserve">
+    <value>Flexibilidad en la Cobertura: Opciones para ajustar la cobertura según el tamaño de la operación apícola, desde pequeños apicultores hasta empresas apícolas a gran escala.</value>
+  </data>
+  <data name="cobertura_1" xml:space="preserve">
+    <value>Pérdida de Colmenas: Cobertura por la pérdida de colmenas debido a causas como enfermedades, ataques de plagas, incendios, inundaciones, y otros eventos climáticos extremos.</value>
+  </data>
+  <data name="cobertura_2" xml:space="preserve">
+    <value>Daños por Vandalismo o Robo: Protección contra la pérdida o daño de colmenas y equipos apícolas a causa de actos de vandalismo o robo.</value>
+  </data>
+  <data name="cobertura_3" xml:space="preserve">
+    <value>Interrupción del Negocio: En algunos casos, se puede ofrecer cobertura para compensar la pérdida de ingresos debido a una interrupción significativa de la actividad apícola.</value>
+  </data>
+  <data name="cover" xml:space="preserve">
+    <value>apicola_cover.jpg</value>
+  </data>
+  <data name="objetivo" xml:space="preserve">
+    <value>Los seguros apícolas de FanCampo están diseñados específicamente para proteger a los apicultores y sus colmenas de una serie de riesgos que pueden afectar la producción de miel y otros productos apícolas. Estos seguros buscan ofrecer tranquilidad y seguridad financiera ante pérdidas causadas por enfermedades en las abejas, desastres naturales, vandalismo, y otros riesgos específicos del sector apícola.</value>
+  </data>
+  <data name="titulo" xml:space="preserve">
+    <value>Seguro Apícola</value>
+  </data>
+  <data name="ventaja_1" xml:space="preserve">
+    <value>Especialización en el Sector Apícola: FanCampo tiene un conocimiento profundo de los desafíos y riesgos específicos enfrentados por la apicultura, ofreciendo soluciones de seguros que abordan directamente estas necesidades.</value>
+  </data>
+  <data name="ventaja_2" xml:space="preserve">
+    <value>Personalización de Polizas: Capacidad para personalizar las pólizas según las necesidades y riesgos únicos de cada apicultor, asegurando una protección adecuada y eficaz.</value>
+  </data>
+  <data name="ventaja_3" xml:space="preserve">
+    <value>Compromiso con el Desarrollo Sostenible: FanCampo reconoce la importancia de las abejas para la biodiversidad y la agricultura, y su oferta de seguros apícolas refleja un compromiso con la sostenibilidad y la conservación de las poblaciones de abejas.</value>
+  </data>
+</root>

@@ -2,7 +2,7 @@
 
 	<xsl:template match="/*">
 		<!-- src: https://codepen.io/codingyaar/pen/MWRjKqM -->
-			<div class="container-fluid bg-body-tertiary py-3" data-aos="fade-up">
+		<div class="container-fluid bg-body-tertiary py-3" data-aos="fade-up">
 			<style>
 				.carousel img {
 				width: 70px;
@@ -67,8 +67,8 @@
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
-				<script defer="">
-					<![CDATA[
+			<script defer="">
+				<![CDATA[
 			const multipleItemCarousel = $context.querySelector("#testimonialCarousel");
 
 if (window.matchMedia("(min-width:576px)").matches) {
@@ -105,7 +105,7 @@ if (window.matchMedia("(min-width:576px)").matches) {
 }
 
 			]]>
-				</script>
+			</script>
 		</div>
 	</xsl:template>
 

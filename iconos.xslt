@@ -4,35 +4,34 @@
 	<xsl:key name="icon" match="data[starts-with(@name,'icon_')]" use="string(comment)"/>
 
 	<xsl:template match="/*">
-		<div class="social-links mt-3">
-			<xsl:apply-templates mode="caracteristicas-item" select="key('icon','')">
+		<div>
+			<style>
+				<![CDATA[
+				.icon svg {
+					height: 20px;
+					fill: white;
+				}sec
+			]]></style>
+			<xsl:apply-templates mode="item" select="key('icon','')">
 				<xsl:sort select="@name"/>
 			</xsl:apply-templates>
-
-			<a href="#" class="facebook">
-				<i class="bx bxl-facebook"></i>
-			</a>
-			<a href="#" class="instagram">
-				<i class="bx bxl-instagram"></i>
-			</a>
 		</div>
 	</xsl:template>
 
-	<xsl:template mode="caracteristicas-item-title" match="*">
-		<xsl:value-of select="substring-before(.,':')"/>
-	</xsl:template>
-
-	<xsl:template mode="caracteristicas-item-text" match="*">
-		<xsl:value-of select="substring-after(.,':')"/>
-	</xsl:template>
-
-	<xsl:template mode="caracteristicas-item" match="*">
-		<a href="#" class="twitter">
-			<xsl:apply-templates mode="caracteristicas-item-icon" select="."/>
+	<xsl:template mode="item" match="*">
+		<a href="#" class="icon" target="_blank">
+			<xsl:attribute name="href">
+				<xsl:value-of select="value"/>
+			</xsl:attribute>
+			<xsl:apply-templates mode="item-icon" select="."/>
 		</a>
 	</xsl:template>
 
-	<xsl:template mode="caracteristicas-item-icon" match="*">
-		<i class="bx bxl-twitter"></i>
+	<xsl:template mode="item-icon" match="*">
+		<i class="fa-brands fa-{comment}"></i>
+	</xsl:template>
+
+	<xsl:template mode="item-icon" match="*[starts-with(comment,'&lt;')]">
+		<xsl:value-of select="comment" disable-output-escaping="yes"/>
 	</xsl:template>
 </xsl:stylesheet>

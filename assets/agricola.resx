@@ -117,6 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="beneficio_1" xml:space="preserve">
+    <value>Asesoramiento Agronómico: FanCampo proporciona servicios de asesoramiento agronómico para ayudar a los agricultores a implementar prácticas de manejo de cultivos que reduzcan el riesgo de siniestros.</value>
+  </data>
+  <data name="beneficio_2" xml:space="preserve">
+    <value>Soluciones Tecnológicas: Uso de tecnología para monitorear condiciones climáticas y alertar a los agricultores sobre posibles riesgos, permitiendo la toma de decisiones proactivas para proteger los cultivos.</value>
+  </data>
+  <data name="beneficio_3" xml:space="preserve">
+    <value>Procesos de Reclamación Simplificados: FanCampo se compromete a ofrecer procesos de reclamación rápidos y eficientes, minimizando el tiempo de inactividad y permitiendo a los agricultores recuperarse más rápidamente de los siniestros.</value>
+  </data>
   <data name="cobertura_1" xml:space="preserve">
     <value>Daños a los cultivos: Esta cobertura compensa a los agricultores por las pérdidas en la producción causadas directamente por eventos climáticos adversos, ataques de plagas, o enfermedades no prevenibles.</value>
   </data>
@@ -131,5 +140,14 @@
   </data>
   <data name="titulo" xml:space="preserve">
     <value>Seguro Agrícola</value>
+  </data>
+  <data name="ventaja_1" xml:space="preserve">
+    <value>Comprensión Profunda del Sector Agrícola: FanCampo entiende las complejidades y desafíos específicos de la agricultura, ofreciendo productos que reflejan las necesidades reales de los agricultores.</value>
+  </data>
+  <data name="ventaja_2" xml:space="preserve">
+    <value>Personalización de Coberturas: La capacidad de adaptar las pólizas a diferentes tipos de cultivos, escalas de producción y niveles de riesgo específicos de cada agricultor.</value>
+  </data>
+  <data name="ventaja_3" xml:space="preserve">
+    <value>Compromiso con el Cliente: Más allá de la relación aseguradora-asegurado, FanCampo actúa como un socio estratégico para los agricultores, brindando soporte y asesoría constante.</value>
   </data>
 </root>

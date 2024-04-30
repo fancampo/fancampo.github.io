@@ -72,6 +72,7 @@
 }
 
 .offcanvas-bottom {
+    border-top: 3px solid var(--fancampovida-blue-smoke) !important;
     height: var(--offcanvas-height, var(--bs-offcanvas-height)) !important;
 }
 

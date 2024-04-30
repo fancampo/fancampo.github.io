@@ -1,46 +1,92 @@
 ﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:env="http://panax.io/state/environment" xmlns:xo="http://panax.io/xover" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<xsl:key name="valid-model" match="root[@env:store='#aviso_privacidad']" use="generate-id()"/>
-	<xsl:key name="valid-model" match="root[@env:store='#codigo_etica']" use="generate-id()"/>
-	<xsl:key name="valid-model" match="root[@env:store='#mision']" use="generate-id()"/>
-	<xsl:key name="valid-model" match="root[@env:store='#vision']" use="generate-id()"/>
-	<xsl:key name="valid-model" match="root[@env:store='#valores']" use="generate-id()"/>
-	<xsl:key name="valid-model" match="root[@env:store='#terminos_condiciones']" use="generate-id()"/>
-
-	<xsl:key name="data" match="root[@env:store='#mision']/data" use="'mision_vision_valores'"/>
-	<xsl:key name="data" match="root[@env:store='#vision']/data" use="'mision_vision_valores'"/>
-	<xsl:key name="data" match="root[@env:store='#valores']/data" use="'mision_vision_valores'"/>
-
 	<xsl:key name="data" match="data/@name" use="."/>
 
 	<xsl:key name="data" match="data" use="@name"/>
 	<xsl:key name="data" match="data[starts-with(@name,'cobertura_')]" use="'coberturas'"/>
-	
+	<xsl:key name="data" match="data[starts-with(@name,'beneficio_')]" use="'beneficios'"/>
+	<xsl:key name="data" match="data[starts-with(@name,'ventaja_')]" use="'ventajas'"/>
+
 	<xsl:template match="/">
-		<section>
-			<xsl:apply-templates/>
-		</section>
+		<main>
+			<style>
+				<![CDATA[
+.b-divider {
+    width: 100vw;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
+}
+			]]>
+			</style>
+			<xsl:variable name="cover">
+				<xsl:choose>
+					<xsl:when test="key('data','cover')">
+						<xsl:value-of select="normalize-space(key('data','cover'))"/>
+					</xsl:when>
+					<xsl:otherwise>cover.jpg</xsl:otherwise>
+				</xsl:choose>
+			</xsl:variable>
+			<section class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/img/{$cover});background-position: center center;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;padding: 150px 0 50px 0;" xo-stylesheet="section_title.xslt" xo-source="active">
+			</section>
+			<xsl:apply-templates mode="caracteristicas">
+				<xsl:with-param name="items" select="key('data','coberturas')"/>
+			</xsl:apply-templates>
+			<xsl:apply-templates mode="caracteristicas_hanging">
+				<xsl:with-param name="title">Beneficios Adicionales</xsl:with-param>
+				<xsl:with-param name="items" select="key('data','beneficios')"/>
+			</xsl:apply-templates>
+			<xsl:apply-templates mode="caracteristicas_hanging">
+				<xsl:with-param name="title">
+					¿Por qué elegir FanCampo para el <xsl:value-of select="key('data','titulo')"/>?
+				</xsl:with-param>
+				<xsl:with-param name="items" select="key('data','ventajas')"/>
+			</xsl:apply-templates>
+		</main>
 	</xsl:template>
 
-	<xsl:template match="/*">
-		<div class="container px-4 py-5">
-			<h2 class="pb-2 border-bottom">Características</h2>
+	<xsl:template match="/*" mode="caracteristicas">
+		<xsl:param name="items" select="."/>
+		<section id="caracteristicas">
+			<div class="container px-4 py-5">
+				<h2 class="pb-2 border-bottom">Características</h2>
+				<div class="row row-cols-1 row-cols-md-2 align-items-md-top g-5 py-5">
+					<div class="col d-flex flex-column align-items-start gap-2">
+						<h2 class="fw-bold text-body-emphasis">¿Qué es?</h2>
+						<p class="text-body-secondary">
+							<xsl:apply-templates select="key('data','objetivo')"/>
+						</p>
+						<a href="#" class="btn btn-primary btn-lg">Contratar</a>
+					</div>
 
-			<div class="row row-cols-1 row-cols-md-2 align-items-md-top g-5 py-5">
-				<div class="col d-flex flex-column align-items-start gap-2">
-					<h2 class="fw-bold text-body-emphasis">Objetivo del servicio</h2>
-					<p class="text-body-secondary">
-						<xsl:apply-templates select="key('data','objetivo')"/>
-					</p>
-					<a href="#" class="btn btn-primary btn-lg">Contratar</a>
-				</div>
-
-				<div class="col">
-					<div class="row row-cols-1 row-cols-sm-2 g-4">
-						<xsl:apply-templates mode="cobertura" select="key('data','coberturas')"/>
+					<div class="col">
+						<div class="row row-cols-1 row-cols-sm-2 g-4">
+							<xsl:apply-templates mode="cobertura" select="$items"/>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+		<div class="b-divider"></div>
+	</xsl:template>
+
+	<xsl:template match="/*" mode="caracteristicas_hanging">
+		<xsl:param name="title" select="."/>
+		<xsl:param name="items" select="."/>
+		<xsl:if test="$items">
+			<section id="razones">
+				<div class="container px-4 py-5" id="hanging-icons">
+					<h2 class="pb-2 border-bottom">
+						<xsl:value-of select="$title"/>
+					</h2>
+					<div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+						<xsl:apply-templates mode="hanging" select="$items"/>
+					</div>
+				</div>
+			</section>
+			<div class="b-divider"></div>
+		</xsl:if>
 	</xsl:template>
 
 	<xsl:template match="data">
@@ -68,6 +114,25 @@
 			<p class="text-body-secondary">
 				<xsl:apply-templates mode="body" select="value"/>
 			</p>
+		</div>
+	</xsl:template>
+
+	<xsl:template mode="hanging" match="data">
+		<div class="col d-flex align-items-start">
+			<div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+					<path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+					<path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+				</svg>
+			</div>
+			<div>
+				<h3 class="fs-2 text-body-emphasis">
+					<xsl:apply-templates mode="title" select="value"/>
+				</h3>
+				<p>
+					<xsl:apply-templates mode="body" select="value"/>
+				</p>
+			</div>
 		</div>
 	</xsl:template>
 </xsl:stylesheet>

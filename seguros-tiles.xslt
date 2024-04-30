@@ -3,7 +3,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 xmlns:xo="http://panax.io/xover"
 xmlns="http://www.w3.org/1999/xhtml"
 >
-	<xsl:key name="seguros" match="item[@title='Seguros agropecuarios']/item" use="'*'"/>
+	<xsl:key name="seguros" match="item[@title='Seguros']/item" use="'*'"/>
 	<xsl:key name="seguros" match="item[@title='Seguros de vida']/item" use="'*'"/>
 	
 	<xsl:template match="/">
@@ -13,9 +13,15 @@ xmlns="http://www.w3.org/1999/xhtml"
 	</xsl:template>
 
 	<xsl:template mode="tile" match="*">
-		<div class="col-12 col-sm-6 col-lg-4 col-xl-3 tile">
-			<div class="position-relative banner-2">
-				<img src="./assets/img/{@image}" class="img-fluid rounded" alt=""/>
+		<div class="col-12 col-sm-6 col-lg-4 col-xl-4 tile">
+			<div class="position-relative banner-2" style="overflow: hidden;
+    height: 300px;">
+				<img src="./assets/img/{@image}" class="img-fluid rounded" alt="" style="width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: inset(0);
+    min-height: 400px;
+    max-height: 400px;"/>
 				<div class="text-center banner-content-2" style="gap: 15px;">
 					<h4 class="mb-2 fw-bold text-accent">Seguro</h4>
 					<p class="mb-2 h2 fw-bold text-white">

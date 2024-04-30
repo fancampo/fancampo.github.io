@@ -117,6 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="beneficio_1" xml:space="preserve">
+    <value>Asesoría Especializada: FanCampo ofrece asesoría especializada en acuicultura, brindando a los productores recomendaciones para mejorar la gestión de riesgos y la bioseguridad en sus operaciones.</value>
+  </data>
+  <data name="beneficio_2" xml:space="preserve">
+    <value>Innovaciones Tecnológicas: Implementación de tecnología para el monitoreo en tiempo real de parámetros críticos del agua y la salud de las especies, permitiendo intervenciones tempranas para prevenir pérdidas.</value>
+  </data>
+  <data name="beneficio_3" xml:space="preserve">
+    <value>Respuesta Rápida a Reclamaciones: Compromiso con un proceso de reclamación eficiente y ágil, facilitando una recuperación rápida ante la ocurrencia de siniestros.</value>
+  </data>
   <data name="cobertura_1" xml:space="preserve">
     <value>Mortalidad de Especies: Compensación por la pérdida de stock debido a enfermedades, condiciones climáticas extremas, y otros riesgos específicos para el sector acuícola.</value>
   </data>
@@ -126,10 +135,22 @@
   <data name="cobertura_3" xml:space="preserve">
     <value>Interrupción del Negocio: Protección contra pérdidas económicas resultantes de una interrupción temporal de la producción acuícola, asegurando continuidad y estabilidad financiera.</value>
   </data>
+  <data name="cover" xml:space="preserve">
+    <value>acuicola_cover.jpeg</value>
+  </data>
   <data name="objetivo" xml:space="preserve">
     <value>Los seguros acuícolas de FanCampo están diseñados específicamente para la industria acuícola, proporcionando cobertura a los productores de especies marinas y de agua dulce contra una amplia gama de riesgos. Estos seguros buscan proteger contra las pérdidas económicas derivadas de eventos como enfermedades, cambios ambientales adversos, contaminación, y ataques de depredadores, que pueden afectar significativamente la producción.</value>
   </data>
   <data name="titulo" xml:space="preserve">
     <value>Seguro Acuícola</value>
+  </data>
+  <data name="ventaja_1" xml:space="preserve">
+    <value>Experiencia Sectorial: FanCampo reconoce las particularidades y desafíos únicos de la acuicultura, ofreciendo soluciones aseguradoras que abordan directamente estos retos.</value>
+  </data>
+  <data name="ventaja_2" xml:space="preserve">
+    <value>Coberturas Personalizadas: Capacidad para personalizar las pólizas según el tipo de especie cultivada, tamaño de la operación, y riesgos específicos de la ubicación, asegurando una protección completa.</value>
+  </data>
+  <data name="ventaja_3" xml:space="preserve">
+    <value>Enfoque en la Sostenibilidad: Promoción de prácticas sostenibles en acuicultura a través de incentivos en las pólizas de seguro, alineándose con los objetivos de conservación y producción responsable.</value>
   </data>
 </root>

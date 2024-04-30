@@ -118,15 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="estadistica_1" xml:space="preserve">
-    <value>Facebook:123456</value>
-    <comment>fa-facebook-square</comment>
+    <value>Apoyo a Productores:185000</value>
   </data>
   <data name="estadistica_2" xml:space="preserve">
-    <value>Twitter:500000</value>
-    <comment>fa-twitter</comment>
+    <value>Operación de Familia:950000</value>
   </data>
   <data name="estadistica_3" xml:space="preserve">
-    <value>Instagram:2000000</value>
-    <comment>fa-instagram</comment>
+    <value>Impacto en Vida:430000</value>
   </data>
 </root>
