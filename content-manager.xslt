@@ -1,4 +1,6 @@
 ﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:env="http://panax.io/state/environment" xmlns:xo="http://panax.io/xover">
+	<xsl:import href="keys.xslt"/>
+	<xsl:import href="common.xslt"/>
 	<xsl:key name="valid-model" match="root[@env:store='#aviso_privacidad']" use="generate-id()"/>
 	<xsl:key name="valid-model" match="root[@env:store='#codigo_etica']" use="generate-id()"/>
 	<xsl:key name="valid-model" match="root[@env:store='#mision']" use="generate-id()"/>
@@ -6,12 +8,9 @@
 	<xsl:key name="valid-model" match="root[@env:store='#valores']" use="generate-id()"/>
 	<xsl:key name="valid-model" match="root[@env:store='#terminos_condiciones']" use="generate-id()"/>
 
-	<xsl:key name="data" match="root[@env:store='#mision']/data" use="'mision_vision_valores'"/>
-	<xsl:key name="data" match="root[@env:store='#vision']/data" use="'mision_vision_valores'"/>
-	<xsl:key name="data" match="root[@env:store='#valores']/data" use="'mision_vision_valores'"/>
-
-	<xsl:key name="data" match="data[not(contains(@name,'title'))]" use="'body'"/>
-	<xsl:key name="data" match="data/@name" use="."/>
+	<xsl:key name="data" match="root[@env:store='#mision']/data[not(contains(@name,':'))]" use="'mision_vision_valores'"/>
+	<xsl:key name="data" match="root[@env:store='#vision']/data[not(contains(@name,':'))]" use="'mision_vision_valores'"/>
+	<xsl:key name="data" match="root[@env:store='#valores']/data[not(contains(@name,':'))]" use="'mision_vision_valores'"/>
 
 	<xsl:template match="/">
 		<div class="offcanvas offcanvas-bottom" xo-static="@style @role @aria-modal">
@@ -64,10 +63,14 @@
 			</div>
 			<div style="overflow: hidden;">
 				<xsl:apply-templates mode="feature-body-class" select="."/>
-				<img src="./assets/img/{@name}.jpg" style="width: 100%; height: 100%; object-fit: cover; clip-path: inset(0); min-height: 400px; max-height: 400px;"/>
+				<img src="./assets/img/{@name}.jpg" style="width: 100%; height: 100%; object-fit: cover; clip-path: inset(0); min-height: 400px; max-height: 400px;">
+					<xsl:apply-templates mode="image-src" select="key('image', @name)"/>
+				</img>
 			</div>
 		</div>
 	</xsl:template>
+
+	<xsl:template match="data[contains(@type,'System.Resources.ResXFileRef')]"/>
 
 	<xsl:template match="data" mode="feature-header-class">
 		<xsl:attribute name="class">col-md-4</xsl:attribute>
@@ -106,11 +109,11 @@
 	<xsl:template match="root[key('valid-model', generate-id())]">
 		<script><![CDATA[bootstrap.Offcanvas.getOrCreateInstance($context.closest('.offcanvas')).show()]]></script>
 		<div class="offcanvas-header">
-			<xsl:apply-templates select="data[@name='title']"/>
+			<xsl:apply-templates select="key('data','title')"/>
 			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		</div>
 		<div class="offcanvas-body small">
-			<xsl:apply-templates select="data[@name!='title']"/>
+			<xsl:apply-templates select="key('data','body')"/>
 		</div>
 	</xsl:template>
 

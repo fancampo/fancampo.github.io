@@ -51,6 +51,56 @@
     --offcanvas-height: 90vh !important;
 }
 
+.list-group-item-action:focus, .list-group-item-action:hover {
+    z-index: 1;
+    color: var(--bs-list-group-action-hover-color);
+    text-decoration: none;
+    background-color: var(--fancampovida-creen-snow);
+}
+
+::backdrop, dialog + .backdrop {
+    background: repeating-linear-gradient( 45deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 1px, rgba(0, 0, 0, 0.3) 1px, rgba(0, 0, 0, 0.3) 20px );
+    backdrop-filter: blur(2px);
+}
+
+/*aviso_privacidad --> */
+.aviso_privacidad {
+    padding-right: 15px;
+    line-height: 1.7;
+}
+
+.aviso_privacidad table thead th {
+    background-color: var(--fancampovida-blue-smoke);
+    color: white;
+}
+
+.aviso_privacidad table, .aviso_privacidad th, .aviso_privacidad td {
+    border: 1px solid black;
+    padding-inline: .5rem;
+}
+
+.aviso_privacidad summary {
+    font-weight: bold
+}
+
+details > * {
+    margin-bottom: 15px;
+}
+
+details li {
+    padding-bottom: .5rem;
+}
+/* <-- aviso_privacidad */
+
+.b-divider {
+    width: 100vw;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
+}
+
 .accent, .text-accent {
     color: var(--fancampovida-creen-snow)
 }
@@ -76,9 +126,11 @@
     height: var(--offcanvas-height, var(--bs-offcanvas-height)) !important;
 }
 
-.offcanvas-bottom > * {
+.offcanvas-bottom > section {
     overflow-x: hidden;
+    overflow-y: scroll;
     padding-inline: 2rem;
+    padding-bottom: 5rem;
 }
 
 .offcanvas-body {
@@ -157,9 +209,9 @@ video {
         padding-inline: 3rem;
     }
 
-    #video-container > div {
-        position: sticky;
-    }
+        #video-container > div {
+            position: sticky;
+        }
 
     video {
         position: fixed;

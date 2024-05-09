@@ -11,7 +11,7 @@
 	<xsl:template match="/*">
 		<div class="container text-center py-5" style="max-width: 900px;">
 			<h3 class="text-white display-3 mb-4">
-				<xsl:value-of select="key('data','titulo')"/>
+				<xsl:value-of select="key('data','title')"/>
 			</h3>
 		</div>
 	</xsl:template>

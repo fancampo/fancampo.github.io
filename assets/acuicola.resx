@@ -138,10 +138,10 @@
   <data name="cover" xml:space="preserve">
     <value>acuicola_cover.jpeg</value>
   </data>
-  <data name="objetivo" xml:space="preserve">
+  <data name="description" xml:space="preserve">
     <value>Los seguros acuícolas de FanCampo están diseñados específicamente para la industria acuícola, proporcionando cobertura a los productores de especies marinas y de agua dulce contra una amplia gama de riesgos. Estos seguros buscan proteger contra las pérdidas económicas derivadas de eventos como enfermedades, cambios ambientales adversos, contaminación, y ataques de depredadores, que pueden afectar significativamente la producción.</value>
   </data>
-  <data name="titulo" xml:space="preserve">
+  <data name="title" xml:space="preserve">
     <value>Seguro Acuícola</value>
   </data>
   <data name="ventaja_1" xml:space="preserve">

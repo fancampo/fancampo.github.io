@@ -129,10 +129,10 @@
   <data name="cover" xml:space="preserve">
     <value>vida_cover.jpg</value>
   </data>
-  <data name="objetivo" xml:space="preserve">
+  <data name="description" xml:space="preserve">
     <value>Brindar protección financiera ante el fallecimiento de los productores y personas relacionadas con el sector agropecuario, asegurando el bienestar de sus familias y la continuidad de las operaciones en el campo.</value>
   </data>
-  <data name="titulo" xml:space="preserve">
+  <data name="title" xml:space="preserve">
     <value>Seguro de vida</value>
   </data>
   <data name="ventaja_1" xml:space="preserve">

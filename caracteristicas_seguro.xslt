@@ -1,49 +1,49 @@
 ﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:env="http://panax.io/state/environment" xmlns:xo="http://panax.io/xover" xmlns:xlink="http://www.w3.org/1999/xlink">
-	<xsl:key name="data" match="data/@name" use="."/>
-
-	<xsl:key name="data" match="data" use="@name"/>
+	<xsl:import href="keys.xslt"/>
+	<xsl:import href="common.xslt"/>
 	<xsl:key name="data" match="data[starts-with(@name,'cobertura_')]" use="'coberturas'"/>
 	<xsl:key name="data" match="data[starts-with(@name,'beneficio_')]" use="'beneficios'"/>
 	<xsl:key name="data" match="data[starts-with(@name,'ventaja_')]" use="'ventajas'"/>
 
 	<xsl:template match="/">
 		<main>
-			<style>
-				<![CDATA[
-.b-divider {
-    width: 100vw;
-    height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
-    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
-}
-			]]>
-			</style>
-			<xsl:variable name="cover">
-				<xsl:choose>
-					<xsl:when test="key('data','cover')">
-						<xsl:value-of select="normalize-space(key('data','cover'))"/>
-					</xsl:when>
-					<xsl:otherwise>cover.jpg</xsl:otherwise>
-				</xsl:choose>
-			</xsl:variable>
-			<section class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/img/{$cover});background-position: center center;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;padding: 150px 0 50px 0;" xo-stylesheet="section_title.xslt" xo-source="active">
-			</section>
-			<xsl:apply-templates mode="caracteristicas">
-				<xsl:with-param name="items" select="key('data','coberturas')"/>
-			</xsl:apply-templates>
-			<xsl:apply-templates mode="caracteristicas_hanging">
-				<xsl:with-param name="title">Beneficios Adicionales</xsl:with-param>
-				<xsl:with-param name="items" select="key('data','beneficios')"/>
-			</xsl:apply-templates>
-			<xsl:apply-templates mode="caracteristicas_hanging">
-				<xsl:with-param name="title">
-					¿Por qué elegir FanCampo para el <xsl:value-of select="key('data','titulo')"/>?
-				</xsl:with-param>
-				<xsl:with-param name="items" select="key('data','ventajas')"/>
-			</xsl:apply-templates>
+			<xsl:apply-templates/>
 		</main>
+	</xsl:template>
+
+	<xsl:template match="/root">
+		<xsl:variable name="cover">
+			<xsl:choose>
+				<xsl:when test="key('data','cover')">
+					<xsl:value-of select="normalize-space(key('data','cover'))"/>
+				</xsl:when>
+				<xsl:otherwise>cover.jpg</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<section class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/img/{$cover});background-position: center center;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;padding: 150px 0 50px 0;" xo-stylesheet="section_title.xslt" xo-source="seed" xo-swap="self::*">
+		</section>
+		<xsl:apply-templates mode="caracteristicas" select=".">
+			<xsl:with-param name="items" select="key('data','coberturas')"/>
+		</xsl:apply-templates>
+		<xsl:apply-templates mode="caracteristicas_hanging" select=".">
+			<xsl:with-param name="title">Beneficios Adicionales</xsl:with-param>
+			<xsl:with-param name="items" select="key('data','beneficios')"/>
+		</xsl:apply-templates>
+		<xsl:apply-templates mode="caracteristicas_hanging" select=".">
+			<xsl:with-param name="title">
+				¿Por qué elegir FanCampo para <xsl:value-of select="key('data','title')"/>?
+			</xsl:with-param>
+			<xsl:with-param name="items" select="key('data','ventajas')"/>
+		</xsl:apply-templates>
+	</xsl:template>
+
+	<xsl:template match="/menu">
+		<section class="container-fluid bg-breadcrumb" style="background-color: var(--fancampovida-blue-smoke);">
+		</section>
+		<div class="b-divider"></div>
+		<div class="row g-4" xo-source="seed" xo-stylesheet="seguros-tiles.xslt">
+		</div>
+		<div class="b-divider"></div>
 	</xsl:template>
 
 	<xsl:template match="/*" mode="caracteristicas">
@@ -55,7 +55,7 @@
 					<div class="col d-flex flex-column align-items-start gap-2">
 						<h2 class="fw-bold text-body-emphasis">¿Qué es?</h2>
 						<p class="text-body-secondary">
-							<xsl:apply-templates select="key('data','objetivo')"/>
+							<xsl:apply-templates select="key('data','description')"/>
 						</p>
 						<a href="#" class="btn btn-primary btn-lg">Contratar</a>
 					</div>
@@ -91,14 +91,6 @@
 
 	<xsl:template match="data">
 		<xsl:apply-templates select="value"/>
-	</xsl:template>
-
-	<xsl:template mode="title" match="value">
-		<xsl:value-of select="substring-before(.,':')"/>
-	</xsl:template>
-
-	<xsl:template mode="body" match="value">
-		<xsl:value-of select="substring-after(.,':')"/>
 	</xsl:template>
 
 	<xsl:template mode="cobertura" match="data">

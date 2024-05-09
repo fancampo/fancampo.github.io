@@ -3,13 +3,16 @@
 	<xsl:key name="icon" match="data[starts-with(@name,'icon_')]" use="''"/>
 	<xsl:key name="icon" match="data[starts-with(@name,'icon_')]" use="string(comment)"/>
 
+	<xsl:param name="title"></xsl:param>
 	<xsl:template match="/*">
-		<div class="container mapa externos">
+		<div>
 			<style>
 				<xsl:apply-templates mode="style" select="data"/>
 			</style>
 			<div class="section-title" style="padding-inline: 1rem">
-				<h2>Nuestra presencia</h2>
+				<h2>
+					<xsl:value-of select="$title"/>
+				</h2>
 			</div>
 			<div class="row align-items-stretch g-4">
 				<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.0" viewBox="0 0 1000 700" id="svg3919" sodipodi:version="0.32" inkscape:version="0.45.1" sodipodi:docname="Mexico_map,_MX-DIF.svg" inkscape:output_extension="org.inkscape.output.svg.inkscape">
@@ -151,7 +154,7 @@
 
 	<xsl:template mode="style" match="*">
 		.externos.mapa #<xsl:value-of select="@name"/>, .externos.mapa g#<xsl:value-of select="@name"/> > path {
-			fill: <xsl:value-of select="value"/> !important
+		fill: <xsl:value-of select="value"/> !important
 		}
 	</xsl:template>
 </xsl:stylesheet>

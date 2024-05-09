@@ -138,10 +138,10 @@
   <data name="cover" xml:space="preserve">
     <value>pecuario_cover.jpg</value>
   </data>
-  <data name="objetivo" xml:space="preserve">
+  <data name="description" xml:space="preserve">
     <value>El seguro pecuario de FanCampo está diseñado para proteger el patrimonio de los ganaderos ante diversos riesgos que pueden afectar la salud y vida de sus animales. Este tipo de seguro cubre una amplia gama de especies, desde ganado bovino, porcino, ovino, hasta aves de corral y otros animales dedicados a la producción agropecuaria.</value>
   </data>
-  <data name="titulo" xml:space="preserve">
+  <data name="title" xml:space="preserve">
     <value>Seguro Pecuario</value>
   </data>
   <data name="ventaja_1" xml:space="preserve">

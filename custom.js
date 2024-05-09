@@ -69,6 +69,7 @@ let lastScrollPosition = window.scrollY || window.pageYOffset;
 
 // Function to handle the scroll event
 function handleScroll(event) {
+    if (!document.querySelector('#video-container')) return;
     // Get the current scroll position
     const scrollY = window.scrollY || window.pageYOffset;
 

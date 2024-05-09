@@ -138,10 +138,10 @@
   <data name="cover" xml:space="preserve">
     <value>apicola_cover.jpg</value>
   </data>
-  <data name="objetivo" xml:space="preserve">
+  <data name="description" xml:space="preserve">
     <value>Los seguros apícolas de FanCampo están diseñados específicamente para proteger a los apicultores y sus colmenas de una serie de riesgos que pueden afectar la producción de miel y otros productos apícolas. Estos seguros buscan ofrecer tranquilidad y seguridad financiera ante pérdidas causadas por enfermedades en las abejas, desastres naturales, vandalismo, y otros riesgos específicos del sector apícola.</value>
   </data>
-  <data name="titulo" xml:space="preserve">
+  <data name="title" xml:space="preserve">
     <value>Seguro Apícola</value>
   </data>
   <data name="ventaja_1" xml:space="preserve">

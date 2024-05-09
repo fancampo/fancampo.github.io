@@ -2,22 +2,31 @@
     <div class="offcanvas offcanvas-bottom xo-skip-compare" tabindex="-1" id="offcanvasBottom" aria-labelledby="Información" xo-stylesheet="content-manager.xslt" xo-source="active">
     </div>
 
+    <script>
+        let myOffcanvas = document.getElementById('offcanvasBottom')
+        myOffcanvas.addEventListener('hidden.bs.offcanvas', function () {
+            if (xo.site.active != xo.site.seed) {
+                xo.site.active = xo.site.seed;
+            } else {
+                document.location.hash = '#'
+            }
+        })
+    </script>
+
     <div class="footer-newsletter cta">
         <div class="footer-top">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-md-12 text-center">
                         <div class="footer-menu text-white">
-                            <a href="#aviso_privacidad">Aviso de privacidad</a>
-                            <a href="#terminos_condiciones">Términos y condiciones</a>
+                            <a href="#aviso_privacidad" target="_self">Aviso de privacidad</a>
+                            <a href="#terminos_condiciones" target="_self">Términos y condiciones</a>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 
     <div class="container footer-bottom clearfix">
         <div class="copyright">

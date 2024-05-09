@@ -1,35 +1,42 @@
 ﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:env="http://panax.io/state/environment" xmlns:xo="http://panax.io/xover" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+	<xsl:param name="title"></xsl:param>
 	<xsl:template match="/*">
 		<div class="container">
 			<script defer="">
 				<![CDATA[
-			function animateValue(id, start, end, duration) {
-    var range = end - start;
-    var current = start;
-    var increment = end > start ? Math.ceil(range / (duration / 50)) : Math.floor(range / (duration / 50));
-    var obj = document.getElementById(id);
+			function animateValue(id, text, duration) {
+	let [, prefix = '', end, sufix = ''] = text.toString().match(/^([^0-9]*)(\d+)(.*)$/);
+	end = +end;
+	let start = 0;
+    let range = end - start;
+    let current = start;
+    let increment = end > start ? Math.ceil(range / (duration / 50)) : Math.floor(range / (duration / 50));
+    let obj = document.getElementById(id);
 	if (obj.animating) return;
 	obj.animating = true;
-    var timer = setInterval(function () {
+    let timer = setInterval(function () {
       current += increment;
-      obj.textContent = current.toLocaleString(); // Add comma separators for better readability
+      obj.innerHTML = `${prefix}${current.toLocaleString()}<small>${sufix}</small>`; // Add comma separators for better readability
       if ((increment > 0 && current >= end) || (increment < 0 && current <= end)) {
         clearInterval(timer);
-        obj.textContent = end.toLocaleString(); // Ensure final value is exact
+        obj.innerHTML = `${prefix}${end.toLocaleString()}<small>${sufix}</small>`; // Ensure final value is exact
       }
     }, 50);
   }
 
   // Animate counts when they come into view
   function animateInView() {
-    var counters = document.querySelectorAll('.counter');
-    var scrollPosition = window.scrollY + window.innerHeight;
+    let counters = document.querySelectorAll('.counter');
+    let scrollPosition = window.scrollY + window.innerHeight;
     counters.forEach(function(counter) {
-      var counterPosition = counter.getBoundingClientRect().top + window.scrollY;
+      let counterPosition = counter.getBoundingClientRect().top + window.scrollY;
       if (scrollPosition > counterPosition) {
-        var endCount = parseInt(counter.getAttribute('data-count'));
-        animateValue(counter.id, 0, endCount, 2000);
-      }
+        let value = counter.getAttribute('data-count');
+        animateValue(counter.id, value, 2000);
+      } else {
+		delete counter.animating
+	  }
     });
   }
 
@@ -41,6 +48,9 @@
 			</script>
 			<style>
 				<![CDATA[
+				[data-count] small {
+					font-size: 1rem;
+				}
 				.bd-placeholder-img {
 				font-size: 1.125rem;
 				text-anchor: middle;
@@ -171,7 +181,9 @@
 				</symbol>
 			</svg>
 			<div class="section-title" style="padding-inline: 1rem">
-				<h2>Nuestros logros</h2>
+				<h2>
+					<xsl:value-of select="$title"/>
+				</h2>
 			</div>
 			<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-4">
 				<xsl:apply-templates select="data"/>

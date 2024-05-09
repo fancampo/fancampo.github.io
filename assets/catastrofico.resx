@@ -138,10 +138,10 @@
   <data name="cover" xml:space="preserve">
     <value>catastrofico_cover.jpeg</value>
   </data>
-  <data name="objetivo" xml:space="preserve">
+  <data name="description" xml:space="preserve">
     <value>Las coberturas contra eventos catastróficos de FanCampo están diseñadas para proteger a agricultores, ganaderos y productores acuícolas de las devastadoras consecuencias financieras que pueden resultar de desastres naturales de gran escala, como huracanes, terremotos, inundaciones extensas y sequías prolongadas. Estos seguros son vitales para garantizar la recuperación y continuidad de las operaciones agropecuarias después de eventos imprevistos y severos.</value>
   </data>
-  <data name="titulo" xml:space="preserve">
+  <data name="title" xml:space="preserve">
     <value>Eventos Catastróficos</value>
   </data>
   <data name="ventaja_1" xml:space="preserve">

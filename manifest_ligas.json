@@ -1,7 +1,6 @@
 {
   "sources": {
-    "#socios": "./assets/socios.resx"
-    , "#interes": "./assets/ligas_interes.resx"
-    , "#asegurados": "./assets/asegurados.resx"
+    "#": "#interes",
+    "#interes": "./assets/ligas_interes.resx"
   }
 }

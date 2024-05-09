@@ -117,145 +117,46 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="item_01" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/CAMPECHE-27cd35b.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs</value>
+  <data name="item_01: Smn" xml:space="preserve">
+    <value>https://smn.conagua.gob.mx/es/</value>
   </data>
-  <data name="item_02" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/LA%20LAGUNA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs</value>
+  <data name="item_02: Windy" xml:space="preserve">
+    <value>https://www.windy.com/?19.436,-99.144,5</value>
   </data>
-  <data name="item_03" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/NAYARIT.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs</value>
+  <data name="item_03: Centro Nacional de Huracanes" xml:space="preserve">
+    <value>https://www.nhc.noaa.gov/text/SJUTWOSP.shtml</value>
   </data>
-  <data name="item_04" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/MICHOACAN.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs</value>
+  <data name="item_04: Siniiga" xml:space="preserve">
+    <value>https://www.siniiga.org.mx/</value>
   </data>
-  <data name="item_05" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/TAMAULIPAS.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs</value>
+  <data name="item_05: Cnog" xml:space="preserve">
+    <value>https://cnog.org.mx/</value>
   </data>
-  <data name="item_06" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/SAN%20LUIS%20POTOSI.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs</value>
+  <data name="item_06: Fira" xml:space="preserve">
+    <value>https://www.fira.gob.mx/Nd/index.jsp</value>
   </data>
-  <data name="item_13" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/VERACRUZ%20CENTRO-a50c71e.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  <data name="item_07: Inifap" xml:space="preserve">
+    <value>https://www.gob.mx/inifap</value>
   </data>
-  <data name="item_14" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/ORIENTE%20DE%20YUCATAN-3dc84d7.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  <data name="item_08: Senasica" xml:space="preserve">
+    <value>https://www.agricultura.gob.mx/datos-abiertos/senasica</value>
   </data>
-  <data name="item_15" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/SINALOA-4c99136.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  <data name="item_09: Siap" xml:space="preserve">
+    <value>https://www.agricultura.gob.mx/datos-abiertos/siap</value>
   </data>
-  <data name="item_16" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/QUINTANA%20ROO-c4ab6d5.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  <data name="item_10: Consejo Nacional Agropecuario" xml:space="preserve">
+    <value>https://cna.org.mx/</value>
   </data>
-  <data name="item_17" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/CHIAPAS-bee8567.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  <data name="item_11: Monex" xml:space="preserve">
+    <value>https://www.monex.com.mx/portal/inicio?gad_source=1&amp;gclid=CjwKCAjww_iwBhApEiwAuG6ccPx6XzB-Xj5seJsSzw965DjLJ9P6-45vOmGvu0nVSIJmy2yocJKAeRoC4lkQAvD_BwE</value>
   </data>
-  <data name="item_18" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/PUEBLA%20ORIENTE.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  <data name="item_12: Ban Bajio" xml:space="preserve">
+    <value>https://www.bb.com.mx/webcenter/portal/BanBajio/home?_afrLoop=7575952511529612&amp;_afrWindowMode=0&amp;Adf-Window-Id=yyjnobvm6&amp;_afrFS=16&amp;_afrMT=screen&amp;_afrMFW=1920&amp;_afrMFH=919&amp;_afrMFDW=1920&amp;_afrMFDH=1080&amp;_afrMFC=8&amp;_afrMFCI=0&amp;_afrMFM=0&amp;_afrMFR=96&amp;_afrMFG=0&amp;_afrMFS=0&amp;_afrMFO=0</value>
   </data>
-  <data name="item_19" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/TLAXCALA-b9157da.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  <data name="item_13: Grupo Ceres" xml:space="preserve">
+    <value>https://www.grupoceres.com.mx/</value>
   </data>
-  <data name="item_20" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/TABASCO-f4a6b1a.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_21" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/QUERETARO-07e0280.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_22" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/GUERRERO-6f6b885.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_23" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/AGUASCALIENTES.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_24" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/BAJA%20CALIFORNIA%20SUR-3f71472.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_25" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/GUANANJUATO-4e7af9b.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_26" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/CHIHUAHUA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_27" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/TLAXCALA%20ESPECIALIZADA-3a495ac.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_28" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/PUEBLA%20CENTRO-876dc30.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_29" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/MORELOS.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_30" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/ESTADO%20DE%20MEXICO%20SUR-acfde99.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_31" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/CHIAPAS%20COSTA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_32" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/OAXACA%20COSTA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_33" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/HUASTECA%20POTOSINA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_34" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/JALISCO.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_35" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/COLIMA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_36" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/ZACATECAS.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_37" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/YUCATAN%20GENERAL.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_38" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/COAHUILA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_39" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/CATAZAJA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_40" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/ISTMO%20DE%20TEHUANTEPEC_OAXACA-54b12f3.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_41" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/DURANGO%20NORTE.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_42" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/VERACRUZ%20NORTE.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_43" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/YUCATAN%20ORIENTE.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_44" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/OAXACA%20NORTE.jpg/:/cr=t:0%25,l:0%25,w:99.3%25,h:99.3%25/rs=h:100,cg:true,m</value>
-  </data>
-  <data name="item_46" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/HIDALGO-d90837c.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_47" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/SONORA.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_48" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/VERACRUZ%20SUR-67d7e01.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_49" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/NUEVO%20LEON.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_50" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/BAJA%20CALIFORNIA.PNG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_51" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/MORELOS%20GENERAL-eff73ae.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_52" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/blob-14c272d.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_53" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/Captura%20de%20pantalla%202022-05-25%20103519-0db801a.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="item_54" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/PUEBLA%20NORTE-ac4518a.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  <data name="title" xml:space="preserve">
+    <value>Ligas de interés</value>
   </data>
 </root>

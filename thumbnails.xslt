@@ -1,17 +1,6 @@
 ﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:env="http://panax.io/state/environment" xmlns:xo="http://panax.io/xover">
-	<xsl:key name="valid-model" match="root[@env:store='#aviso_privacidad']" use="generate-id()"/>
-	<xsl:key name="valid-model" match="root[@env:store='#codigo_etica']" use="generate-id()"/>
-	<xsl:key name="valid-model" match="root[@env:store='#mision']" use="generate-id()"/>
-	<xsl:key name="valid-model" match="root[@env:store='#vision']" use="generate-id()"/>
-	<xsl:key name="valid-model" match="root[@env:store='#valores']" use="generate-id()"/>
-	<xsl:key name="valid-model" match="root[@env:store='#terminos_condiciones']" use="generate-id()"/>
-
-	<xsl:key name="data" match="root[@env:store='#mision']/data" use="'mision_vision_valores'"/>
-	<xsl:key name="data" match="root[@env:store='#vision']/data" use="'mision_vision_valores'"/>
-	<xsl:key name="data" match="root[@env:store='#valores']/data" use="'mision_vision_valores'"/>
-
-	<xsl:key name="data" match="data[not(contains(@name,'title'))]" use="'body'"/>
-	<xsl:key name="data" match="data/@name" use="."/>
+	<xsl:import href="keys.xslt"/>
+	<xsl:import href="common.xslt"/>
 
 	<xsl:template match="/">
 		<section>
@@ -20,10 +9,16 @@
 	</xsl:template>
 
 	<xsl:template match="/*">
+		<xsl:variable name="class">
+			<xsl:choose>
+				<xsl:when test="@env:store='#beneficiarios'">row-cols-lg-3 row-cols-sm-2 row-cols-md-3</xsl:when>
+				<xsl:otherwise>row-cols-2 row-cols-xl-6 row-cols-lg-5 row-cols-sm-3 row-cols-md-4</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
 		<div class="album py-5 bg-body-tertiary">
 			<div class="container-fluid">
-				<div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3">
-					<xsl:apply-templates select="data"/>
+				<div class="row {$class} gy-5">
+					<xsl:apply-templates select="key('data','body')"/>
 				</div>
 			</div>
 		</div>
@@ -52,8 +47,8 @@
 	</xsl:template>
 
 	<xsl:template match="data">
-		<div class="col-lg-2" style="text-align: center; min-height: 91px;">
-			<img src="{value}" style="max-width: 25vw;"/>
+		<div style="text-align: center; min-height: 91px;">
+			<img src="{normalize-space(value)}" style="max-width: 25vw;"/>
 			<!--<p>
 				<a class="btn btn-secondary" href="#">Visitar »</a>
 			</p>-->

@@ -117,8 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="img:valores" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>img\vida.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="mision" xml:space="preserve">
     <value>Proteger el patrimonio de los productores agropecuarios de México y la continuidad operativa de sus unidades de producción.</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Nosotros</value>
   </data>
   <data name="valores" xml:space="preserve">
     <value>Ética profesional, Compromiso, Responsabilidad, Honestidad, Transparencia, Servicio, Mejora continua,  para satisfacer las necesidades de administración de riesgos de los productores.</value>
