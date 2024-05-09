@@ -1,9 +1,11 @@
 ﻿<menu>
 	<item title="Inicio" href="./"/>
 	<item title="Nosotros">
-		<item title="Misión" href="#mision"/>
-		<item title="Visión" href="#vision"/>
-		<item title="Valores" href="#valores"/>
+		<item title="Conócenos" href="./nosotros.html#"/>
+		<item title="Misión" target="_self" href="#mision"/>
+		<item title="Visión" target="_self" href="#vision"/>
+		<item title="Valores" target="_self" href="#valores"/>
+		<item title="Aviso de privacidad" target="_self" href="#aviso_privacidad"/>
 	</item>
 	<item title="Seguros">
 		<item title="Catastróficos" href="./seguro.html#catastrofico" image="catastrofico.jpeg"/>

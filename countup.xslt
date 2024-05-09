@@ -5,7 +5,7 @@
 		<div class="container">
 			<script defer="">
 				<![CDATA[
-			function animateValue(id, text, duration) {
+function animateValue(id, text, duration) {
 	let [, prefix = '', end, sufix = ''] = text.toString().match(/^([^0-9]*)(\d+)(.*)$/);
 	end = +end;
 	let start = 0;
@@ -23,10 +23,10 @@
         obj.innerHTML = `${prefix}${end.toLocaleString()}<small>${sufix}</small>`; // Ensure final value is exact
       }
     }, 50);
-  }
+}
 
-  // Animate counts when they come into view
-  function animateInView() {
+// Animate counts when they come into view
+function animateInView() {
     let counters = document.querySelectorAll('.counter');
     let scrollPosition = window.scrollY + window.innerHeight;
     counters.forEach(function(counter) {
@@ -38,11 +38,11 @@
 		delete counter.animating
 	  }
     });
-  }
+}
 
-  // Call the animation function when page loads and when scrolling
-  document.addEventListener("DOMContentLoaded", animateInView);
-  window.addEventListener('scroll', animateInView);
+// Call the animation function when page loads and when scrolling
+document.addEventListener("DOMContentLoaded", animateInView);
+window.addEventListener('scroll', animateInView);
 
 			]]>
 			</script>
@@ -63,21 +63,6 @@
 				.bd-placeholder-img-lg {
 				font-size: 3.5rem;
 				}
-				}
-
-				.b-example-divider {
-				width: 100%;
-				height: 3rem;
-				background-color: rgba(0, 0, 0, .1);
-				border: solid rgba(0, 0, 0, .15);
-				border-width: 1px 0;
-				box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-				}
-
-				.b-example-vr {
-				flex-shrink: 0;
-				width: 1.5rem;
-				height: 100vh;
 				}
 
 				.bi {
@@ -185,7 +170,7 @@
 					<xsl:value-of select="$title"/>
 				</h2>
 			</div>
-			<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-4">
+			<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">
 				<xsl:apply-templates select="data"/>
 			</div>
 		</div>
@@ -201,6 +186,7 @@
 		<xsl:variable name="image">
 			<xsl:apply-templates mode="image" select="."/>
 		</xsl:variable>
+		<xsl:variable name="source" select="/*/@env:store"/>
 		<div class="col">
 			<div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-color: var(--fancampovida-silver-cloud) !important;">
 				<div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
@@ -210,7 +196,7 @@
 							<xsl:value-of select="$title"/>
 						</label>
 					</h4>
-					<h1 data-count="{$value}" class="counter" id="counter_{position()}" style="align-self: end">0</h1>
+					<h1 data-count="{$value}" class="counter" id="{$source}_counter_{position()}" style="align-self: end">0</h1>
 					<!--<ul class="d-flex list-unstyled mt-auto">
 						<li class="me-auto">
 							<img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"/>

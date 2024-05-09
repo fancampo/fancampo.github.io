@@ -117,12 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="conocenos" xml:space="preserve">
+    <value>Integramos desde hace 15 años el Fondo de Aseguramiento agropecuario más grande del país, al tener asegurado el 79% del padrón ganadero nacional. Somos los únicos con autorización de operaciones y cobertura nacional, con respaldo de los principales reaseguradores nacionales e internacionales para hacer frente a eventos extraordinarios. Diseñamos seguros acordes a las necesidades de nuestros socios. A través de la “Administración y Transferencia de Riesgos del Campo, Asociación Civil” (ATRC, A. C.), agremiamos a todos los productores del sector primario y la agroindustria.</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="img:valores" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>img\vida.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mision" xml:space="preserve">
-    <value>Proteger el patrimonio de los productores agropecuarios de México y la continuidad operativa de sus unidades de producción.</value>
+    <value>Consolidar un sector con capacidad, recursos y cultura para administrar los riesgos que afectan a la actividad rural nacional.</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>Nosotros</value>
@@ -131,6 +134,6 @@
     <value>Ética profesional, Compromiso, Responsabilidad, Honestidad, Transparencia, Servicio, Mejora continua,  para satisfacer las necesidades de administración de riesgos de los productores.</value>
   </data>
   <data name="vision" xml:space="preserve">
-    <value>Consolidar un sector agropecuario con capacidad, recursos y cultura para administrar los riesgos que afectan a la actividad rural nacional.</value>
+    <value>Proteger el patrimonio de los productores agropecuarios de México y la continuidad operativa de sus unidades de producción.</value>
   </data>
 </root>

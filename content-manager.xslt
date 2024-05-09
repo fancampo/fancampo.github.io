@@ -6,11 +6,13 @@
 	<xsl:key name="valid-model" match="root[@env:store='#mision']" use="generate-id()"/>
 	<xsl:key name="valid-model" match="root[@env:store='#vision']" use="generate-id()"/>
 	<xsl:key name="valid-model" match="root[@env:store='#valores']" use="generate-id()"/>
+	<xsl:key name="valid-model" match="root[@env:store='#conocenos']" use="generate-id()"/>
 	<xsl:key name="valid-model" match="root[@env:store='#terminos_condiciones']" use="generate-id()"/>
 
 	<xsl:key name="data" match="root[@env:store='#mision']/data[not(contains(@name,':'))]" use="'mision_vision_valores'"/>
 	<xsl:key name="data" match="root[@env:store='#vision']/data[not(contains(@name,':'))]" use="'mision_vision_valores'"/>
 	<xsl:key name="data" match="root[@env:store='#valores']/data[not(contains(@name,':'))]" use="'mision_vision_valores'"/>
+	<xsl:key name="data" match="root[@env:store='#conocenos']/data[not(contains(@name,':'))]" use="'mision_vision_valores'"/>
 
 	<xsl:template match="/">
 		<div class="offcanvas offcanvas-bottom" xo-static="@style @role @aria-modal">
@@ -101,6 +103,10 @@
 
 	<xsl:template mode="headerText" match="key('data','vision')">
 		<xsl:text>Visión</xsl:text>
+	</xsl:template>
+
+	<xsl:template mode="headerText" match="key('data','conocenos')">
+		<xsl:text>Conócenos</xsl:text>
 	</xsl:template>
 
 	<xsl:template mode="subtitle" match="@*|*">

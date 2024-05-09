@@ -1,4 +1,4 @@
-const video = document.querySelector('video');
+﻿const video = document.querySelector('video');
 if (video) {
     // Options for the intersection observer
     //const options = {
@@ -113,4 +113,49 @@ function initialize_carousel() {
 
         target_carousel.carousel.cycle();
     }
+}
+
+async function cotizar() {
+    let chatbot = document.querySelector("#chatbot");
+    chatbot.contentDocument.documentElement.querySelector('#voiceflow-chat').shadowRoot.querySelector('button').click();
+    chatbot.style.height = '80vh';
+    let chat = chatbot && chatbot.contentDocument.documentElement.querySelector('#voiceflow-chat')
+    if (!chat) {
+        throw ("No se pudo inicializar el proceso de cotización. Intente más tarde, por favor");
+        return
+    }
+    await xover.delay(1000);
+    let textarea = chat.shadowRoot.querySelector('textarea');
+
+    async function typeWriter(text, index, speed) {
+        if (index < text.length) {
+            const event = new Event('input', {
+                bubbles: true,
+                cancelable: true,
+            });
+            textarea.placeholder += text.charAt(index);
+            textarea.dispatchEvent(event);
+            index++;
+            setTimeout(() => {
+                typeWriter(text, index, speed);
+            }, speed);
+        } else {
+            textarea.setAttribute("onkeyup", "event.keyCode == 32 && (this.value = 'Cómo cotizar?')")
+            textarea.textContent = textarea.value;
+            //textarea.nextElementSibling.classList.add('c-iSWgdS-eHahlm-ready-true');
+            textarea.nextElementSibling.classList='vfrc-chat-input--button c-iSWgdS c-iSWgdS-eHahlm-ready-true'
+            await xover.delay(1000);
+            textarea.parentNode.style.boxShadow = 'none';
+            textarea.focus();
+        }
+    }
+
+    // Start typing the phrase
+    function startTyping(text) {
+        const speed = 100; // Typing speed (milliseconds per character)
+        typeWriter(text, 0, speed);
+    }
+    textarea.placeholder = '';
+    startTyping('Pregunta cómo cotizar (O presiona espacio)');
+    textarea.parentNode.style.boxShadow = '0 0 10px rgba(0, 0, 255, 0.5)';
 }

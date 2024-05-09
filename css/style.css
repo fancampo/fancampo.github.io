@@ -51,6 +51,68 @@
     --offcanvas-height: 90vh !important;
 }
 
+.animated_card2 {
+    overflow: hidden;
+}
+
+.animated_card2::before {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 180%;
+    background: #fff;
+    transform: rotate(45deg);
+}
+
+.animated_card2:hover::before {
+    animation: animate2 2s linear infinite;
+}
+
+@keyframes animate2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.animated_card2::after {
+    position:absolute;
+    content: '';
+    inset: 5px;
+    background: #222;
+    border-radius: 8px;
+}
+
 .list-group-item-action:focus, .list-group-item-action:hover {
     z-index: 1;
     color: var(--bs-list-group-action-hover-color);
@@ -69,19 +131,19 @@
     line-height: 1.7;
 }
 
-.aviso_privacidad table thead th {
-    background-color: var(--fancampovida-blue-smoke);
-    color: white;
-}
+    .aviso_privacidad table thead th {
+        background-color: var(--fancampovida-blue-smoke);
+        color: white;
+    }
 
-.aviso_privacidad table, .aviso_privacidad th, .aviso_privacidad td {
-    border: 1px solid black;
-    padding-inline: .5rem;
-}
+    .aviso_privacidad table, .aviso_privacidad th, .aviso_privacidad td {
+        border: 1px solid black;
+        padding-inline: .5rem;
+    }
 
-.aviso_privacidad summary {
-    font-weight: bold
-}
+    .aviso_privacidad summary {
+        font-weight: bold
+    }
 
 details > * {
     margin-bottom: 15px;
@@ -126,12 +188,12 @@ details li {
     height: var(--offcanvas-height, var(--bs-offcanvas-height)) !important;
 }
 
-.offcanvas-bottom > section {
-    overflow-x: hidden;
-    overflow-y: scroll;
-    padding-inline: 2rem;
-    padding-bottom: 5rem;
-}
+    .offcanvas-bottom > section {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding-inline: 2rem;
+        padding-bottom: 5rem;
+    }
 
 .offcanvas-body {
     padding-bottom: 10rem;
@@ -252,11 +314,19 @@ section {
     width: 100%;
 }
 
+main {
+    padding-bottom: 4rem;
+}
+
 #footer {
     font-size: 14px;
     background: var(--fancampovida-blue-smoke);
-    z-index: 3;
+    z-index: 2;
+    /*bottom: 0;*/
     position: relative;
+    width: 100vw;
+    height: 4rem;
+    padding-block: 1rem;
 }
 
 .cta {
@@ -278,7 +348,7 @@ section {
     min-width: 120px;
     min-height: 120px;
     font-size: clamp(32px, 4vw, 12px);
-    z-index: 3;
+    z-index: 4;
 }
 
 .cotizar.container {
@@ -288,6 +358,7 @@ section {
 }
 
 body {
+    overflow-x: hidden;
     font-family: "Open Sans", sans-serif;
     color: #444444;
 }
@@ -351,6 +422,10 @@ h6 {
     transition: all 0.5s;
     z-index: 997;
     padding: 5px 0;
+}
+
+#header:not(.header-scrolled) {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
     #header.header-scrolled,
@@ -795,41 +870,41 @@ section {
     padding-bottom: 30px;
 }
 
-    .section-title h2 {
-        font-size: 32px;
-        font-weight: bold;
-        /*text-transform: uppercase;*/
-        /*margin-bottom: 20px;*/
-        padding-bottom: 20px;
-        position: relative;
-        color: var(--fancampovida-river-red);
-    }
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    /*text-transform: uppercase;*/
+    /*margin-bottom: 20px;*/
+    padding-block: 20px;
+    position: relative;
+    color: var(--fancampovida-river-red);
+}
 
-        .section-title h2::before {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 120px;
-            height: 1px;
-            background: #ddd;
-            bottom: 1px;
-            left: calc(50% - 60px);
-        }
+.section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
 
-        .section-title h2::after {
-            content: "";
-            position: absolute;
-            display: block;
-            width: 40px;
-            height: 3px;
-            background: var(--fancampovida-blue-smoke);
-            bottom: 0;
-            left: calc(50% - 20px);
-        }
+.section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--fancampovida-blue-smoke);
+    bottom: 0;
+    left: calc(50% - 20px);
+}
 
-    .section-title p {
-        margin-bottom: 0;
-    }
+.section-title p {
+    margin-bottom: 0;
+}
 
 /*--------------------------------------------------------------
 # Clients
@@ -1172,6 +1247,10 @@ section {
         padding-top: 5px;
     }
 
+    .contact .info .clock p {
+        padding-top: 5px;
+    }
+
     .contact .info .social-links {
         padding-left: 60px;
     }
@@ -1197,13 +1276,14 @@ section {
             }
 
     .contact .info .email:hover i,
+    .contact .info .clock:hover i,
     .contact .info .address:hover i,
     .contact .info .phone:hover i {
         background: var(--fancampovida-silver-cloud);
         color: white;
     }
 
-.contact .php-email-form {
+.contact .contact-form {
     width: 100%;
     border-top: 3px solid var(--fancampovida-blue-smoke);
     border-bottom: 3px solid var(--fancampovida-blue-smoke);
@@ -1220,11 +1300,11 @@ section {
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
-.contact .php-email-form .form-group {
+.contact .contact-form .form-group {
     padding-bottom: 8px;
 }
 
-.contact .php-email-form .validate {
+.contact .contact-form .validate {
     display: none;
     color: red;
     margin: 0 0 15px 0;
@@ -1232,7 +1312,7 @@ section {
     font-size: 13px;
 }
 
-.contact .php-email-form .error-message {
+.contact .contact-form .error-message {
     display: none;
     color: #fff;
     background: #ed3c0d;
@@ -1241,11 +1321,11 @@ section {
     font-weight: 600;
 }
 
-    .contact .php-email-form .error-message br + br {
+    .contact .contact-form .error-message br + br {
         margin-top: 25px;
     }
 
-.contact .php-email-form .sent-message {
+.contact .contact-form .sent-message {
     display: none;
     color: #fff;
     background: #18d26e;
@@ -1254,14 +1334,14 @@ section {
     font-weight: 600;
 }
 
-.contact .php-email-form .loading {
+.contact .contact-form .loading {
     display: none;
     background: #fff;
     text-align: center;
     padding: 15px;
 }
 
-    .contact .php-email-form .loading:before {
+    .contact .contact-form .loading:before {
         content: "";
         display: inline-block;
         border-radius: 50%;
@@ -1273,36 +1353,36 @@ section {
         animation: animate-loading 1s linear infinite;
     }
 
-.contact .php-email-form .form-group {
+.contact .contact-form .form-group {
     margin-bottom: 20px;
 }
 
-.contact .php-email-form label {
+.contact .contact-form label {
     padding-bottom: 8px;
 }
 
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .contact-form input,
+.contact .contact-form textarea {
     border-radius: 0;
     box-shadow: none;
     font-size: 14px;
     border-radius: 4px;
 }
 
-    .contact .php-email-form input:focus,
-    .contact .php-email-form textarea:focus {
+    .contact .contact-form input:focus,
+    .contact .contact-form textarea:focus {
         border-color: #47b2e4;
     }
 
-.contact .php-email-form input {
+.contact .contact-form input {
     height: 44px;
 }
 
-.contact .php-email-form textarea {
+.contact .contact-form textarea {
     padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .contact-form button[type=submit] {
     background: var(--fancampovida-creen-snow);
     border: 0;
     padding: 12px 34px;
@@ -1311,7 +1391,7 @@ section {
     border-radius: 50px;
 }
 
-    .contact .php-email-form button[type=submit]:hover {
+    .contact .contact-form button[type=submit]:hover {
         background: var(--fancampovida-silver-cloud);
     }
 
@@ -1521,8 +1601,6 @@ section {
 }
 
 #footer .footer-bottom {
-    padding-top: 30px;
-    padding-bottom: 30px;
     color: #fff;
 }
 
