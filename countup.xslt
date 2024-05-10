@@ -196,7 +196,7 @@ window.addEventListener('scroll', animateInView);
 							<xsl:value-of select="$title"/>
 						</label>
 					</h4>
-					<h1 data-count="{$value}" class="counter" id="{$source}_counter_{position()}" style="align-self: end">0</h1>
+					<h1 data-count="{$value}" class="counter text-nowrap" id="{$source}_counter_{position()}" style="align-self: end">0</h1>
 					<!--<ul class="d-flex list-unstyled mt-auto">
 						<li class="me-auto">
 							<img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"/>

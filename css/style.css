@@ -318,6 +318,10 @@ main {
     padding-bottom: 4rem;
 }
 
+main section p {
+    font-size: larger;
+}
+
 #footer {
     font-size: 14px;
     background: var(--fancampovida-blue-smoke);
@@ -390,7 +394,7 @@ h6 {
     visibility: hidden;
     opacity: 0;
     right: 15px;
-    bottom: 15px;
+    bottom: 10px;
     z-index: 996;
     background: var(--fancampovida-river-red);
     width: 40px;
@@ -1214,74 +1218,74 @@ section {
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 
-    .contact .info i {
-        font-size: 20px;
-        color: white;
-        float: left;
-        width: 44px;
-        height: 44px;
-        background: var(--fancampovida-creen-snow);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50px;
-        transition: all 0.3s ease-in-out;
-    }
+.contact .info i {
+    font-size: 20px;
+    color: white;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: var(--fancampovida-creen-snow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
 
-    .contact .info h4 {
-        padding: 0 0 0 60px;
-        font-size: 22px;
-        font-weight: 600;
-        margin-bottom: 5px;
-        color: #37517e;
-    }
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #37517e;
+}
 
-    .contact .info p {
-        padding: 0 0 10px 60px;
-        margin-bottom: 20px;
-        font-size: 14px;
-        color: #6182ba;
-    }
+.contact .info p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #6182ba;
+}
 
-    .contact .info .email p {
-        padding-top: 5px;
-    }
+.contact .info .email p {
+    padding-top: 5px;
+}
 
-    .contact .info .clock p {
-        padding-top: 5px;
-    }
+.contact .info .clock p {
+    padding-top: 5px;
+}
 
-    .contact .info .social-links {
-        padding-left: 60px;
-    }
+.contact .info .social-links {
+    padding-left: 60px;
+}
 
-        .contact .info .social-links a {
-            font-size: 18px;
-            display: inline-block;
-            background: #333;
-            color: #fff;
-            line-height: 1;
-            padding: 8px 0;
-            border-radius: 50%;
-            text-align: center;
-            width: 36px;
-            height: 36px;
-            transition: 0.3s;
-            margin-right: 10px;
-        }
+.contact .info .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    margin-right: 10px;
+}
 
-            .contact .info .social-links a:hover {
-                background: #47b2e4;
-                color: #fff;
-            }
+.contact .info .social-links a:hover {
+    background: #47b2e4;
+    color: #fff;
+}
 
-    .contact .info .email:hover i,
-    .contact .info .clock:hover i,
-    .contact .info .address:hover i,
-    .contact .info .phone:hover i {
-        background: var(--fancampovida-silver-cloud);
-        color: white;
-    }
+/*.contact .info .email:hover i,
+.contact .info .clock:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+    background: var(--fancampovida-silver-cloud);
+    color: white;
+}*/
 
 .contact .contact-form {
     width: 100%;

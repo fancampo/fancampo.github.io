@@ -49,6 +49,7 @@
             padding: 15px;
             background: var(--fancampovida-silver-cloud);
             color: white;
+			font-size: large;
         }
 
         .timeline ul li div::before {

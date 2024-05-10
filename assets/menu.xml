@@ -1,5 +1,5 @@
 ﻿<menu>
-	<item title="Inicio" href="./"/>
+	<item title="Inicio" href="./#"/>
 	<item title="Nosotros">
 		<item title="Conócenos" href="./nosotros.html#"/>
 		<item title="Misión" target="_self" href="#mision"/>
