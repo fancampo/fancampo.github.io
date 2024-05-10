@@ -124,6 +124,10 @@ async function cotizar() {
         throw ("No se pudo inicializar el proceso de cotización. Intente más tarde, por favor");
         return
     }
+    let start_button = chat.shadowRoot.querySelector('article footer button');
+    if (start_button) {
+        start_button.click()
+    }
     await xover.delay(1000);
     let textarea = chat.shadowRoot.querySelector('textarea');
 
@@ -140,7 +144,8 @@ async function cotizar() {
                 typeWriter(text, index, speed);
             }, speed);
         } else {
-            textarea.setAttribute("onkeyup", "event.keyCode == 32 && this.value == ' ' && (this.value = 'Cómo cotizar?')")
+            //textarea.setAttribute("onkeyup", "event.keyCode == 32 && this.value == ' ' && (this.value = 'Cómo cotizar?') && (this.innerHTML = this.value)")
+            textarea.setAttribute("oninput", "this.placeholder = ''")
             textarea.textContent = textarea.value;
             //textarea.nextElementSibling.classList.add('c-iSWgdS-eHahlm-ready-true');
             textarea.nextElementSibling.classList='vfrc-chat-input--button c-iSWgdS c-iSWgdS-eHahlm-ready-true'
@@ -156,6 +161,6 @@ async function cotizar() {
         typeWriter(text, 0, speed);
     }
     textarea.placeholder = '';
-    startTyping('Pregunta cómo cotizar (O presiona espacio)');
+    startTyping('Pregunta cómo cotizar');// (O presiona espacio)
     textarea.parentNode.style.boxShadow = '0 0 10px rgba(0, 0, 255, 0.5)';
 }
