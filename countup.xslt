@@ -6,7 +6,7 @@
 			<script defer="">
 				<![CDATA[
 function animateValue(id, text, duration) {
-	let [, prefix = '', end, sufix = ''] = text.toString().match(/^([^0-9]*)(\d+)(.*)$/);
+	let [, prefix = '', end, sufix = ''] = text.toString().match(/^([^0-9]*)([\d\.]+)(.*)$/);
 	end = +end;
 	let start = 0;
     let range = end - start;

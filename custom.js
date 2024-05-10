@@ -140,7 +140,7 @@ async function cotizar() {
                 typeWriter(text, index, speed);
             }, speed);
         } else {
-            textarea.setAttribute("onkeyup", "event.keyCode == 32 && (this.value = 'Cómo cotizar?')")
+            textarea.setAttribute("onkeyup", "event.keyCode == 32 && this.value == ' ' && (this.value = 'Cómo cotizar?')")
             textarea.textContent = textarea.value;
             //textarea.nextElementSibling.classList.add('c-iSWgdS-eHahlm-ready-true');
             textarea.nextElementSibling.classList='vfrc-chat-input--button c-iSWgdS c-iSWgdS-eHahlm-ready-true'
