@@ -314,9 +314,9 @@ section {
     width: 100%;
 }
 
-main {
+/*main {
     padding-bottom: 4rem;
-}
+}*/
 
 main section p {
     font-size: larger;
@@ -326,10 +326,10 @@ main section p {
     font-size: 14px;
     background: var(--fancampovida-blue-smoke);
     z-index: 2;
-    /*bottom: 0;*/
+    bottom: 0;
     position: relative;
     width: 100vw;
-    height: 4rem;
+    min-height: 4rem;
     padding-block: 1rem;
 }
 
@@ -1608,16 +1608,16 @@ section {
     color: #fff;
 }
 
-#footer .copyright {
+#footer .social {
     float: left;
 }
 
-#footer .credits {
+#footer .copyright {
     float: right;
     font-size: 13px;
 }
 
-    #footer .credits a {
+    #footer .copyright a {
         transition: 0.3s;
     }
 
@@ -1627,14 +1627,14 @@ section {
         padding-bottom: 20px;
     }
 
-    #footer .copyright,
-    #footer .credits {
+    #footer .social,
+    #footer .copyright {
         text-align: center;
         float: none;
     }
 
-    #footer .credits {
-        padding-top: 4px;
+    #footer .copyright {
+        padding-top: 14px;
     }
 }
 
