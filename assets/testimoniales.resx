@@ -119,26 +119,26 @@
   </resheader>
   <data name="testimonio_1" xml:space="preserve">
     <value>Juan Pérez, agricultor de maíz y frijol: "Desde que contraté el seguro agrícola con esta empresa, mi tranquilidad ha aumentado considerablemente. Saber que mis cultivos están protegidos ante cualquier eventualidad climática o pérdida inesperada me da la confianza necesaria para seguir invirtiendo en mi negocio sin preocupaciones. ¡Altamente recomendado para cualquier agricultor que valore su tranquilidad y seguridad financiera!"</value>
-    <comment>https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg</comment>
+    <comment>./assets/img/headshot-3.jpg</comment>
   </data>
   <data name="testimonio_2" xml:space="preserve">
     <value>María González, propietaria de una granja de ganado lechero: "Optar por los servicios de seguros de esta compañía ha sido una de las mejores decisiones que he tomado como ganadera. Su respaldo sólido en caso de cualquier imprevisto y la atención personalizada que brindan sus agentes son invaluables para la tranquilidad de mi negocio."</value>
-    <comment>https://codingyaar.com/wp-content/uploads/square-headshot-2.png</comment>
+    <comment>./assets/img/headshot-2.jpg</comment>
   </data>
   <data name="testimonio_3" xml:space="preserve">
     <value>Carlos Ramírez, productor de cítricos: "Gracias al seguro para cultivos que contraté con esta empresa, he podido enfrentar con mayor confianza las incertidumbres inherentes a nuestra industria. Su cobertura integral y el apoyo constante de su equipo de expertos hacen que recomiende encarecidamente sus servicios a cualquier productor agrícola."</value>
-    <comment>https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg</comment>
+    <comment>./assets/img/headshot-3.jpg</comment>
   </data>
   <data name="testimonio_4" xml:space="preserve">
     <value>Ana Torres, dueña de una plantación de olivos: "Como agricultora, siempre he estado consciente de los riesgos que enfrentamos en el campo. Con el seguro agrícola de esta empresa, he encontrado la tranquilidad que necesitaba para proteger mi inversión. Su profesionalismo y compromiso con los clientes son impresionantes."</value>
-    <comment>https://codingyaar.com/wp-content/uploads/square-headshot-1.png</comment>
+    <comment>./assets/img/headshot-1.jpg</comment>
   </data>
   <data name="testimonio_5" xml:space="preserve">
     <value>Luis Martínez, agricultor de hortalizas: "La seguridad que ofrece este seguro agrícola es incomparable. Saber que mi sustento está protegido ante cualquier imprevisto me permite concentrarme en mejorar mi producción sin preocupaciones. ¡Una inversión que todo agricultor debería considerar!"</value>
-    <comment>https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg</comment>
+    <comment>./assets/img/headshot-3.jpg</comment>
   </data>
   <data name="testimonio_6" xml:space="preserve">
     <value>José Rodríguez, propietaria de un viñedo: "El seguro para cultivos de esta empresa ha sido fundamental para proteger mi viñedo de los riesgos del clima y otras eventualidades. Su atención personalizada y eficiente manejo de reclamaciones han superado mis expectativas. ¡Totalmente recomendado para cualquier viticultor!"</value>
-    <comment>https://codingyaar.com/wp-content/uploads/bootstrap-profile-card-image.jpg</comment>
+    <comment>./assets/img/headshot-3.jpg</comment>
   </data>
 </root>
