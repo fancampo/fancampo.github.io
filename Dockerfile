@@ -2,6 +2,6 @@ FROM nginx:1.26.0-alpine
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY . /usr/share/nginx/html
 RUN apk add --no-cache git
-RUN git submodule init
+RUN git submodule update --init --recursive
 EXPOSE 8080
 CMD [ "nginx", "-g", "daemon off;" ]
