@@ -1514,74 +1514,74 @@ section {
     background: inherit;
 }
 
-    #footer .footer-top .footer-contact {
-        margin-bottom: 30px;
+#footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h3 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--bg-border);
+}
+
+#footer .footer-top .footer-contact p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Jost", sans-serif;
+    color: var(--fancampovida-creen-snow);
+}
+
+#footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--bg-border);
+    position: relative;
+    padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+    margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#footer .footer-top .footer-links menu i {
+    padding-right: 2px;
+    color: #47b2e4;
+    font-size: 18px;
+    line-height: 1;
+}
+
+#footer .footer-top .footer-links menu li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+    #footer .footer-top .footer-links menu li:first-child {
+        padding-top: 0;
     }
 
-        #footer .footer-top .footer-contact h3 {
-            font-size: 28px;
-            margin: 0 0 10px 0;
-            padding: 2px 0 2px 0;
-            line-height: 1;
-            text-transform: uppercase;
-            font-weight: 600;
-            color: var(--bg-border);
-        }
+#footer .footer-top .footer-links menu a {
+    color: var(--fancampovida-creen-snow);
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+}
 
-        #footer .footer-top .footer-contact p {
-            font-size: 14px;
-            line-height: 24px;
-            margin-bottom: 0;
-            font-family: "Jost", sans-serif;
-            color: var(--fancampovida-creen-snow);
-        }
-
-    #footer .footer-top h4 {
-        font-size: 16px;
-        font-weight: bold;
-        color: var(--bg-border);
-        position: relative;
-        padding-bottom: 12px;
-    }
-
-    #footer .footer-top .footer-links {
-        margin-bottom: 30px;
-    }
-
-        #footer .footer-top .footer-links menu {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-            #footer .footer-top .footer-links menu i {
-                padding-right: 2px;
-                color: #47b2e4;
-                font-size: 18px;
-                line-height: 1;
-            }
-
-            #footer .footer-top .footer-links menu li {
-                padding: 10px 0;
-                display: flex;
-                align-items: center;
-            }
-
-                #footer .footer-top .footer-links menu li:first-child {
-                    padding-top: 0;
-                }
-
-            #footer .footer-top .footer-links menu a {
-                color: var(--fancampovida-creen-snow);
-                transition: 0.3s;
-                display: inline-block;
-                line-height: 1;
-            }
-
-                #footer .footer-top .footer-links menu a:hover {
-                    text-decoration: none;
-                    color: #47b2e4;
-                }
+#footer .footer-top .footer-links menu a:hover {
+    text-decoration: none;
+    color: #47b2e4;
+}
 
 #footer .footer-bottom .social-links a {
     font-size: 18px;
