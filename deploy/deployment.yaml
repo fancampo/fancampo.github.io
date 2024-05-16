@@ -52,10 +52,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - www.fancampoyvida.com.mx
+        - demo.fancampoyvida.com.mx
       secretName: site-fancampoyvida-tls
   rules:
-    - host: www.fancampoyvida.com.mx
+    - host: demo.fancampoyvida.com.mx
       http:
         paths:
           - path: /
