@@ -72,6 +72,7 @@
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -106,7 +107,7 @@
 }
 
 .animated_card2::after {
-    position:absolute;
+    position: absolute;
     content: '';
     inset: 5px;
     background: #222;
@@ -433,7 +434,8 @@ h6 {
 }
 
     #header.header-scrolled,
-    #header.header-inner-pages {
+    #header.header-inner-pages,
+    #header.solid-background {
         /* background: rgba(40, 58, 90, 0.9); */
         background-color: var(--fancampovida-blue-smoke);
     }
@@ -580,9 +582,12 @@ h6 {
             }
 
             .navbar .dropdown ul a:hover,
-            .navbar .dropdown ul .active:hover,
             .navbar .dropdown ul li:hover > a {
                 color: #47b2e4;
+            }
+
+            .navbar .dropdown ul li a:active {
+                color: white;
             }
 
     .navbar .dropdown:hover > ul {

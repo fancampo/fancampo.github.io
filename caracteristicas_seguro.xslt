@@ -55,7 +55,7 @@
 					<div class="col d-flex flex-column align-items-start gap-2">
 						<h2 class="fw-bold text-body-emphasis">¿Qué es?</h2>
 						<p class="text-body-secondary">
-							<xsl:apply-templates select="key('data','description')"/>
+							<xsl:apply-templates mode="description" select="key('data','description')"/>
 						</p>
 						<a href="#" class="btn btn-primary btn-lg">Contratar</a>
 					</div>
@@ -70,6 +70,8 @@
 		</section>
 		<div class="b-divider"></div>
 	</xsl:template>
+
+	<xsl:template match="@*" mode="description"/>
 
 	<xsl:template match="/*" mode="caracteristicas_hanging">
 		<xsl:param name="title" select="."/>

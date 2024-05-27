@@ -48,10 +48,14 @@
 
 	<xsl:template match="data">
 		<div style="text-align: center; min-height: 91px;">
-			<img src="{normalize-space(value)}" style="max-width: 25vw;"/>
-			<!--<p>
-				<a class="btn btn-secondary" href="#">Visitar »</a>
-			</p>-->
+			<a href="#" target="_blank">
+				<xsl:if test="comment!=''">
+					<xsl:attribute name="href">
+						<xsl:value-of select="comment"/>
+					</xsl:attribute>
+				</xsl:if>
+				<img src="{normalize-space(value)}" style="max-width: 25vw;"/>
+			</a>
 		</div>
 	</xsl:template>
 
