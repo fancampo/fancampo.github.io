@@ -1,0 +1,80 @@
+﻿<cotizaciones>
+	<id/>
+	<upp/>
+	<tipocotizacion/>
+	<cliente/>
+	<coordinador/>
+	<solicitante/>
+	<beneficiario/>
+	<estado/>
+	<municipio/>
+	<especie/>
+	<Cotizacion tipo="agricola">
+		<cultivo/>
+		<fechasiembra/>
+		<ciclo/>
+		<modalidad/>
+		<cobertura/>
+		<financiamiento/>
+		<detalle>
+			<row>
+				<superficie/>
+				<coordenada1/>
+				<coordenada2/>
+				<municipio/>
+				<localidad/>
+				<nombre/>
+				<identificador/>
+			</row>
+		</detalle>
+		<detalle>
+			<row>
+				<superficie/>
+				<coordenada1/>
+				<coordenada2/>
+				<municipio/>
+				<localidad/>
+				<nombre/>
+				<identificador/>
+			</row>
+		</detalle>
+	</Cotizacion>
+	<!--Tipo de cotizacion acuicola-->
+	<Cotizacion tipo="acuicola">
+		<funcionzootecnica/>
+		<numeroestanques/>
+		<densidadpoblacion/>
+		<ciclo/>
+		<fechasiembraprimerestanque/>
+		<detalle>
+			<row>
+				<estanque/>
+				<fechasiembra/>
+				<fechacosecha/>
+				<nombrelaboratorio/>
+				<superficieha/>
+				<densidadsiembra/>
+				<totalanimales/>
+			</row>
+			<row>
+				<estanque/>
+				<fechasiembra/>
+				<fechacosecha/>
+				<nombrelaboratorio/>
+				<superficieha/>
+				<densidadsiembra/>
+				<totalanimales/>
+			</row>
+		</detalle>
+	</Cotizacion>
+
+	<!--Tipo de cotizacion ganadera-->
+	<Cotizacion tipo="ganadero">
+		<raza/>
+		<sexo/>
+		<funcionzootecnica/>
+		<edad/>
+		<machosporasegurar/>
+		<hembrasporasegurar/>
+	</Cotizacion>
+</cotizaciones>

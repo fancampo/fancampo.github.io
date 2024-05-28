@@ -1,0 +1,11 @@
+{
+  "sources": {
+    "#": "#cotizacion",
+    "#cotizacion": "assets/cotizacion.xml"
+  },
+  "settings": {
+    "#cotizacion": {
+      "hash": ""
+    }
+  }
+}
