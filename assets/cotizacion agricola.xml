@@ -1,4 +1,4 @@
-﻿<modelo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="" upp="" tipocotizacion="" coordinador="" solicitante="" beneficiario="" cliente="" telefono="" correoelectronico="">
+﻿<modelo>
 	<tipocotizacion>
 		<row id="1" desc="Acu&#xED;cola"/>
 		<row id="2" desc="Ganadera"/>
@@ -2547,34 +2547,7 @@
 		<row id="3" desc="FIRA"/>
 		<row id="4" desc="Banco"/>
 	</financiamiento>
-	<especie>
-		<row id="1" desc="Bovino"/>
-		<row id="2" desc="Ovino"/>
-		<row id="3" desc="Caprino"/>
-		<row id="4" desc="Colmena"/>
-		<row id="5" desc="Porcino"/>
-		<row id="6" desc="Equino"/>
-		<row id="7" desc="Aves"/>
-	</especie>
-	<origen_racial>
-		<row id="1" desc="Europeo"/>
-		<row id="2" desc="Sintético"/>
-		<row id="3" desc="Cebuíno"/>
-		<row id="4" desc="Comercial"/>
-	</origen_racial>
-	<sexo>
-		<row id="4" desc="Hembra"/>
-		<row id="4" desc="Macho"/>
-	</sexo>
-	<Cotizacion xsi:type="agricola" cultivo="" fechasiembra="" ciclo="" modalidad="" cobertura="" financiamiento="">
-		<detalle superficie="" coordenada1="" coordenada2="" estado="" municipio="" localidad="" nombre="" identificador=""/>
-	</Cotizacion>
-	<!--Tipo de cotizacion acuicola-->
-	<Cotizacion xsi:type="acuicola" funcionzootecnica="" numeroestanques="" densidadpoblacion="" ciclo="" fechasiembraprimerestanque="">
-		<detalle estanque="" fechasiembra="" fechacosecha="" nombrelaboratorio="" superficieha="" densidadsiembra="" totalanimales=""/>
-	</Cotizacion>
-	<!--Tipo de cotizacion ganadera-->
-	<Cotizacion xsi:type="ganadero" machosporasegurar="" hembrasporasegurar="" especie="">
-		<detalle xsi:type="mock" especie="" raza="" sexo="" funcionzootecnica="" edad=""/>
-	</Cotizacion>
+	<cotizacion id="" tipocotizacion="" fecha="" coordinador="" solicitante="" beneficiario="" upp="" cliente="" telefono="" correoelectronico="" estado="" cultivo="" fechasiembra="" ciclo="" modalidad="" cobertura="" financiamiento="">
+		<detalle superficie="" coordenada1="" coordenada2="" municipio="" localidad="" nombre="" identificador=""/>
+	</cotizacion>
 </modelo>

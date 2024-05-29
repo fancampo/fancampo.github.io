@@ -1,18 +1,24 @@
-﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml"
-  xmlns:xo="http://panax.io/xover"
-  xmlns:state="http://panax.io/state"
+﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:xo="http://panax.io/xover"
+	xmlns:state="http://panax.io/state"
+	xmlns:selected="http://panax.io/state/selected"
 >
+	<xsl:import href="headers.xslt"/>
 	<xsl:import href="wizard.xslt"/>
 
-	<xsl:key name="wizard.section" match="tipocotizacion" use="concat(1,'::',generate-id())"/>
-	<xsl:key name="wizard.section" match="/*[tipocotizacion/@value!='']/cliente" use="concat(2,'::',generate-id())"/>
-	<xsl:key name="wizard.section" match="/*[tipocotizacion/@value!='']/*[not(@tipo)]" use="concat(2,'::',generate-id())"/>
-	<xsl:key name="wizard.section" match="/*/Cotizacion[@tipo=../tipocotizacion/@value]/*[not(self::detalle)]" use="concat(3,'::',generate-id())"/>
-	<xsl:key name="wizard.section" match="/*/Cotizacion[@tipo=../tipocotizacion/@value]/detalle/row[1]/*" use="concat(4,'::',generate-id())"/>
+	<xsl:key name="wizard.section" match="@tipocotizacion" use="1"/>
+	<xsl:key name="wizard.section" match="/*[@tipocotizacion!='']/@*[namespace-uri()='']" use="2"/>
+	<xsl:key name="wizard.section" match="/*/Cotizacion[@xsi:type=../@tipocotizacion]/@*[namespace-uri()='']" use="3"/>
+	<xsl:key name="wizard.section" match="/*/Cotizacion[@xsi:type=../@tipocotizacion]/detalle[not(@xsi:type='mock')]/@*[namespace-uri()='']" use="4"/>
 
-	<xsl:key name="invalid" match="*[not(@value!='')]" use="generate-id()"/>
-	<xsl:key name="hidden" match="id" use="generate-id()"/>
-	<xsl:key name="readonly" match="tipocotizacion" use="generate-id()"/>
+	<xsl:key name="invalid" match="/*/@*[namespace-uri()=''][.='']" use="generate-id()"/>
+	<xsl:key name="invalid" match="/*/Cotizacion[@xsi:type=../@tipocotizacion]/@*[namespace-uri()=''][.='']" use="generate-id()"/>
+	<xsl:key name="invalid" match="/*/Cotizacion[@xsi:type=../@tipocotizacion]/detalle/@*[namespace-uri()=''][.='']" use="generate-id()"/>
+	<xsl:key name="hidden" match="@id" use="generate-id()"/>
+	<xsl:key name="readonly" match="@tipocotizacion" use="generate-id()"/>
+	<xsl:key name="readonly" match="@fecha" use="generate-id()"/>
 
 	<xsl:template match="/*">
 		<main style="margin-top: 5rem;">
@@ -184,36 +190,33 @@ li span.wizard-icon-step-completed {
 
 .wizard table > thead.freeze > tr:nth-child(1) > td, .wizard table > thead.freeze > tr:nth-child(1) > th {
     top: 120px !important;
-}
-
-
-      ]]>
+}]]>
 		</style>
 	</xsl:template>
-	
-	<xsl:template mode="wizard.step.title.legend" match="*[key('wizard.section',concat(4,'::',generate-id()))]">
+
+	<xsl:template mode="wizard.step.title.legend" match="key('wizard.section','4')">
 		<xsl:text>Detalles de seguro </xsl:text>
-		<xsl:value-of select="ancestor::Cotizacion/@tipo"/>
+		<xsl:value-of select="ancestor::Cotizacion/@xsi:type"/>
 	</xsl:template>
 
-	<xsl:template mode="wizard.step.title.legend" match="*[key('wizard.section',concat(3,'::',generate-id()))]">
+	<xsl:template mode="wizard.step.title.legend" match="key('wizard.section','3')">
 		<xsl:text>Datos de seguro </xsl:text>
-		<xsl:value-of select="ancestor::Cotizacion/@tipo"/>
+		<xsl:value-of select="ancestor::Cotizacion/@xsi:type"/>
 	</xsl:template>
 
-	<xsl:template mode="wizard.step.title.legend" match="*[key('wizard.section',concat(2,'::',generate-id()))]">
+	<xsl:template mode="wizard.step.title.legend" match="key('wizard.section','2')">
 		<xsl:text/>Generales<xsl:text/>
 	</xsl:template>
 
-	<xsl:template mode="wizard.step.title.legend" match="*[key('wizard.section',concat(1,'::',generate-id()))]">
+	<xsl:template mode="wizard.step.title.legend" match="key('wizard.section','1')">
 		<xsl:text/>Seguro a cotizar<xsl:text/>
 	</xsl:template>
 
-	<xsl:template mode="wizard.step.panel.content" match="*[key('wizard.section',concat(1,'::',generate-id()))]">
+	<xsl:template mode="wizard.step.panel.content" match="key('wizard.section','1')">
 		<xsl:param name="step" select="0"/>
 		<div>
 			<div class="body">
-				<xsl:for-each select="//*[key('wizard.section',concat($step,'::',generate-id()))]">
+				<xsl:for-each select="key('wizard.section',$step)">
 					<div class="form-group">
 						<xsl:apply-templates mode="form.body.field" select="."/>
 					</div>
@@ -222,11 +225,11 @@ li span.wizard-icon-step-completed {
 		</div>
 	</xsl:template>
 
-	<xsl:template mode="wizard.step.panel.content" match="*[key('wizard.section',concat(2,'::',generate-id()))]|*[key('wizard.section',concat(3,'::',generate-id()))]|*[key('wizard.section',concat(4,'::',generate-id()))]">
+	<xsl:template mode="wizard.step.panel.content" match="key('wizard.section','2')|key('wizard.section','3')|key('wizard.section','4')">
 		<xsl:param name="step" select="0"/>
 		<div>
 			<div class="body">
-				<xsl:for-each select="//*[key('wizard.section',concat($step,'::',generate-id()))][not(key('hidden', generate-id()))]">
+				<xsl:for-each select="key('wizard.section',$step)[not(key('hidden', generate-id()))]">
 					<div class="form-group">
 						<xsl:apply-templates mode="form.body.field" select="."/>
 					</div>
@@ -235,7 +238,7 @@ li span.wizard-icon-step-completed {
 		</div>
 	</xsl:template>
 
-	<xsl:template mode="wizard.step.panel.content" match="*[key('wizard.section',concat(1,'::',generate-id()))]">
+	<xsl:template mode="wizard.step.panel.content" match="key('wizard.section','1')">
 		<xsl:param name="step" select="0"/>
 		<p>
 			Por favor seleccione el tipo de cotización
@@ -245,16 +248,16 @@ li span.wizard-icon-step-completed {
 	</xsl:template>
 
 
-	<xsl:template mode="form.body.field" match="*">
+	<xsl:template mode="form.body.field" match="@*">
 		<xsl:param name="step"></xsl:param>
 		<xsl:variable name="headerText">
 			<xsl:apply-templates mode="headerText" select="."></xsl:apply-templates>
 		</xsl:variable>
-		<div class="mb-3 row" style="max-width: 992px;" xo-scope="field_ref_5aa775b2_0524_4186_bedb_baeec4af6883" xo-slot="Name" data-field="{name()}">
-			<label class="col-sm-2 col-form-label text-capitalize" xo-scope="field_ref_5aa775b2_0524_4186_bedb_baeec4af6883" xo-slot="Name">
+		<div class="mb-3 row" style="max-width: 992px;" xo-slot="{name()}">
+			<label class="col-sm-2 col-form-label text-capitalize" xo-slot="Name">
 				<xsl:value-of select="$headerText"/>:
 			</label>
-			<div class="col-sm-10" xo-scope="field_ref_5aa775b2_0524_4186_bedb_baeec4af6883" xo-slot="Name">
+			<div class="col-sm-10" xo-slot="Name">
 				<!--debug:info-->
 				<xsl:apply-templates mode="control" select=".">
 					<xsl:with-param name="headerText" select="$headerText"/>
@@ -263,56 +266,90 @@ li span.wizard-icon-step-completed {
 		</div>
 	</xsl:template>
 
-	<xsl:template mode="headerText" match="*">
-		<xsl:value-of select="name()"/>
+	<xsl:template match="@*" mode="wizard.buttons.back" name="wizard.buttons.back">
 	</xsl:template>
 
-	<xsl:template mode="headerText" match="tipocotizacion">
-		<xsl:text>Tipo de cotizacion</xsl:text>
+	<xsl:template match="@*" mode="wizard.buttons.next" name="wizard.buttons.next">
 	</xsl:template>
 
-	<xsl:template mode="headerText" match="fechasiembra">
-		<xsl:text>Fecha de siembra</xsl:text>
+	<xsl:template match="@*" mode="wizard.buttons.finish" name="wizard.buttons.finish">
 	</xsl:template>
 
-	<xsl:template mode="headerText" match="fechasiembraprimerestanque">
-		<xsl:text>Fecha de siembra primer estanque</xsl:text>
-	</xsl:template>
-
-	<xsl:template mode="headerText" match="upp">
-		<xsl:text>UPP</xsl:text>
-	</xsl:template>
-
-	<xsl:template match="*" mode="wizard.buttons.back" name="wizard.buttons.back">
-	</xsl:template>
-
-	<xsl:template match="*" mode="wizard.buttons.next" name="wizard.buttons.next">
-	</xsl:template>
-
-	<xsl:template match="*" mode="wizard.buttons.finish" name="wizard.buttons.finish">
-	</xsl:template>
-
-	<xsl:template mode="control" match="*">
+	<xsl:template mode="control" match="@*">
 		<xsl:param name="headerText"/>
-		<div class="form-group form-floating" xo-slot="value" style="min-width: calc(6ch + 6rem);">
-			<input id="input_{@xo:id}" name="{name()}" class="form-control" type="text" xo-slot="value" value="{@value}" placeholder="" xo-scope="{@xo:id}"/>
+		<div class="form-group form-floating" style="min-width: calc(6ch + 6rem);">
+			<input id="input_{@xo:id}" name="{name()}" class="form-control" type="text" value="{@value}" placeholder="">
+				<xsl:attribute name="type">
+					<xsl:apply-templates mode="control_type" select="."/>
+				</xsl:attribute>
+			</input>
 			<label for="input_{@xo:id}" class="text-capitalize">
 				<xsl:value-of select="$headerText"/>
 			</label>
 		</div>
 	</xsl:template>
 
-	<xsl:template mode="control" match="sexo">
+	<xsl:key name="dim" match="especie" use="name()"/>
+	<xsl:key name="selected" match="@selected:especie" use="concat(generate-id(..), '::', local-name())"/>
+
+	<xsl:template mode="control" match="Cotizacion/@especie">
+		<xsl:apply-templates mode="control" select="key('dim',name())">
+			<xsl:with-param name="context" select="."/>
+		</xsl:apply-templates>			
+	</xsl:template>
+
+	<xsl:template mode="control" match="especie">
+		<xsl:param name="context" select="."/>
+		<xsl:variable name="selected_items" select="concat(';',key('selected',concat(generate-id($context/..), '::', local-name($context))),';')"/>
+		<script>
+			<![CDATA[
+		function pushAndReturnArray(arr, ...elements) {
+			arr.push(...elements);
+			return arr;
+		}]]>
+		</script>
+		<ul class="list-group">
+			<xsl:for-each select="row">
+				<xsl:variable name="active">
+					<xsl:if test="contains($selected_items,concat(';',@id,';'))">active</xsl:if>
+				</xsl:variable>
+				<li class="list-group-item list-group-item-action {$active} d-flex justify-content-between align-items-start" xo-scope="{$context/../@xo:id}" xo-slot="selected:{name($context)}" onclick="scope.set(pushAndReturnArray(scope.value?scope.value.split(';'):[], ('{@id}')).join(';'))">
+					<xsl:if test="$active='active'">
+						<xsl:attribute name="onclick">
+							scope.set(scope.value.split(/;/g).filter(item => item != '<xsl:value-of select="@id"/>').join(';'))
+						</xsl:attribute>
+					</xsl:if>
+					<div class="ms-2 me-auto">
+						<div class="fw-bold">
+							<xsl:value-of select="@desc"/>
+						</div>
+					</div>
+					<span class="badge text-bg-primary rounded-pill">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-male" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8"/>
+						</svg>
+					</span>
+					<span class="badge text-bg-primary rounded-pill">
+						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16">
+							<path fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8M3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5"/>
+						</svg>
+					</span>
+				</li>
+			</xsl:for-each>
+		</ul>
+	</xsl:template>
+
+	<xsl:template mode="control" match="@sexo">
 		<div class="btn-group" role="group">
-			<input type="radio" class="btn-check" name="{name()}" id="{name()}_1" autocomplete="off" xo-slot="value" onclick="scope.set(this.value)" value="macho">
-				<xsl:if test="@value='macho'">
+			<input type="radio" class="btn-check" name="{name()}" id="{name()}_1" autocomplete="off" onclick="scope.set(this.value)" value="macho">
+				<xsl:if test=".='macho'">
 					<xsl:attribute name="checked"/>
 				</xsl:if>
 			</input>
 			<label class="btn btn-outline-primary" for="{name()}_1">Macho</label>
 
-			<input type="radio" class="btn-check" name="{name()}" id="{name()}_2" autocomplete="off" xo-slot="value" onclick="scope.set(this.value)" value="hembra">
-				<xsl:if test="@value='hembra'">
+			<input type="radio" class="btn-check" name="{name()}" id="{name()}_2" autocomplete="off" onclick="scope.set(this.value)" value="hembra">
+				<xsl:if test=".='hembra'">
 					<xsl:attribute name="checked"/>
 				</xsl:if>
 			</input>
@@ -320,11 +357,13 @@ li span.wizard-icon-step-completed {
 		</div>
 	</xsl:template>
 
-	<xsl:template mode="control" match="*[key('readonly',generate-id())]">
-		<input type="text" readonly="" tabindex="-1" class="form-control-plaintext" value="{@value}"/>
+	<xsl:template mode="control" match="@*[key('readonly',generate-id())]">
+		<input type="text" readonly="" tabindex="-1" class="form-control-plaintext" value="{.}"/>
 	</xsl:template>
 
-	<xsl:template mode="control" match="fechasiembra|fechacosecha">
-		<input id="input_{@xo:id}" name="{name()}" class="form-control" type="date" xo-slot="value" value="{@value}" placeholder="" xo-scope="{@xo:id}"/>
-	</xsl:template>
+	<xsl:template mode="control_type" match="@correoelectronico">email</xsl:template>
+	<xsl:template mode="control_type" match="@fechasiembra|@fechacosecha">date</xsl:template>
+	<xsl:template mode="control_type" match="@machosporasegurar|@hembrasporasegurar">number</xsl:template>
+
+	<xsl:template mode="control_type" match="@*">text</xsl:template>
 </xsl:stylesheet>

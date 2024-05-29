@@ -1,7 +1,11 @@
 {
   "sources": {
     "#": "#cotizacion",
-    "#cotizacion": "assets/cotizacion.xml"
+    "#cotizacion": "assets/cotizacion.xml",
+    "#ganadero": "#cotizacion",
+    "#agricola": "#cotizacion",
+    "#acuicola": "#cotizacion",
+    "#globalization": [ "assets/globalization/headerText.cotizacion.${xo.session.locale.split('-').shift()}.resx", "assets/globalization/headerText.cotizacion.resx" ]
   },
   "settings": {
     "#cotizacion": {

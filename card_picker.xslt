@@ -288,19 +288,21 @@
 			<div class="card-content box-shadow">
 				<div class="position-relative banner-2" style="overflow: hidden; height: 300px;">
 					<xsl:value-of select="count(key('image', @name))"/>
-					<img src="./assets/img/FanCampo.png" class="img-fluid rounded" alt="" style="width: 100%; object-fit: scale-down; clip-path: inset(0);">
-						<xsl:apply-templates mode="image-src" select="key('image', @name)"/>
-					</img>
-					<div class="text-center banner-content-2" style="gap: 15px;">
-						<xsl:attribute name="onclick">
-							<xsl:text/>xo.stores.seed.selectFirst('/*/tipocotizacion').setAttribute('value', '<xsl:value-of select="@name"/>');<xsl:text/>
-							<xsl:text/>xo.stores.seed.documentElement.setAttribute('state:active', '2');<xsl:text/>
-						</xsl:attribute>
-						<h4 class="mb-2 fw-bold text-accent">Seguro</h4>
-						<p class="mb-2 h2 fw-bold text-white">
-							<xsl:value-of select="value"/>
-						</p>
-					</div>
+					<a href="#">
+						<img src="./assets/img/FanCampo.png" class="img-fluid rounded" alt="" style="width: 100%; object-fit: scale-down; clip-path: inset(0);">
+							<xsl:apply-templates mode="image-src" select="key('image', @name)"/>
+						</img>
+						<div class="text-center banner-content-2" style="gap: 15px;">
+							<xsl:attribute name="onclick">
+								<xsl:text/>xo.stores.seed.selectFirst('/*/@tipocotizacion').set('<xsl:value-of select="@name"/>');<xsl:text/>
+								<xsl:text/>xo.state.active = 2;<xsl:text/>
+							</xsl:attribute>
+							<h4 class="mb-2 fw-bold text-accent">Seguro</h4>
+							<p class="mb-2 h2 fw-bold text-white">
+								<xsl:value-of select="value"/>
+							</p>
+						</div>
+					</a>
 				</div>
 			</div>
 		</div>

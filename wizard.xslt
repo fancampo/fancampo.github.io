@@ -5,10 +5,12 @@
   exclude-result-prefixes="state xo source"
   xmlns="http://www.w3.org/1999/xhtml"
 >
-	<xsl:key name="wizard.section" match="xo:dummy" use="concat(1,'::',generate-id())"/>
+	<xsl:key name="wizard.section" match="xo:dummy" use="1"/>
 	<xsl:key name="optional" match="xo:dummy" use="generate-id()"/>
 	<xsl:key name="invalid" match="xo:dummy" use="generate-id()"/>
 	<xsl:key name="hidden" match="xo:dummy" use="generate-id()"/>
+
+	<xsl:param name="state:active">1</xsl:param>
 
 	<xsl:template match="*" mode="wizard.styles" priority="-10"/>
 
@@ -30,11 +32,11 @@
     <xsl:text/>Paso <xsl:value-of select="$step"/><xsl:text/>
   </xsl:template>-->
 
-	<xsl:template match="*" mode="wizard.step.title" priority="-1">
+	<xsl:template match="*|@*" mode="wizard.step.title" priority="-1">
 		<xsl:param name="active">1</xsl:param>
-		<xsl:param name="step" select="count(preceding-sibling::*|self::*)"/>
-		<li data-position="{$step}" class="inactive" style="padding: 0px 43px;" xo-scope="inherit" xo-slot="state:active" onclick="scope.set('{$step}')">
-			<xsl:variable name="completed" select="not(//*[key('wizard.section',concat(number($step),'::',generate-id()))][key('invalid',generate-id())][not(key('optional',generate-id()) or key('hidden',generate-id()))])"/>
+		<xsl:param name="step">1</xsl:param>
+		<li data-position="{$step}" class="inactive" style="padding: 0px 43px;" xo-scope="inherit" xo-slot="state:active" onclick="xo.state.active = {$step}">
+			<xsl:variable name="completed" select="not(key('wizard.section',number($step))[key('invalid',generate-id())][not(key('optional',generate-id()) or key('hidden',generate-id()))])"/>
 			<xsl:choose>
 				<xsl:when test="$active=$step">
 					<xsl:attribute name="class">active</xsl:attribute>
@@ -78,7 +80,7 @@
 
 	<xsl:template match="*" mode="wizard.buttons.back" name="wizard.buttons.back" priority="-1">
 		<xsl:param name="step" select="count(preceding-sibling::*|self::*)"/>
-		<xsl:if test="//*[key('wizard.section',concat(number($step)-1,'::',generate-id()))]">
+		<xsl:if test="key('wizard.section',number($step)-1)">
 			<button class="btn btn-primary pull-left aiia-wizard-button-previous" xo-slot="state:active">
 				<xsl:attribute name="onclick">
 					<xsl:apply-templates mode="wizard.buttons.back.attributes.onclick" select=".">
@@ -153,7 +155,7 @@
 		<p>No hay nada que hacer aún en este paso.</p>
 	</xsl:template>
 
-	<xsl:template match="*" mode="wizard.step.panel" priority="-1">
+	<xsl:template match="*|@*" mode="wizard.step.panel" priority="-1">
 		<xsl:param name="step">1</xsl:param>
 		<xsl:variable name="step-class">aiia-wizard-step</xsl:variable>
 		<div id="container_{@xo:id}" class="{$step-class}" data-position="{count(preceding-sibling::*|self::*)}" style="position: absolute; min-height: 400px; width: 100%; margin-left: 0px;" xo-scope="inherit">
@@ -186,7 +188,7 @@
 			<div class="aiia-wizard-buttons-wrapper row" style="display: block;">
 				<div class="col-md-12">
 					<xsl:choose>
-						<xsl:when test="//*[key('wizard.section',concat(number($step)-1,'::',generate-id()))]">
+						<xsl:when test="key('wizard.section',number($step)-1)">
 							<xsl:apply-templates select="." mode="wizard.buttons.back">
 								<xsl:with-param name="step" select="$step"/>
 							</xsl:apply-templates>
@@ -198,7 +200,7 @@
 						</xsl:otherwise>
 					</xsl:choose>
 					<xsl:choose>
-						<xsl:when test="//*[key('wizard.section',concat(number($step)+1,'::',generate-id()))]">
+						<xsl:when test="key('wizard.section',number($step)+1)">
 							<xsl:apply-templates select="." mode="wizard.buttons.next">
 								<xsl:with-param name="step" select="$step"/>
 							</xsl:apply-templates>
@@ -218,6 +220,9 @@
 		<xsl:variable name="current" select="current()"/>
 		<xsl:variable name="active">
 			<xsl:choose>
+				<xsl:when test="$state:active">
+					<xsl:value-of select="$state:active"/>
+				</xsl:when>
 				<xsl:when test="@state:active">
 					<xsl:value-of select="@state:active"/>
 				</xsl:when>
@@ -234,9 +239,9 @@
 				<div class="aiia-wizard-progress-buttons-wrapper row" style="display: block;">
 					<div class="col-md-12">
 						<ul class="nav nav-pills nav-justified aiia-wizard-progress-buttons-placeholder">
-							<xsl:for-each select="(//*)[position()&lt;20]">
+							<xsl:for-each select="(//@*)[position()&lt;20]">
 								<xsl:variable name="current-step" select="position()"/>
-								<xsl:variable name="items" select="$current//*[key('wizard.section',concat($current-step,'::',generate-id()))]"/>
+								<xsl:variable name="items" select="key('wizard.section',$current-step)"/>
 								<xsl:apply-templates mode="wizard.step.title" select="$items[1]">
 									<xsl:with-param name="active" select="$active"/>
 									<xsl:with-param name="step" select="position()"/>
@@ -248,7 +253,7 @@
 				<hr style="border-width: 4px; border-color: silver;"/>
 				<div class="aiia-wizard-steps-wrapper container" style="position: relative; overflow-y: scroll; width: 100%;
     min-height: 500px; height: 500px; overflow-x: hidden;">
-					<xsl:apply-templates mode="wizard.step.panel" select="($current//*[key('wizard.section',concat($active,'::',generate-id()))])[1]">
+					<xsl:apply-templates mode="wizard.step.panel" select="key('wizard.section',$active)[1]">
 						<xsl:with-param name="active" select="$active"/>
 						<xsl:with-param name="step" select="$active"/>
 					</xsl:apply-templates>

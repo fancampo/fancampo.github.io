@@ -50,7 +50,7 @@
     --offcanvas-height: 90vh !important;
 }
 
-#wizard [data-field=tipocotizacion] input[readonly] {
+#wizard [xo-slot=tipocotizacion] input {
     text-transform: capitalize;
 }
 
