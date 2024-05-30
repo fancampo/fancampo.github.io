@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 # General Styles
 --------------------------------------------------------------*/
@@ -51,22 +50,71 @@
     --offcanvas-height: 90vh !important;
 }
 
+.accordion-button {
+    font-size: unset;
+}
+
+.btn-outline-primary, .btn-check + .btn:hover {
+    color: var(--fancampovida-silver-cloud);
+    border-color: var(--fancampovida-silver-cloud);
+}
+
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+    color: var(--bs-btn-active-color);
+    background-color: var(--fancampovida-silver-cloud);
+    border-color: var(--fancampovida-silver-cloud);
+}
+
+.accordion-button {
+    background-color: var(--bs-accordion-active-bg);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--fancampovida-creen-snow);
+}
+
+.list-group-item.active {
+    background-color: var(--fancampovida-silver-cloud);
+    border-color: var(--fancampovida-silver-cloud);
+}
+
+
+#wizard [xo-slot=tipocotizacion] input {
+    text-transform: capitalize;
+}
+
+.form-floating [placeholder] + label {
+    color: silver;
+}
+
+.form-floating [placeholder] + label::after {
+    background-color: transparent !important;
+}
+
+.fa-check-circle {
+    margin-left: 8px;
+}
+
+.aiia-wizard-progress-buttons-wrapper li a {
+    color: var(--fancampovida-creen-snow);
+}
+
 .animated_card2 {
     overflow: hidden;
 }
 
-.animated_card2::before {
-    position: absolute;
-    content: '';
-    width: 50%;
-    height: 180%;
-    background: #fff;
-    transform: rotate(45deg);
-}
+    .animated_card2::before {
+        position: absolute;
+        content: '';
+        width: 50%;
+        height: 180%;
+        background: #fff;
+        transform: rotate(45deg);
+    }
 
-.animated_card2:hover::before {
-    animation: animate2 2s linear infinite;
-}
+    .animated_card2:hover::before {
+        animation: animate2 2s linear infinite;
+    }
 
 @keyframes animate2 {
     from {
@@ -429,9 +477,9 @@ h6 {
     padding: 5px 0;
 }
 
-#header:not(.header-scrolled) {
-    background-color: rgba(0, 0, 0, 0.1);
-}
+    #header:not(.header-scrolled) {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
 
     #header.header-scrolled,
     #header.header-inner-pages,
@@ -879,41 +927,41 @@ section {
     padding-bottom: 30px;
 }
 
-.section-title h2 {
-    font-size: 32px;
-    font-weight: bold;
-    /*text-transform: uppercase;*/
-    /*margin-bottom: 20px;*/
-    padding-block: 20px;
-    position: relative;
-    color: var(--fancampovida-river-red);
-}
+    .section-title h2 {
+        font-size: 32px;
+        font-weight: bold;
+        /*text-transform: uppercase;*/
+        /*margin-bottom: 20px;*/
+        padding-block: 20px;
+        position: relative;
+        color: var(--fancampovida-river-red);
+    }
 
-.section-title h2::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 120px;
-    height: 1px;
-    background: #ddd;
-    bottom: 1px;
-    left: calc(50% - 60px);
-}
+        .section-title h2::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 120px;
+            height: 1px;
+            background: #ddd;
+            bottom: 1px;
+            left: calc(50% - 60px);
+        }
 
-.section-title h2::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 40px;
-    height: 3px;
-    background: var(--fancampovida-blue-smoke);
-    bottom: 0;
-    left: calc(50% - 20px);
-}
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: var(--fancampovida-blue-smoke);
+            bottom: 0;
+            left: calc(50% - 20px);
+        }
 
-.section-title p {
-    margin-bottom: 0;
-}
+    .section-title p {
+        margin-bottom: 0;
+    }
 
 /*--------------------------------------------------------------
 # Clients
@@ -1223,66 +1271,66 @@ section {
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 
-.contact .info i {
-    font-size: 20px;
-    color: white;
-    float: left;
-    width: 44px;
-    height: 44px;
-    background: var(--fancampovida-creen-snow);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    transition: all 0.3s ease-in-out;
-}
+    .contact .info i {
+        font-size: 20px;
+        color: white;
+        float: left;
+        width: 44px;
+        height: 44px;
+        background: var(--fancampovida-creen-snow);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+    }
 
-.contact .info h4 {
-    padding: 0 0 0 60px;
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 5px;
-    color: #37517e;
-}
+    .contact .info h4 {
+        padding: 0 0 0 60px;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #37517e;
+    }
 
-.contact .info p {
-    padding: 0 0 10px 60px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: #6182ba;
-}
+    .contact .info p {
+        padding: 0 0 10px 60px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #6182ba;
+    }
 
-.contact .info .email p {
-    padding-top: 5px;
-}
+    .contact .info .email p {
+        padding-top: 5px;
+    }
 
-.contact .info .clock p {
-    padding-top: 5px;
-}
+    .contact .info .clock p {
+        padding-top: 5px;
+    }
 
-.contact .info .social-links {
-    padding-left: 60px;
-}
+    .contact .info .social-links {
+        padding-left: 60px;
+    }
 
-.contact .info .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: #333;
-    color: #fff;
-    line-height: 1;
-    padding: 8px 0;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-    margin-right: 10px;
-}
+        .contact .info .social-links a {
+            font-size: 18px;
+            display: inline-block;
+            background: #333;
+            color: #fff;
+            line-height: 1;
+            padding: 8px 0;
+            border-radius: 50%;
+            text-align: center;
+            width: 36px;
+            height: 36px;
+            transition: 0.3s;
+            margin-right: 10px;
+        }
 
-.contact .info .social-links a:hover {
-    background: #47b2e4;
-    color: #fff;
-}
+            .contact .info .social-links a:hover {
+                background: #47b2e4;
+                color: #fff;
+            }
 
 /*.contact .info .email:hover i,
 .contact .info .clock:hover i,
@@ -1519,74 +1567,74 @@ section {
     background: inherit;
 }
 
-#footer .footer-top .footer-contact {
-    margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-contact h3 {
-    font-size: 28px;
-    margin: 0 0 10px 0;
-    padding: 2px 0 2px 0;
-    line-height: 1;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: var(--bg-border);
-}
-
-#footer .footer-top .footer-contact p {
-    font-size: 14px;
-    line-height: 24px;
-    margin-bottom: 0;
-    font-family: "Jost", sans-serif;
-    color: var(--fancampovida-creen-snow);
-}
-
-#footer .footer-top h4 {
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--bg-border);
-    position: relative;
-    padding-bottom: 12px;
-}
-
-#footer .footer-top .footer-links {
-    margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-links menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#footer .footer-top .footer-links menu i {
-    padding-right: 2px;
-    color: #47b2e4;
-    font-size: 18px;
-    line-height: 1;
-}
-
-#footer .footer-top .footer-links menu li {
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-}
-
-    #footer .footer-top .footer-links menu li:first-child {
-        padding-top: 0;
+    #footer .footer-top .footer-contact {
+        margin-bottom: 30px;
     }
 
-#footer .footer-top .footer-links menu a {
-    color: var(--fancampovida-creen-snow);
-    transition: 0.3s;
-    display: inline-block;
-    line-height: 1;
-}
+        #footer .footer-top .footer-contact h3 {
+            font-size: 28px;
+            margin: 0 0 10px 0;
+            padding: 2px 0 2px 0;
+            line-height: 1;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--bg-border);
+        }
 
-#footer .footer-top .footer-links menu a:hover {
-    text-decoration: none;
-    color: #47b2e4;
-}
+        #footer .footer-top .footer-contact p {
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 0;
+            font-family: "Jost", sans-serif;
+            color: var(--fancampovida-creen-snow);
+        }
+
+    #footer .footer-top h4 {
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--bg-border);
+        position: relative;
+        padding-bottom: 12px;
+    }
+
+    #footer .footer-top .footer-links {
+        margin-bottom: 30px;
+    }
+
+        #footer .footer-top .footer-links menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+            #footer .footer-top .footer-links menu i {
+                padding-right: 2px;
+                color: #47b2e4;
+                font-size: 18px;
+                line-height: 1;
+            }
+
+            #footer .footer-top .footer-links menu li {
+                padding: 10px 0;
+                display: flex;
+                align-items: center;
+            }
+
+                #footer .footer-top .footer-links menu li:first-child {
+                    padding-top: 0;
+                }
+
+            #footer .footer-top .footer-links menu a {
+                color: var(--fancampovida-creen-snow);
+                transition: 0.3s;
+                display: inline-block;
+                line-height: 1;
+            }
+
+                #footer .footer-top .footer-links menu a:hover {
+                    text-decoration: none;
+                    color: #47b2e4;
+                }
 
 #footer .footer-bottom .social-links a {
     font-size: 18px;

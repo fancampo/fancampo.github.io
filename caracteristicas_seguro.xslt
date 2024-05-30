@@ -1,9 +1,18 @@
-﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:env="http://panax.io/state/environment" xmlns:xo="http://panax.io/xover" xmlns:swap="http://panax.io/xover/swap" xmlns:xlink="http://www.w3.org/1999/xlink">
+﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:env="http://panax.io/state/environment"
+	xmlns:xo="http://panax.io/xover"
+	xmlns:swap="http://panax.io/xover/swap"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns:site="http://panax.io/site"
+>
 	<xsl:import href="keys.xslt"/>
 	<xsl:import href="common.xslt"/>
 	<xsl:key name="data" match="data[starts-with(@name,'cobertura_')]" use="'coberturas'"/>
 	<xsl:key name="data" match="data[starts-with(@name,'beneficio_')]" use="'beneficios'"/>
 	<xsl:key name="data" match="data[starts-with(@name,'ventaja_')]" use="'ventajas'"/>
+
+	<xsl:param name="site:hash"></xsl:param>
 
 	<xsl:template match="/">
 		<main>
@@ -57,7 +66,15 @@
 						<p class="text-body-secondary">
 							<xsl:apply-templates mode="description" select="key('data','description')"/>
 						</p>
-						<a href="#" class="btn btn-primary btn-lg">Contratar</a>
+						<xsl:variable name="tipo">
+							<xsl:choose>
+								<xsl:when test="$site:hash='#pecuario'">ganadero</xsl:when>
+								<xsl:otherwise>
+									<xsl:value-of select="translate($site:hash,'#','')"/>
+								</xsl:otherwise>
+							</xsl:choose>
+						</xsl:variable>
+						<a href="cotizador.html?tipo={$tipo}" class="btn btn-primary btn-lg">Contratar</a>
 					</div>
 
 					<div class="col">
@@ -69,6 +86,9 @@
 			</div>
 		</section>
 		<div class="b-divider"></div>
+	</xsl:template>
+
+	<xsl:template match="@*" mode="tipo">
 	</xsl:template>
 
 	<xsl:template match="@*" mode="description"/>
