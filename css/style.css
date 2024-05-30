@@ -50,6 +50,35 @@
     --offcanvas-height: 90vh !important;
 }
 
+.accordion-button {
+    font-size: unset;
+}
+
+.btn-outline-primary, .btn-check + .btn:hover {
+    color: var(--fancampovida-silver-cloud);
+    border-color: var(--fancampovida-silver-cloud);
+}
+
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+    color: var(--bs-btn-active-color);
+    background-color: var(--fancampovida-silver-cloud);
+    border-color: var(--fancampovida-silver-cloud);
+}
+
+.accordion-button {
+    background-color: var(--bs-accordion-active-bg);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--fancampovida-creen-snow);
+}
+
+.list-group-item.active {
+    background-color: var(--fancampovida-silver-cloud);
+    border-color: var(--fancampovida-silver-cloud);
+}
+
+
 #wizard [xo-slot=tipocotizacion] input {
     text-transform: capitalize;
 }

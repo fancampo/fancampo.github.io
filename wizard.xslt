@@ -2,7 +2,7 @@
   xmlns:xo="http://panax.io/xover"
   xmlns:state="http://panax.io/state"
   xmlns:source="http://panax.io/xdom/binding/source"
-  exclude-result-prefixes="state xo source"
+  exclude-result-prefixes="xo source"
   xmlns="http://www.w3.org/1999/xhtml"
 >
 	<xsl:key name="wizard.section" match="xo:dummy" use="1"/>
@@ -10,17 +10,15 @@
 	<xsl:key name="invalid" match="xo:dummy" use="generate-id()"/>
 	<xsl:key name="hidden" match="xo:dummy" use="generate-id()"/>
 
-	<xsl:param name="state:active">1</xsl:param>
-
 	<xsl:template match="*" mode="wizard.styles" priority="-10"/>
 
 	<!--<xsl:template match="*" mode="wizard.step.title.legend" priority="-10">
     <xsl:value-of select="@shortTitle|self::*[not(@shortTitle)]/@title"/>
   </xsl:template>-->
 
-	<xsl:template match="*" mode="wizard.step.title.legend" priority="-10"/>
+	<xsl:template match="*|@*" mode="wizard.step.title.legend" priority="-10"/>
 
-	<xsl:template match="*" mode="wizard.step.panel.legend" priority="-10">
+	<xsl:template match="*|@*" mode="wizard.step.panel.legend" priority="-10">
 		<xsl:param name="step" select="count(preceding-sibling::*|self::*)"/>
 		<xsl:apply-templates mode="wizard.step.title.legend" select=".">
 			<xsl:with-param name="step" select="$step"/>
@@ -217,20 +215,8 @@
 	</xsl:template>
 
 	<xsl:template match="*" mode="wizard" priority="-1">
+		<xsl:param name="active" select="1"/>
 		<xsl:variable name="current" select="current()"/>
-		<xsl:variable name="active">
-			<xsl:choose>
-				<xsl:when test="$state:active">
-					<xsl:value-of select="$state:active"/>
-				</xsl:when>
-				<xsl:when test="@state:active">
-					<xsl:value-of select="@state:active"/>
-				</xsl:when>
-				<xsl:when test="string(@first_name)=''">1</xsl:when>
-				<xsl:when test="string(@last_name)=''">2</xsl:when>
-				<xsl:otherwise>1</xsl:otherwise>
-			</xsl:choose>
-		</xsl:variable>
 
 		<div class="outer-container">
 			<xsl:apply-templates mode="wizard.styles" select="."/>

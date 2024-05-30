@@ -2541,6 +2541,12 @@
 		<row id="4" desc="B&#xE1;sica"/>
 		<row id="5" desc="Adicional"/>
 	</cobertura>
+	<referencia_suma>
+		<row id="1" desc="Factura"/>
+		<row id="2" desc="Agrocosto"/>
+		<row id="3" desc="Crédito"/>
+		<row id="4" desc="Valor de referencia en la zona"/>
+	</referencia_suma>
 	<financiamiento>
 		<row id="1" desc="Recursos propios"/>
 		<row id="2" desc="SOFOM"/>
@@ -2562,10 +2568,55 @@
 		<row id="3" desc="Cebuíno"/>
 		<row id="4" desc="Comercial"/>
 	</origen_racial>
+	<seguro>
+		<row id="1" desc="Transporte (T)"/>
+		<row id="2" desc="Adaptación (A)"/>
+		<row id="3" desc="Radicación (R)"/>
+		<row id="4" desc="Alta mortalidad"/>
+		<row id="5" desc="Estaciones cuarentenarias"/>
+		<row id="6" desc="Estancia temporal"/>
+		<row id="7" desc="Programa de fomento (A + R)"/>
+		<row id="8" desc="Programa de Mejoramiento Genético (T + A + R)"/>
+	</seguro>
+	<funcionzootecnica>
+		<row id="1" desc="Reproducción"/>
+		<row id="2" desc="Engorda"/>
+		<row id="3" desc="Producción"/>
+	</funcionzootecnica>
+	<deducible>
+		<row id="10" desc="10%"/>
+		<row id="15" desc="15%"/>
+		<row id="20" desc="20%"/>
+	</deducible>
+	<duracion>
+		<row id="12" desc="12 horas"/>
+		<row id="24" desc="24 horas"/>
+		<row id="36" desc="36 horas"/>
+		<row id="48" desc="48 horas"/>
+	</duracion>
+	<riesgo>
+		<row id="1" desc="Transporte tradicional"/>
+		<row id="2" desc="Riesgo ordinario de tránsito"/>
+		<row id="3" desc="Robo en caso de accidente"/>
+	</riesgo>
 	<sexo>
-		<row id="4" desc="Hembra"/>
-		<row id="4" desc="Macho"/>
+		<row id="1" pk="hembra" desc="Hembra"/>
+		<row id="2" pk="macho" desc="Macho"/>
 	</sexo>
+	<origen_destino_transporte>
+		<row id="1" desc="Estado"/>
+		<row id="2" desc="Municipio"/>
+	</origen_destino_transporte>
+	<enfermedades_zona>
+		<row id="1" desc="Complejo clostridial"/>
+		<row id="2" desc="Complejo Respiratorio Bovino"/>
+		<row id="3" desc="Rabia Paralítica"/>
+		<row id="4" desc="Anaplasmosis"/>
+		<row id="5" desc="Piroplasmosis"/>
+		<row id="6" desc="Manheymia"/>
+		<row id="7" desc="Haemophilosis"/>
+		<row id="8" desc="Otras y especifique"/>
+	</enfermedades_zona>
 	<Cotizacion xsi:type="agricola" cultivo="" fechasiembra="" ciclo="" modalidad="" cobertura="" financiamiento="">
 		<detalle superficie="" coordenada1="" coordenada2="" estado="" municipio="" localidad="" nombre="" identificador=""/>
 	</Cotizacion>
@@ -2574,7 +2625,7 @@
 		<detalle estanque="" fechasiembra="" fechacosecha="" nombrelaboratorio="" superficieha="" densidadsiembra="" totalanimales=""/>
 	</Cotizacion>
 	<!--Tipo de cotizacion ganadera-->
-	<Cotizacion xsi:type="ganadero" machosporasegurar="" hembrasporasegurar="" especie="">
-		<detalle xsi:type="mock" especie="" raza="" sexo="" funcionzootecnica="" edad=""/>
+	<Cotizacion xsi:type="ganadero" especie="">
+		<detalle xsi:type="mock" especie="" estado="" municipio="" localidad="" origen_racial="" raza="" sexo=""  funcionzootecnica="" edad="" numero_cabezas="" suma_asegurada="" referencia_suma_asegurada="" financiamiento="" seguro="" deducible="" suma_asegurada_total="" enfermedades_zona="" cabezas_totales_hato="" cabezas_muertas_anuales="" duracion="" riesgo="" origen_transporte="" destino_transporte=""/>
 	</Cotizacion>
 </modelo>

@@ -294,7 +294,8 @@
 						</img>
 						<div class="text-center banner-content-2" style="gap: 15px;">
 							<xsl:attribute name="onclick">
-								<xsl:text/>xo.stores.seed.selectFirst('/*/@tipocotizacion').set('<xsl:value-of select="@name"/>');<xsl:text/>
+								<xsl:text/>xo.site.searchParams.set('tipo', '<xsl:value-of select="@name"/>');<xsl:text/>
+								<!--<xsl:text/>xo.stores.seed.selectFirst('/*/@tipocotizacion').set('<xsl:value-of select="@name"/>');<xsl:text/>-->
 								<xsl:text/>xo.state.active = 2;<xsl:text/>
 							</xsl:attribute>
 							<h4 class="mb-2 fw-bold text-accent">Seguro</h4>

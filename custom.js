@@ -164,7 +164,3 @@ async function cotizar() {
     startTyping('Pregunta cómo cotizar');// (O presiona espacio)
     textarea.parentNode.style.boxShadow = '0 0 10px rgba(0, 0, 255, 0.5)';
 }
-
-xo.listener.on('fetch::#cotizador', function() {
-    debugger
-})

@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="@cabezas_muertas_anuales" xml:space="preserve">
+    <value>Cabezas muertas y desechadas al año:</value>
+  </data>
+  <data name="@cabezas_totales_hato" xml:space="preserve">
+    <value>Cabezas totales en el hato</value>
+  </data>
   <data name="@ciclo" xml:space="preserve">
     <value>Ciclo</value>
   </data>
@@ -155,6 +161,18 @@
   </data>
   <data name="@numeroestanques" xml:space="preserve">
     <value>Número de estánques</value>
+  </data>
+  <data name="@numero_cabezas" xml:space="preserve">
+    <value>Número de cabezas a asegurar</value>
+  </data>
+  <data name="@referencia_suma_asegurada" xml:space="preserve">
+    <value>Referencia de la Suma Asegurada</value>
+  </data>
+  <data name="@seguro" xml:space="preserve">
+    <value>Seguro a contratar</value>
+  </data>
+  <data name="@suma_asegurada" xml:space="preserve">
+    <value>Suma asegurada por cabeza</value>
   </data>
   <data name="@superficieha" xml:space="preserve">
     <value>Superficie (ha)</value>
