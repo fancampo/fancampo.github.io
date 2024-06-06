@@ -1,5 +1,10 @@
 {
   "sources": {
     "#": "#menu"
+  },
+  "settings": {
+    "#menu": {
+      "hash": ""
+    }
   }
 }

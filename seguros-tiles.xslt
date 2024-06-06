@@ -1,14 +1,17 @@
 ﻿<xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 xmlns:xo="http://panax.io/xover"
+xmlns:searchParams="http://panax.io/site/searchParams"
 xmlns="http://www.w3.org/1999/xhtml"
 >
 	<xsl:key name="seguros" match="item[@title='Seguros']/item" use="'*'"/>
 	<xsl:key name="seguros" match="item[@title='Seguros de vida']/item" use="'*'"/>
-	
+	<xsl:key name="seguros" match="item[@tag]/item" use="../@tag"/>
+	<xsl:param name="searchParams:tipo">*</xsl:param>
+
 	<xsl:template match="/">
 		<div>
-			<xsl:apply-templates mode="tile" select="key('seguros','*')"/>
+			<xsl:apply-templates mode="tile" select="key('seguros',$searchParams:tipo)"/>
 		</div>
 	</xsl:template>
 

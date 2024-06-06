@@ -1,4 +1,5 @@
-﻿const video = document.querySelector('video');
+﻿const video = document.querySelector('video.main');
+const promocional = document.querySelector('video.promocional');
 if (video) {
     // Options for the intersection observer
     //const options = {
@@ -29,6 +30,7 @@ if (video) {
 
     const viewportHeight = window.innerHeight;
     const viewportWidth = window.innerWidth;
+    //promocional.pause();
 
     window.addEventListener('scroll', function () {
         const scrollPosition = window.scrollY;

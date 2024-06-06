@@ -1,6 +1,6 @@
 ﻿<xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-xmlns:xo="http://xover.dev"
+xmlns:xo="http://panax.io/xover"
 xmlns:menu="http://xover.dev/widgets/menu"
 xmlns="http://www.w3.org/1999/xhtml"
 >
@@ -37,7 +37,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 	</xsl:template>
 
 	<xsl:template match="@*|*" mode="menu:item-icon" priority="-1"/>
-	
+
 	<xsl:template match="@*|*" mode="menu:item-link-attribute" priority="-1"/>
 
 	<xsl:template match="*[@href]|*[@href]/@*" mode="menu:item-link-attribute">
@@ -78,6 +78,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 
 	<xsl:template match="@*|*" mode="menu:item">
 		<xsl:variable name="dropdown">
+			<xsl:if test="* and ancestor-or-self::*[1]/ancestor::item">dropstart </xsl:if>
 			<xsl:if test="*">dropdown</xsl:if>
 		</xsl:variable>
 		<xsl:variable name="class">
