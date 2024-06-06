@@ -1,0 +1,7 @@
+{
+  "sources": {
+    "#": "#eventos",
+    "#eventos": "./assets/eventos.resx"
+  },
+  "settings": { "#eventos": {"hash": ''} }
+}

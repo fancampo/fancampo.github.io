@@ -50,6 +50,14 @@
     --offcanvas-height: 90vh !important;
 }
 
+.dropstart > ul {
+    transform: translate(-640px, 0px);
+}
+
+.list-group-item:nth-of-type(odd) {
+    background-color: beige;
+}
+
 .accordion-button {
     font-size: unset;
 }
@@ -303,7 +311,7 @@ iframe:hover {
     text-decoration: none; /* Remove underline */
 }
 
-video {
+video.main {
     max-width: 100vw;
     min-width: 100%;
     transform: scale(1);
@@ -324,12 +332,12 @@ video {
             position: sticky;
         }
 
-    video {
+    video.main {
         position: fixed;
         padding-top: 0px;
     }
 
-    .scrolled video {
+    .scrolled video.main {
         transform: scale(0.5);
         top: 90px;
     }
