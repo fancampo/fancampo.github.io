@@ -8,10 +8,13 @@
 		<item title="Aviso de privacidad" target="_self" href="#aviso_privacidad"/>
 	</item>
 	<item title="Seguros">
-		<item title="Ataque de depredador" href="./seguro.html#catastrofico" image="catastrofico.jpeg"/>
-		<item title="Apícola" href="./seguro.html#apicola" image="apicola.jpg"/>
-		<item title="Acuícola" href="./seguro.html#acuicola" image="acuicola.jpg"/>
-		<item title="Ganadero Climático" href="./seguro.html#pecuario" image="pecuario.jpg"/>
+		<item title="Seguros Multi Riesgos" href="./seguro.html?tipo=agropecuario" image="pecuario.jpg" tag="agropecuario"></item>
+			<item title="Alta Mortalidad" href="./seguro.html#altamortalidad" image="apicola.jpg"/>
+			<item title="Ataque de depredador" href="./seguro.html#catastrofico" image="catastrofico.jpeg"/>
+			<item title="Apícola" href="./seguro.html#apicola" image="apicola.jpg"/>
+			<item title="Acuícola" href="./seguro.html#acuicola" image="acuicola.jpg"/>
+			<item title="Ganadero Climático" href="./seguro.html#pecuario" image="pecuario.jpg"/>
+		</item>
 		<item title="Comerciales Agropecuarios" href="./seguro.html?tipo=agropecuario" image="pecuario.jpg" tag="agropecuario">
 			<item title="Transporte" href="./seguro.html#transporte" image="apicola.jpg"/>
 			<item title="Adaptación" href="./seguro.html#adaptacion" image="apicola.jpg"/>
