@@ -15,7 +15,7 @@
 			<item title="Acuícola" href="./seguro.html#acuicola" image="acuicola.jpg"/>
 			<item title="Ganadero Climático" href="./seguro.html#pecuario" image="pecuario.jpg"/>
 		</item>
-		<item title="Comerciales Agropecuarios" href="./seguro.html?tipo=agropecuario" image="pecuario.jpg" tag="agropecuario">
+		<item title="Comerciales Agropecuarios">
 			<item title="Transporte" href="./seguro.html#transporte" image="apicola.jpg"/>
 			<item title="Adaptación" href="./seguro.html#adaptacion" image="apicola.jpg"/>
 			<item title="Radiación" href="./seguro.html#radiacion" image="apicola.jpg"/>
