@@ -8,7 +8,7 @@
 		<item title="Aviso de privacidad" target="_self" href="#aviso_privacidad"/>
 	</item>
 	<item title="Seguros">
-		<item title="Seguros Multi Riesgos" href="./seguro.html?tipo=agropecuario" image="pecuario.jpg" tag="agropecuario"></item>
+		<item title="Seguros Multi Riesgos" href="./seguro.html?tipo=agropecuario" image="pecuario.jpg" tag="agropecuario">
 			<item title="Alta Mortalidad" href="./seguro.html#altamortalidad" image="apicola.jpg"/>
 			<item title="Ataque de depredador" href="./seguro.html#catastrofico" image="catastrofico.jpeg"/>
 			<item title="Apícola" href="./seguro.html#apicola" image="apicola.jpg"/>
