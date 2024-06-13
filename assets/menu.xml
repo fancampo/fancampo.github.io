@@ -8,7 +8,7 @@
 		<item title="Aviso de privacidad" target="_self" href="#aviso_privacidad"/>
 	</item>
 	<item title="Seguros">
-		<item title="Multiriesgo" href="./seguro.html" image="multiriesgo.jpeg" tag="multiriesgo">
+		<item title="Multirriesgo" href="./seguro.html" image="multirriesgo.jpeg" tag="multirriesgo">
 			<item title="Alta mortalidad" href="./seguro.html#alta_mortalidad" image="alta_mortalidad.jpeg"/>
 			<item title="Ataque de depredador" href="./seguro.html#ataque_depredador" image="ataque_depredador.jpeg"/>
 			<item title="Bienes patrimoniales en instalaciones ganaderas" href="./seguro.html#bienes_patrimoniales" image="bienes_patrimoniales.jpeg"/>
