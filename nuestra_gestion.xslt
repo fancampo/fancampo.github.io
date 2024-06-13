@@ -4,6 +4,8 @@ xmlns:xo="http://panax.io/xover"
 xmlns:state="http://panax.io/state"
 xmlns="http://www.w3.org/1999/xhtml"
 >
+	<xsl:import href="keys.xslt"/>
+	<xsl:import href="common.xslt"/>
 	<xsl:template match="*[@state:version='v1']">
 		<section>
 			<div class="container" data-aos="fade-up">
@@ -78,7 +80,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 	</xsl:template>
 
 	<xsl:template match="*">
-		<section style="background-image: url(assets/img/Imagen6-flipped.jpg);
+		<section style="background-image: url(assets/img/nuestra_gestion.jpg);
     background-size: cover; display: flex; justify-content: center;">
 			<div class="container row mx-2" data-aos="fade-up" style="display: flex;
     justify-content: end;">

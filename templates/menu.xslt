@@ -9,7 +9,10 @@ xmlns="http://www.w3.org/1999/xhtml"
 	</xsl:template>
 
 	<xsl:attribute-set name="menu:dropdown">
-		<xsl:attribute name="class">dropdown-menu</xsl:attribute>
+		<xsl:attribute name="class">
+			<xsl:text>dropdown-menu </xsl:text>
+			<xsl:value-of select="ancestor-or-self::*[1]/@tag"/>
+		</xsl:attribute>
 	</xsl:attribute-set>
 
 	<xsl:attribute-set name="menu:icon-badge">

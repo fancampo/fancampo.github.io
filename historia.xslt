@@ -12,7 +12,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
         .timeline ul {
-            background: url(./assets/img/campo_hd.jpg);
+            background: url(./assets/img/conocenos.jpg);
             padding: 50px 0;
             background-size: cover;
             background-repeat: no-repeat;

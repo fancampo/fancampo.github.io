@@ -16,6 +16,12 @@ xmlns="http://www.w3.org/1999/xhtml"
 	</xsl:template>
 
 	<xsl:template mode="tile" match="*">
+		<xsl:variable name="tipo">
+			<xsl:if test="@tag">
+				<xsl:text>?tipo=</xsl:text>
+				<xsl:value-of select="@tag"/>
+			</xsl:if>
+		</xsl:variable>
 		<div class="col-12 col-sm-6 col-lg-4 col-xl-4 tile">
 			<div class="position-relative banner-2" style="overflow: hidden;
     height: 300px;">
@@ -30,7 +36,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 					<p class="mb-2 h2 fw-bold text-white">
 						<xsl:apply-templates select="@title"/>
 					</p>
-					<a href="{@href}" class="btn btn-primary px-4">Ver más</a>
+					<a href="{@href}{$tipo}" class="btn btn-primary px-4">Ver más</a>
 				</div>
 			</div>
 		</div>

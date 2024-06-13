@@ -1,5 +1,5 @@
 ﻿<modelo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<tipo_cotizacion>
+	<tipocotizacion>
 		<row id="1" desc="Acu&#xED;cola"/>
 		<row id="2" desc="Ganadera"/>
 		<row id="3" desc="Ap&#xED;cola"/>
@@ -7,7 +7,7 @@
 		<row id="5" desc="Transporte"/>
 		<row id="6" desc="Transporte acu&#xED;cola"/>
 		<row id="7" desc="Agr&#xED;cola"/>
-	</tipo_cotizacion>
+	</tipocotizacion>
 	<estado>
 		<row id="01" desc="Aguascalientes"/>
 		<row id="02" desc="Baja California"/>
@@ -2525,8 +2525,13 @@
 		<row id="1" desc="Primavera-Verano"/>
 		<row id="2" desc="Oto&#xF1;o-Invierno"/>
 		<row id="3" desc="Perenne"/>
-		<row id="4" desc="Bienal"/>
-		<row id="5" desc="Agricultura protegida"/>
+		<row id="4" desc="Bienal">
+			<condition tipocotizacion="1" estado="5"/>
+			<condition tipocotizacion="7"/>
+		</row>
+		<row id="5" desc="Agricultura protegida">
+			<condition tipocotizacion="7"/>
+		</row>
 		<row id="6" desc="Malla sombra" ciclo="5"/>
 		<row id="7" desc="Macrot&#xFA;nel" ciclo="5"/>
 		<row id="8" desc="Invernadero" ciclo="5"/>
@@ -2593,14 +2598,14 @@
 	</funcion_zootecnica>
 	<referenciasumaasegurada/>
 	<tipo_seguro>
-		<row id="1" desc="Radicaci&#xF3;n (R)" tipo_cotizacion="2"/>
-		<row id="2" desc="Adaptaci&#xF3;n (A)" tipo_cotizacion="2"/>
-		<row id="3" desc="Transporte (T)" tipo_cotizacion="2"/>
-		<row id="4" desc="Alta mortalidad" tipo_cotizacion="2"/>
-		<row id="5" desc="Estaciones cuaternarias" tipo_cotizacion="2"/>
-		<row id="6" desc="Estancia temporal" tipo_cotizacion="2"/>
-		<row id="7" desc="Programa de fomento (Adaptaci&#xF3;n + Radicaci&#xF3;n)" tipo_cotizacion="2"/>
-		<row id="8" desc="Programa de mejoramiento gen&#xE9;tico (Transporte + Adaptaci&#xF3;n + Radicaci&#xF3;n)" tipo_cotizacion="2"/>
+		<row id="1" desc="Radicaci&#xF3;n (R)" tipocotizacion="2"/>
+		<row id="2" desc="Adaptaci&#xF3;n (A)" tipocotizacion="2"/>
+		<row id="3" desc="Transporte (T)" tipocotizacion="2"/>
+		<row id="4" desc="Alta mortalidad" tipocotizacion="2"/>
+		<row id="5" desc="Estaciones cuaternarias" tipocotizacion="2"/>
+		<row id="6" desc="Estancia temporal" tipocotizacion="2"/>
+		<row id="7" desc="Programa de fomento (Adaptaci&#xF3;n + Radicaci&#xF3;n)" tipocotizacion="2"/>
+		<row id="8" desc="Programa de mejoramiento gen&#xE9;tico (Transporte + Adaptaci&#xF3;n + Radicaci&#xF3;n)" tipocotizacion="2"/>
 	</tipo_seguro>
 	<deducible>
 		<row desc="10"/>
@@ -2628,14 +2633,14 @@
 		<row id="3" desc="Robo en caso de accidente"/>
 	</riesgo_transporte>
 	<clientes>
-		<row/>
+		<row coordinador="" solicitante="" beneficiario="" upp="" cliente="" telefono="" correo_electronico=""/>
 	</clientes>
-	<cotizaciones id="" tipo_cotizacion="" fecha="" coordinador="" solicitante="" beneficiario="" upp="" cliente="" telefono="" correo_electronico="" suma_asegurada_total="" costo_prima="">
-		<cotizacion type="agr&#xED;cola" cultivo="" variedad="" fecha_siembra="" fecha_arraigo="" ciclo="" modalidad="" riesgo_protegido="" esquema_proteccion="" metodo_ajuste="" financiamiento="" inversion_hectarea="" rendimiento_protegido="">
-			<detalle nombre="" identificador="" estado="" municipio="" localidad="" superficie="" coordenada1="" coordenada2=""/>
+	<cotizaciones id="" tipocotizacion="" fecha="" suma_asegurada_total="" costo_prima="" xmlns:fixed="http://panax.io/state/fixed">
+		<cotizacion fixed:tipocotizacion="7" cultivo="" variedad="" fecha_siembra="" fecha_arraigo="" ciclo="" modalidad="" riesgo_protegido="" esquema_proteccion="" metodo_ajuste="" financiamiento="" inversion_hectarea="" rendimiento_protegido="">
+			<detalle xsi:type="mock" nombre="" identificador="" estado="" municipio="" localidad="" superficie="" coordenada1="" coordenada2=""/>
 		</cotizacion>
-		<cotizacion type="ganadero" especie="">
-			<detalle estado="" municipio="" especie="" origen_racial="" raza="" sexo="" funcion_zootecnica="" edad="" numero_cabezas="" suma_asegurada="" referencia_suma_asegurada="" financiamiento="" tipo_seguro="" deducible="" enfermedades_zona="" cabezas_totales_hato="" cabezas_muertas_anuales="" duracion="" riesgo_transporte="" estado_origen="" municipio_origen="" estado_destino="" municipio_destino=""/>
+		<cotizacion fixed:tipocotizacion="2" especie="">
+			<detalle xsi:type="mock" estado="" municipio="" especie="" origen_racial="" raza="" sexo="" funcion_zootecnica="" edad="" numero_cabezas="" suma_asegurada="" referencia_suma_asegurada="" financiamiento="" tipo_seguro="" deducible="" enfermedades_zona="" cabezas_totales_hato="" cabezas_muertas_anuales="" duracion="" riesgo_transporte="" estado_origen="" municipio_origen="" estado_destino="" municipio_destino=""/>
 		</cotizacion>
 	</cotizaciones>
 </modelo>

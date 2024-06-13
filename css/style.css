@@ -49,9 +49,15 @@
     --header-height: 60px;
     --offcanvas-height: 90vh !important;
 }
+.dropdown-menu {
+    width: 300px;
+}
 
 .dropstart > ul {
-    transform: translate(-640px, 0px);
+    position: absolute;
+    inset: 0px 0px auto auto;
+    margin: 0px;
+    left: -101% !important;
 }
 
 .list-group-item:nth-of-type(odd) {
@@ -564,7 +570,7 @@ h6 {
     .navbar a:focus {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
         padding: 10px 0 10px 30px;
         font-size: 20px;
         font-weight: 500;
@@ -631,6 +637,7 @@ h6 {
             text-transform: none;
             font-weight: 500;
             color: #0c3c53;
+            text-wrap: wrap;
         }
 
             .navbar .dropdown ul a i {
@@ -663,6 +670,7 @@ h6 {
         top: 0;
         left: 100%;
         visibility: visible;
+        box-shadow: -1px 5px 20px 0px rgba(0,0,0,.5);
     }
 
 @media (max-width: 1366px) {

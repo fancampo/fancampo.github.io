@@ -118,12 +118,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="cover" xml:space="preserve">
-    <value>agricola_cover.jpg</value>
+    <value>transporte_cover.jpg</value>
   </data>
   <data name="description" xml:space="preserve">
-    <value>Protege cualquier tipo de cultivos por inversiones realizadas ante los diversos riesgos que está expuesto el campo, como son: Climatológicos, Biológicos y Riesgos Antes de la Nacencia (RAN) que cubren pérdidas parciales y totales. Los cultivos susceptibles de aseguramiento en los ciclos Primavera – Verano y Otoño – Invierno son: maíz grano, trigo grano, frijol, cebada grano, sorgo grano y cártamo. Los cultivos perennes son: Aguacate, cítricos (naranja, limón y mandarina), manzana, nogal, mango, caña de azúcar, palma africana, agave, cocotero y forestales.</value>
+    <value>Puede ser Transporte y Riesgos Ordinarios de Transito (inicia con embarque y termina con desembarque) o redondo (de un lugar a otro donde tendrá una estancia temporal y posteriormente trasladados de regreso a su lugar de origen). Vigencia desde 12, 24, 48 horas, dentro de territorio nacional.</value>
   </data>
   <data name="title" xml:space="preserve">
-    <value>Agrícola</value>
+    <value>Transporte</value>
   </data>
 </root>

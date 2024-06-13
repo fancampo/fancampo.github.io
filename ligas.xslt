@@ -28,7 +28,7 @@
 				<img src="./assets/logos_ligas/fira.png" class="img-fluid rounded-start mr-3" alt="{$title}" style="height:100px;">
 					<xsl:apply-templates mode="image-src" select="key('image', comment)"/>
 				</img>
-				<span style="border: 1px black solid; margin: 100px;"></span>
+				<span style="margin: 70px;"></span>
 				<xsl:value-of select="$title"/>
 			</h3>
 		</a>

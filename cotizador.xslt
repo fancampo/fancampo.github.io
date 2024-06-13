@@ -3,7 +3,6 @@
 	xmlns:html="http://www.w3.org/1999/xhtml"
 	xmlns:xo="http://panax.io/xover"
 	xmlns:state="http://panax.io/state"
-	xmlns:site-state="http://panax.io/site/state"
 	xmlns:searchParams="http://panax.io/site/searchParams"
 	xmlns:selected="http://panax.io/state/selected"
 >
@@ -48,12 +47,13 @@
 	<xsl:key name="dim" match="/*/origen_destino_transporte" use="'destino_transporte'"/>
 
 	<xsl:param name="searchParams:tipo"/>
-	<xsl:param name="site-state:active">${xo.site.searchParams.has("tipo")?2:1}</xsl:param>
+	<xsl:param name="state:edit">${xo.site.searchParams.has("tipo")?2:1}</xsl:param>
+	<xsl:param name="state:active">${xo.site.searchParams.has("tipo")?2:1}</xsl:param>
 
 	<xsl:template match="/*">
 		<main style="margin-top: 5rem;">
 			<xsl:apply-templates mode="wizard" select=".">
-				<xsl:with-param name="active" select="$site-state:active"/>
+				<xsl:with-param name="active" select="$state:active"/>
 			</xsl:apply-templates>
 		</main>
 	</xsl:template>
