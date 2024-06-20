@@ -188,6 +188,127 @@
     backdrop-filter: blur(2px);
 }
 
+/*--------------------------------------------------------------
+# Nuetra Presencia
+--------------------------------------------------------------*/
+.property {
+    align-items: center;
+    background-color: red;
+    border-radius: 50%;
+    color: white; /*#263238*/
+    display: flex;
+    font-size: 14px;
+    gap: 15px;
+    height: 30px;
+    justify-content: center;
+    padding: 4px;
+    position: relative;
+    position: relative;
+    transition: all 0.3s ease-out;
+    width: 30px;
+}
+
+.property::after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid red;
+    content: "";
+    height: 0;
+    left: 50%;
+    position: absolute;
+    top: 95%;
+    transform: translate(-50%, 0);
+    transition: all 0.3s ease-out;
+    width: 0;
+    z-index: 1;
+}
+
+.property .icon {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+}
+
+.property .icon svg {
+    height: 20px;
+    width: auto;
+}
+
+.property .details {
+    display: none;
+    flex-direction: column;
+    flex: 1;
+}
+
+.property > img {
+    display: none;
+}
+
+.property .address {
+    color: white; /*#9E9E9E*/
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.property .features {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.property .features > div {
+    align-items: center;
+    background: #F5F5F5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: flex;
+    font-size: 10px;
+    gap: 5px;
+    padding: 5px;
+}
+
+/* Property styles in highlighted state. */
+.property.highlight {
+    background-color: red;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    height: 80px;
+    padding: 8px 15px;
+    width: auto;
+}
+
+.property.highlight::after {
+    border-top: 9px solid red;
+}
+
+.property.highlight .details {
+    display: flex;
+}
+
+.property.highlight > img {
+    display: block;
+}
+
+.property.highlight .icon svg {
+    width: 50px;
+    height: 50px;
+}
+
+.property .bed {
+    color: #FFA000;
+}
+
+.property .bath {
+    color: #03A9F4;
+}
+
+.property .size {
+    color: #388E3C;
+}
+
 /*aviso_privacidad --> */
 .aviso_privacidad {
     padding-right: 15px;
@@ -1714,11 +1835,11 @@ section {
     color: var(--bs-light);
 }
 
-    .footer-menu a:last-child {
-        margin-right: 0;
-        padding-right: 0;
-        border-right: none;
-    }
+.footer-menu a:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
 /*--------------------------------------------------------------
 # Section nuestra gestión de riesgos
 --------------------------------------------------------------*/
@@ -1737,6 +1858,33 @@ section {
     border-radius: 50%;
 }
 
+/*--------------------------------------------------------------
+# Section timeline
+--------------------------------------------------------------*/
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: url(../assets/img/conocenos.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.timeline ul li:nth-child(even) div {
+    left: 45px !important;
+}
+
+.timeline ul li:nth-child(even) div::before {
+    left: -15px !important;
+    border-width: 8px 16px 8px 0 !important;
+    border-color: transparent var(--fancampovida-silver-cloud) transparent transparent !important;
+}
+
+.timeline ul li:nth-child(even) div {
+    transform: translate3d(200px, 0, 0) !important;
+}
 
 /*--------------------------------------------------------------
 # Section Nuestros seguros
