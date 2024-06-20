@@ -17,7 +17,7 @@
     <meta property="og:url" content="" />
     <meta name="twitter:card" content="summary_large_image">
 
-    <meta name="scroll-restoration" content="manual" />
+    <!--<meta name="scroll-restoration" content="manual" />-->
     <!-- Title -->
     <title>FanCampo - FanVida</title>
     <!-- Favicon -->
@@ -62,6 +62,26 @@
             font-family: 'Billie-DEMO-Bold';
         }
     </style>-->
+    <script type="text/javascript">
+         async function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 5.3,
+                center: {"lat":25.0000, "lng":-102.0000},
+                streetViewControl: false,
+                tilt: 0
+            });
+
+             let uniones = [{ lat: 21.9068027, lng: -102.3098597, title: 'UNION GANADERA REGIONAL DE AGUASCALIENTES' }, { lat: 32.6039378, lng: -115.4360517, title: 'UNION GANADERA REGIONAL DE BAJA CALIFORNIA' }, { lat: 24.1470641, lng: -110.3098968, title: 'UNION GANADERA REGIONAL DE BAJA CALIFORNIA SUR' }, { lat: 19.2441909, lng: -103.7465464, title: 'UNION GANADERA REGIONAL DE COLIMA' }, { lat: 18.6044234, lng: -90.74440419999999, title: 'UNION GANADERA REGIONAL DE CAMPECHE' }, { lat: 28.6916182, lng: -100.5408622, title: 'UNION GANADERA REGIONAL DE COAHUILA' }, { lat: 16.7837843, lng: -93.1787478, title: 'UNION GANADERA DE CHIAPAS' }, { lat: 16.0938917, lng: -93.76098519999999, title: 'UNION GANADERA REGIONAL DE CHIAPAS COSTA' }, { lat: 21.9981067, lng: -99.02278889999999, title: 'UNION GANADERA REGIONAL DE LA HUASTECA POTOSINA' }, { lat: 17.5145557, lng: -91.99242799999999, title: 'UNION GANADERA REGIONAL DE CATAZAJA' }, { lat: 20.0354355, lng: -98.74795829999999, title: 'UNION GANADERA REGIONAL DE HIDALGO' }, { lat: 19.147029, lng: -96.11222429999999, title: 'UNION GANADERA REGIONAL DE LA ZONA CENTRAL , DEL ESTADO DE VERACRUZ' }, { lat: 20.9537897, lng: -97.40646150000001, title: 'UNION GANADERA REGIONAL DEL , NORTE DE VERACRUZ' }, { lat: 17.949192, lng: -94.91459739999999, title: 'UNION GANADERA REGIONAL DEL , SUR DE VERACRUZ' }, { lat: 17.530995, lng: -99.4930674, title: 'UNION GANADERA REGIONAL DE GUERRERO' }, { lat: 21.4922798, lng: -104.8786024, title: 'UNION GANADERA REGIONAL DE NAYARIT' }, { lat: 19.6839479, lng: -101.2166098, title: 'UNION GANADERA REGIONAL DE MICHOACAN' }, { lat: 18.9178317, lng: -99.182219, title: 'UNION GANADERA REGIONAL GENERAL DEL , ESTADO DE MORELOS' }, { lat: 25.6783764, lng: -100.2447165, title: 'UNION GANADERA REGIONAL DE NUEVO LEON' }, { lat: 18.0824925, lng: -96.1352302, title: 'UNION GANADERA REGIONAL DEL NORTE DE , OAXACA' }, { lat: 17.0542297, lng: -96.7132304, title: 'UNION GANADERA REGIONAL DE LA COSTA DE , OAXACA' }, { lat: 29.0416524, lng: -110.9368391, title: 'UNION GANADERA REGIONAL DE SONORA' }, { lat: 17.8409173, lng: -92.6189273, title: 'UNION GANADERA REGIONAL DE TABASCO' }, { lat: 19.1153441, lng: -98.17395620000001, title: 'UNION GANADERA REGIONAL DE TLAXCALA' }, { lat: 23.7170363, lng: -99.1694832, title: 'UNION GANADERA REGIONAL DE TAMAULIPAS' }, { lat: 19.3172264, lng: -97.9124145, title: 'UNION GANADERA REGIONAL ESPECIALIZADA DE , TLAXCALA' }, { lat: 20.6250583, lng: -103.3169433, title: 'UNION GANADERA REGIONAL DE JALISCO' }, { lat: 16.4406904, lng: -95.0221653, title: 'UNION GANADERA REGIONAL DEL ISTMO DE TEHUANTEPEC' }, { lat: 25.5584794, lng: -103.4096267, title: 'UNION GANADERA REGIONAL DE LA LAGUNA' }, { lat: 25.5486256, lng: -103.4535842, title: 'UNION GANADERA REGIONAL DE CAPRINOCULTORES DE LA REGION LAGUNERA' }, { lat: 19.4692652, lng: -99.2221378, title: 'UNION GANADERA REGIONAL DEL ESTADO DE MEXICO' }, { lat: 18.8915219, lng: -100.1427166, title: 'UNION GANADERA REGIONAL DEL SUR, ESTADO DE MÉXICO' }, { lat: 19.0487219, lng: -98.18269989999999, title: 'UNION GANADERA REGIONAL DE PUEBLA' }, { lat: 19.0414398, lng: -98.2062727, title: 'UNION GANADERA REGIONAL DEL NORTE DE PUEBLA' }, { lat: 19.8152157, lng: -97.3617161, title: 'UNION GANADERA REGIONAL DE LA SIERRA ORIENTE DE PUEBLA' }, { lat: 20.5788834, lng: -100.3227768, title: 'UNION GANADERA REGIONAL DE QUERETARO' }, { lat: 18.5174936, lng: -88.2914246, title: 'UNION GANADERA REGIONAL DE QUINTANA ROO' }, { lat: 22.1514666, lng: -100.958908, title: 'UNION GANADERA REGIONAL DE SAN LUIS POTOSI' }, { lat: 24.7515952, lng: -107.4473388, title: 'UNION GANADERA REGIONAL DE SINALOA' }, { lat: 20.9493994, lng: -89.64893219999999, title: 'UNION GANADERA REGIONAL DE YUCATAN' }, { lat: 21.2008902, lng: -88.78561309999999, title: 'UNION GANADERA REGIONAL DEL ORIENTE DE , YUCATAN' }, { lat: 22.7745177, lng: -102.5790658, title: 'UNION GANADERA REGIONAL DE ZACATECAS' }, { lat: 28.578274, lng: -106.124557, title: 'UNION GANADERA REGIONAL DE CHIHUAHUA' }, { lat: 18.8718413, lng: -99.06554389999999, title: 'UNION GANADERA REGIONAL DE MORELOS' }, { lat: 25.5891476, lng: -103.485862, title: 'UNION GANADERA REGIONAL DE DURANGO' }, { lat: 25.5499927, lng: -103.4798063, title: 'UNION GANADERA REGIONAL DEL NORTE DE , DURANGO' }, { lat: 20.6614933, lng: -101.3141174, title: 'UNION GANADERA REGIONAL DE GUANAJUATO' }]
+
+             for (let point of uniones) {
+                 new google.maps.Marker({
+                     position: point,
+                     map,
+                     title: point.title.toUpperCase(),
+                 });
+             }
+         }
+    </script>
 </head>
 
 <body>
@@ -104,7 +124,11 @@
         </section>
 
         <section id="presencia" class="section-bg">
-            <div data-aos="fade-up" xo-source="#mapa" xo-stylesheet="mapa.xslt" title="Nuestra Presencia" class="container mapa externos"></div>
+            <!--<div data-aos="fade-up" xo-source="#mapa" xo-stylesheet="mapa.xslt" title="Nuestra Presencia" class="container mapa externos"></div>-->
+            <div class="section-title">
+                <h2 style="text-transform: capitalize">Nuestra <span style="color: var(--fancampovida-creen-snow)">Presencia</span></h2>
+            </div>
+            <div id="map" style="height:85vh; width:auto"></div>
         </section>
 
         <section id="testimoniales" class="section-bg">
@@ -185,7 +209,6 @@
 
             </div>
         </section>
-
     </main>
 
     <footer id="footer" xo-source="footer.html">
@@ -220,6 +243,7 @@
 
     <!-- Template Main JS File -->
     <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf4CxGRp-FNTXD2Db54g3mzr-M25E7AlY&callback=initMap&v=weekly" async></script>
 
 </body>
 
