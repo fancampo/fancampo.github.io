@@ -62,25 +62,411 @@
             font-family: 'Billie-DEMO-Bold';
         }
     </style>-->
+    <style>
+        :root {
+            --building-color: #FF9800;
+            --house-color: #0288D1;
+            --shop-color: #7B1FA2;
+            --warehouse-color: #558B2F;
+        }
+               /* HTML marker styles */
+
+               .property {
+                   align-items: center;
+                   background-color: #FFFFFF;
+                   border-radius: 50%;
+                   color: #263238;
+                   display: flex;
+                   font-size: 14px;
+                   gap: 15px;
+                   height: 30px;
+                   justify-content: center;
+                   padding: 4px;
+                   position: relative;
+                   position: relative;
+                   transition: all 0.3s ease-out;
+                   width: 30px;
+               }
+
+                   .property::after {
+                       border-left: 9px solid transparent;
+                       border-right: 9px solid transparent;
+                       border-top: 9px solid #FFFFFF;
+                       content: "";
+                       height: 0;
+                       left: 50%;
+                       position: absolute;
+                       top: 95%;
+                       transform: translate(-50%, 0);
+                       transition: all 0.3s ease-out;
+                       width: 0;
+                       z-index: 1;
+                   }
+
+                   .property .icon {
+                       align-items: center;
+                       display: flex;
+                       justify-content: center;
+                       color: #FFFFFF;
+                   }
+
+                       .property .icon svg {
+                           height: 20px;
+                           width: auto;
+                       }
+
+                   .property .details {
+                       display: none;
+                       flex-direction: column;
+                       flex: 1;
+                   }
+
+                   .property .address {
+                       color: #9E9E9E;
+                       font-size: 10px;
+                       margin-bottom: 10px;
+                       margin-top: 5px;
+                   }
+
+                   .property .features {
+                       align-items: flex-end;
+                       display: flex;
+                       flex-direction: row;
+                       gap: 10px;
+                   }
+
+                       .property .features > div {
+                           align-items: center;
+                           background: #F5F5F5;
+                           border-radius: 5px;
+                           border: 1px solid #ccc;
+                           display: flex;
+                           font-size: 10px;
+                           gap: 5px;
+                           padding: 5px;
+                       }
+
+                   /*
+        * Property styles in highlighted state.
+        */
+                   .property.highlight {
+                       background-color: #FFFFFF;
+                       border-radius: 8px;
+                       box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+                       height: 80px;
+                       padding: 8px 15px;
+                       width: auto;
+                   }
+
+                       .property.highlight::after {
+                           border-top: 9px solid #FFFFFF;
+                       }
+
+                       .property.highlight .details {
+                           display: flex;
+                       }
+
+                       .property.highlight .icon svg {
+                           width: 50px;
+                           height: 50px;
+                       }
+
+                   .property .bed {
+                       color: #FFA000;
+                   }
+
+                   .property .bath {
+                       color: #03A9F4;
+                   }
+
+                   .property .size {
+                       color: #388E3C;
+                   }
+
+                   /*
+        * House icon colors.
+        */
+                   .property.highlight:has(.fa-house) .icon {
+                       color: var(--house-color);
+                   }
+
+                   .property:not(.highlight):has(.fa-house) {
+                       background-color: var(--house-color);
+                   }
+
+                       .property:not(.highlight):has(.fa-house)::after {
+                           border-top: 9px solid var(--house-color);
+                       }
+
+                   /*
+        * Building icon colors.
+        */
+                   .property.highlight:has(.fa-building) .icon {
+                       color: var(--building-color);
+                   }
+
+                   .property:not(.highlight):has(.fa-building) {
+                       background-color: var(--building-color);
+                   }
+
+                       .property:not(.highlight):has(.fa-building)::after {
+                           border-top: 9px solid var(--building-color);
+                       }
+
+                   /*
+        * Warehouse icon colors.
+        */
+                   .property.highlight:has(.fa-warehouse) .icon {
+                       color: var(--warehouse-color);
+                   }
+
+                   .property:not(.highlight):has(.fa-warehouse) {
+                       background-color: var(--warehouse-color);
+                   }
+
+                       .property:not(.highlight):has(.fa-warehouse)::after {
+                           border-top: 9px solid var(--warehouse-color);
+                       }
+
+                   /*
+        * Shop icon colors.
+        */
+                   .property.highlight:has(.fa-shop) .icon {
+                       color: var(--shop-color);
+                   }
+
+                   .property:not(.highlight):has(.fa-shop) {
+                       background-color: var(--shop-color);
+                   }
+
+                       .property:not(.highlight):has(.fa-shop)::after {
+                           border-top: 9px solid var(--shop-color);
+                       }
+    </style>
+    <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
     <script type="text/javascript">
          async function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 5.3,
-                center: {"lat":25.0000, "lng":-102.0000},
+                zoom: 11,
+                center: { lat: 37.43238031167444, lng: -122.16795397128632 },
                 streetViewControl: false,
-                tilt: 0
+                tilt: 0,
+                mapId: "DEMO_MAP_ID"
             });
 
              let uniones = [{ lat: 21.9068027, lng: -102.3098597, title: 'UNION GANADERA REGIONAL DE AGUASCALIENTES' }, { lat: 32.6039378, lng: -115.4360517, title: 'UNION GANADERA REGIONAL DE BAJA CALIFORNIA' }, { lat: 24.1470641, lng: -110.3098968, title: 'UNION GANADERA REGIONAL DE BAJA CALIFORNIA SUR' }, { lat: 19.2441909, lng: -103.7465464, title: 'UNION GANADERA REGIONAL DE COLIMA' }, { lat: 18.6044234, lng: -90.74440419999999, title: 'UNION GANADERA REGIONAL DE CAMPECHE' }, { lat: 28.6916182, lng: -100.5408622, title: 'UNION GANADERA REGIONAL DE COAHUILA' }, { lat: 16.7837843, lng: -93.1787478, title: 'UNION GANADERA DE CHIAPAS' }, { lat: 16.0938917, lng: -93.76098519999999, title: 'UNION GANADERA REGIONAL DE CHIAPAS COSTA' }, { lat: 21.9981067, lng: -99.02278889999999, title: 'UNION GANADERA REGIONAL DE LA HUASTECA POTOSINA' }, { lat: 17.5145557, lng: -91.99242799999999, title: 'UNION GANADERA REGIONAL DE CATAZAJA' }, { lat: 20.0354355, lng: -98.74795829999999, title: 'UNION GANADERA REGIONAL DE HIDALGO' }, { lat: 19.147029, lng: -96.11222429999999, title: 'UNION GANADERA REGIONAL DE LA ZONA CENTRAL , DEL ESTADO DE VERACRUZ' }, { lat: 20.9537897, lng: -97.40646150000001, title: 'UNION GANADERA REGIONAL DEL , NORTE DE VERACRUZ' }, { lat: 17.949192, lng: -94.91459739999999, title: 'UNION GANADERA REGIONAL DEL , SUR DE VERACRUZ' }, { lat: 17.530995, lng: -99.4930674, title: 'UNION GANADERA REGIONAL DE GUERRERO' }, { lat: 21.4922798, lng: -104.8786024, title: 'UNION GANADERA REGIONAL DE NAYARIT' }, { lat: 19.6839479, lng: -101.2166098, title: 'UNION GANADERA REGIONAL DE MICHOACAN' }, { lat: 18.9178317, lng: -99.182219, title: 'UNION GANADERA REGIONAL GENERAL DEL , ESTADO DE MORELOS' }, { lat: 25.6783764, lng: -100.2447165, title: 'UNION GANADERA REGIONAL DE NUEVO LEON' }, { lat: 18.0824925, lng: -96.1352302, title: 'UNION GANADERA REGIONAL DEL NORTE DE , OAXACA' }, { lat: 17.0542297, lng: -96.7132304, title: 'UNION GANADERA REGIONAL DE LA COSTA DE , OAXACA' }, { lat: 29.0416524, lng: -110.9368391, title: 'UNION GANADERA REGIONAL DE SONORA' }, { lat: 17.8409173, lng: -92.6189273, title: 'UNION GANADERA REGIONAL DE TABASCO' }, { lat: 19.1153441, lng: -98.17395620000001, title: 'UNION GANADERA REGIONAL DE TLAXCALA' }, { lat: 23.7170363, lng: -99.1694832, title: 'UNION GANADERA REGIONAL DE TAMAULIPAS' }, { lat: 19.3172264, lng: -97.9124145, title: 'UNION GANADERA REGIONAL ESPECIALIZADA DE , TLAXCALA' }, { lat: 20.6250583, lng: -103.3169433, title: 'UNION GANADERA REGIONAL DE JALISCO' }, { lat: 16.4406904, lng: -95.0221653, title: 'UNION GANADERA REGIONAL DEL ISTMO DE TEHUANTEPEC' }, { lat: 25.5584794, lng: -103.4096267, title: 'UNION GANADERA REGIONAL DE LA LAGUNA' }, { lat: 25.5486256, lng: -103.4535842, title: 'UNION GANADERA REGIONAL DE CAPRINOCULTORES DE LA REGION LAGUNERA' }, { lat: 19.4692652, lng: -99.2221378, title: 'UNION GANADERA REGIONAL DEL ESTADO DE MEXICO' }, { lat: 18.8915219, lng: -100.1427166, title: 'UNION GANADERA REGIONAL DEL SUR, ESTADO DE MÉXICO' }, { lat: 19.0487219, lng: -98.18269989999999, title: 'UNION GANADERA REGIONAL DE PUEBLA' }, { lat: 19.0414398, lng: -98.2062727, title: 'UNION GANADERA REGIONAL DEL NORTE DE PUEBLA' }, { lat: 19.8152157, lng: -97.3617161, title: 'UNION GANADERA REGIONAL DE LA SIERRA ORIENTE DE PUEBLA' }, { lat: 20.5788834, lng: -100.3227768, title: 'UNION GANADERA REGIONAL DE QUERETARO' }, { lat: 18.5174936, lng: -88.2914246, title: 'UNION GANADERA REGIONAL DE QUINTANA ROO' }, { lat: 22.1514666, lng: -100.958908, title: 'UNION GANADERA REGIONAL DE SAN LUIS POTOSI' }, { lat: 24.7515952, lng: -107.4473388, title: 'UNION GANADERA REGIONAL DE SINALOA' }, { lat: 20.9493994, lng: -89.64893219999999, title: 'UNION GANADERA REGIONAL DE YUCATAN' }, { lat: 21.2008902, lng: -88.78561309999999, title: 'UNION GANADERA REGIONAL DEL ORIENTE DE , YUCATAN' }, { lat: 22.7745177, lng: -102.5790658, title: 'UNION GANADERA REGIONAL DE ZACATECAS' }, { lat: 28.578274, lng: -106.124557, title: 'UNION GANADERA REGIONAL DE CHIHUAHUA' }, { lat: 18.8718413, lng: -99.06554389999999, title: 'UNION GANADERA REGIONAL DE MORELOS' }, { lat: 25.5891476, lng: -103.485862, title: 'UNION GANADERA REGIONAL DE DURANGO' }, { lat: 25.5499927, lng: -103.4798063, title: 'UNION GANADERA REGIONAL DEL NORTE DE , DURANGO' }, { lat: 20.6614933, lng: -101.3141174, title: 'UNION GANADERA REGIONAL DE GUANAJUATO' }]
 
-             for (let point of uniones) {
-                 new google.maps.Marker({
-                     position: point,
-                     map,
-                     title: point.title.toUpperCase(),
-                 });
-             }
+             //for (let point of uniones) {
+             //
+             //     const priceTag = document.createElement("div");
+             //
+             //     priceTag.className = "price-tag";
+             //     priceTag.textContent = point.title.toUpperCase();
+             //
+             //    const marker = new google.maps.marker.AdvancedMarkerElement({
+             //        position: point,
+             //        map,
+             //        title: point.title.toUpperCase(),
+             //        gmpClickable: true
+             //    });
+             //
+             //    marker.addListener("click", () => {
+             //     toggleHighlight(AdvancedMarkerElement, property);
+             //   });
+             //}
+
+
+            const properties = [
+                {
+                address: "215 Emily St, MountainView, CA",
+                description: "Single family house with modern design",
+                price: "$ 3,889,000",
+                type: "home",
+                bed: 5,
+                bath: 4.5,
+                size: 300,
+                position: {
+                    lat: 37.50024109655184,
+                    lng: -122.28528451834352,
+                },
+                },
+                {
+                address: "108 Squirrel Ln &#128063;, Menlo Park, CA",
+                description: "Townhouse with friendly neighbors",
+                price: "$ 3,050,000",
+                type: "building",
+                bed: 4,
+                bath: 3,
+                size: 200,
+                position: {
+                    lat: 37.44440882321596,
+                    lng: -122.2160620727,
+                },
+                },
+                {
+                address: "100 Chris St, Portola Valley, CA",
+                description: "Spacious warehouse great for small business",
+                price: "$ 3,125,000",
+                type: "warehouse",
+                bed: 4,
+                bath: 4,
+                size: 800,
+                position: {
+                    lat: 37.39561833718522,
+                    lng: -122.21855116258479,
+                },
+                },
+                {
+                address: "98 Aleh Ave, Palo Alto, CA",
+                description: "A lovely store on busy road",
+                price: "$ 4,225,000",
+                type: "store-alt",
+                bed: 2,
+                bath: 1,
+                size: 210,
+                position: {
+                    lat: 37.423928529779644,
+                    lng: -122.1087629822001,
+                },
+                },
+                {
+                address: "2117 Su St, MountainView, CA",
+                description: "Single family house near golf club",
+                price: "$ 1,700,000",
+                type: "home",
+                bed: 4,
+                bath: 3,
+                size: 200,
+                position: {
+                    lat: 37.40578635332598,
+                    lng: -122.15043378466069,
+                },
+                },
+                {
+                address: "197 Alicia Dr, Santa Clara, CA",
+                description: "Multifloor large warehouse",
+                price: "$ 5,000,000",
+                type: "warehouse",
+                bed: 5,
+                bath: 4,
+                size: 700,
+                position: {
+                    lat: 37.36399747905774,
+                    lng: -122.10465384268522,
+                },
+                },
+                {
+                address: "700 Jose Ave, Sunnyvale, CA",
+                description: "3 storey townhouse with 2 car garage",
+                price: "$ 3,850,000",
+                type: "building",
+                bed: 4,
+                bath: 4,
+                size: 600,
+                position: {
+                    lat: 37.38343706184458,
+                    lng: -122.02340436985183,
+                },
+                },
+                {
+                address: "868 Will Ct, Cupertino, CA",
+                description: "Single family house in great school zone",
+                price: "$ 2,500,000",
+                type: "home",
+                bed: 3,
+                bath: 2,
+                size: 100,
+                position: {
+                    lat: 37.34576403052,
+                    lng: -122.04455090047453,
+                },
+                },
+                {
+                address: "655 Haylee St, Santa Clara, CA",
+                description: "2 storey store with large storage room",
+                price: "$ 2,500,000",
+                type: "store-alt",
+                bed: 3,
+                bath: 2,
+                size: 450,
+                position: {
+                    lat: 37.362863347890716,
+                    lng: -121.97802139023555,
+                },
+                },
+                {
+                address: "2019 Natasha Dr, San Jose, CA",
+                description: "Single family house",
+                price: "$ 2,325,000",
+                type: "home",
+                bed: 4,
+                bath: 3.5,
+                size: 500,
+                position: {
+                    lat: 37.41391636421949,
+                    lng: -121.94592071575907,
+                },
+                },
+            ];
+
+
+              for (const property of properties) {
+                const AdvancedMarkerElement = new google.maps.marker.AdvancedMarkerElement({
+                  map,
+                  content: buildContent(property),
+                  position: property.position,
+                  title: property.description,
+                });
+
+                AdvancedMarkerElement.addListener("click", () => {
+                  toggleHighlight(AdvancedMarkerElement, property);
+                });
+              }
          }
+
+        function toggleHighlight(markerView, property) {
+          if (markerView.content.classList.contains("highlight")) {
+            markerView.content.classList.remove("highlight");
+            markerView.zIndex = null;
+          } else {
+            markerView.content.classList.add("highlight");
+            markerView.zIndex = 1;
+          }
+        }
+
+        function buildContent(property) {
+          const content = document.createElement("div");
+
+          content.classList.add("property");
+          content.innerHTML = `
+            <div class="icon">
+                <i aria-hidden="true" class="fa fa-icon fa-${property.type}" title="${property.type}"></i>
+                <span class="fa-sr-only">${property.type}</span>
+            </div>
+            <div class="details">
+                <div class="price">${property.price}</div>
+                <div class="address">${property.address}</div>
+                <!--<div class="features">
+                    <div>
+                        <i aria-hidden="true" class="fa fa-bed fa-lg bed" title="bedroom"></i>
+                        <span class="fa-sr-only">bedroom</span>
+                        <span>${property.bed}</span>
+                    </div>
+                    <div>
+                        <i aria-hidden="true" class="fa fa-bath fa-lg bath" title="bathroom"></i>
+                        <span class="fa-sr-only">bathroom</span>
+                        <span>${property.bath}</span>
+                    </div>
+                    <div>
+                        <i aria-hidden="true" class="fa fa-ruler fa-lg size" title="size"></i>
+                        <span class="fa-sr-only">size</span>
+                        <span>${property.size} ft<sup>2</sup></span>
+                    </div>
+                </div>-->
+            </div>
+            `;
+          return content;
+        }
     </script>
 </head>
 
@@ -243,7 +629,7 @@
 
     <!-- Template Main JS File -->
     <script src="js/main.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf4CxGRp-FNTXD2Db54g3mzr-M25E7AlY&callback=initMap&v=weekly" async></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf4CxGRp-FNTXD2Db54g3mzr-M25E7AlY&callback=initMap&v=weekly&libraries=marker" defer></script>
 
 </body>
 
