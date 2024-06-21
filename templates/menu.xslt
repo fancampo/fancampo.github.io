@@ -2,6 +2,7 @@
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 xmlns:xo="http://panax.io/xover"
 xmlns:menu="http://xover.dev/widgets/menu"
+xmlns:site="http://panax.io/site"
 xmlns="http://www.w3.org/1999/xhtml"
 >
 	<xsl:template match="/">

@@ -415,14 +415,15 @@ iframe#chatbot {
     position: fixed;
     bottom: calc(var(--footer-height, 60px) - 30px);
     right: 0;
-    /*height: 80vh;*/
+    height: 90px;
     width: 400px;
     z-index: 1001;
+    transition: height 0.5s ease-in-out;
     /*box-shadow: -1px 5px 20px 0px rgba(0,0,0,.5);*/
 }
 
 iframe:hover {
-    height: 80vh;
+    height: 80vh !important;
 }
 
 .circle-btn {
@@ -816,13 +817,83 @@ h6 {
     transition: 0.5s;
 }
 
-    .mobile-nav-toggle.bi-x {
-        color: #fff;
+.mobile-nav-toggle.bi-x {
+    color: #fff;
+}
+
+
+/* Keyframes for expanding animation */
+@keyframes expand {
+    from {
+        max-height: 0;
     }
+
+    to {
+        max-height: 100vh;
+    }
+}
 
 @media (max-width: 991px) {
     .mobile-nav-toggle {
         display: block;
+    }
+
+    .navbar .dropdown ul {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden !important;
+        max-height: 0;
+        overflow: hidden; /* Hide overflow for max-height transition */
+        width: 95%;
+        transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+        top: 0 !important;
+    }
+
+
+    #site-navbar > ul {
+        overflow-y: auto;
+        height: 80vh;
+        padding: 1rem .5rem;
+    }
+
+    .navbar li {
+        position: relative;
+        width: 100%;
+    }
+
+    .dropdown > ul:not(.show) {
+        transition: none;
+    }
+
+    .dropdown > ul.show {
+        position: relative;
+        opacity: 1;
+        visibility: visible !important;
+        animation: expand 0.4s ease-in-out forwards;
+    }
+
+    .dropstart > ul {
+        left: 0 !important;
+    }
+
+    .navbar .dropdown .dropdown ul {
+        left: 30px !important;
+        width: 93%;
+    }
+
+    .dropstart::before {
+        display: none !important;
+    }
+
+    .dropstart.dropdown-toggle::after {
+        display: inline-block;
+        margin-left: .255em;
+        vertical-align: .255em;
+        content: "";
+        border-top: .3em solid;
+        border-right: .3em solid transparent;
+        border-bottom: 0;
+        border-left: .3em solid transparent;
     }
 }
 
@@ -834,10 +905,10 @@ h6 {
     left: 0;
     bottom: 0;
     /* background: rgba(40, 58, 90, 0.9); */
-    background-color: var(--fancampovida-blue-smoke);
-    transition: 0.3s;
-    z-index: 999;
-}
+        background-color: var(--fancampovida-blue-smoke);
+        transition: 0.3s;
+        z-index: 999;
+    }
 
     .navbar-mobile .mobile-nav-toggle {
         position: absolute;
@@ -1867,7 +1938,7 @@ section {
     top: 0;
     left: 0;
     width: 40%;
-    height: 100%;
+    height: 95%;
     background: url(../assets/img/conocenos.jpg) no-repeat center;
     background-size: cover;
 }
