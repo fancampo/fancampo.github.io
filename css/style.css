@@ -275,9 +275,10 @@
     background-color: red;
     border-radius: 8px;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
-    height: 80px;
-    padding: 8px 15px;
+    height: max-content;
+    padding: 20px 15px;
     width: auto;
+    max-width: 70%;
 }
 
 .property.highlight::after {
@@ -290,6 +291,7 @@
 
 .property.highlight > img {
     display: block;
+    max-width: 300px;
 }
 
 .property.highlight .icon svg {
