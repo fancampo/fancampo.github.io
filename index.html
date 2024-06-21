@@ -17,7 +17,7 @@
     <meta property="og:url" content="" />
     <meta name="twitter:card" content="summary_large_image">
 
-    <meta name="scroll-restoration" content="manual" />
+    <!--<meta name="scroll-restoration" content="manual" />-->
     <!-- Title -->
     <title>FanCampo - FanVida</title>
     <!-- Favicon -->
@@ -33,7 +33,7 @@
 
 
     <!-- Styles -->
-    <link rel="xover-manifest" href="manifest.json?v=20240613_1121">
+    <link rel="xover-manifest" href="manifest.json?v=20240620_2124">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
@@ -48,8 +48,8 @@
     <link href="css/fontawesome-all.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <script type="text/javascript" src="xover/xo.js?v=20240613_1121"></script>
-    <script type="text/javascript" src="custom.js?v=20240613_1121" defer></script>
+    <script type="text/javascript" src="xover/xo.js?v=20240620_2124"></script>
+    <script type="text/javascript" src="custom.js?v=20240620_2124" defer></script>
     <!--<style>
         @font-face {
             font-family: 'Billie-DEMO-Bold';
@@ -62,6 +62,76 @@
             font-family: 'Billie-DEMO-Bold';
         }
     </style>-->
+    <script type="text/javascript">
+         async function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 5.3,
+                center: {"lat":25.0000, "lng":-102.0000},
+                streetViewControl: false,
+                tilt: 0,
+                mapId: "nuestra_presencia"
+            });
+
+             let uniones = [{lat:21.9068027, lng:-102.3098597, title:'UNION GANADERA REGIONAL DE AGUASCALIENTES', address:'Av. Universidad # 604, Fracc. Unidad Ganadera , Aguascalientes, Ags. , C.P.20130', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/AGUASCALIENTES.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:32.6039378, lng:-115.4360517, title:'UNION GANADERA REGIONAL DE BAJA CALIFORNIA', address:'Km 1.5 S/N Cruce de carretera San Felipe y Calzada , Héctor Teran T. , Col. Xochimilco , Mexicali, B.C. , C.P.21380', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/BAJA%20CALIFORNIA%20SUR-3f71472.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:24.1470641, lng:-110.3098968, title:'UNION GANADERA REGIONAL DE BAJA CALIFORNIA SUR', address:'ESCUELA NORMAL URBANA No.1395 , LA PAZ, B.C.S. , C.P. 23000', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/BAJA%20CALIFORNIA.PNG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:19.2441909, lng:-103.7465464, title:'UNION GANADERA REGIONAL DE COLIMA', address:'Km. 1.5 de la Carretera Colima Coquimatlán , Boulevard Rodolfo Chávez Carrillo S/N , Col. Santa Teresa. , Mpio. de Villa de Álvarez, Col. , C.P.28973', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/COLIMA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:18.6044234, lng:-90.74440419999999, title:'UNION GANADERA REGIONAL DE CAMPECHE', address:'Calle 53a. x 26a. s/n , Col. Esperanza , Escárcega, Camp. , C.P.24350', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/CAMPECHE-27cd35b.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs'}, {lat:28.6916182, lng:-100.5408622, title:'UNION GANADERA REGIONAL DE COAHUILA', address:'Carr. Piedras Negras -Nvo. Laredo Km.12.5 , Nava, Coah. C.P. 26170 (domicilio fiscal)', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/COAHUILA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:16.7837843, lng:-93.1787478, title:'UNION GANADERA DE CHIAPAS', address:'Instalaciones Feria de Chiapas, , Frente a la Chacona , Tuxtla Gutiérrez, Chiapas , C.P.29020 , A.P.152', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/CHIAPAS-bee8567.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:16.0938917, lng:-93.76098519999999, title:'UNION GANADERA REGIONAL DE CHIAPAS COSTA', address:'Prol. Av. Hidalgo Pte. S/N, , Carretera Costera , Tonalá, Chiapas. , C.P.30500', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/CHIAPAS%20COSTA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:21.9981067, lng:-99.02278889999999, title:'UNION GANADERA REGIONAL DE LA HUASTECA POTOSINA', address:'Blvd. Carr. Valles - Río Verde, Esq. Calle Estadio , Col. Loma Bonita, , Cd. Valles, S.L.P. , C.P.79020', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/HUASTECA%20POTOSINA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:17.5145557, lng:-91.99242799999999, title:'UNION GANADERA REGIONAL DE CATAZAJA', address:'Carr. Estación del Ferrocarril Km.1 , Palénque, Chiapas. , C.P.29960', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/CATAZAJA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:20.0354355, lng:-98.74795829999999, title:'UNION GANADERA REGIONAL DE HIDALGO', address:'Boulevard las Torres S/N Km. 5 , Col. La Higa, Mineral de la Reforma, Hidalgo , C.P.42186', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/HIDALGO-d90837c.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:19.147029, lng:-96.11222429999999, title:'UNION GANADERA REGIONAL DE LA ZONA CENTRAL , DEL ESTADO DE VERACRUZ', address:'Av. Urano S/N, Instalaciones Pecuarias , Fracc. Jardines de Mocambo , Ylang Ylang, Boca del Río, Ver. , C.P.94299', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/VERACRUZ%20CENTRO-a50c71e.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:20.9537897, lng:-97.40646150000001, title:'UNION GANADERA REGIONAL DEL , NORTE DE VERACRUZ', address:'Morelos No. 31. , Col. Centro, , Tuxpán, Ver. , C.P.92800', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/VERACRUZ%20NORTE.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:17.949192, lng:-94.91459739999999, title:'UNION GANADERA REGIONAL DEL , SUR DE VERACRUZ', address:'Carr. Costera del Golfo Km. 221.5. , Col. Predio Nueva Lucha. , Acayucan, Ver. , C.P. 96000', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/VERACRUZ%20SUR-67d7e01.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:17.530995, lng:-99.4930674, title:'UNION GANADERA REGIONAL DE GUERRERO', address:'Carr. México - Acapulco Km.274.5 , Col. Burócratas, , Chilpancingo, Gro. , C.P.39000', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/GUERRERO-6f6b885.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:21.4922798, lng:-104.8786024, title:'UNION GANADERA REGIONAL DE NAYARIT', address:'Av. Independencia #502 Sur , Col. Los Llanitos , Tepic, Nay. , C.P.63000', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/NAYARIT.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs'}, {lat:19.6839479, lng:-101.2166098, title:'UNION GANADERA REGIONAL DE MICHOACAN', address:'Calz. La Huerta No. 212 , Km.2.5, Fracc. Cosmos , Morelia, Mich. , C.P.58050, A.P.248', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/MICHOACAN.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs'}, {lat:18.9178317, lng:-99.182219, title:'UNION GANADERA REGIONAL GENERAL DEL , ESTADO DE MORELOS', address:'Aquiles Serdan No. 88. , Col. Revolución. , Cuernavaca, Mor. , C.P. 62390', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/MORELOS%20GENERAL-eff73ae.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:25.6783764, lng:-100.2447165, title:'UNION GANADERA REGIONAL DE NUEVO LEON', address:'Terr. Exposición Ganadera S/N , Entre Av. Azteca y 5 de Mayo. , Col. Exposición. , Guadalupe, N. L. , C.P.67150', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/NUEVO%20LEON.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:18.0824925, lng:-96.1352302, title:'UNION GANADERA REGIONAL DEL NORTE DE , OAXACA', address:'Av. Independencia #72 , Esq. Guerrero, Col. Centro. , San Juan Bautista,Tuxtepec, Oax. , C.P.68300', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/OAXACA%20NORTE.jpg/:/cr=t:0%25,l:0%25,w:99.3%25,h:99.3%25/rs=h:100,cg:true,m'}, {lat:17.0542297, lng:-96.7132304, title:'UNION GANADERA REGIONAL DE LA COSTA DE , OAXACA', address:'Calle 2da. Sur #111 Bis., Centro , Pinotepa Nacional, Oax. , C.P.71600', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/OAXACA%20COSTA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:29.0416524, lng:-110.9368391, title:'UNION GANADERA REGIONAL DE SONORA', address:'Blvd. de los Ganaderos s/n. , Col. Parque Industrial. , Hermosillo, Son. , C.P.83299, A.P.45', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/SONORA.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:17.8409173, lng:-92.6189273, title:'UNION GANADERA REGIONAL DE TABASCO', address:'Adolfo Ruiz Cortinez #2223 , Col. Atasta, Zona Centro , Villahermosa, Tab. , C.P.86100, A.P.86000', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/TABASCO-f4a6b1a.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:19.1153441, lng:-98.17395620000001, title:'UNION GANADERA REGIONAL DE TLAXCALA', address:'Calle Pablo Sidar Sur # 134 , San Bartolomé de Villa Vicente Guerrero , San Pablo del Monte, Tlax. , C.P. 90970', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/TLAXCALA%20ESPECIALIZADA-3a495ac.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:23.7170363, lng:-99.1694832, title:'UNION GANADERA REGIONAL DE TAMAULIPAS', address:'Calzada General Luis Caballero No. 38 , Col. Tamatan. , Cd. Victoria, Tamps. , C.P. 87060 A.P. 184', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/TAMAULIPAS.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs'}, {lat:19.3172264, lng:-97.9124145, title:'UNION GANADERA REGIONAL ESPECIALIZADA DE , TLAXCALA', address:'Carr: México – Veracruz Km. 165. , Col. Centro. Huamantla, Tlax. , C.P. 90500', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/TLAXCALA%20ESPECIALIZADA-3a495ac.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:20.6250583, lng:-103.3169433, title:'UNION GANADERA REGIONAL DE JALISCO', address:'Huascato No. 915, , Col. El Alamo, , Tlaquepáque, Jal. , C.P.45560, A.P.1-2096', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/JALISCO.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:16.4406904, lng:-95.0221653, title:'UNION GANADERA REGIONAL DEL ISTMO DE TEHUANTEPEC', address:'Km. 820, Carr. Cristóbal Colón , Juchitan de Zaragoza, Oax. , C.P.70000', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/ISTMO%20DE%20TEHUANTEPEC_OAXACA-54b12f3.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:25.5584794, lng:-103.4096267, title:'UNION GANADERA REGIONAL DE LA LAGUNA', address:'Calz. Gral. Manuel Avila Camacho y , Calz. Moctezuma #3902, , Col. Aviación , Torreón, Coah. , C.P.27040', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/LA%20LAGUNA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs'}, {lat:25.5486256, lng:-103.4535842, title:'UNION GANADERA REGIONAL DE CAPRINOCULTORES DE LA REGION LAGUNERA', address:'Pedro Camino No. 112 , Col. Ampliación Los Ángeles , Torreón, Coah. , C.P. 27148', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/COAHUILA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:19.4692652, lng:-99.2221378, title:'UNION GANADERA REGIONAL DEL ESTADO DE MEXICO', address:'Av. 16 de Septiembre #318 , Cuautitlán de Romero Rubio, Edo. de México , C.P.54800', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/ESTADO%20DE%20MEXICO%20SUR-acfde99.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:18.8915219, lng:-100.1427166, title:'UNION GANADERA REGIONAL DEL SUR, ESTADO DE MÉXICO', address:'Boulevard de los Planetas s/n Col. Del Sol, Tejupilco, Edo. de , Méx. C.P. 51412', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/VERACRUZ%20SUR-67d7e01.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:19.0487219, lng:-98.18269989999999, title:'UNION GANADERA REGIONAL DE PUEBLA', address:'Calle 26 Oriente Núm. 1611 y 18 Norte. , (a dos cuadras de la Fuente de los Muñecos) , Col. Xonaca, , Puebla, Pue. , C.P.72280', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/PUEBLA%20ORIENTE.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:19.0414398, lng:-98.2062727, title:'UNION GANADERA REGIONAL DEL NORTE DE PUEBLA', address:'Av. Zaragoza # 191 , Col. Centro. , Cd. Xicotepec de Juárez, Pue. , C.P.73080', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/PUEBLA%20NORTE-ac4518a.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:19.8152157, lng:-97.3617161, title:'UNION GANADERA REGIONAL DE LA SIERRA ORIENTE DE PUEBLA', address:'Av. Cuauhtemoc #705, Col. Centro , Teziutlán, Pue. , C.P.73800', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/PUEBLA%20ORIENTE.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:20.5788834, lng:-100.3227768, title:'UNION GANADERA REGIONAL DE QUERETARO', address:'ECO CENTRO DE QUERÉTARO. , Carr. Antiguo Camino a México Km. 1.900 , Col. Cumbres de Conin, , El Marqués, Qro. , C.P.76240', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/QUERETARO-07e0280.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:18.5174936, lng:-88.2914246, title:'UNION GANADERA REGIONAL DE QUINTANA ROO', address:'Carr. Fed. Chetumal Bacalar Km. 4 , Col.Vivero los Mangos Entre SAGARPA y SEDUMA , Chetumal, Quintana Roo , C.P. 77010', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/QUINTANA%20ROO-c4ab6d5.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:22.1514666, lng:-100.958908, title:'UNION GANADERA REGIONAL DE SAN LUIS POTOSI', address:'Av. Universidad #1965, Col. San Luis , San Luis Potosí, S.L.P. , C.P.78310', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/SAN%20LUIS%20POTOSI.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true/fx-gs'}, {lat:24.7515952, lng:-107.4473388, title:'UNION GANADERA REGIONAL DE SINALOA', address:'Blvd. Las Torres # 5270 Pte. , Col. Ejido las Flores. , Culiacán, Sin. , C.P.80104', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/SINALOA-4c99136.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:20.9493994, lng:-89.64893219999999, title:'UNION GANADERA REGIONAL DE YUCATAN', address:'Av. Aviación 525 x 73 y 71 , Mérida, Yuc. , C.P.97000', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/YUCATAN%20GENERAL.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:21.2008902, lng:-88.78561309999999, title:'UNION GANADERA REGIONAL DEL ORIENTE DE , YUCATAN', address:'Calle 45 y 50 #392 , Tizimín, Yuc. , C.P.97700', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/YUCATAN%20ORIENTE.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:22.7745177, lng:-102.5790658, title:'UNION GANADERA REGIONAL DE ZACATECAS', address:'Av. Torreón #633 , Zacatecas, Zac. , C.P.98000', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/ZACATECAS.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:28.578274, lng:-106.124557, title:'UNION GANADERA REGIONAL DE CHIHUAHUA', address:'Km.8.5 Carr.Cuauhtémoc , Col. Animas. , Chihuahua, Chih. , C.P.31450, A.P.137', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/CHIHUAHUA.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:18.8718413, lng:-99.06554389999999, title:'UNION GANADERA REGIONAL DE MORELOS', address:'Calle San Juan # 190, , Barrio San Juan. , Yautepec, Mor. , C.P. 62731', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/MORELOS.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:25.5891476, lng:-103.485862, title:'UNION GANADERA REGIONAL DE DURANGO', address:'Km.20 Autopista Durango –Gómez Palacio , Col. Malaga. , Durango, Dgo. , C.P. 34304 A.P. 616', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/DURANGO%20NORTE.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:25.5499927, lng:-103.4798063, title:'UNION GANADERA REGIONAL DEL NORTE DE , DURANGO', address:'Blvd. Miguel Alemán y Terryzas S/N , Gómez Palacio, Dgo. , C.P.35000, A.P.98', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/DURANGO%20NORTE.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}, {lat:20.6614933, lng:-101.3141174, title:'UNION GANADERA REGIONAL DE GUANAJUATO', address:'Carr. Irapuato – Salamanca Km. 4 , Col. Rafael Galván , Irapuato, Gto. , C.P. 36545', image:'https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/GUANANJUATO-4e7af9b.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true'}];
+
+              for (let point of uniones) {
+                const AdvancedMarkerElement = new google.maps.marker.AdvancedMarkerElement({
+                  map,
+                  content: buildContent(point),
+                  position: point,
+                  title: point.title,
+                });
+
+                AdvancedMarkerElement.addListener("click", () => {
+                  toggleHighlight(AdvancedMarkerElement, point);
+                });
+              }
+         }
+
+        function toggleHighlight(markerView, property) {
+          if (markerView.content.classList.contains("highlight")) {
+            markerView.content.classList.remove("highlight");
+            markerView.zIndex = null;
+          } else {
+            markerView.content.classList.add("highlight");
+            markerView.zIndex = 1;
+          }
+        }
+
+        function buildContent(property) {
+          const content = document.createElement("div");
+
+          content.classList.add("property");
+          content.innerHTML = `
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M96 224v32V416c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V327.8c9.9 6.6 20.6 12 32 16.1V368c0 8.8 7.2 16 16 16s16-7.2 16-16V351.1c5.3 .6 10.6 .9 16 .9s10.7-.3 16-.9V368c0 8.8 7.2 16 16 16s16-7.2 16-16V343.8c11.4-4 22.1-9.4 32-16.1V416c0 17.7 14.3 32 32 32h32c17.7 0 32-14.3 32-32V256l32 32v49.5c0 9.5 2.8 18.7 8.1 26.6L530 427c8.8 13.1 23.5 21 39.3 21c22.5 0 41.9-15.9 46.3-38l20.3-101.6c2.6-13-.3-26.5-8-37.3l-3.9-5.5V184c0-13.3-10.7-24-24-24s-24 10.7-24 24v14.4l-52.9-74.1C496 86.5 452.4 64 405.9 64H272 256 192 144C77.7 64 24 117.7 24 184v54C9.4 249.8 0 267.8 0 288v17.6c0 8 6.4 14.4 14.4 14.4C46.2 320 72 294.2 72 262.4V256 224 184c0-24.3 12.1-45.8 30.5-58.9C98.3 135.9 96 147.7 96 160v64zM560 336a16 16 0 1 1 32 0 16 16 0 1 1 -32 0zM166.6 166.6c-4.2-4.2-6.6-10-6.6-16c0-12.5 10.1-22.6 22.6-22.6H361.4c12.5 0 22.6 10.1 22.6 22.6c0 6-2.4 11.8-6.6 16l-23.4 23.4C332.2 211.8 302.7 224 272 224s-60.2-12.2-81.9-33.9l-23.4-23.4z"/></svg>
+            </div>
+            <img src="${property.image}" style="height: 100%; width: auto;"/>
+            <div class="details">
+                <h4>${property.title}</h4>
+                <div class="address">${property.address}</div>
+                <!--<div class="features">
+                    <div>
+                        <i aria-hidden="true" class="fa fa-bed fa-lg bed" title="bedroom"></i>
+                        <span class="fa-sr-only">bedroom</span>
+                        <span>${property.bed}</span>
+                    </div>
+                    <div>
+                        <i aria-hidden="true" class="fa fa-bath fa-lg bath" title="bathroom"></i>
+                        <span class="fa-sr-only">bathroom</span>
+                        <span>${property.bath}</span>
+                    </div>
+                    <div>
+                        <i aria-hidden="true" class="fa fa-ruler fa-lg size" title="size"></i>
+                        <span class="fa-sr-only">size</span>
+                        <span>${property.size} ft<sup>2</sup></span>
+                    </div>
+                </div>-->
+            </div>
+            `;
+          return content;
+        }
+    </script>
 </head>
 
 <body>
@@ -104,7 +174,11 @@
         </section>
 
         <section id="presencia" class="section-bg">
-            <div data-aos="fade-up" xo-source="#mapa" xo-stylesheet="mapa.xslt" title="Nuestra Presencia" class="container mapa externos"></div>
+            <!--<div data-aos="fade-up" xo-source="#mapa" xo-stylesheet="mapa.xslt" title="Nuestra Presencia" class="container mapa externos"></div>-->
+            <div class="section-title">
+                <h2 style="text-transform: capitalize">Nuestra <span style="color: var(--fancampovida-creen-snow)">Presencia</span></h2>
+            </div>
+            <div id="map" style="height:95vh; width:auto"></div>
         </section>
 
         <section id="testimoniales" class="section-bg">
@@ -185,7 +259,6 @@
 
             </div>
         </section>
-
     </main>
 
     <footer id="footer" xo-source="footer.html">
@@ -220,6 +293,7 @@
 
     <!-- Template Main JS File -->
     <script src="js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf4CxGRp-FNTXD2Db54g3mzr-M25E7AlY&callback=initMap&v=weekly&libraries=marker" defer></script>
 
 </body>
 

@@ -10,9 +10,12 @@
 
         /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+        .timeline {
+            position: relative;
+        }
 
         .timeline ul {
-            background: url(./assets/img/conocenos.jpg);
+            /*background: url(./timeline.jpg);*/
             padding: 50px 0;
             background-size: cover;
             background-repeat: no-repeat;
@@ -105,8 +108,8 @@
             opacity: 0;
             transition: all 0.5s ease-in-out;
         }
-
-        .timeline ul li:nth-child(odd) div {
+		
+		.timeline ul li:nth-child(odd) div {
             transform: translate3d(200px, 0, 0);
         }
 
@@ -115,7 +118,7 @@
         }
 
         .timeline ul li.in-view div {
-            transform: none;
+            transform: none !important;
             visibility: visible;
             opacity: 1;
         }
@@ -129,7 +132,7 @@
                 width: 250px;
             }
 
-            .timeline ul li:nth-child(even) div {
+             .timeline ul li:nth-child(even) div {
                 left: -289px;
                 /*250+45-6*/
             }
@@ -212,7 +215,7 @@
 					Nuestra <span style="color: var(--fancampovida-creen-snow)">historia</span>
 				</h2>
 			</div>
-			<section class="timeline">
+			<section class="timeline container">
 				<ul>
 					<xsl:apply-templates select="key('data','')"/>
 				</ul>
