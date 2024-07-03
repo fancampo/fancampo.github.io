@@ -32,9 +32,8 @@
 	</xsl:template>
 
 	<xsl:template mode="input" match="key('input','select')">
-		<select name="{@name}" class="form-select" xo-slot="value" required="">
+		<select name="{@name}" class="form-select" xo-slot="value" required="" xo-source="#menu" xo-stylesheet="seguros-combobox.xslt">
 			<option selected=""> </option>
-			<option>Seguro </option>
 		</select>
 	</xsl:template>
 

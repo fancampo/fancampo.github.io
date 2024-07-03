@@ -49,6 +49,20 @@
     --header-height: 60px;
     --offcanvas-height: 90vh !important;
 }
+
+h1 em, h2 em, h3 em, h4 em {
+    color: var(--fancampovida-creen-snow);
+    font-style: normal;
+}
+
+[xo-stylesheet="thumbnails.xslt"] a label {
+    text-decoration: none;
+    color: var(--fancampovida-river-red);
+    padding: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 .dropdown-menu {
     width: 300px;
 }
@@ -424,7 +438,7 @@ iframe#chatbot {
     /*box-shadow: -1px 5px 20px 0px rgba(0,0,0,.5);*/
 }
 
-iframe:hover {
+iframe#chatbot:hover {
     height: 80vh !important;
 }
 
@@ -452,15 +466,25 @@ video.main {
     padding: 0px;
 }
 
+#promocional .nav-pills .nav-link {
+    color: white;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#promocional .nav-pills .nav-link.active {
+    background-color: #012664;
+}
+
 @media (min-width: 1200px) {
     #video-container {
         height: 350vh;
         padding-inline: 3rem;
     }
 
-        #video-container > div {
-            position: sticky;
-        }
+    #video-container > div {
+        position: sticky;
+    }
 
     video.main {
         position: fixed;

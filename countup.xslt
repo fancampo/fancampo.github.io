@@ -167,7 +167,7 @@ window.addEventListener('scroll', animateInView);
 			</svg>
 			<div class="section-title" style="padding-inline: 1rem">
 				<h2>
-					<xsl:value-of select="$title"/>
+					<xsl:value-of select="$title" disable-output-escaping="yes"/>
 				</h2>
 			</div>
 			<div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4">

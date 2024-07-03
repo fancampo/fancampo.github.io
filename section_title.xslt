@@ -2,6 +2,7 @@
 	<xsl:key name="data" match="data/@name" use="."/>
 	<xsl:key name="data" match="data" use="@name"/>
 
+	<xsl:param name="title"/>
 	<xsl:template match="/">
 		<section>
 			<xsl:apply-templates/>
@@ -9,9 +10,19 @@
 	</xsl:template>
 
 	<xsl:template match="/*">
+		<xsl:variable name="section_title">
+			<xsl:choose>
+				<xsl:when test="$title!=''">
+					<xsl:value-of select="$title"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="key('data','title')"/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
 		<div class="container text-center py-5" style="max-width: 900px;">
 			<h3 class="text-white display-3 mb-4">
-				<xsl:value-of select="key('data','title')"/>
+				<xsl:value-of select="$section_title"/>
 			</h3>
 		</div>
 	</xsl:template>
