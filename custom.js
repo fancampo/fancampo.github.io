@@ -1,5 +1,5 @@
 ﻿const video = document.querySelector('video.main');
-const promocional = document.querySelector('video.promocional');
+const promocional = document.querySelector('#promocional video');
 if (video) {
     // Options for the intersection observer
     //const options = {
@@ -163,6 +163,38 @@ async function cotizar() {
         typeWriter(text, 0, speed);
     }
     textarea.placeholder = '';
-    startTyping('Pregunta cómo cotizar');// (O presiona espacio)
+    startTyping('Pregúntame cómo cotizar');// (O presiona espacio)
     textarea.parentNode.style.boxShadow = '0 0 10px rgba(0, 0, 255, 0.5)';
 }
+
+function videoSelector() {
+    let panel = this.closest('.nav-pills');
+    panel.querySelectorAll('.active').forEach(el => el.classList.remove('active'));
+    let target = this.closest('.nav-item').querySelector('.nav-link');
+    target.classList.add('active');
+    let class_name = [...target.classList].find(item => item.indexOf('video-') != -1);
+    let video = this.closest('div').querySelector('video');
+    video.src = `${video.src.replace(/[^\/]+$/, '')}promocional_${class_name.replace(/^video-/, '')}.mp4`
+    video.muted = false;
+    playVideo.call(this, true);
+    event.preventDefault()
+}
+
+function playVideo(play) {
+    let wrapper = this.closest('div:has(.video-container)');
+    let video = wrapper.querySelector('video');
+    let container = wrapper.querySelector('.video-container');
+    if (play || !video.paused) {
+        container.classList.add('playing');
+    } else {
+        container.classList.remove('playing');
+    }
+    container.classList.contains('playing') ? video.play() : video.pause()
+    event.preventDefault();
+
+}
+
+//xo.listener.on('click::*[ancestor-or-self::a[@href]]', function () {
+//    let section = this.closest('[id]');
+//    xover.site.hash = section.id
+//})

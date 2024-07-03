@@ -9,8 +9,24 @@ xmlns="http://www.w3.org/1999/xhtml"
 	<xsl:key name="seguros" match="item[@tag]/item" use="../@tag"/>
 	<xsl:param name="searchParams:tipo">*</xsl:param>
 
+	<xsl:param name="title"></xsl:param>
 	<xsl:template match="/">
+		<xsl:variable name="section_title">
+			<xsl:choose>
+				<xsl:when test="$title!=''">
+					<xsl:value-of select="$title"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="key('seguros',$searchParams:tipo)/../@title"/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
 		<div>
+			<div class="section-title" style="padding-inline: 1rem">
+				<h2>
+					<xsl:value-of select="$section_title" disable-output-escaping="yes"/>
+				</h2>
+			</div>
 			<xsl:apply-templates mode="tile" select="key('seguros',$searchParams:tipo)"/>
 		</div>
 	</xsl:template>
@@ -22,7 +38,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 				<xsl:value-of select="@tag"/>
 			</xsl:if>
 		</xsl:variable>
-		<div class="col-12 col-sm-6 col-lg-4 col-xl-4 tile">
+		<div class="col-12 col-sm-6 col-lg-6 col-xl-3 tile">
 			<div class="position-relative banner-2" style="overflow: hidden;
     height: 300px;">
 				<img src="./assets/img/{@image}" class="img-fluid rounded" alt="" style="width: 100%;
