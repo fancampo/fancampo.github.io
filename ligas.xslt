@@ -15,7 +15,9 @@
 			</section>
 			<div class="container p-5">
 				<div class="list-group info">
-					<xsl:apply-templates select="key('data','body')"/>
+					<xsl:apply-templates select="key('data','body')">
+						<xsl:sort select="@name"/>
+					</xsl:apply-templates>
 				</div>
 			</div>
 		</main>

@@ -8,7 +8,6 @@
     "#equipo_trabajo": "equipo_trabajo.html",
     "#terminos_condiciones": "terminos_condiciones.html",
     "#nosotros": "./assets/nosotros.resx",
-    "#conocenos": "#nosotros",
     "#mision": "#nosotros",
     "#vision": "#nosotros",
     "#valores": "#nosotros"

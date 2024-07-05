@@ -308,6 +308,11 @@ h1 em, h2 em, h3 em, h4 em {
     max-width: 300px;
 }
 
+.property.highlight img.cnog {
+    display: block;
+    width: 100px;
+}
+
 .property.highlight .icon svg {
     width: 50px;
     height: 50px;
@@ -472,6 +477,10 @@ video.main {
     border-bottom-left-radius: 0;
 }
 
+#promocional .nav-pills .nav-link {
+    background-color: var(--fancampovida-blue-smoke);
+}
+
 #promocional .nav-pills .nav-link.active {
     background-color: #012664;
 }
@@ -492,7 +501,7 @@ video.main {
     }
 
     .scrolled video.main {
-        transform: scale(0.5);
+        transform: scale(0.4);
         top: 90px;
     }
 

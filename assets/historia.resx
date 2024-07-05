@@ -128,21 +128,13 @@ hacer frente a los riesgos que amenazan su patrimonio.</value>
     <value>Por lo anterior, en el año 2007 fue constituido el Fondo de Aseguramiento en términos de la Ley de Fondos de Aseguramiento Agropecuario y Rural (LFAAR), 
 que ofrece protección mutualista a los ganaderos organizados de México en todo el país, de carácter incluyente, con capacidad de organización, gestión y respuesta.</value>
   </data>
-  <data name="2008" xml:space="preserve">
-    <value>Obteniendo en 2008 su Registro General de Fondos de Aseguramiento (RGFA
-0510-08-DF-327741-G-CX-A-UG) emitido por la Dirección General Adjunta de 
-Seguros y Fianzas de la SHCP, emitiendo su primer contrato de reaseguro e inició 
-operaciones en octubre de ese mismo año.</value>
-  </data>
-  <data name="2016" xml:space="preserve">
-    <value>En 2016 nace el Fondo de Aseguramiento de Vida mediante el registro RGFA-0746
-15-DF-329069-V-UG para amparar el fallecimiento de los productores 
-agropecuarios de México, sus familiares y trabajadores.</value>
+  <data name="2008 - 2019" xml:space="preserve">
+    <value>Se trabajó con la Secretaría de Hacienda y Crédito Público (SHCP) a través, del programa de subsidio a la prima del seguro agropecuario y con la Secretaría de Agricultura y Desarrollo Rural, antes SAGARPA.
+
+Con la dirección general de atención al cambio climático en el sector agropecuario asegurando más de un millón doscientas mil unidades de protección pecuaria, esto se traduce arriba de 46.3 millones de cabezas (Ovino, Bobino, Caprino) y más de 4,000,000 de colmenas a nivel nacional.</value>
   </data>
   <data name="2022" xml:space="preserve">
-    <value>Para expansión y satisfacer las necesidades de aseguramiento de los socios, ampliamos el ramo ganadero.  
-Se incluyeron las operaciones de los seguros agrícolas, acuícolas, de bienes conexos y la agroindustria.  
-Al seguro de vida se le agregaron coberturas adicionales.</value>
+    <value>Nos reinventamos para fortalecer nuestros ramos agrícolas, ganadero bienes conexos y agroindustriales.</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="conocenos" type="System.Resources.ResXFileRef, System.Windows.Forms">

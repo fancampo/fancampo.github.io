@@ -46,7 +46,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 
 	<xsl:template match="*[@href]|*[@href]/@*" mode="menu:item-link-attribute">
 		<xsl:variable name="element" select="ancestor-or-self::*[1]"/>
-		<xsl:copy-of select="$element/@href|$element/@target"/>
+		<xsl:copy-of select="$element/@href|$element/@target|$element/@onclick"/>
 	</xsl:template>
 
 	<xsl:template mode="menu:item-attributes" match="@*|*"></xsl:template>

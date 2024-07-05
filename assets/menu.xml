@@ -21,8 +21,13 @@
 			<item title="Radicación" href="./seguro.html#agro_radicacion" image="agro_radicacion.jpg"/>
 			<item title="Estaciones cuarentenarias" href="./seguro.html#estaciones_cuarentenarias" image="estaciones_cuarentenarias.jpg"/>
 			<item title="Estancia temporal" href="./seguro.html#estancia_temporal" image="pecuario.jpg"/>
-			<item title="Insumos agropecuarios" href="./seguro.html#insumos_agropecuarios" image="insumos_agropecuarios.jpg"/>
+			<item title="Maquinaria e Insumos Agropecuarios" href="./seguro.html#insumos_agropecuarios" image="insumos_agropecuarios.jpg"/>
 			<item title="Acuícola" href="./seguro.html#acuicola" image="acuicola.jpg"/>
+		</item>
+		<item title="Agrícola" href="./seguro.html" image="agricola.jpg" id_seguro="7" tag="agricolas">
+			<item title="Riego" href="./seguro.html#agricola_riego" image="agricola_riego.jpg"/>
+			<item title="Temporal" href="./seguro.html#temporal" image="agricola_temporal.jpg"/>
+			<item title="Agricultura Protegida" href="./seguro.html#agricola_protegida" image="agricola_protegida.jpg"/>
 		</item>
 		<item title="Seguro de Vida" href="./seguro.html" image="vida.jpg" tag="seguros_vida">
 			<item title="Básico" href="./seguro.html#vida_basico" image="vida_basico.jpg"/>
@@ -30,11 +35,6 @@
 				<item title="Seguro de Vida" href="./seguro.html#vida_integral" image="vida_integral.jpg"/>
 				<item title="Asistencia médica y funeraria" href="./seguro.html#asistencia_medica" image="asistencia_medica.jpg"/>
 			</item>
-		</item>
-		<item title="Agrícola" href="./seguro.html" image="agricola.jpg" id_seguro="7" tag="agricolas">
-			<item title="Riego" href="./seguro.html#agricola_riego" image="agricola_riego.jpg"/>
-			<item title="Temporal" href="./seguro.html#temporal" image="agricola_temporal.jpg"/>
-			<item title="Agricultura Protegida" href="./seguro.html#agricola_protegida" image="agricola_protegida.jpg"/>
 		</item>
 	</item>
 	<item title="Asociados">
@@ -44,5 +44,6 @@
 		<item title="Ligas de interés" href="./ligas.html#interes"/>
 		<item title="Eventos" href="eventos.html"/>
 	</item>
+	<item title="Cotizar" href="./#" onclick="event.preventDefault(); cotizar()"/>
 	<!--<item title="Novedades" href="./novedades.html"/>-->
 </menu>

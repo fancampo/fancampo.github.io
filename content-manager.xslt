@@ -6,7 +6,7 @@
 	<xsl:key name="valid-model" match="root[@env:store='#mision']" use="generate-id()"/>
 	<xsl:key name="valid-model" match="root[@env:store='#vision']" use="generate-id()"/>
 	<xsl:key name="valid-model" match="root[@env:store='#valores']" use="generate-id()"/>
-	<xsl:key name="valid-model" match="root[@env:store='#conocenos']" use="generate-id()"/>
+	<!--<xsl:key name="valid-model" match="root[@env:store='#conocenos']" use="generate-id()"/>-->
 	<xsl:key name="valid-model" match="root[@env:store='#terminos_condiciones']" use="generate-id()"/>
 
 	<xsl:key name="data" match="root[@env:store='#mision']/data[not(contains(@name,':'))]" use="'mision_vision_valores'"/>
@@ -119,7 +119,9 @@
 			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		</div>
 		<div class="offcanvas-body small">
-			<xsl:apply-templates select="key('data','body')"/>
+			<xsl:apply-templates select="key('data','body')">
+				<xsl:sort select="comment"/>
+			</xsl:apply-templates>
 		</div>
 	</xsl:template>
 
