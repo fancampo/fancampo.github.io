@@ -47,12 +47,8 @@
 	</xsl:template>
 
 	<xsl:template match="/menu">
-		<section class="container-fluid bg-breadcrumb" style="background-color: var(--fancampovida-blue-smoke);">
-		</section>
-		<div class="b-divider"></div>
-		<div class="row g-4" xo-source="seed" xo-stylesheet="seguros-tiles.xslt">
+		<div xo-source="seed" xo-stylesheet="seguros-tiles.xslt">
 		</div>
-		<div class="b-divider"></div>
 	</xsl:template>
 
 	<xsl:template match="/*" mode="caracteristicas">

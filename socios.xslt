@@ -16,7 +16,7 @@
 					<xsl:otherwise>img/cover.jpg</xsl:otherwise>
 				</xsl:choose>
 			</xsl:variable>
-			<section class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/{$cover});background-position: center center;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;padding: 150px 0 50px 0;" xo-stylesheet="section_title.xslt" xo-source="seed" xo-swap="self::*" title="{$title}">
+			<section class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/{$cover});background-position: center center;background-repeat: no-repeat;background-size: cover;padding: 150px 0 50px 0;" xo-stylesheet="section_title.xslt" xo-source="seed" xo-swap="self::*" title="{$title}">
 			</section>
 			<section xo-source="seed" xo-stylesheet="thumbnails.xslt" />
 		</main>

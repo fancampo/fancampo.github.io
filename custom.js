@@ -1,33 +1,38 @@
 ﻿const video = document.querySelector('video.main');
 const promocional = document.querySelector('#promocional video');
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: .5
+    };
+
+    const callback = (entries, observer) => {
+        entries.forEach(entry => {
+            document.body.classList.remove('fanvida-is-active','fancampo-is-active');
+            let target = entry.target;
+            if (target.id) {
+                document.body.classList.remove(`${target.id}-active`);
+            }
+            if (target.id) {
+                document.body.classList[entry.isIntersecting ? "add" : "remove"](`${target.id}-active`);
+            }
+            if (target.matches('.fanvida-section')) {
+                document.body.classList[entry.isIntersecting ? "add" : "remove"]('fanvida-is-active');
+            }
+            if (target.matches('.fancampo-section')) {
+                document.body.classList[entry.isIntersecting ? "add" : "remove"]('fancampo-is-active');
+            }
+        });
+    };
+
+    // Create intersection observer
+    const observer = new IntersectionObserver(callback, options);
+
+    for (let section of document.querySelectorAll('.fanvida-section, .fancampo-section, main > *')) {
+        observer.observe(section);
+    }
+
 if (video) {
-    // Options for the intersection observer
-    //const options = {
-    //  root: null,
-    //  rootMargin: '0px',
-    //  threshold: .2
-    //};
-
-    //// Intersection Observer callback function
-    //const callback = (entries, observer) => {
-    //  entries.forEach(entry => {
-    //    if (entry.isIntersecting) {
-    //      video.play();
-    //      //video.style.transform = 'scale(1)'; // Example rescaling value
-    //    } else {
-    //        console.log(`Scrolling`)
-    //      video.pause();
-    //      //video.style.transform = 'scale(.4)';
-    //    }
-    //  });
-    //};
-
-    //// Create intersection observer
-    //const observer = new IntersectionObserver(callback, options);
-
-    //// Observe the video
-    //observer.observe(video);
-
     const viewportHeight = window.innerHeight;
     const viewportWidth = window.innerWidth;
     //promocional.pause();
@@ -157,7 +162,7 @@ async function cotizar() {
             textarea.setAttribute("oninput", "this.placeholder = ''")
             textarea.textContent = textarea.value;
             //textarea.nextElementSibling.classList.add('c-iSWgdS-eHahlm-ready-true');
-            textarea.nextElementSibling.classList='vfrc-chat-input--button c-iSWgdS c-iSWgdS-eHahlm-ready-true'
+            textarea.nextElementSibling.classList = 'vfrc-chat-input--button c-iSWgdS c-iSWgdS-eHahlm-ready-true'
             await xover.delay(1000);
             textarea.parentNode.style.boxShadow = 'none';
             textarea.focus();
@@ -199,7 +204,7 @@ function playVideo(play) {
         }
         container.classList.contains('playing') ? video.play() : video.pause()
         event && event.preventDefault();
-    } catch(e) {
+    } catch (e) {
         console.warn(e)
     }
 }
@@ -209,3 +214,25 @@ function playVideo(play) {
 //    let section = this.closest('[id]');
 //    xover.site.hash = section.id
 //})
+
+
+window.addEventListener('resize', function () {
+    if (window.innerHeight > window.innerWidth) {
+        document.body.classList.add('portrait');
+        document.body.classList.remove('landscape');
+    } else {
+        document.body.classList.add('landscape');
+        document.body.classList.remove('portrait');
+    }
+});
+
+xo.listener.on('submit::.contact-form', async function(){
+    event.preventDefault();
+    let formData = new FormData(this);
+    try {
+        await xover.server.requestInfo(new URLSearchParams(formData));
+        alert("La solicitud ha sido recibida con éxito");
+    } catch(e) {
+        throw(e)
+    }
+})

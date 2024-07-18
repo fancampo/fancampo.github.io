@@ -63,9 +63,8 @@ xmlns="http://www.w3.org/1999/xhtml"
 			content.classList.add("property");
 			content.innerHTML = `
 			<div class="icon">
-				<img src="/assets/logos_ligas/cnog.png" class="cnog" width="30" style="filter: brightness(0) invert(1);"/>
+				<img class="logo" src="${property.image}"/>
 			</div>
-			<img src="${property.image}" style="max-height: 100%; width: auto;"/>
 			<div class="details">
 				<h4>${property.title}</h4>
 				<div class="address">${property.address}</div>

@@ -33,8 +33,8 @@
 
 
     <!-- Manifest -->
-    <link rel="xover-manifest" href="manifest.json?v=20240627_1744">
-    <link rel="xover-manifest" href="manifest_eventos.json?v=20240627_1744">
+    <link rel="xover-manifest" href="manifest.json?v=20240711_1027">
+    <link rel="xover-manifest" href="manifest_eventos.json?v=20240711_1027">
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
@@ -51,7 +51,7 @@
     <link href="css/fontawesome-all.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <script type="text/javascript" src="xover/xo.js?v=20240627_1744"></script>
+    <script type="text/javascript" src="xover/xo.js?v=20240711_1027"></script>
     <!--<style>
         @font-face {
             font-family: 'Billie-DEMO-Bold';
@@ -72,10 +72,10 @@
     </header>
 
     <main id="main" xo-source="seed">
-        <section class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/img/cover.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; padding: 150px 0 50px 0;" xo-stylesheet="section_title.xslt" xo-source="seed" xo-swap="self::*">
+        <section class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/img/cover.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;  padding: 150px 0 50px 0;" xo-stylesheet="section_title.xslt" xo-source="seed" xo-swap="self::*">
         </section>
         <section id="eventos">
-            <div data-aos="fade-up" xo-source="calendario.html"></div>
+            <div data-aos="fade-up" xo-source="#eventos" xo-stylesheet="eventos.xslt"></div>
         </section>
     </main>
 

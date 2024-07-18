@@ -130,6 +130,21 @@
   <data name="cnog" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>logos_ligas\cnog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="evento_20240623" xml:space="preserve">
+    <value>Difícil que termine el TLC: El riesgo de que se termine el Tratado de Libre Comercio México-Estados Unidos-Canadá es muy reducido, por varias razones, entre ellas, por los intereses económicos que tienen los tres países, en especial Estados Unidos con México, ya que recibimos más de 210 mil millones de dólares en inversiones, con más de 65 mil empresas americanas, además 6 millones de empleos en Estados Unidos dependen directamente de las exportaciones que hacen a nuestro país, coincidieron en señalar expertos en temas económicos, diputados y funcionarios del Gobierno Federal que participaron en el Panel “Sector Pecuario y el Comercio Exterior: Ante la Apertura de Negociaciones del TLC”, celebrado en el marco de los festejos del “Día de la Ganadería Nacional”.</value>
+  </data>
+  <data name="evento_20240624" xml:space="preserve">
+    <value>Difícil que termine el TLC: El riesgo de que se termine el Tratado de Libre Comercio México-Estados Unidos-Canadá es muy reducido, por varias razones, entre ellas, por los intereses económicos que tienen los tres países, en especial Estados Unidos con México, ya que recibimos más de 210 mil millones de dólares en inversiones, con más de 65 mil empresas americanas, además 6 millones de empleos en Estados Unidos dependen directamente de las exportaciones que hacen a nuestro país, coincidieron en señalar expertos en temas económicos, diputados y funcionarios del Gobierno Federal que participaron en el Panel “Sector Pecuario y el Comercio Exterior: Ante la Apertura de Negociaciones del TLC”, celebrado en el marco de los festejos del “Día de la Ganadería Nacional”.</value>
+  </data>
+  <data name="evento_20240701" xml:space="preserve">
+    <value>Administración de riesgos e inocuidad temas abordados por autoridades y legisladores: En el marco de la Décima Reunión Ordinaría de la Comisión de Ganadería de la LXIII Legislatura de la Cámara de Diputados, encabezada por su presidente, Dip. Oswaldo Cházaro Montalvo, la subsecretaria de Desarrollo Rural de la Secretaría de Agricultura, Mtra. Mely Romero Celis, abordó el tema de la administración de riesgos en la ganadería, componente de atención a siniestros agropecuarios para atender a pequeños productores; y el director en Jefe del Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria (SENASICA), MVZ Enrique Sánchez Cruz, los temas de inocuidad en la industria de productos cárnicos.</value>
+  </data>
+  <data name="evento_20240710" xml:space="preserve">
+    <value>Comparecencia José Calzada en Cámara de Diputados: Durante la comparecencia de José Calzada Rovirosa a la Cámara de Diputados, con motivo de la Glosa del IV Informe de Gobierno del presidente, Lic. Enrique Peña Nieto, el diputado Oswaldo Cházaro Montalvo, Presidente de la CNOG y de la Comisión de Ganadería de la LXIII Legislatura, coincidió con el titular de SAGARPA en que “invertir en el campo es sembrar paz, para cosechar progreso”, pues afirmó que el campo mexicano no sólo es un segmento económico estratégico nacional, sino el espacio por el que el desarrollo social debe comenzar.</value>
+  </data>
+  <data name="evento_20240712" xml:space="preserve">
+    <value>El sector pecuario en la renegociación del TLCAN: Durante más de dos décadas las tres economías de Norteamérica han consolidado una nutrida relación comercial de proveeduría y consumo de bienes relacionados con la actividad pecuaria, como es el caso de granos forrajeros, maquinaria y equipo, ganado de pie de cría y material genético, animales vivos para el abasto y productos cárnicos. En el año 2016, el intercambio pecuario de México fue de más de $9,000 millones de dólares, con una concentración de más del 90% con Estados Unidos y Canadá.</value>
+  </data>
   <data name="fira" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>logos_ligas\fira.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

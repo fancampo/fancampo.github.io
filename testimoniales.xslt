@@ -1,5 +1,6 @@
 ﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:env="http://panax.io/state/environment" xmlns:xo="http://panax.io/xover">
 
+	<xsl:param name="title">Testimoniales</xsl:param>
 	<xsl:template match="/*">
 		<!-- src: https://codepen.io/codingyaar/pen/MWRjKqM -->
 		<div class="container-fluid bg-body-tertiary py-3" data-aos="fade-up">
@@ -52,7 +53,9 @@
 				}
 			</style>
 			<div class="section-title" style="padding-inline: 1rem">
-				<h2>Testimoniales</h2>
+				<h2>
+					<xsl:value-of select="$title" disable-output-escaping="yes"/>
+				</h2>
 			</div>
 			<div id="testimonialCarousel" class="carousel">
 				<div class="carousel-inner">

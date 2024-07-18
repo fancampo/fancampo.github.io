@@ -2,6 +2,7 @@
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 xmlns:xo="http://panax.io/xover"
 xmlns:searchParams="http://panax.io/site/searchParams"
+xmlns:site="http://panax.io/site"
 xmlns="http://www.w3.org/1999/xhtml"
 >
 	<xsl:key name="seguros" match="item[@title='Seguros']/item" use="'*'"/>
@@ -9,25 +10,44 @@ xmlns="http://www.w3.org/1999/xhtml"
 	<xsl:key name="seguros" match="item[@tag]/item" use="../@tag"/>
 	<xsl:param name="searchParams:tipo">*</xsl:param>
 
+	<xsl:param name="site:aspectRatio"></xsl:param>
+
 	<xsl:param name="title"></xsl:param>
 	<xsl:template match="/">
+		<xsl:variable name="seguros" select="key('seguros',$searchParams:tipo)"/>
 		<xsl:variable name="section_title">
 			<xsl:choose>
 				<xsl:when test="$title!=''">
 					<xsl:value-of select="$title"/>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:value-of select="key('seguros',$searchParams:tipo)/../@title"/>
+					<xsl:value-of select="$seguros/../@title"/>
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
 		<div>
+			<xsl:if test="$seguros/ancestor::*[@tag='seguros_vida']">
+				<xsl:attribute name="class">fanvida-section</xsl:attribute>
+			</xsl:if>
+			<xsl:if test="not($seguros/ancestor-or-self::*[@tag='seguros_vida'])">
+				<xsl:attribute name="class">fancampo-section</xsl:attribute>
+			</xsl:if>
+			<script><![CDATA[
+				for (let section of document.querySelectorAll('.fanvida-section, .fancampo-section, #video-container')) {
+				observer.observe(section);
+				}]]>
+			</script>
 			<div class="section-title" style="padding-inline: 1rem">
 				<h2>
 					<xsl:value-of select="$section_title" disable-output-escaping="yes"/>
 				</h2>
 			</div>
-			<xsl:apply-templates mode="tile" select="key('seguros',$searchParams:tipo)"/>
+			<div class="row row-cols-1 row-cols-md-2 align-items-md-top g-3">
+				<xsl:if test="$site:aspectRatio = 'portrait'">
+					<xsl:attribute name="class">row row-cols-1 row-cols-md-2 align-items-md-top g-3</xsl:attribute>
+				</xsl:if>
+				<xsl:apply-templates mode="tile" select="$seguros"/>
+			</div>
 		</div>
 	</xsl:template>
 
@@ -38,7 +58,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 				<xsl:value-of select="@tag"/>
 			</xsl:if>
 		</xsl:variable>
-		<div class="col-12 col-sm-6 col-lg-6 col-xl-3 tile">
+		<div class="tile">
 			<div class="position-relative banner-2" style="overflow: hidden;
     height: 300px;">
 				<img src="./assets/img/{@image}" class="img-fluid rounded" alt="" style="width: 100%;
