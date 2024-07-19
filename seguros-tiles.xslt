@@ -32,7 +32,8 @@ xmlns="http://www.w3.org/1999/xhtml"
 			<xsl:if test="not($seguros/ancestor-or-self::*[@tag='seguros_vida'])">
 				<xsl:attribute name="class">fancampo-section</xsl:attribute>
 			</xsl:if>
-			<script><![CDATA[
+			<script>
+				<![CDATA[
 				for (let section of document.querySelectorAll('.fanvida-section, .fancampo-section, #video-container')) {
 				observer.observe(section);
 				}]]>
@@ -52,11 +53,19 @@ xmlns="http://www.w3.org/1999/xhtml"
 	</xsl:template>
 
 	<xsl:template mode="tile" match="*">
+		<xsl:variable name="href">
+			<xsl:value-of select="substring-before(concat(@href,'#'),'#')"/>
+		</xsl:variable>
 		<xsl:variable name="tipo">
-			<xsl:if test="@tag">
-				<xsl:text>?tipo=</xsl:text>
-				<xsl:value-of select="@tag"/>
-			</xsl:if>
+			<xsl:choose>
+				<xsl:when test="@tag">
+					<xsl:text>?tipo=</xsl:text>
+					<xsl:value-of select="@tag"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="concat('#',substring-after(@href,'#'))"/>
+				</xsl:otherwise>
+			</xsl:choose>
 		</xsl:variable>
 		<div class="tile">
 			<div class="position-relative banner-2" style="overflow: hidden;
@@ -72,7 +81,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 					<p class="mb-2 h2 fw-bold text-white">
 						<xsl:apply-templates select="@title"/>
 					</p>
-					<a href="{@href}{$tipo}" class="btn btn-primary px-4">Ver más</a>
+					<a href="{$href}{$tipo}" class="btn btn-primary px-4">Ver más</a>
 				</div>
 			</div>
 		</div>

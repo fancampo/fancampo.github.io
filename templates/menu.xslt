@@ -46,6 +46,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 
 	<xsl:template match="*[@href]|*[@href]/@*" mode="menu:item-link-attribute">
 		<xsl:variable name="element" select="ancestor-or-self::*[1]"/>
+		<xsl:attribute name="onclick">event.preventDefault(); window.location.href = this.href;</xsl:attribute>
 		<xsl:copy-of select="$element/@href|$element/@target|$element/@onclick"/>
 	</xsl:template>
 
@@ -95,7 +96,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 		</xsl:variable>
 		<li class="{$dropdown} {local-name()}-menu">
 			<xsl:apply-templates mode="menu:item-attributes" select="."/>
-			<a class="{$dropdown}-toggle {$class}" href="#" role="button">
+			<a class="{$dropdown}-toggle text-capitalize {$class}" href="#" role="button">
 				<xsl:if test="$dropdown!=''">
 					<xsl:attribute name="aria-expanded">false</xsl:attribute>
 					<xsl:attribute name="data-bs-toggle">dropdown</xsl:attribute>

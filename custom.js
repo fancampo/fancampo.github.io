@@ -209,12 +209,10 @@ function playVideo(play) {
     }
 }
 
-
 //xo.listener.on('click::*[ancestor-or-self::a[@href]]', function () {
 //    let section = this.closest('[id]');
 //    xover.site.hash = section.id
 //})
-
 
 window.addEventListener('resize', function () {
     if (window.innerHeight > window.innerWidth) {
@@ -235,4 +233,8 @@ xo.listener.on('submit::.contact-form', async function(){
     } catch(e) {
         throw(e)
     }
+})
+
+xo.listener.on('fetch::root', async function(document){
+   this.select(`//data/value/text()`).filter(text => text.value.match(/\n/)).forEach(data => data.textContent = data.textContent.replace(/([>:]\s*)\n/g,'$1').replace(/\n/g,'<br/>'));
 })

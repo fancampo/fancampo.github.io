@@ -8,14 +8,14 @@
 		<item title="Aviso de privacidad" target="_self" href="#aviso_privacidad"/>
 	</item>
 	<item title="Seguros">
-		<item title="Multirriesgo" href="./seguro.html" image="multirriesgo.jpg" tag="multirriesgo">
+		<item title="Multirriesgo" href="./seguro.html#multirriesgo" image="multirriesgo.jpg" tag="multirriesgo">
 			<item title="Alta mortalidad" href="./seguro.html#alta_mortalidad" image="alta_mortalidad.jpg"/>
 			<item title="Ataque de depredador" href="./seguro.html#ataque_depredador" image="ataque_depredador.jpg"/>
 			<item title="Bienes patrimoniales en instalaciones ganaderas" href="./seguro.html#bienes_patrimoniales" image="bienes_patrimoniales.jpeg"/>
 			<item title="Apícola climático" href="./seguro.html#apicola_climatico" image="apicola_climatico.jpg"/>
 			<item title="Ganadero Climático" href="./seguro.html#ganadero_climatico" image="ganadero_climatico.jpg"/>
 		</item>
-		<item title="Comerciales Agropecuarios" href="./seguro.html" image="comerciales_agropecuario.jpg" tag="comerciales_agropecuario">
+		<item title="Comerciales Agropecuarios" href="./seguro.html#comerciales_agropecuarios" image="comerciales_agropecuarios.jpg" tag="comerciales_agropecuarios">
 			<item title="Transporte" href="./seguro.html#agro_transporte" image="agro_transporte.jpg"/>
 			<item title="Adaptación" href="./seguro.html#agro_adaptacion" image="agro_adaptacion.jpg"/>
 			<item title="Radicación" href="./seguro.html#agro_radicacion" image="agro_radicacion.jpg"/>
@@ -24,14 +24,19 @@
 			<item title="Maquinaria e Insumos Agropecuarios" href="./seguro.html#maquinaria_insumos_agropecuarios" image="maquinaria_insumos_agropecuarios.jpg"/>
 			<item title="Acuícola" href="./seguro.html#acuicola" image="acuicola.jpg"/>
 		</item>
-		<item title="Agrícola" href="./seguro.html" image="agricola.jpg" id_seguro="7" tag="agricolas">
+		<item title="Comerciales" href="./seguro.html#comerciales" image="comerciales.jpg" tag="comerciales">
+			<item title="Bienes conexos" href="./seguro.html#bienes_conexos" image="bienes_conexos.jpg"/>
+			<item title="Catastróficos" href="./seguro.html#catastroficos" image="catastroficos.jpg"/>
+			<item title="Acuícolas" href="./seguro.html#acuicolas" image="acuicolas.jpg"/>
+		</item>
+		<item title="Agrícola" href="./seguro.html#agricola" image="agricola.jpg" id_seguro="7" tag="agricolas">
 			<item title="Riego" href="./seguro.html#agricola_riego" image="agricola_riego.jpg"/>
-			<item title="Temporal" href="./seguro.html#temporal" image="agricola_temporal.jpg"/>
+			<item title="Temporal" href="./seguro.html#agricola_temporal" image="agricola_temporal.jpg"/>
 			<item title="Agricultura Protegida" href="./seguro.html#agricola_protegida" image="agricola_protegida.jpg"/>
 		</item>
-		<item title="Seguro de Vida" href="./seguro.html" image="vida.jpg" tag="seguros_vida">
+		<item title="Seguro de Vida" href="./seguro.html#seguros_vida" image="vida.jpg" tag="seguros_vida">
 			<item title="Básico" href="./seguro.html#vida_basico" image="vida_basico.jpg"/>
-			<item title="Protección Integral" href="./seguro.html" image="vida_proteccion_integral.jpg" tag="vida_integral">
+			<item title="Protección Integral" href="./seguro.html#proteccion_integral" image="vida_proteccion_integral.jpg" tag="vida_integral">
 				<item title="Seguro de Vida" href="./seguro.html#vida_integral" image="seguro_vida.jpg"/>
 				<item title="Asistencia médica y funeraria" href="./seguro.html#asistencia_medica" image="asistencia_medica.jpg"/>
 			</item>

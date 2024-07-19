@@ -117,11 +117,105 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="carousel_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (10).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (11).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (12).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (13).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (14).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (2).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (3).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (4).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (5).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (6).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (7).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (8).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (9).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cobertura_1" xml:space="preserve">
+    <value>Fenómenos metereológicos: &lt;ul&gt;
+  &lt;li&gt;Helada Atípica.&lt;/li&gt;
+  &lt;li&gt;Granizo.&lt;/li&gt;
+  &lt;li&gt;Inundación.&lt;/li&gt;
+  &lt;li&gt;Huracán.&lt;/li&gt;
+  &lt;li&gt;Ciclón.&lt;/li&gt;
+  &lt;li&gt;Tornado.&lt;/li&gt;
+  &lt;li&gt;Tromba.&lt;/li&gt;
+  &lt;li&gt;Incendio.&lt;/li&gt;
+  &lt;li&gt;Vientos Fuertes.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="cobertura_2" xml:space="preserve">
+    <value>Fenómenos sísmicos:  Erupción volcánica y caída de ceniza.</value>
+  </data>
+  <data name="cobertura_3" xml:space="preserve">
+    <value>Sequía:</value>
+  </data>
+  <data name="cobertura_4" xml:space="preserve">
+    <value>Lavado de Flor:</value>
+  </data>
   <data name="cover" xml:space="preserve">
     <value>apicola_cover.jpg</value>
   </data>
   <data name="description" xml:space="preserve">
-    <value>Cubre la disminución de la producción de miel de los apiarios, como consecuencia de la falta o disminución de la floración durante la cosecha de miel más importante que se registra en el estado o región, debida a los efectos de eventos climáticos protegidos.</value>
+    <value>El Fondo cubre la falta de floración en época de la cosecha de miel más importante que ocurra en el estado o región, como consecuencia de la presentación de los riesgos cubiertos.
+
+&lt;h4&gt;UNIDAD DE RIESGO&lt;/h4&gt;
+Para el caso del riesgo de Sequía o Helada Atípica la unidad de riesgo son el total de Unidades Animal de cada municipio o región.  
+
+Para riesgos diferentes a sequía o helada atípica, la Unidad de Riesgo son las Unidades Animal de cada una de las Unidades de Producción Pecuaria  aseguradas. 
+
+La Unidad Animal equivale a 5 colmenas. 
+
+La cosecha es considerada como la acción de extraer la miel de las  colmenas.  
+
+Y, la época de cosecha de miel son los meses en los que se realiza la  recolección de miel más importante en cada estado o región; por lo que, en caso de afectación, el riesgo protegido debe de ocurrir dentro de esta época para cada estado o región.</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>Apícola Climático</value>

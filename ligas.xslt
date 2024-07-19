@@ -27,7 +27,7 @@
 		<xsl:variable name="title"><xsl:apply-templates mode="title" select="@name"/></xsl:variable>
 		<a href="{value}" class="list-group-item list-group-item-action p-5" aria-current="true" style="text-align: center; gap: 20px;" target="_blank">
 			<h3>
-				<img src="./assets/logos_ligas/fira.png" class="img-fluid rounded-start mr-3" alt="{$title}" style="height:100px;">
+				<img src="./assets/img/fancampo.png" class="img-fluid rounded-start mr-3" alt="{$title}" style="height:100px;">
 					<xsl:apply-templates mode="image-src" select="key('image', comment)"/>
 				</img>
 				<span style="margin: 70px;"></span>
