@@ -74,37 +74,40 @@
 
 	<xsl:template match="/*" mode="caracteristicas">
 		<xsl:param name="items" select="."/>
-		<section id="caracteristicas">
-			<div class="container px-4 py-5">
-				<h2 class="pb-2 border-bottom">Características</h2>
-				<div class="row row-cols-1 row-cols-md-2 align-items-md-top g-5 py-5">
-					<div class="col d-flex flex-column align-items-start gap-2">
-						<h2 class="fw-bold text-body-emphasis">¿Qué es?</h2>
-						<p class="text-body-secondary">
-							<xsl:apply-templates mode="description" select="key('data','description')"/>
-						</p>
-						<xsl:variable name="tipo">
-							<xsl:choose>
-								<xsl:when test="$site:hash='#pecuario'">ganadero</xsl:when>
-								<xsl:otherwise>
-									<xsl:value-of select="translate($site:hash,'#','')"/>
-								</xsl:otherwise>
-							</xsl:choose>
-						</xsl:variable>
-						<!--<a href="cotizador.html?tipo={$tipo}" class="btn btn-primary btn-lg">Contratar</a>-->
-					</div>
-					<div class="col">
-						<div class="row row-cols-1 g-4">
-							<xsl:if test="$site:hash='#bienes_patrimoniales'">
-								<xsl:attribute name="class">row row-cols-1 g-4</xsl:attribute>
-							</xsl:if>
-							<xsl:apply-templates mode="cobertura" select="$items"/>
+		<xsl:variable name="description" select="key('data','description')"/>
+		<xsl:if test="$description">
+			<section id="caracteristicas">
+				<div class="container px-4 py-5">
+					<h2 class="pb-2 border-bottom">Características</h2>
+					<div class="row row-cols-1 row-cols-md-1 align-items-md-top g-5 py-5">
+						<div class="col d-flex flex-column align-items-start gap-2">
+							<h2 class="fw-bold text-body-emphasis">¿Qué es?</h2>
+							<p class="text-body-secondary">
+								<xsl:apply-templates mode="description" select="$description"/>
+							</p>
+							<xsl:variable name="tipo">
+								<xsl:choose>
+									<xsl:when test="$site:hash='#pecuario'">ganadero</xsl:when>
+									<xsl:otherwise>
+										<xsl:value-of select="translate($site:hash,'#','')"/>
+									</xsl:otherwise>
+								</xsl:choose>
+							</xsl:variable>
+							<!--<a href="cotizador.html?tipo={$tipo}" class="btn btn-primary btn-lg">Contratar</a>-->
+						</div>
+						<div class="col">
+							<div class="row row-cols-1 row-cols-md-2 g-4">
+								<xsl:if test="$site:hash='#bienes_patrimoniales'">
+									<xsl:attribute name="class">row row-cols-1 g-4</xsl:attribute>
+								</xsl:if>
+								<xsl:apply-templates mode="cobertura" select="$items"/>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-		<div class="b-divider"></div>
+			</section>
+			<div class="b-divider"></div>
+		</xsl:if>
 	</xsl:template>
 
 	<xsl:template match="@*" mode="tipo">
