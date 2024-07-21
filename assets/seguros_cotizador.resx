@@ -136,4 +136,22 @@
   <data name="img:ganadero" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>img\pecuario.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="img:maquinaria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>img\maquinaria_insumos_agropecuarios.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img:transporte_bienes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>img\agro_transporte.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img:vida" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>img\asistencia_medica.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maquinaria" xml:space="preserve">
+    <value>Maquinaria</value>
+  </data>
+  <data name="transporte_bienes" xml:space="preserve">
+    <value>Transporte de Bienes</value>
+  </data>
+  <data name="vida" xml:space="preserve">
+    <value>Vida</value>
+  </data>
 </root>

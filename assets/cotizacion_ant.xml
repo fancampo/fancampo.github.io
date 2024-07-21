@@ -1,11 +1,16 @@
-﻿<modelo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<tipo_cotizacion>
+﻿<modelo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="" upp="" tipocotizacion="" coordinador="" solicitante="" beneficiario="" cliente="" telefono="" correoelectronico="">
+	<tipocotizacion>
+		<row id="1" desc="Acu&#xED;cola"/>
 		<row id="2" desc="Ganadera"/>
+		<row id="3" desc="Ap&#xED;cola"/>
 		<row id="4" desc="Maquinaria"/>
+		<row id="5" desc="Transporte"/>
+		<row id="6" desc="Transporte acu&#xED;cola"/>
 		<row id="7" desc="Agr&#xED;cola"/>
-		<row id="8" desc="Transporte de bienes"/>
-		<row id="9" desc="Vida"/>
-	</tipo_cotizacion>
+	</tipocotizacion>
+	<clientes>
+		<row/>
+	</clientes>
 	<estado>
 		<row id="01" desc="Aguascalientes"/>
 		<row id="02" desc="Baja California"/>
@@ -2517,17 +2522,10 @@
 		<row id="32057" desc="Trancoso" edo="32"/>
 		<row id="32058" desc="Santa Mar&#xED;a de la Paz" edo="32"/>
 	</municipio>
-	<cultivo/>
-	<variedad/>
 	<ciclo>
 		<row id="1" desc="Primavera-Verano"/>
 		<row id="2" desc="Oto&#xF1;o-Invierno"/>
 		<row id="3" desc="Perenne"/>
-		<row id="4" desc="Bienal"/>
-		<row id="5" desc="Agricultura protegida"/>
-		<row id="6" desc="Malla sombra" ciclo="5"/>
-		<row id="7" desc="Macrot&#xFA;nel" ciclo="5"/>
-		<row id="8" desc="Invernadero" ciclo="5"/>
 	</ciclo>
 	<modalidad>
 		<row id="1" desc="Riego"/>
@@ -2535,206 +2533,99 @@
 		<row id="3" desc="Gravedad" modalidad="1"/>
 		<row id="4" desc="Bombeo" modalidad="1"/>
 		<row id="5" desc="Goteo" modalidad="1"/>
-		<row id="6" desc="Medio riego"/>
-		<row id="7" desc="Punteo"/>
 	</modalidad>
-	<riesgo_protegido>
+	<cobertura>
 		<row id="1" desc="Climatol&#xF3;gico"/>
-		<row id="2" desc="Climatol&#xF3;gico + Biol&#xF3;gico"/>
-		<row id="3" desc="Climatol&#xF3;gico + Riesgos antes de la nacencia(RAN)"/>
-		<row id="4" desc="Climatol&#xF3;gico + Biol&#xF3;gico + Riesgos antes de la nacencia(RAN)"/>
-		<row id="5" desc="Otro"/>
-	</riesgo_protegido>
-	<esquema_proteccion>
-		<row id="1" desc="Da&#xF1;o F&#xED;sico Directo (DFD)"/>
-		<row id="2" desc="Rendimiento (R)"/>
-		<row id="3" desc="Mixto (Da&#xF1;o F&#xED;sico Directo + Rendimiento)"/>
-		<row id="4" desc="Por planta"/>
-	</esquema_proteccion>
-	<metodo_ajuste>
-		<row id="1" desc="Predio"/>
-		<row id="2" desc="Hect&#xE1;rea"/>
-	</metodo_ajuste>
+		<row id="2" desc="Biol&#xF3;gico"/>
+		<row id="3" desc="Riesgos antes de la nacencia(RAN)"/>
+		<row id="4" desc="B&#xE1;sica"/>
+		<row id="5" desc="Adicional"/>
+	</cobertura>
+	<referencia_suma>
+		<row id="1" desc="Factura"/>
+		<row id="2" desc="Agrocosto"/>
+		<row id="3" desc="Crédito"/>
+		<row id="4" desc="Valor de referencia en la zona"/>
+	</referencia_suma>
 	<financiamiento>
 		<row id="1" desc="Recursos propios"/>
+		<row id="2" desc="SOFOM"/>
 		<row id="3" desc="FIRA"/>
 		<row id="4" desc="Banco"/>
-		<row id="2" desc="IFBN"/>
-		<row id="5" desc="Otro"/>
 	</financiamiento>
 	<especie>
 		<row id="1" desc="Bovino"/>
 		<row id="2" desc="Ovino"/>
-		<row id="4" desc="Caprino"/>
-		<row id="5" desc="Colmena"/>
+		<row id="3" desc="Caprino"/>
+		<row id="4" desc="Colmena"/>
+		<row id="5" desc="Porcino"/>
 		<row id="6" desc="Equino"/>
 		<row id="7" desc="Aves"/>
-		<row id="3" desc="Porcino"/>
 	</especie>
 	<origen_racial>
 		<row id="1" desc="Europeo"/>
-		<row id="2" desc="Sint&#xE9;tico"/>
-		<row id="3" desc="Cebuino"/>
+		<row id="2" desc="Sintético"/>
+		<row id="3" desc="Cebuíno"/>
 		<row id="4" desc="Comercial"/>
 	</origen_racial>
-	<sexo>
-		<row desc="Macho"/>
-		<row desc="Hembra"/>
-	</sexo>
-	<funcion_zootecnica>
-		<row id="1" desc="Orde&#xF1;a"/>
-		<row id="2" desc="Reproducci&#xF3;n"/>
-		<row id="4" desc="Engorda"/>
-		<row id="3" desc="Producci&#xF3;n"/>
-	</funcion_zootecnica>
-	<referenciasumaasegurada>
-		<row id="1" desc="Factura"/>
-		<row id="2" desc="Agrocosto"/>
-		<row id="3" desc="Cr&#xE9;dito"/>
-		<row id="4" desc="Valor de referencia en la zona"/>
-	</referenciasumaasegurada>
-	<tipo_seguro>
-		<row id="1" desc="Radicaci&#xF3;n (R)" tipo_cotizacion="2"/>
-		<row id="2" desc="Adaptaci&#xF3;n (A)" tipo_cotizacion="2"/>
-		<row id="3" desc="Transporte (T)" tipo_cotizacion="2"/>
-		<row id="4" desc="Alta mortalidad" tipo_cotizacion="2"/>
-		<row id="5" desc="Estaciones cuaternarias" tipo_cotizacion="2"/>
-		<row id="6" desc="Estancia temporal" tipo_cotizacion="2"/>
-		<row id="7" desc="Programa de fomento (Adaptaci&#xF3;n + Radicaci&#xF3;n)" tipo_cotizacion="2"/>
-		<row id="8" desc="Programa de mejoramiento gen&#xE9;tico (Transporte + Adaptaci&#xF3;n + Radicaci&#xF3;n)" tipo_cotizacion="2"/>
-	</tipo_seguro>
+	<seguro>
+		<row id="1" desc="Transporte (T)"/>
+		<row id="2" desc="Adaptación (A)"/>
+		<row id="3" desc="Radicación (R)"/>
+		<row id="4" desc="Alta mortalidad"/>
+		<row id="5" desc="Estaciones cuarentenarias"/>
+		<row id="6" desc="Estancia temporal"/>
+		<row id="7" desc="Programa de fomento (A + R)"/>
+		<row id="8" desc="Programa de Mejoramiento Genético (T + A + R)"/>
+	</seguro>
+	<funcionzootecnica>
+		<row id="1" desc="Reproducción"/>
+		<row id="2" desc="Engorda"/>
+		<row id="3" desc="Producción"/>
+	</funcionzootecnica>
 	<deducible>
-		<row desc="10"/>
-		<row desc="15"/>
-		<row desc="20"/>
+		<row id="10" desc="10%"/>
+		<row id="15" desc="15%"/>
+		<row id="20" desc="20%"/>
 	</deducible>
+	<duracion>
+		<row id="12" desc="12 horas"/>
+		<row id="24" desc="24 horas"/>
+		<row id="36" desc="36 horas"/>
+		<row id="48" desc="48 horas"/>
+	</duracion>
+	<riesgo>
+		<row id="1" desc="Transporte tradicional"/>
+		<row id="2" desc="Riesgo ordinario de tránsito"/>
+		<row id="3" desc="Robo en caso de accidente"/>
+	</riesgo>
+	<sexo>
+		<row id="1" pk="hembra" desc="Hembra"/>
+		<row id="2" pk="macho" desc="Macho"/>
+	</sexo>
+	<origen_destino_transporte>
+		<row id="1" desc="Estado"/>
+		<row id="2" desc="Municipio"/>
+	</origen_destino_transporte>
 	<enfermedades_zona>
 		<row id="1" desc="Complejo clostridial"/>
-		<row id="2" desc="Complejo respiratorio bovino"/>
-		<row id="3" desc="Rabia paral&#xED;tica"/>
+		<row id="2" desc="Complejo Respiratorio Bovino"/>
+		<row id="3" desc="Rabia Paralítica"/>
 		<row id="4" desc="Anaplasmosis"/>
 		<row id="5" desc="Piroplasmosis"/>
 		<row id="6" desc="Manheymia"/>
 		<row id="7" desc="Haemophilosis"/>
-		<row id="8" desc="Otro"/>
+		<row id="8" desc="Otras y especifique"/>
 	</enfermedades_zona>
-	<duracion>
-		<row id="1" desc="12 horas"/>
-		<row id="2" desc="24 horas"/>
-		<row id="3" desc="36 horas"/>
-		<row id="4" desc="48 horas"/>
-	</duracion>
-	<riesgo_transporte>
-		<row id="1" desc="Transporte tradicional"/>
-		<row id="2" desc="Riesgo ordinario de tr&#xE1;nsito"/>
-		<row id="3" desc="Robo o extrav&#xED;o en caso de accidente"/>
-	</riesgo_transporte>
-	<riesgo_solicitado>
-		<row id="1" desc="B&#xE1;sicos" txt="Incendio, rayo, explosi&#xF3;n, cicl&#xF3;n, tornado, vendaval, hurac&#xE1;n, granizo, inundaci&#xF3;n o inundaci&#xF3;n por lluvia, terremoto o erupci&#xF3;n volc&#xE1;nica, derrumbe, deslave, hundimiento, deslizamiento del terreno o alud, colisi&#xF3;n, volcadura o caida de maquinaria asegurada." tipo_cotizacion="4"/>
-		<row id="2" desc="Adicional" txt="Robo" tipo_cotizacion="4"/>
-		<row id="3" desc="B&#xE1;sicos" txt="Incendio, rayo, explosi&#xF3;n, descarrilamiento de vagones de ferrocarril y colisi&#xF3;n o volcadura del veh&#xED;culo." tipo_cotizacion="8"/>
-		<row id="4" desc="Adicional" txt="Robo total y extrav&#xED;o o robo en caso de accidente de tr&#xE1;nsito." tipo_cotizacion="8"/>
-	</riesgo_solicitado>
-	<unidad_medida>
-		<row id="1" desc="Unidades"/>
-		<row id="2" desc="Pacas"/>
-		<row id="3" desc="Toneladas"/>
-		<row id="4" desc="Metros cuadrados"/>
-		<row id="5" desc="Costales"/>
-		<row id="6" desc="Litros"/>
-		<row id="7" desc="Kilos"/>
-		<row id="8" desc="Cajas"/>
-	</unidad_medida>
-	<parentesco>
-		<row id="1" desc="Padre"/>
-		<row id="2" desc="Madre"/>
-		<row id="3" desc="Hermano"/>
-		<row id="4" desc="Hermana"/>
-		<row id="5" desc="Esposa"/>
-		<row id="6" desc="Esposo"/>
-		<row id="7" desc="Conyuge"/>
-		<row id="8" desc="Concuvino(a)"/>
-		<row id="9" desc="Hijo"/>
-		<row id="10" desc="Hija"/>
-		<row id="11" desc="Otro"/>
-	</parentesco>
-	<tipo_cotizacion_vida>
-		<row id="1" desc ="F&#xED;sica"/>
-		<row id="2" desc ="Moral"/>
-	</tipo_cotizacion_vida>
-	<suma>
-		<row id="1" desc="B&#xE1;sico"/>
-		<row id="2" desc="Montos mayores"/>
-		<row id="3" desc="$20,000" suma="1"/>
-		<row id="4" desc="$50,000" suma="1"/>
-		<row id="5" desc="$30,000" suma="2"/>
-		<row id="6" desc="$40,000" suma="2"/>
-		<row id="7" desc="$50,000" suma="2"/>
-		<row id="8" desc="$60,000" suma="2"/>
-		<row id="9" desc="$70,000" suma="2"/>
-		<row id="10" desc="$80,000" suma="2"/>
-		<row id="11" desc="$90,000" suma="2"/>
-		<row id="12" desc="$100,000" suma="2"/>
-		<row id="13" desc="$110,000" suma="2"/>
-		<row id="14" desc="$120,000" suma="2"/>
-		<row id="15" desc="$130,000" suma="2"/>
-		<row id="16" desc="$140,000" suma="2"/>
-		<row id="17" desc="$150,000" suma="2"/>
-		<row id="18" desc="$160,000" suma="2"/>
-		<row id="19" desc="$170,000" suma="2"/>
-		<row id="20" desc="$180,000" suma="2"/>
-		<row id="21" desc="$190,000" suma="2"/>
-		<row id="22" desc="$200,000" suma="2"/>
-		<row id="23" desc="$210,000" suma="2"/>
-		<row id="24" desc="$220,000" suma="2"/>
-		<row id="25" desc="$230,000" suma="2"/>
-		<row id="26" desc="$240,000" suma="2"/>
-		<row id="27" desc="$250,000" suma="2"/>
-		<row id="28" desc="$260,000" suma="2"/>
-		<row id="29" desc="$270,000" suma="2"/>
-		<row id="30" desc="$280,000" suma="2"/>
-		<row id="31" desc="$290,000" suma="2"/>
-		<row id="32" desc="$300,000" suma="2"/>
-		<row id="33" desc="$310,000" suma="2"/>
-		<row id="34" desc="$320,000" suma="2"/>
-		<row id="35" desc="$330,000" suma="2"/>
-		<row id="36" desc="$340,000" suma="2"/>
-		<row id="37" desc="$350,000" suma="2"/>
-		<row id="38" desc="$360,000" suma="2"/>
-		<row id="39" desc="$370,000" suma="2"/>
-		<row id="40" desc="$380,000" suma="2"/>
-		<row id="41" desc="$390,000" suma="2"/>
-		<row id="42" desc="$400,000" suma="2"/>
-		<row id="43" desc="$410,000" suma="2"/>
-		<row id="44" desc="$420,000" suma="2"/>
-		<row id="45" desc="$430,000" suma="2"/>
-		<row id="46" desc="$440,000" suma="2"/>
-		<row id="47" desc="$450,000" suma="2"/>
-		<row id="48" desc="$460,000" suma="2"/>
-		<row id="49" desc="$470,000" suma="2"/>
-		<row id="50" desc="$480,000" suma="2"/>
-		<row id="51" desc="$490,000" suma="2"/>
-		<row id="52" desc="$500,000" suma="2"/>
-	</suma>
-	<clientes>
-		<row/>
-	</clientes>
-	<cotizaciones xmlns:fixed="http://panax.io/state/fixed" id="" tipo_cotizacion="" fecha="" coordinador="" solicitante="" beneficiario="" upp="" cliente="" telefono="" correo_electronico="" suma_asegurada_total="" costo_prima="">
-		<cotizacion fixed:tipo_cotizacion="7" type="agricola" cultivo="" variedad="" fecha_siembra="" fecha_arraigo="" ciclo="" modalidad="" riesgo_protegido="" esquema_proteccion="" metodo_ajuste="" financiamiento="" inversion_hectarea="" rendimiento_protegido="">
-			<detalle xsi:type="mock" nombre="" identificador="" estado="" municipio="" localidad="" superficie="" coordenada1="" coordenada2=""/>
-		</cotizacion>
-		<cotizacion fixed:tipo_cotizacion="2" type="ganadero" especie="">
-			<detalle xsi:type="mock" estado="" municipio="" especie="" origen_racial="" raza="" sexo="" funcion_zootecnica="" edad="" numero_cabezas="" suma_asegurada="" referencia_suma_asegurada="" financiamiento="" tipo_seguro="" deducible="" enfermedades_zona="" cabezas_totales_hato="" cabezas_muertas_anuales="" duracion="" riesgo_transporte="" estado_origen="" municipio_origen="" estado_destino="" municipio_destino=""/>
-		</cotizacion>
-		<cotizacion fixed:tipo_cotizacion="9" type="vida" tipo_cotizacion_vida="" fecha_inicio="" fecha_fin="" suma="" >
-			<detalle xsi:type="mock" fixed:tipo_cotizacion_vida="1" folio_pif="" ugr="" agl="" folio="" curp="" parentesco="" monto_deposito=""/>
-			<detalle xsi:type="mock" fixed:tipo_cotizacion_vida="2" suscripciones=""/>
-		</cotizacion>
-		<cotizacion fixed:tipo_cotizacion="4" type="maquinaria">
-			<detalle xsi:type="mock" nombre_maquinaria="" numero_unidades="" descripcion="" valor_maquinaria="" anio_modelo="" riesgo_solicitado=""/>
-		</cotizacion>
-		<cotizacion fixed:tipo_cotizacion="8" type="transporte_bienes">
-			<detalle xsi:type="mock" unidad_medida="" a_granel="" nombre_bienes="" descripcion="" valor_bienes="" riesgo_solicitado="" fallas_sistema_refrigeracion="" kilometros="" estado_origen="" municipio_origen="" estado_destino="" municipio_destino=""/>
-		</cotizacion>
-	</cotizaciones>
+	<Cotizacion xsi:type="agricola" cultivo="" fechasiembra="" ciclo="" modalidad="" cobertura="" financiamiento="">
+		<detalle superficie="" coordenada1="" coordenada2="" estado="" municipio="" localidad="" nombre="" identificador=""/>
+	</Cotizacion>
+	<!--Tipo de cotizacion acuicola-->
+	<Cotizacion xsi:type="acuicola" funcionzootecnica="" numeroestanques="" densidadpoblacion="" ciclo="" fechasiembraprimerestanque="">
+		<detalle estanque="" fechasiembra="" fechacosecha="" nombrelaboratorio="" superficieha="" densidadsiembra="" totalanimales=""/>
+	</Cotizacion>
+	<!--Tipo de cotizacion ganadera-->
+	<Cotizacion xsi:type="ganadero" especie="">
+		<detalle xsi:type="mock" especie="" estado="" municipio="" localidad="" origen_racial="" raza="" sexo=""  funcionzootecnica="" edad="" numero_cabezas="" suma_asegurada="" referencia_suma_asegurada="" financiamiento="" seguro="" deducible="" suma_asegurada_total="" enfermedades_zona="" cabezas_totales_hato="" cabezas_muertas_anuales="" duracion="" riesgo="" origen_transporte="" destino_transporte=""/>
+	</Cotizacion>
 </modelo>

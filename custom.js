@@ -131,6 +131,10 @@ function initialize_carousel() {
 
 async function cotizar() {
     let chatbot = document.querySelector("#chatbot");
+    if (!chatbot) {
+        window.document.location = 'cotizador.html';
+        return;
+    }
     chatbot.contentDocument.documentElement.querySelector('#voiceflow-chat').shadowRoot.querySelector('button').click();
     chatbot.style.height = '80vh';
     let chat = chatbot && chatbot.contentDocument.documentElement.querySelector('#voiceflow-chat')

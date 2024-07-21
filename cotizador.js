@@ -4,7 +4,7 @@ xo.listener.on('fetch::#cotizador', function() {
 })
 
 xo.listener.on(`searchParams?param=tipo`, function({ params }) {
-    xo.stores.seed.selectFirst('/*/@tipocotizacion').set(params.tipo);
+    xo.stores.seed.selectFirst('/*/cotizaciones/@tipo_cotizacion').set(params.tipo);
 })
 
 xo.listener.on(`agregarDetalle::@especie`, function({ selection, element, dimension }) {

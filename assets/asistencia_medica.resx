@@ -118,49 +118,24 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="cobertura_1" xml:space="preserve">
-    <value>I. ALTA MORTALIDAD: Cubre la muerte por enfermedad, accidente y/o sacrificio forzoso por la ocurrencia de eventos de alta mortalidad* del ganado identificado con arete SINIIGA.
-
-&lt;em&gt;*Aplica un mínimo de animales muertos por la misma causa denominado franquicia. En muerte ocasionada por mordedura de serpiente se debe cumplir franquicia.&lt;/em&gt;
-
-
-&lt;a href="seguro.html#alta_mortalidad" class="btn btn-primary btn-lg"&gt;Ver más...&lt;/a&gt;</value>
+    <value>Coberturas: Proporciona seguros de vida para productores, trabajadores del campo y sus familias, garantizando apoyo financiero en momentos críticos.</value>
   </data>
   <data name="cobertura_2" xml:space="preserve">
-    <value>II. ATAQUE DE DEPREDADOR: cubre la muerte y/o sacrificio forzoso del 
-ganado y cubre los daños en las colmenas y material biológico de la colmena asegurados, como consecuencia directa e inmediata de daños causados por el ataque de depredadores. 
-
-Se protege el inventario nacional.
-
-&lt;a href="seguro.html#ataque_depredador" class="btn btn-primary btn-lg"&gt;Ver más...&lt;/a&gt;</value>
+    <value>Beneficiarios: Productores, trabajadores agrícolas, y sus familias. Este fondo se enfoca en asegurar la vida de aquellos cuya labor diaria sostiene el sector agropecuario.</value>
   </data>
   <data name="cobertura_3" xml:space="preserve">
-    <value>III. DAÑOS PATRIMONIALES A LA INFRAESTRUCTURA GANADERA: protege las instalaciones ganaderas dentro de la Unidades de Producción Pecuaria (UPP) aseguradas, que son afectadas por los daños de eventos climáticos y geológicos protegidos a lo largo del todo el año.
-
-&lt;a href="seguro.html#bienes_patrimoniales" class="btn btn-primary btn-lg"&gt;Ver más...&lt;/a&gt;</value>
+    <value>Operación: Se maneja bajo principios de mutualismo y solidaridad, ofreciendo coberturas adaptadas a las necesidades y realidades del sector rural. La operación del fondo se caracteriza por su enfoque humano y su adaptabilidad a las condiciones particulares de sus beneficiarios.</value>
   </data>
-  <data name="cobertura_4" xml:space="preserve">
-    <value>IV. APÍCOLA CLIMÁTICO: El Fondo cubre la falta de floración en época de la cosecha de miel más importante que ocurra en el estado o región, como consecuencia de la presentación de los riesgos cubiertos.
-
-&lt;a href="seguro.html#apicola_climatico" class="btn btn-primary btn-lg"&gt;Ver más...&lt;/a&gt;</value>
-  </data>
-  <data name="cobertura_5" xml:space="preserve">
-    <value>V. GANADERO CLIMÁTICO: cubre la muerte, sacrificio forzoso o 
-desaparición de animales y colmenas por la ocurrencia de eventos 
-meteorológicos y geológicos protegidos.
-
-&lt;a href="seguro.html#ganadero_climatico" class="btn btn-primary btn-lg"&gt;Ver más...&lt;/a&gt;</value>
+  <data name="cover" xml:space="preserve">
+    <value>vida_cover.jpg</value>
   </data>
   <data name="description" xml:space="preserve">
-    <value>Contempla cinco seguros de manera integral para la protección de los ganaderos de México.</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="multirriesgo (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\multirriesgo (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="multirriesgo (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\multirriesgo (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>Brindar protección financiera ante el fallecimiento de los productores y personas relacionadas con el sector agropecuario, asegurando el bienestar de sus familias y la continuidad de las operaciones en el campo.</value>
   </data>
   <data name="title" xml:space="preserve">
-    <value>Multirriesgo</value>
+    <value>Seguro de vida</value>
+  </data>
+  <data name="ventaja_1" xml:space="preserve">
+    <value>Importancia y Beneficios: FanVida cumple una función social fundamental al proporcionar seguridad financiera a las familias de los productores en caso de fallecimiento, contribuyendo a la estabilidad económica y social del entorno rural.</value>
   </data>
 </root>

@@ -121,6 +121,9 @@
   <data name="banbajio" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>logos_ligas\banbajio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bbva" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>img\bbva.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ceres" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>logos_ligas\ceres.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -163,6 +166,10 @@
   <data name="item_06_2: INIFAP" xml:space="preserve">
     <value>https://www.gob.mx/inifap</value>
     <comment>#inifap</comment>
+  </data>
+  <data name="item_07: BBVA" xml:space="preserve">
+    <value>https://www.bbva.mx/</value>
+    <comment>#bbva</comment>
   </data>
   <data name="item_07: MONEX" xml:space="preserve">
     <value>https://www.monex.com.mx/portal/inicio?gad_source=1&amp;gclid=CjwKCAjww_iwBhApEiwAuG6ccPx6XzB-Xj5seJsSzw965DjLJ9P6-45vOmGvu0nVSIJmy2yocJKAeRoC4lkQAvD_BwE</value>

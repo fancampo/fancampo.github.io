@@ -202,7 +202,37 @@
 &lt;/ul&gt;</value>
   </data>
   <data name="description" xml:space="preserve">
-    <value>Es de contratación particular y protege a diferentes cultivos cubriendo las pérdidas de las inversiones realizadas en la Unidad de Riesgo ocasionada por los riesgos protegidos. Siendo un instrumento financiero esencial que ayuda al crecimiento del sector.</value>
+    <value>Es de contratación particular y protege a diferentes cultivos cubriendo las pérdidas de las inversiones realizadas en la Unidad de Riesgo ocasionada por los riesgos protegidos. Siendo un instrumento financiero esencial que ayuda al crecimiento del sector.
+
+&lt;p&gt;RIESGOS CUBIERTOS:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Climatológicos.&lt;/li&gt;
+  &lt;li&gt;Biológicos.&lt;/li&gt;
+  &lt;li&gt;Antes de la Nacencia (RAN).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;MODALIDADES:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Riego.&lt;/li&gt;
+  &lt;li&gt;Temporal.&lt;/li&gt;
+  &lt;li&gt;Agricultura protegida.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;PROTECCION A LA INVERSION EN ESQUEMAS:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Daño físico directo (DFD)&lt;/li&gt;
+  &lt;li&gt;Rendimiento (R)&lt;/li&gt;
+  &lt;li&gt;Mixto (DFD + R)&lt;/li&gt;
+  &lt;li&gt;Por planta.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;CULTIVOS ASEGURABLES:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Granos básicos.&lt;/li&gt;
+  &lt;li&gt;Hortalizas.&lt;/li&gt;
+  &lt;li&gt;Frutales.&lt;/li&gt;
+  &lt;li&gt;Plantaciones.&lt;/li&gt;
+&lt;/ul&gt;</value>
   </data>
   <data name="especie_1" xml:space="preserve">
     <value>Cultivos susceptibles de aseguramiento en los ciclos Primavera – Verano y Otoño – Invierno: 
