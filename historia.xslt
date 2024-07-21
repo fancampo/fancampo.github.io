@@ -258,6 +258,10 @@
 		</div>
 	</xsl:template>
 
+	<xsl:template match="value">
+		<xsl:value-of select="." disable-output-escaping="yes"/>
+	</xsl:template>
+
 	<xsl:template match="data">
 		<li>
 			<div>

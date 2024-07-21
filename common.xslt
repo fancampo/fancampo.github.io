@@ -8,22 +8,50 @@
 	</xsl:template>
 
 	<xsl:template mode="image-src" match="data">
+		<xsl:comment>debug:info</xsl:comment>
 		<xsl:apply-templates mode="image-src" select="key('image', @name)"/>
 	</xsl:template>
 
 	<xsl:template mode="title" match="data">
+		<xsl:comment>debug:info</xsl:comment>
 		<xsl:apply-templates mode="title" select="value"/>
 	</xsl:template>
 
 	<xsl:template mode="title" match="@name">
-		<xsl:value-of select="normalize-space(substring-after(.,':'))"/>
+		<xsl:comment>debug:info</xsl:comment>
+		<xsl:value-of select="normalize-space(substring-after(.,':'))" disable-output-escaping="yes"/>
 	</xsl:template>
 
 	<xsl:template mode="title" match="value">
-		<xsl:value-of select="normalize-space(substring-before(.,':'))"/>
+		<xsl:comment>debug:info</xsl:comment>
+		<xsl:value-of select="normalize-space(substring-before(.,':'))" disable-output-escaping="yes"/>
 	</xsl:template>
 
 	<xsl:template mode="body" match="value">
-		<xsl:value-of select="normalize-space(substring-after(.,':'))"/>
+		<xsl:comment>debug:info</xsl:comment>
+		<xsl:value-of select="." disable-output-escaping="yes"/>
+	</xsl:template>
+
+	<xsl:template mode="body" match="value[contains(.,':')]">
+		<xsl:comment>debug:info</xsl:comment>
+		<xsl:value-of select="normalize-space(substring-after(.,':'))" disable-output-escaping="yes"/>
+	</xsl:template>
+
+	<xsl:template mode="paragraph" match="*">
+		<xsl:param name="class"/>
+		<xsl:comment>debug:info</xsl:comment>
+		<xsl:variable name="body">
+			<xsl:apply-templates mode="body" select="."/>
+		</xsl:variable>
+		<xsl:choose>
+			<xsl:when test="substring($body,1,1)='&lt;'">
+				<xsl:value-of select="$body" disable-output-escaping="yes"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<p class="$class">
+					<xsl:value-of select="$body" disable-output-escaping="yes"/>
+				</p>
+			</xsl:otherwise>
+		</xsl:choose>
 	</xsl:template>
 </xsl:stylesheet>

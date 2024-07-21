@@ -23,21 +23,24 @@
 		</xsl:choose>
 	</xsl:template>
 
-	<xsl:key name="wizard.section" match="@tipocotizacion" use="1"/>
-	<xsl:key name="wizard.section" match="/*[@tipocotizacion!='']/@*[namespace-uri()='']" use="2"/>
-	<xsl:key name="wizard.section" match="/*/Cotizacion[@xsi:type=../@tipocotizacion]/@*[namespace-uri()='']" use="3"/>
-	<xsl:key name="wizard.section" match="/*/Cotizacion[@xsi:type=../@tipocotizacion]/detalle[not(@xsi:type='mock')]/@especie" use="4"/>
-	<xsl:key name="wizard.section" match="/*/Cotizacion[@xsi:type=../@tipocotizacion]/detalle[not(@xsi:type='mock')]/@*[namespace-uri()=''][not(name()='especie')]" use="4.1"/>
+	<xsl:key name="wizard.section" match="cotizaciones/@tipo_cotizacion" use="1"/>
+	<xsl:key name="wizard.section" match="/*/cotizaciones[@tipo_cotizacion!='']/@*[namespace-uri()='']" use="2"/>
+	<xsl:key name="wizard.section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/@*[namespace-uri()='']" use="3"/>
+	<xsl:key name="wizard.section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/detalle[not(@xsi:type='mock')]/@especie" use="4"/>
+	<xsl:key name="wizard.section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/detalle[not(@xsi:type='mock')]/@*[namespace-uri()=''][not(name()='especie')]" use="4.1"/>
 
-	<xsl:key name="invalid" match="/*/@*[namespace-uri()=''][.='']" use="generate-id()"/>
-	<xsl:key name="invalid" match="/*/Cotizacion[@xsi:type=../@tipocotizacion]/@*[namespace-uri()=''][.='']" use="generate-id()"/>
-	<xsl:key name="invalid" match="/*/Cotizacion[@xsi:type=../@tipocotizacion]/detalle/@*[namespace-uri()=''][.='']" use="generate-id()"/>
+	<!--<xsl:key name="wizard.section" match="/*/cotizaciones/cotizacion[not(@type='ganadero')][@type=../@tipo_cotizacion]/detalle/@*" use="4"/>-->
+	
+	<xsl:key name="invalid" match="/*/cotizaciones/@*[namespace-uri()=''][.='']" use="generate-id()"/>
+	<xsl:key name="invalid" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/@*[namespace-uri()=''][.='']" use="generate-id()"/>
+	<xsl:key name="invalid" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/detalle/@*[namespace-uri()=''][.='']" use="generate-id()"/>
 	<xsl:key name="hidden" match="@id" use="generate-id()"/>
 	<xsl:key name="hidden" match="detalle[not(@seguro=1)]/@duracion" use="generate-id()"/>
 	<xsl:key name="hidden" match="detalle[not(@seguro=1)]/@riesgo" use="generate-id()"/>
 	<xsl:key name="hidden" match="detalle[not(@seguro=1)]/@origen_transporte" use="generate-id()"/>
 	<xsl:key name="hidden" match="detalle[not(@seguro=1)]/@destino_transporte" use="generate-id()"/>
-	<xsl:key name="readonly" match="@tipocotizacion" use="generate-id()"/>
+	<xsl:key name="readonly" match="@type" use="generate-id()"/>
+	<xsl:key name="readonly" match="@tipo_cotizacion" use="generate-id()"/>
 	<xsl:key name="readonly" match="@fecha" use="generate-id()"/>
 	<xsl:key name="readonly" match="@suma_asegurada_total" use="generate-id()"/>
 
@@ -228,12 +231,12 @@ li span.wizard-icon-step-completed {
 
 	<xsl:template mode="wizard.step.title.legend" match="key('wizard.section','4')">
 		<xsl:text>Detalles de seguro </xsl:text>
-		<xsl:value-of select="ancestor::Cotizacion/@xsi:type"/>
+		<xsl:value-of select="ancestor::cotizacion/@type"/>
 	</xsl:template>
 
 	<xsl:template mode="wizard.step.title.legend" match="key('wizard.section','3')">
 		<xsl:text>Datos de seguro </xsl:text>
-		<xsl:value-of select="ancestor::Cotizacion/@xsi:type"/>
+		<xsl:value-of select="ancestor::cotizacion/@type"/>
 	</xsl:template>
 
 	<xsl:template mode="wizard.step.title.legend" match="key('wizard.section','2')">
@@ -346,7 +349,7 @@ li span.wizard-icon-step-completed {
 	<xsl:key name="desc" match="especie/row/@desc" use="concat(name(../..),'::',../@id)"/>
 	<xsl:key name="selected" match="@selected:especie" use="concat(generate-id(..), '::', local-name())"/>
 
-	<xsl:key name="selected" match="Cotizacion/detalle/@especie" use="concat(generate-id(../..), '::', .)"/>
+	<xsl:key name="selected" match="cotizaciones/cotizacion/detalle/@especie" use="concat(generate-id(../..), '::', .)"/>
 
 	<xsl:template mode="control" match="@*">
 		<xsl:param name="headerText"/>
@@ -487,7 +490,9 @@ li span.wizard-icon-step-completed {
 
 	<xsl:template mode="control" match="@*[key('readonly',generate-id())]" priority="2">
 		<input type="text" readonly="" tabindex="-1" class="form-control-plaintext">
-			<xsl:apply-templates select="."/>
+			<xsl:attribute name="value">
+				<xsl:apply-templates select="."/>
+			</xsl:attribute>
 		</input>
 	</xsl:template>
 
@@ -495,7 +500,7 @@ li span.wizard-icon-step-completed {
 	</xsl:template>
 
 	<xsl:template mode="control_type" match="@correoelectronico">email</xsl:template>
-	<xsl:template mode="control_type" match="@fechasiembra|@fechacosecha">date</xsl:template>
+	<xsl:template mode="control_type" match="@fecha_siembra|@fecha_siembra|@fecha|@fecha_inicio|@fecha_fin">date</xsl:template>
 	<xsl:template mode="control_type" match="@machosporasegurar|@hembrasporasegurar|@edad|@numero_cabezas|@suma_asegurada">number</xsl:template>
 
 	<xsl:template mode="control_type" match="@*">text</xsl:template>

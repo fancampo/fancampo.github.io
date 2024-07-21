@@ -117,11 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="cover" xml:space="preserve">
-    <value>comerciales_agropecuarios_cover.jpg</value>
+  <data name="cobertura_1" xml:space="preserve">
+    <value>Transporte: puede ser Transporte y Riesgos Ordinarios de Transito (inicia 
+con embarque y termina con desembarque) o redondo (de un lugar a otro donde tendrá una estancia temporal y posteriormente trasladados de regreso a su lugar de origen). Vigencia desde 12, 24, 48 horas, dentro de territorio nacional.</value>
+  </data>
+  <data name="cobertura_2" xml:space="preserve">
+    <value>Adaptación: Cubre el riesgo de muerte por enfermedad, accidente y/o 
+sacrificio forzoso. Vigencia hasta 45 días en la nueva explotación.</value>
+  </data>
+  <data name="cobertura_3" xml:space="preserve">
+    <value>Radicación: cubre el riesgo de muerte por enfermedad, accidente y/o 
+sacrificio forzoso. Vigencia hasta 365 días en el lugar de producción.</value>
+  </data>
+  <data name="cobertura_4" xml:space="preserve">
+    <value>Estaciones Cuarentenarias: Se pueden proteger animales en estaciones cuarentenarias con vigencia desde 3 días hasta 9 días.</value>
+  </data>
+  <data name="cobertura_5" xml:space="preserve">
+    <value>Estancia Temporal: Período dónde los animales participan en exposiciones, exhibiciones, muestras, tianguis, subastas o concursos, el cual quedará definido en la vigencia. Vigencia desde 10 días hasta 20 días en el lugar del evento.</value>
+  </data>
+  <data name="cobertura_6" xml:space="preserve">
+    <value>Alta Mortalidad: Cubre la muerte por enfermedad, accidente y/o sacrificio forzoso por la ocurrencia de eventos de alta mortalidad* del ganado identificado con arete SINIIGA.
+
+&lt;em&gt;*Aplica un mínimo de animales muertos por la misma causa denominado franquicia. En muerte ocasionada por mordedura de serpiente se debe cumplir franquicia.&lt;/em&gt;</value>
   </data>
   <data name="description" xml:space="preserve">
-    <value>Seguros de contratación programa de Fomento, Mejoramiento Genético, particular (transporte, adaptación, radicación, estancia temporal y alta mortalidad) protegen contra muerte por enfermedad, accidentes y/o sacrificio forzoso de bovinos de reproducción, doble función, ordeña, engorda y de trabajo; ovinos y caprinos de reproducción; cerdos de reproducción y engorda.</value>
+    <value>Son de contratación particular enfocados a diversos programas de fomento ganadero y mejoramiento genético protegiendo la muerte contra enfermedad, accidentes y/o sacrificio forzoso de bovinos de reproducción, doble función, ordeña, engorda y de trabajo; ovinos y caprinos de reproducción; cerdos de reproducción y engorda.</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>Comerciales Agropecuarios</value>

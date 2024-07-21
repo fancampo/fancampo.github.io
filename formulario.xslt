@@ -8,7 +8,7 @@
 	<xsl:param name="title"></xsl:param>
 	<xsl:template match="/*">
 		<div>
-			<form action="contact.asp" method="post" role="form" class="contact-form">
+			<form method="post" role="form" class="contact-form">
 				<div class="row">
 					<xsl:apply-templates mode="field" select="key('data','*')">
 						<xsl:sort select="comment" data-type="number"/>

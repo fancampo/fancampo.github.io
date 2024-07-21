@@ -11,11 +11,13 @@
 					<xsl:otherwise>img/cover.jpg</xsl:otherwise>
 				</xsl:choose>
 			</xsl:variable>
-			<section class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/{$cover});background-position: center center;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;padding: 150px 0 50px 0;" xo-stylesheet="section_title.xslt" xo-source="seed" xo-swap="self::*">
+			<section class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/{$cover});background-position: center center;background-repeat: no-repeat;background-size: cover;padding: 150px 0 50px 0;" xo-stylesheet="section_title.xslt" xo-source="seed" xo-swap="self::*">
 			</section>
 			<div class="container p-5">
 				<div class="list-group info">
-					<xsl:apply-templates select="key('data','body')"/>
+					<xsl:apply-templates select="key('data','body')">
+						<xsl:sort select="@name"/>
+					</xsl:apply-templates>
 				</div>
 			</div>
 		</main>
@@ -25,7 +27,7 @@
 		<xsl:variable name="title"><xsl:apply-templates mode="title" select="@name"/></xsl:variable>
 		<a href="{value}" class="list-group-item list-group-item-action p-5" aria-current="true" style="text-align: center; gap: 20px;" target="_blank">
 			<h3>
-				<img src="./assets/logos_ligas/fira.png" class="img-fluid rounded-start mr-3" alt="{$title}" style="height:100px;">
+				<img src="./assets/img/fancampo.png" class="img-fluid rounded-start mr-3" alt="{$title}" style="height:100px;">
 					<xsl:apply-templates mode="image-src" select="key('image', comment)"/>
 				</img>
 				<span style="margin: 70px;"></span>

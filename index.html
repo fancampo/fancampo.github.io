@@ -33,7 +33,7 @@
 
 
     <!-- Styles -->
-    <link rel="xover-manifest" href="manifest.json?v=20240627_1744">
+    <link rel="xover-manifest" href="manifest.json?v=20240711_1027">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
@@ -48,8 +48,8 @@
     <link href="css/fontawesome-all.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
-    <script type="text/javascript" src="xover/xo.js?v=20240627_1744"></script>
-    <script type="text/javascript" src="custom.js?v=20240627_1744" defer></script>
+    <script type="text/javascript" src="xover/xo.js?v=20240711_1027"></script>
+    <script type="text/javascript" src="custom.js?v=20240711_1027" defer></script>
     <!--<style>
         @font-face {
             font-family: 'Billie-DEMO-Bold';
@@ -64,11 +64,10 @@
     </style>-->
 </head>
 <body>
-
     <header id="header" class="fixed-top" xo-source="header.html">
     </header>
 
-    <section id="video-container" class="d-flex" style="background-color: var(--fancampovida-blue-smoke); flex-wrap: wrap; flex-direction: column;">
+    <section id="video-container" class="d-flex" style="background: linear-gradient(to bottom, var(--fancampovida-blue-smoke) 40%, var(--fancampovida-creen-snow) 60%); flex-wrap: wrap; flex-direction: column; ">
         <style>
             #promocional .video-container {
                 position: relative;
@@ -76,33 +75,33 @@
                 cursor: pointer;
             }
 
-            #promocional .video-container video {
-                /*position: absolute;
+                #promocional .video-container video {
+                    /*position: absolute;
                 visibility: hidden;*/
-            }
+                }
 
-            #promocional .video-container.playing video {
-                visibility: visible;
-            }
+                #promocional .video-container.playing video {
+                    visibility: visible;
+                }
 
-            #promocional .video-container.playing video {
-                visibility: visible;
-            }
+                #promocional .video-container.playing video {
+                    visibility: visible;
+                }
 
-            #promocional .video-container.playing .thumbnail {
-                display: none;
-            }
+                #promocional .video-container.playing .thumbnail {
+                    display: none;
+                }
 
-            #promocional .video-container .thumbnail {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                left: 0;
-            }
+                #promocional .video-container .thumbnail {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                }
 
-            #promocional .video-container.playing .play-button {
-                display: none;
-            }
+                #promocional .video-container.playing .play-button {
+                    display: none;
+                }
 
             .play-button {
                 position: absolute;
@@ -121,14 +120,21 @@
                 margin: auto;
             }
         </style>
-        <video class="col-md-6 col-12 main" autoplay muted loop style=" height: auto; right: 0; bottom: -2rem; transition: transform 0.5s ease 0s; transform-origin: top right; z-index: 1;" src="assets/img/video1.mp4"></video>
-        <div class="col-md-6 col-12 aos-init aos-animate" style="top: 10vh; color: white; white-space: nowrap; padding-inline: 1rem;" data-aos="fade-up">
+        <video class="col-md-6 col-12 main fancampo-section" autoplay muted loop style=" height: auto; bottom: -2rem; transition: transform 0.5s ease 0s, opacity 1s ease 0s; transform-origin: top right; z-index: 1;" src="assets/img/video1.mp4"></video>
+        <div class="aos-init aos-animate fancampo-section" style="top: 15vh; color: white; white-space: nowrap; padding-inline: 1rem;" data-aos="fade-up">
             <div style="padding-block: 2rem">
-                <h1>Protección Integral para el</h1>
+                <h1 class="accent">Protección Integral para el</h1>
                 <h1 class="accent">campo de México</h1>
-                <p style="font-size: +18pt">Brindamos servicio de cobertura de riesgos</p>
-
+                <p class="accent" style="font-size: +18pt">Brindamos servicio de cobertura de riesgos</p>
             </div>
+        </div>
+        <div class="d-flex justify-content-end fanvida-section">
+            <div class="col-6 px-3" style="padding-block: 2rem;text-align: end;">
+                <h1 class="accent">Seguro Protección Integral</h1>
+                <p class="accent" style="font-size: +18pt">Es un seguro de vida, con asistencia médica de primer contacto (no especialidades) y asistencias funerarias.</p>
+            </div>
+        </div>
+        <div class="col-md-6 col-12 aos-init aos-animate fanvida-section " style="width: 100%; top: 20vh; display: flex; flex-direction: column; z-index: 2; color: white; " onclick="playVideo.call(promocional, true)">
             <div id="promocional">
                 <ul class="nav nav-pills">
                     <li class="nav-item">
@@ -145,19 +151,9 @@
                 </div>
             </div>
         </div>
-        <div class="container cotizar" style="width: 50%; top: 73vh; display: flex; justify-content: center; z-index: 2; max-width: 100vw; padding-bottom: 3rem;">
-            <h2>
-                <a href="#" class="btn circle-btn active" onclick="event.preventDefault(); cotizar()">
-                    Cotizar
-                </a>
-            </h2>
-        </div>
     </section>
 
     <main id="main" style="background-color: white; position: relative; z-index: 2">
-        <section id="about" class="about" xo-source="#nuestra_gestion" xo-stylesheet="nuestra_gestion.xslt" xo-slot="state:version">
-        </section>
-
         <section id="seguros" class="section-bg">
             <div class="row g-4" data-aos="fade-up" xo-source="#menu" xo-stylesheet="seguros-tiles.xslt" title="Nuestros <em>Seguros</em>">
             </div>
@@ -169,16 +165,16 @@
         </section>
 
         <section id="presencia" class="section-bg">
-            <div data-aos="fade-up" xo-source="#uniones" xo-stylesheet="mapa.xslt" title="Nuestra Presencia" class="container mapa externos"></div>
+            <div data-aos="fade-up" xo-source="#uniones" xo-stylesheet="mapa.xslt" title="Nuestra <em>Presencia</em>" class="container mapa externos"></div>
         </section>
 
         <section id="testimoniales" class="section-bg">
-            <div data-aos="fade-up" xo-source="#testimoniales" xo-stylesheet="testimoniales.xslt"></div>
+            <div data-aos="fade-up" xo-source="#testimoniales" xo-stylesheet="testimoniales.xslt" title="Testimoniales"></div>
         </section>
 
-        <section id="eventos">
+        <!--<section id="eventos">
             <div data-aos="fade-up" xo-source="calendario.html"></div>
-        </section>
+        </section>-->
 
         <section id="contact" class="contact">
             <div class="container" data-aos="fade-up">
@@ -210,23 +206,14 @@
 
                             <div class="phone">
                                 <i class="bi bi-phone"></i>
-                                <p>55.91.26.94.00 con 20 líneas</p>
+                                <p><a href="tel:5591269400">559-126-9400</a> con 20 líneas</p>
                                 <p>
                                     <a rel="noopener" data-ux-btn="external" data-ux="ButtonExternal" href="https://wa.me/529828222648" target="_blank" data-aid="CONTACT_INFO_WHATS_APP_REND" data-tccl="ux2.contact.whatsapp.click,click" icon="whatsApp" data-typography="false" class="x-el x-el-a c2-2i c2-4 c2-3j c2-3k c2-3l c2-3m c2-3n c2-h c2-3o c2-28 c2-29 c2-2a c2-2b c2-3p c2-3q c2-3r c2-3s c2-3t c2-3u c2-j c2-3v c2-i c2-1s c2-3w c2-3x c2-3y c2-34 c2-3z c2-40 c2-2c c2-2d c2-41 c2-2h c2-1 c2-2 c2-42 c2-43 c2-44 c2-45 c2-46 c2-47 c2-48 c2-49 c2-4a c2-4b c2-4c"><span data-ux="Element" class="x-el x-el-span c2-4 c2-3k c2-34 c2-4d c2-4e c2-4f c2-4g"><span data-ux="Element" class="x-el x-el-span c2-4h c2-4i c2-2m c2-4j c2-27 c2-4k c2-4l c2-2l c2-4m c2-3k c2-4"><svg viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px" data-ux="Icon" class="x-el x-el-svg c2-30 c2-r c2-s c2-3k c2-4"><svg viewBox="0 0 496 497"><defs><linearGradient id="a" x1="247.32" x2="247.32" y1="446.09" y2="39.9" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#20b038"></stop><stop offset="1" stop-color="#60d66a"></stop></linearGradient><linearGradient id="b" x1="247.32" x2="247.32" y1="453.37" y2="32.61" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f9f9f9"></stop><stop offset="1" stop-color="#fff"></stop></linearGradient></defs><path d="M37.88 453.37l29.59-108A208 208 0 0 1 39.63 241.1c0-115 93.6-208.49 208.56-208.49a208.57 208.57 0 0 1 208.57 208.66c-.05 115-93.62 208.49-208.57 208.49h-.08a208.41 208.41 0 0 1-99.67-25.38zm115.68-66.73l6.34 3.75a173.18 173.18 0 0 0 88.23 24.16h.06c95.55 0 173.31-77.75 173.35-173.3A173.34 173.34 0 0 0 248.26 67.83c-95.62 0-173.38 77.73-173.42 173.28a172.94 172.94 0 0 0 26.5 92.23l4.13 6.55L88 403.84z"></path><path fill="url(#a)" d="M45.13 446.09l28.57-104.3a200.82 200.82 0 0 1-26.88-100.62c0-111 90.36-201.27 201.34-201.27A201.35 201.35 0 0 1 449.5 241.32c0 111-90.37 201.28-201.33 201.28h-.09a201.31 201.31 0 0 1-96.21-24.49z"></path><path fill="url(#b)" d="M37.88 453.37l29.59-108A208 208 0 0 1 39.63 241.1c0-115 93.6-208.49 208.56-208.49a208.57 208.57 0 0 1 208.57 208.66c-.05 115-93.62 208.49-208.57 208.49h-.08a208.41 208.41 0 0 1-99.67-25.38zm115.68-66.73l6.34 3.75a173.18 173.18 0 0 0 88.23 24.16h.06c95.55 0 173.31-77.75 173.35-173.3A173.34 173.34 0 0 0 248.26 67.83c-95.62 0-173.38 77.73-173.42 173.28a172.94 172.94 0 0 0 26.5 92.23l4.13 6.55L88 403.84z"></path><path fill="#fff" d="M196.07 153.94c-3.91-8.68-8-8.85-11.73-9-3-.14-6.51-.13-10-.13a19.15 19.15 0 0 0-13.89 6.52c-4.78 5.22-18.24 17.82-18.24 43.46s18.67 50.42 21.28 53.9 36.05 57.77 89 78.66c44 17.36 53 13.91 62.53 13s30.83-12.61 35.18-24.78 4.34-22.59 3-24.77-4.78-3.48-10-6.08-30.83-15.22-35.61-16.95-8.25-2.61-11.73 2.61-13.45 16.94-16.5 20.42-6.08 3.92-11.29 1.31-22-8.11-41.9-25.86c-15.5-13.82-26-30.87-29-36.09s-.32-8 2.29-10.63c2.34-2.34 5.21-6.09 7.82-9.13s3.47-5.21 5.21-8.69.87-6.52-.44-9.13-11.35-28.34-15.98-38.64z"></path></svg></svg></span><span data-ux="Element" class="x-el x-el-span iconText c2-4 c2-3k c2-4n c2-1s c2-4o c2-4e c2-4f c2-4g">FanCampo</span></span></a>
-                                    <a aria-label="WhatsApp FanCampo" href="https://wa.me/529828222648">
-                                        <img alt="WhatsApp FanCampo" src="WhatsAppButtonGreenLarge.svg" />
-                                    </a>
                                 </p>
                                 <p>
                                     <a rel="noopener" data-ux-btn="external" data-ux="ButtonExternal" href="https://wa.me/525580068466" target="_blank" data-aid="CONTACT_INFO_WHATS_APP_REND" data-tccl="ux2.contact.whatsapp.click,click" icon="whatsApp" data-typography="false" class="x-el x-el-a c2-2i c2-4 c2-3j c2-3k c2-3l c2-3m c2-3n c2-h c2-3o c2-28 c2-29 c2-2a c2-2b c2-3p c2-3q c2-3r c2-3s c2-3t c2-3u c2-j c2-3v c2-i c2-1s c2-3w c2-3x c2-3y c2-34 c2-3z c2-40 c2-2c c2-2d c2-41 c2-2h c2-1 c2-2 c2-42 c2-43 c2-44 c2-45 c2-46 c2-47 c2-48 c2-49 c2-4a c2-4b c2-4c"><span data-ux="Element" class="x-el x-el-span c2-4 c2-3k c2-34 c2-4d c2-4e c2-4f c2-4g"><span data-ux="Element" class="x-el x-el-span c2-4h c2-4i c2-2m c2-4j c2-27 c2-4k c2-4l c2-2l c2-4m c2-3k c2-4"><svg viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px" data-ux="Icon" class="x-el x-el-svg c2-30 c2-r c2-s c2-3k c2-4"><svg viewBox="0 0 496 497"><defs><linearGradient id="a" x1="247.32" x2="247.32" y1="446.09" y2="39.9" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#20b038"></stop><stop offset="1" stop-color="#60d66a"></stop></linearGradient><linearGradient id="b" x1="247.32" x2="247.32" y1="453.37" y2="32.61" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f9f9f9"></stop><stop offset="1" stop-color="#fff"></stop></linearGradient></defs><path d="M37.88 453.37l29.59-108A208 208 0 0 1 39.63 241.1c0-115 93.6-208.49 208.56-208.49a208.57 208.57 0 0 1 208.57 208.66c-.05 115-93.62 208.49-208.57 208.49h-.08a208.41 208.41 0 0 1-99.67-25.38zm115.68-66.73l6.34 3.75a173.18 173.18 0 0 0 88.23 24.16h.06c95.55 0 173.31-77.75 173.35-173.3A173.34 173.34 0 0 0 248.26 67.83c-95.62 0-173.38 77.73-173.42 173.28a172.94 172.94 0 0 0 26.5 92.23l4.13 6.55L88 403.84z"></path><path fill="url(#a)" d="M45.13 446.09l28.57-104.3a200.82 200.82 0 0 1-26.88-100.62c0-111 90.36-201.27 201.34-201.27A201.35 201.35 0 0 1 449.5 241.32c0 111-90.37 201.28-201.33 201.28h-.09a201.31 201.31 0 0 1-96.21-24.49z"></path><path fill="url(#b)" d="M37.88 453.37l29.59-108A208 208 0 0 1 39.63 241.1c0-115 93.6-208.49 208.56-208.49a208.57 208.57 0 0 1 208.57 208.66c-.05 115-93.62 208.49-208.57 208.49h-.08a208.41 208.41 0 0 1-99.67-25.38zm115.68-66.73l6.34 3.75a173.18 173.18 0 0 0 88.23 24.16h.06c95.55 0 173.31-77.75 173.35-173.3A173.34 173.34 0 0 0 248.26 67.83c-95.62 0-173.38 77.73-173.42 173.28a172.94 172.94 0 0 0 26.5 92.23l4.13 6.55L88 403.84z"></path><path fill="#fff" d="M196.07 153.94c-3.91-8.68-8-8.85-11.73-9-3-.14-6.51-.13-10-.13a19.15 19.15 0 0 0-13.89 6.52c-4.78 5.22-18.24 17.82-18.24 43.46s18.67 50.42 21.28 53.9 36.05 57.77 89 78.66c44 17.36 53 13.91 62.53 13s30.83-12.61 35.18-24.78 4.34-22.59 3-24.77-4.78-3.48-10-6.08-30.83-15.22-35.61-16.95-8.25-2.61-11.73 2.61-13.45 16.94-16.5 20.42-6.08 3.92-11.29 1.31-22-8.11-41.9-25.86c-15.5-13.82-26-30.87-29-36.09s-.32-8 2.29-10.63c2.34-2.34 5.21-6.09 7.82-9.13s3.47-5.21 5.21-8.69.87-6.52-.44-9.13-11.35-28.34-15.98-38.64z"></path></svg></svg></span><span data-ux="Element" class="x-el x-el-span iconText c2-4 c2-3k c2-4n c2-1s c2-4o c2-4e c2-4f c2-4g">FanVida</span></span></a>
-                                    <a aria-label="WhatsApp FanVida" href="https://wa.me/5580068466">
-                                        <img alt="WhatsApp FanVida" src="WhatsAppButtonGreenLarge.svg" />
-                                    </a>
                                 </p><p>
                                     <a rel="noopener" data-ux-btn="external" data-ux="ButtonExternal" href="https://wa.me/525543542636" target="_blank" data-aid="CONTACT_INFO_WHATS_APP_REND" data-tccl="ux2.contact.whatsapp.click,click" icon="whatsApp" data-typography="false" class="x-el x-el-a c2-2i c2-4 c2-3j c2-3k c2-3l c2-3m c2-3n c2-h c2-3o c2-28 c2-29 c2-2a c2-2b c2-3p c2-3q c2-3r c2-3s c2-3t c2-3u c2-j c2-3v c2-i c2-1s c2-3w c2-3x c2-3y c2-34 c2-3z c2-40 c2-2c c2-2d c2-41 c2-2h c2-1 c2-2 c2-42 c2-43 c2-44 c2-45 c2-46 c2-47 c2-48 c2-49 c2-4a c2-4b c2-4c"><span data-ux="Element" class="x-el x-el-span c2-4 c2-3k c2-34 c2-4d c2-4e c2-4f c2-4g"><span data-ux="Element" class="x-el x-el-span c2-4h c2-4i c2-2m c2-4j c2-27 c2-4k c2-4l c2-2l c2-4m c2-3k c2-4"><svg viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px" data-ux="Icon" class="x-el x-el-svg c2-30 c2-r c2-s c2-3k c2-4"><svg viewBox="0 0 496 497"><defs><linearGradient id="a" x1="247.32" x2="247.32" y1="446.09" y2="39.9" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#20b038"></stop><stop offset="1" stop-color="#60d66a"></stop></linearGradient><linearGradient id="b" x1="247.32" x2="247.32" y1="453.37" y2="32.61" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f9f9f9"></stop><stop offset="1" stop-color="#fff"></stop></linearGradient></defs><path d="M37.88 453.37l29.59-108A208 208 0 0 1 39.63 241.1c0-115 93.6-208.49 208.56-208.49a208.57 208.57 0 0 1 208.57 208.66c-.05 115-93.62 208.49-208.57 208.49h-.08a208.41 208.41 0 0 1-99.67-25.38zm115.68-66.73l6.34 3.75a173.18 173.18 0 0 0 88.23 24.16h.06c95.55 0 173.31-77.75 173.35-173.3A173.34 173.34 0 0 0 248.26 67.83c-95.62 0-173.38 77.73-173.42 173.28a172.94 172.94 0 0 0 26.5 92.23l4.13 6.55L88 403.84z"></path><path fill="url(#a)" d="M45.13 446.09l28.57-104.3a200.82 200.82 0 0 1-26.88-100.62c0-111 90.36-201.27 201.34-201.27A201.35 201.35 0 0 1 449.5 241.32c0 111-90.37 201.28-201.33 201.28h-.09a201.31 201.31 0 0 1-96.21-24.49z"></path><path fill="url(#b)" d="M37.88 453.37l29.59-108A208 208 0 0 1 39.63 241.1c0-115 93.6-208.49 208.56-208.49a208.57 208.57 0 0 1 208.57 208.66c-.05 115-93.62 208.49-208.57 208.49h-.08a208.41 208.41 0 0 1-99.67-25.38zm115.68-66.73l6.34 3.75a173.18 173.18 0 0 0 88.23 24.16h.06c95.55 0 173.31-77.75 173.35-173.3A173.34 173.34 0 0 0 248.26 67.83c-95.62 0-173.38 77.73-173.42 173.28a172.94 172.94 0 0 0 26.5 92.23l4.13 6.55L88 403.84z"></path><path fill="#fff" d="M196.07 153.94c-3.91-8.68-8-8.85-11.73-9-3-.14-6.51-.13-10-.13a19.15 19.15 0 0 0-13.89 6.52c-4.78 5.22-18.24 17.82-18.24 43.46s18.67 50.42 21.28 53.9 36.05 57.77 89 78.66c44 17.36 53 13.91 62.53 13s30.83-12.61 35.18-24.78 4.34-22.59 3-24.77-4.78-3.48-10-6.08-30.83-15.22-35.61-16.95-8.25-2.61-11.73 2.61-13.45 16.94-16.5 20.42-6.08 3.92-11.29 1.31-22-8.11-41.9-25.86c-15.5-13.82-26-30.87-29-36.09s-.32-8 2.29-10.63c2.34-2.34 5.21-6.09 7.82-9.13s3.47-5.21 5.21-8.69.87-6.52-.44-9.13-11.35-28.34-15.98-38.64z"></path></svg></svg></span><span data-ux="Element" class="x-el x-el-span iconText c2-4 c2-3k c2-4n c2-1s c2-4o c2-4e c2-4f c2-4g">Suscripciones</span></span></a>
-                                    <a aria-label="WhatsApp Suscripciones" href="https://wa.me/5543542636">
-                                        <img alt="WhatsApp  Suscripciones" src="WhatsAppButtonGreenLarge.svg" />
-                                    </a>
                                 </p>
                             </div>
 

@@ -308,6 +308,20 @@ h1 em, h2 em, h3 em, h4 em {
     max-width: 300px;
 }
 
+.property.highlight img.cnog {
+    display: block;
+    width: 100px;
+}
+
+.property .icon > img.logo {
+    max-height: 50px;
+    width: auto;
+}
+
+.property.highlight .icon > img.logo {
+    max-height: 100%;
+}
+
 .property.highlight .icon svg {
     width: 50px;
     height: 50px;
@@ -383,17 +397,21 @@ details li {
     background-color: var(--fancampovida-accent);
 }
 
+.v2 .fanvida-section .circle-btn {
+    background-color: var(--fancampovida-accent);
+}
+
 .offcanvas-bottom {
     border-top: 3px solid var(--fancampovida-blue-smoke) !important;
     height: var(--offcanvas-height, var(--bs-offcanvas-height)) !important;
 }
 
-    .offcanvas-bottom > section {
-        overflow-x: hidden;
-        overflow-y: scroll;
-        padding-inline: 2rem;
-        padding-bottom: 5rem;
-    }
+.offcanvas-bottom > section {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding-inline: 2rem;
+    padding-bottom: 5rem;
+}
 
 .offcanvas-body {
     padding-bottom: 10rem;
@@ -455,15 +473,39 @@ iframe#chatbot:hover {
     text-decoration: none; /* Remove underline */
 }
 
+/* Styles for screens with more height than width (portrait) */
+/*@media screen and (max-aspect-ratio: 1/1) {
+    body {
+        background-color: lightblue;
+    }
+}*/
+
+/* Styles for screens with more width than height (landscape) */
+/*@media screen and (min-aspect-ratio: 1/1) {
+    body {
+        background-color: lightcoral;
+    }
+}*/
+
+main {
+    margin-bottom: 150px;
+    padding-top: 30px;
+}
+
 video.main {
     max-width: 100vw;
     min-width: 100%;
     transform: scale(1);
     padding-top: 70px;
+    right: 0;
 }
 
 #video-container {
     padding: 0px;
+}
+
+#video-container h1 {
+    font-weight: 800;
 }
 
 #promocional .nav-pills .nav-link {
@@ -472,13 +514,20 @@ video.main {
     border-bottom-left-radius: 0;
 }
 
+#promocional .nav-pills .nav-link {
+    background-color: transparent;
+    color: var(--fancampovida-blue-smoke,#012664);
+    font-weight: bold;
+}
+
 #promocional .nav-pills .nav-link.active {
     background-color: #012664;
+    color: white;
 }
 
 @media (min-width: 1200px) {
     #video-container {
-        height: 350vh;
+        height: 400vh;
         padding-inline: 3rem;
     }
 
@@ -492,14 +541,28 @@ video.main {
     }
 
     .scrolled video.main {
-        transform: scale(0.5);
+        transform: scale(0.35);
+        right: 4rem;
         top: 90px;
     }
 
-    .cotizar {
-        margin-top: 100vh;
+    #video-container .fanvida-section {
+        top: 50vh;
+        margin-top: 40vh;
         justify-content: end !important;
     }
+
+    .fanvida-section:has(#promocional) {
+        margin-top: 150vh;
+    }
+
+    #promocional {
+        max-width: 50vw;
+    }
+}
+
+#promocional {
+    margin-bottom: 5rem;
 }
 
 p {
@@ -530,7 +593,7 @@ section {
     padding-bottom: 4rem;
 }*/
 
-main section p {
+        main section p {
     font-size: larger;
 }
 
@@ -539,10 +602,14 @@ main section p {
     background: var(--fancampovida-blue-smoke);
     z-index: 2;
     bottom: 0;
-    position: relative;
+    position: fixed;
     width: 100vw;
     min-height: 4rem;
     padding-block: 1rem;
+}
+
+body:has(header:not(.header-scrolled)):has(video) #footer {
+    visibility: hidden;
 }
 
 .cta {
@@ -567,7 +634,7 @@ main section p {
     z-index: 4;
 }
 
-.cotizar.container {
+.fanvida-section.container {
     left: 20vw;
     top: 38vh;
     position: sticky;
@@ -615,21 +682,21 @@ h6 {
     transition: all 0.4s;
 }
 
-    .back-to-top i {
-        font-size: 24px;
-        color: #fff;
-        line-height: 0;
-    }
+.back-to-top i {
+    font-size: 24px;
+    color: #fff;
+    line-height: 0;
+}
 
-    .back-to-top:hover {
-        background: var(--fancampovida-silver-cloud);
-        color: #fff;
-    }
+.back-to-top:hover {
+    background: var(--fancampovida-silver-cloud);
+    color: #fff;
+}
 
-    .back-to-top.active {
-        visibility: visible;
-        opacity: 1;
-    }
+.back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+}
 
 /*--------------------------------------------------------------
 # Header
@@ -640,35 +707,87 @@ h6 {
     padding: 5px 0;
 }
 
-    #header:not(.header-scrolled) {
-        background-color: rgba(0, 0, 0, 0.1);
-    }
+#header.header-inner-pages,
+#header.solid-background {
+    /* background: rgba(40, 58, 90, 0.9); */
+    background-color: var(--fancampovida-blue-smoke);
+}
 
-    #header.header-scrolled,
-    #header.header-inner-pages,
-    #header.solid-background {
-        /* background: rgba(40, 58, 90, 0.9); */
-        background-color: var(--fancampovida-blue-smoke);
-    }
+.fancampo-is-active:not(.fanvida-is-active) .logo-fanvida
+, :has(video.main) #header:not(.header-scrolled) .logo-fanvida {
+    /* background: rgba(40, 58, 90, 0.9); */
+    /*background-color: var(--fancampovida-blue-smoke);*/
+    visibility: hidden;
+}
 
-    #header .logo {
-        font-size: 30px;
-        margin: 0;
-        padding: 0;
-        line-height: 1;
-        font-weight: 500;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-    }
+.fancampo-is-active:not(.fanvida-is-active) .logo-fancampo
+, :has(video.main) #header:not(.header-scrolled) .logo-fancampo {
+    scale: 2.5;
+    transform-origin: top left;
+}
 
-        #header .logo a {
-            color: #fff;
-        }
+.fanvida-is-active:not(.fancampo-is-active) .logo-fancampo {
+    /* background: rgba(40, 58, 90, 0.9); */
+    /*background-color: var(--fancampovida-blue-smoke);*/
+    visibility: hidden;
+}
 
-        #header .logo img {
-            max-height: 40px;
-            filter: brightness(0) invert(1);
-        }
+.fanvida-is-active:not(.fancampo-is-active) .logo-fanvida {
+    scale: 2.5;
+    transform-origin: top right;
+}
+
+.fanvida-is-active:not(.fancampo-is-active):not(.portrait) video.main {
+    opacity: 0;
+}
+
+#header {
+    background-color: var(--fancampovida-blue-smoke);
+}
+
+:has(video.main) #header:not(.header-scrolled)
+, .fanvida-is-active:not(.fancampo-is-active):has(video.main)  #header
+, .fancampo-is-active:not(.fanvida-is-active):has(video.main)  #header {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+:has(video.main) #header:not(.header-scrolled)
+, .fanvida-is-active:not(.fancampo-is-active) #header
+, .fancampo-is-active:not(.fanvida-is-active) #header {
+    height: 120px;
+}
+
+.fanvida-is-active:not(.fancampo-is-active) main
+, .fancampo-is-active:not(.fanvida-is-active) main {
+    margin-top: 120px !important;
+}
+
+.fancampo-section .accent {
+    color: var(--fancampovida-creen-snow)
+}
+
+.fanvida-section .accent {
+    color: var(--fancampovida-blue-smoke)
+}
+
+#header .logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#header .logo a {
+    color: #fff;
+}
+
+#header .logo img {
+    max-height: 40px;
+    filter: brightness(0) invert(1);
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -693,10 +812,10 @@ h6 {
         transition: transform 0.2s ease-in-out, visibility 0.2s ease-in-out;
     }
 
-        .offcanvas-collapse.show {
-            visibility: visible;
-            transform: translateX(-100%);
-        }
+    .offcanvas-collapse.show {
+        visibility: visible;
+        transform: translateX(-100%);
+    }
 }
 
 .navbar {
@@ -1089,17 +1208,17 @@ h6 {
         text-align: center;
     }
 
-        #hero .animated {
-            animation: none;
-        }
+    #hero .animated {
+        animation: none;
+    }
 
-        #hero .hero-img {
-            text-align: center;
-        }
+    #hero .hero-img {
+        text-align: center;
+    }
 
-            #hero .hero-img img {
-                width: 50%;
-            }
+    #hero .hero-img img {
+        width: 50%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1910,11 +2029,6 @@ section {
     }
 
 @media (max-width: 768px) {
-    #footer .footer-bottom {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
     #footer .social,
     #footer .copyright {
         text-align: center;

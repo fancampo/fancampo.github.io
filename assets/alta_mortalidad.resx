@@ -117,11 +117,51 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="carousel_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\alta_mortalidad (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\alta_mortalidad (1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\alta_mortalidad (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\alta_mortalidad (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carousel_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\alta_mortalidad (1).jfif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="carousel_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\alta_mortalidad (2).jfif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cobertura_1" xml:space="preserve">
+    <value>La muerte por enfermedad: es considerada como una alteración de las funciones orgánicas causadas por agentes físicos, químicos y/o biológicos, como la neumonía, rabia paralítica bovina, anaplasmosis, enteritis inespecífica, etcétera.</value>
+  </data>
+  <data name="cobertura_2" xml:space="preserve">
+    <value>Muerte por accidente: es un acontecimiento proveniente de una causa externa, súbita imprevista, fortuita y violenta, como la intoxicación por Plantas, traumatismo por desbarrancamiento, etcétera.</value>
+  </data>
+  <data name="cobertura_3" xml:space="preserve">
+    <value>La muerte originada por sacrificio forzoso del ganado: es la determinación de dar muerte a un animal autorizadas por el Médico Veterinario Zootecnista de FANCAMPO cuando el animal sufra una lesión o enfermedad irreversible originada por una causa cubierta que implique la inminencia de muerte.</value>
+  </data>
   <data name="cover" xml:space="preserve">
     <value>alta_mortalidad.jpg</value>
   </data>
   <data name="description" xml:space="preserve">
-    <value>Cubre la muerte de bovinos de reproducción, ordeña, doble función y trabajo, así como ovinos y caprinos de reproducción ocasionados por enfermedad, accidente y sacrificio forzoso, a consecuencia de los dos anteriores. Aplica un mínimo de animales muertos por la misma causa denominado franquicia. En muerte ocasionada por mordedura de serpiente se debe cumplir franquicia.</value>
+    <value>Cubre la muerte por enfermedad, accidente y/o sacrificio forzoso por la ocurrencia de eventos de alta mortalidad* del ganado identificado con arete SINIIGA.
+
+&lt;em&gt;*Aplica un mínimo de animales muertos por la misma causa denominado franquicia. En muerte ocasionada por mordedura de serpiente se debe cumplir franquicia.&lt;/em&gt;
+
+
+FRANQUICIAS POR ESPECIE Y FUNCIÓN:
+&lt;img src="./assets/img/alta_mortalidad_franquicias.jpg" class="img-fluid"&gt;</value>
+  </data>
+  <data name="especie_1" xml:space="preserve">
+    <value>Bovinos de reproducción, doble función y trabajo.</value>
+  </data>
+  <data name="especie_2" xml:space="preserve">
+    <value>Ovinos y caprinos de reproducción</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>Alta Mortalidad</value>

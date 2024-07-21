@@ -1,33 +1,38 @@
 ﻿const video = document.querySelector('video.main');
 const promocional = document.querySelector('#promocional video');
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: .5
+    };
+
+    const callback = (entries, observer) => {
+        entries.forEach(entry => {
+            document.body.classList.remove('fanvida-is-active','fancampo-is-active');
+            let target = entry.target;
+            if (target.id) {
+                document.body.classList.remove(`${target.id}-active`);
+            }
+            if (target.id) {
+                document.body.classList[entry.isIntersecting ? "add" : "remove"](`${target.id}-active`);
+            }
+            if (target.matches('.fanvida-section')) {
+                document.body.classList[entry.isIntersecting ? "add" : "remove"]('fanvida-is-active');
+            }
+            if (target.matches('.fancampo-section')) {
+                document.body.classList[entry.isIntersecting ? "add" : "remove"]('fancampo-is-active');
+            }
+        });
+    };
+
+    // Create intersection observer
+    const observer = new IntersectionObserver(callback, options);
+
+    for (let section of document.querySelectorAll('.fanvida-section, .fancampo-section, main > *')) {
+        observer.observe(section);
+    }
+
 if (video) {
-    // Options for the intersection observer
-    //const options = {
-    //  root: null,
-    //  rootMargin: '0px',
-    //  threshold: .2
-    //};
-
-    //// Intersection Observer callback function
-    //const callback = (entries, observer) => {
-    //  entries.forEach(entry => {
-    //    if (entry.isIntersecting) {
-    //      video.play();
-    //      //video.style.transform = 'scale(1)'; // Example rescaling value
-    //    } else {
-    //        console.log(`Scrolling`)
-    //      video.pause();
-    //      //video.style.transform = 'scale(.4)';
-    //    }
-    //  });
-    //};
-
-    //// Create intersection observer
-    //const observer = new IntersectionObserver(callback, options);
-
-    //// Observe the video
-    //observer.observe(video);
-
     const viewportHeight = window.innerHeight;
     const viewportWidth = window.innerWidth;
     //promocional.pause();
@@ -49,10 +54,17 @@ if (video) {
         //    video.style.transform = `translate(0, 0) scale(1)`;
         //    video.style.top = '0';
         //}
-        if (scrollPosition) {
+        if (scrollPosition > 100) {
             video.closest('section').classList.add('scrolled');
+            video.pause()
+            /*try {
+                playVideo.call(promocional, true);
+            } catch(e) {
+                console.log(e)
+            }*/
         } else {
             video.closest('section').classList.remove('scrolled');
+            video.play()
         }
     });
 }
@@ -119,6 +131,10 @@ function initialize_carousel() {
 
 async function cotizar() {
     let chatbot = document.querySelector("#chatbot");
+    if (!chatbot) {
+        window.document.location = 'cotizador.html';
+        return;
+    }
     chatbot.contentDocument.documentElement.querySelector('#voiceflow-chat').shadowRoot.querySelector('button').click();
     chatbot.style.height = '80vh';
     let chat = chatbot && chatbot.contentDocument.documentElement.querySelector('#voiceflow-chat')
@@ -150,7 +166,7 @@ async function cotizar() {
             textarea.setAttribute("oninput", "this.placeholder = ''")
             textarea.textContent = textarea.value;
             //textarea.nextElementSibling.classList.add('c-iSWgdS-eHahlm-ready-true');
-            textarea.nextElementSibling.classList='vfrc-chat-input--button c-iSWgdS c-iSWgdS-eHahlm-ready-true'
+            textarea.nextElementSibling.classList = 'vfrc-chat-input--button c-iSWgdS c-iSWgdS-eHahlm-ready-true'
             await xover.delay(1000);
             textarea.parentNode.style.boxShadow = 'none';
             textarea.focus();
@@ -177,24 +193,52 @@ function videoSelector() {
     video.src = `${video.src.replace(/[^\/]+$/, '')}promocional_${class_name.replace(/^video-/, '')}.mp4`
     video.muted = false;
     playVideo.call(this, true);
-    event.preventDefault()
+    event && event.preventDefault()
 }
 
 function playVideo(play) {
-    let wrapper = this.closest('div:has(.video-container)');
-    let video = wrapper.querySelector('video');
-    let container = wrapper.querySelector('.video-container');
-    if (play || !video.paused) {
-        container.classList.add('playing');
-    } else {
-        container.classList.remove('playing');
+    try {
+        let wrapper = document.querySelector("#promocional"); //this.closest('div:has(.video-container)');
+        let video = wrapper.querySelector('video');
+        let container = wrapper.querySelector('.video-container');
+        if (play || !video.paused) {
+            container.classList.add('playing');
+        } else {
+            container.classList.remove('playing');
+        }
+        container.classList.contains('playing') ? video.play() : video.pause()
+        event && event.preventDefault();
+    } catch (e) {
+        console.warn(e)
     }
-    container.classList.contains('playing') ? video.play() : video.pause()
-    event.preventDefault();
-
 }
 
 //xo.listener.on('click::*[ancestor-or-self::a[@href]]', function () {
 //    let section = this.closest('[id]');
 //    xover.site.hash = section.id
 //})
+
+window.addEventListener('resize', function () {
+    if (window.innerHeight > window.innerWidth) {
+        document.body.classList.add('portrait');
+        document.body.classList.remove('landscape');
+    } else {
+        document.body.classList.add('landscape');
+        document.body.classList.remove('portrait');
+    }
+});
+
+xo.listener.on('submit::.contact-form', async function(){
+    event.preventDefault();
+    let formData = new FormData(this);
+    try {
+        await xover.server.requestInfo(new URLSearchParams(formData));
+        alert("La solicitud ha sido recibida con éxito");
+    } catch(e) {
+        throw(e)
+    }
+})
+
+xo.listener.on('fetch::root', async function(document){
+   this.select(`//data/value/text()`).filter(text => text.value.match(/\n/)).forEach(data => data.textContent = data.textContent.replace(/([>:]\s*)\n/g,'$1').replace(/\n/g,'<br/>'));
+})

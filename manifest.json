@@ -1,4 +1,7 @@
 {
+  "server": {
+    "requestInfo":  "https://server.panax.io:8001/requestInfo"
+  },
   "sources": {
     "^#(.+)$": "./assets/$1.resx",
     "^#(.+):gallery$": "./assets/desarrollos/$1/gallery.resx",
@@ -8,13 +11,9 @@
     "#equipo_trabajo": "equipo_trabajo.html",
     "#terminos_condiciones": "terminos_condiciones.html",
     "#nosotros": "./assets/nosotros.resx",
-    "#conocenos": "#nosotros",
     "#mision": "#nosotros",
     "#vision": "#nosotros",
     "#valores": "#nosotros"
-  },
-  "session": {
-    "phone": "000-000-0000"
   },
   "state": {
     "seguro": "${(xover.site.seed || '').replace(/^#/,'')}"
