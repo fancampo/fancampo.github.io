@@ -79,12 +79,12 @@
 	</xsl:template>
 
 	<xsl:template match="data[comment mod 2=0]" mode="feature-header-class">
-		<xsl:attribute name="class">col-md-4 order-md-2</xsl:attribute>
+		<xsl:attribute name="class">col-md-5 order-md-2</xsl:attribute>
 	</xsl:template>
 
 	<xsl:template match="data" mode="feature-body-class">
 		<xsl:attribute name="class">
-			<xsl:text>col-md-2 </xsl:text>
+			<xsl:text>col-md-6 </xsl:text>
 			<xsl:if test="count(preceding-sibling::data) mod 2 = 1">
 				<xsl:text/>order-md-1<xsl:text/>
 			</xsl:if>
@@ -97,16 +97,12 @@
 		</h5>
 	</xsl:template>
 
-	<xsl:template mode="headerText" match="key('data','mision')">
+	<xsl:template mode="headerText" match="key('data','mision')/@name">
 		<xsl:text>Misión</xsl:text>
 	</xsl:template>
 
-	<xsl:template mode="headerText" match="key('data','vision')">
+	<xsl:template mode="headerText" match="key('data','vision')/@name">
 		<xsl:text>Visión</xsl:text>
-	</xsl:template>
-
-	<xsl:template mode="headerText" match="key('data','conocenos')">
-		<xsl:text>Conócenos</xsl:text>
 	</xsl:template>
 
 	<xsl:template mode="subtitle" match="@*|*">
