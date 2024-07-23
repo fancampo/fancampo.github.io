@@ -721,7 +721,7 @@ h6 {
 }
 
 .fancampo-is-active:not(.fanvida-is-active) .logo-fancampo
-, :has(video.main) #header:not(.header-scrolled) .logo-fancampo {
+, :has(video.main):not(:has(.offcanvas.show)) #header:not(.header-scrolled) .logo-fancampo {
     scale: 2.5;
     transform-origin: top left;
 }
@@ -751,7 +751,7 @@ h6 {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-:has(video.main) #header:not(.header-scrolled)
+:has(video.main):not(:has(.offcanvas.show)) #header:not(.header-scrolled)
 , .fanvida-is-active:not(.fancampo-is-active) #header
 , .fancampo-is-active:not(.fanvida-is-active) #header {
     height: 120px;
