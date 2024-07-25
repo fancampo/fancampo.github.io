@@ -24,6 +24,6 @@ xo.listener.on(`eliminarDetalle::@especie`, function({ selection, element, dimen
 })
 
 xo.listener.on('beforeTransform?stylesheet.href=cotizador.xslt', function() {
-    let tipocotizacion = this.documentElement.getAttributeNode("tipocotizacion")
+    let tipocotizacion = this.selectFirst("//cotizaciones/@tipo_cotizacion")
     if (xo.site.searchParams.has("tipo") && !tipocotizacion.value) tipocotizacion.value = xo.site.searchParams.get("tipo");
 })
