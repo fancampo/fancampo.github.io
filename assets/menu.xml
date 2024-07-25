@@ -25,15 +25,15 @@
 		</item>
 		<item title="Comerciales" href="./seguro.html#comerciales" image="comerciales.jpg" tag="comerciales">
 			<item title="Bienes conexos" href="./seguro.html#bienes_conexos" image="bienes_conexos.jpg"/>
-			<item title="Catastróficos" href="./seguro.html#catastroficos" image="catastroficos.jpg"/>
-			<item title="Acuícolas" href="./seguro.html#acuicolas" image="acuicolas.jpg"/>
+			<item title="castróficos" href="./seguro.html#catastrofico" image="catastrofico.jpg"/>
+			<item title="Acuícolas" href="./seguro.html#acuicola" image="acuicola.jpg"/>
 		</item>
 		<item title="Agrícola" href="./seguro.html#agricola" image="agricola.jpg" id_seguro="7" tag="agricolas">
 			<item title="Riego" href="./seguro.html#agricola_riego" image="agricola_riego.jpg"/>
 			<item title="Temporal" href="./seguro.html#agricola_temporal" image="agricola_temporal.jpg"/>
 			<item title="Agricultura Protegida" href="./seguro.html#agricola_protegida" image="agricola_protegida.jpg"/>
 		</item>
-		<item title="Seguro de Vida" href="./seguro.html#seguros_vida" image="vida.jpg" tag="seguros_vida">
+		<item title="Seguro de Vida" href="./seguro.html#proteccion_integral" image="vida.jpg" tag="seguro_vida">
 			<item title="Básico" href="./seguro.html#vida_basico" image="vida_basico.jpg"/>
 			<item title="Protección Integral" href="./seguro.html#proteccion_integral" image="vida_proteccion_integral.jpg" tag="vida_integral">
 				<item title="Seguro de Vida" href="./seguro.html#vida_integral" image="seguro_vida.jpg"/>

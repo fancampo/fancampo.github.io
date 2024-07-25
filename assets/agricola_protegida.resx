@@ -160,7 +160,13 @@
   <data name="agricola_protegida (9)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agricola_protegida (9).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cobertura_1" xml:space="preserve">
+    <value>Solo se cubren riesgos climatológicos</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>Es aquel cultivo que cuenta con protección para su producción, puede estar en invernadero, macro túnel o malla con sombra.</value>
+  </data>
   <data name="title" xml:space="preserve">
-    <value>Protegida</value>
+    <value>Agricultura Protegida</value>
   </data>
 </root>

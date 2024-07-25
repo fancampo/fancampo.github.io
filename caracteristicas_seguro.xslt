@@ -8,6 +8,7 @@
 	<xsl:import href="keys.xslt"/>
 	<xsl:import href="common.xslt"/>
 	<xsl:key name="data" match="data[starts-with(@name,'cobertura_')]" use="'coberturas'"/>
+	<xsl:key name="data" match="data[starts-with(@name,'riesgo_')]" use="'riesgos'"/>
 	<xsl:key name="data" match="data[starts-with(@name,'beneficio_')]" use="'beneficios'"/>
 	<xsl:key name="data" match="data[starts-with(@name,'ventaja_')]" use="'ventajas'"/>
 	<xsl:key name="data" match="data[starts-with(@name,'especie_')]" use="'especies'"/>
@@ -34,10 +35,13 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<section class="container-fluid bg-breadcrumb" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/img/{$cover}); background-position: center center;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;padding: 150px 0 50px 0;" xo-stylesheet="section_title.xslt" xo-source="seed" xo-swap="@style">
-		</section>
+		<section image="{$cover}" xo-stylesheet="section_title.xslt" attachment="fixed"/>
 		<xsl:apply-templates mode="caracteristicas" select=".">
 			<xsl:with-param name="items" select="key('data','coberturas')"/>
+		</xsl:apply-templates>
+		<xsl:apply-templates mode="caracteristicas_hanging" select=".">
+			<xsl:with-param name="title">Tipos de Riesgos</xsl:with-param>
+			<xsl:with-param name="items" select="key('data','riesgos')"/>
 		</xsl:apply-templates>
 		<xsl:apply-templates mode="caracteristicas_hanging" select=".">
 			<xsl:with-param name="title">Beneficios Adicionales</xsl:with-param>
@@ -96,12 +100,15 @@
 							<!--<a href="cotizador.html?tipo={$tipo}" class="btn btn-primary btn-lg">Contratar</a>-->
 						</div>
 						<div class="col">
-							<div class="row row-cols-1 row-cols-md-2 g-4">
-								<xsl:if test="$site:hash='#bienes_patrimoniales'">
-									<xsl:attribute name="class">row row-cols-1 g-4</xsl:attribute>
-								</xsl:if>
-								<xsl:apply-templates mode="cobertura" select="$items"/>
-							</div>
+							<xsl:if test="$items">
+								<h2 class="fw-bold text-body-emphasis">¿Qué cubre?</h2>
+								<div class="row row-cols-1 row-cols-md-2 g-4">
+									<xsl:if test="$site:hash='#bienes_patrimoniales'">
+										<xsl:attribute name="class">row row-cols-1 g-4</xsl:attribute>
+									</xsl:if>
+									<xsl:apply-templates mode="cobertura" select="$items"/>
+								</div>
+							</xsl:if>
 						</div>
 					</div>
 				</div>

@@ -117,48 +117,53 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="beneficio_1" xml:space="preserve">
+    <value>Único seguro que protege a los asegurados hasta los 75 años.</value>
+  </data>
+  <data name="beneficio_2" xml:space="preserve">
+    <value>Para contratación no requiere exámenes médicos.</value>
+  </data>
+  <data name="beneficio_3" xml:space="preserve">
+    <value>El seguro de vida no excluye enfermedades preexistentes para la suma de hasta $50,000 pesos.</value>
+  </data>
+  <data name="beneficio_4" xml:space="preserve">
+    <value>Periodo de espera de 60 días para el seguro de vida.</value>
+  </data>
+  <data name="beneficio_5" xml:space="preserve">
+    <value>Cobertura para las asistencias médicas desde el primer día.</value>
+  </data>
   <data name="cobertura_1" xml:space="preserve">
-    <value>Coberturas: Proporciona seguros de vida para productores, trabajadores del campo y sus familias, garantizando apoyo financiero en momentos críticos.</value>
+    <value>SEGURO DE VIDA: Que ampara durante un año a la persona contratante, por el fallecimiento por accidente o enfermedad. La suma asegurada puede ser de $20,000 pesos o $50,000 pesos con límite de edad de 75 años.</value>
   </data>
   <data name="cobertura_2" xml:space="preserve">
-    <value>Beneficiarios: Productores, trabajadores agrícolas, y sus familias. Este fondo se enfoca en asegurar la vida de aquellos cuya labor diaria sostiene el sector agropecuario.</value>
+    <value>ASISTENCIA FUNERARIA: Cubre por hasta $25,000 pesos, un evento por familia, que pueda incluir traslado del cuerpo, arreglo estético, ataúd básico sala de espera para 20 personas o cremación/urna.</value>
   </data>
   <data name="cobertura_3" xml:space="preserve">
-    <value>Operación: Se maneja bajo principios de mutualismo y solidaridad, ofreciendo coberturas adaptadas a las necesidades y realidades del sector rural. La operación del fondo se caracteriza por su enfoque humano y su adaptabilidad a las condiciones particulares de sus beneficiarios.</value>
+    <value>MÉDICO EN CASA: Incluye tres visitas a domicilio de una médico general, por familia. En caso de no tener cobertura en la zona, se realizará el reembolso de la consulta hasta $500 pesos.</value>
+  </data>
+  <data name="cobertura_4" xml:space="preserve">
+    <value>REEMBOLSO DE MEDICAMENTOS: Como familia tienes derecho a tres eventos para reembolso hasta por $500 pesos cada uno.</value>
+  </data>
+  <data name="cobertura_5" xml:space="preserve">
+    <value>ANÁLISIS CLÍNICOS: Un evento por familia para análisis de química sanguínea por 27 elementos o examen general de orina.</value>
+  </data>
+  <data name="cobertura_6" xml:space="preserve">
+    <value>AMBULANCIA POR EMERGENCIA: Se tiene derecho a un evento por familia hasta por $1,500 pesos.</value>
+  </data>
+  <data name="cobertura_7" xml:space="preserve">
+    <value>ASISTENCIA TELEMEDICINA: Eventos ilimitados en la familia para asistencia de un médico general por videollamada y/o chat, emitiendo la receta correspondiente.</value>
+  </data>
+  <data name="cobertura_8" xml:space="preserve">
+    <value>DESCUENTOS COMERCIALES: La familia tiene descuentos en farmacias, laboratorios y hospitales.
+Consulta los descuentos en &lt;a href="https://ahorramas.mx"&gt;ahorramas.mx&lt;/a&gt;</value>
   </data>
   <data name="cover" xml:space="preserve">
     <value>vida_cover.jpg</value>
   </data>
   <data name="description" xml:space="preserve">
-    <value>El Fondo de Aseguramiento de Vida Rural Nacional ofrece al ámbito agropecuario y empresarial un seguro de vida integral con asistencias médicas y funerarias para toda la familia y trabajadores en una sola membresía. 
-
-El seguro de vida protege durante un año de vigencia a la persona contratante por el fallecimiento por accidente o enfermedad, entre varios beneficios se tienen los siguientes: 
-• Único seguro que protege a los asegurados hasta los 75 años. 
-• Para ser contratado el seguro de vida no se requiere exámenes 
-médicos. 
-• El seguro de vida no excluye enfermedades preexistentes para las 
-sumas aseguradas de hasta $50,000 pesos. 
-• Desde el primer día de protección se tiene derecho a las asistencias 
-médicas. 
-
-La asistencia funeraria cubre hasta $25,000 pesos, un evento por familia que pueda incluir traslado del cuerpo, arreglo estético, ataúd básico, sala de espera para 20 personas o cremación y urna. 
-
-El servicio de asistencia de médico en casa incluye tres visitas a domicilio de un médico general, por familia. En caso de no tener cobertura en la zona, se realizará el reembolso de la consulta hasta $500 pesos cada una. 
-
-Para el reembolso del costo de medicamentos se tiene derecho a tres eventos por familia hasta por $500 pesos cada uno. 
-
-En cuanto a la asistencia del derecho de análisis clínicos debe ser un evento por familia para química sanguínea por 27 elementos o examen general de orina.   
-
-La asistencia de ambulancia por emergencia se tiene derecho a un evento por familia hasta por $1, 500 pesos. 
-
-Para la asistencia telemedicina son eventos ilimitados en la familia asistido por un médico general por video llamada y/o chat, emitiendo la receta correspondiente. 
-
-Adicionalmente a todo lo anterior se tiene derecho a descuentos comerciales en farmacias, laboratorios y hospitales.</value>
+    <value>Es un seguro de Vida con asistencias médicas y funerarias para toda la familia en una sola membresía anual.</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>Seguro de vida</value>
-  </data>
-  <data name="ventaja_1" xml:space="preserve">
-    <value>Importancia y Beneficios: FanVida cumple una función social fundamental al proporcionar seguridad financiera a las familias de los productores en caso de fallecimiento, contribuyendo a la estabilidad económica y social del entorno rural.</value>
   </data>
 </root>

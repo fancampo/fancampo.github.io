@@ -151,6 +151,21 @@
   <data name="agricola_temporal (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agricola_temporal (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cobertura_1" xml:space="preserve">
+    <value>Riesgos a la nacencia: depende el estado, región y cultivo para poder otorgar riesgos climatológicos y biológicos.</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>Es aquel cultivo que se mantiene con el temporal de lluvias normales en la región donde se siembra.</value>
+  </data>
+  <data name="riesgo_1" xml:space="preserve">
+    <value>Riesgos a la nacencia: Imposibilidad de realizar la siembra, No nacencia y Taponamiento.</value>
+  </data>
+  <data name="riesgo_2" xml:space="preserve">
+    <value>Riesgos climatológicos: Bajas Temperaturas, Falta de piso para cosechar, Granizo, Heladas, Incendio, Inundación, Lluvia, Onda Cálida, Sequía, Vientos.</value>
+  </data>
+  <data name="riesgo_3" xml:space="preserve">
+    <value>Riesgos biológicos: Plagas, depredadores y enfermedades.</value>
+  </data>
   <data name="title" xml:space="preserve">
     <value>Temporal</value>
   </data>
