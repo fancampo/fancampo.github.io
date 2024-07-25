@@ -3,8 +3,10 @@
 	<xsl:key name="data" match="data" use="@name"/>
 
 	<xsl:param name="title"/>
+	<xsl:param name="image">cover.jpg</xsl:param>
+	<xsl:param name="attachment">scroll</xsl:param>
 	<xsl:template match="/">
-		<section>
+		<section class="container-fluid" style="background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/img/{normalize-space($image)}); background-attachment: {$attachment}; background-position: center center; background-size: cover; background-repeat: no-repeat; padding: 150px 0 50px 0;" xo-source="inherit" xo-swap="self::*">
 			<xsl:apply-templates/>
 		</section>
 	</xsl:template>

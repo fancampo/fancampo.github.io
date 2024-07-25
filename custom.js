@@ -242,3 +242,7 @@ xo.listener.on('submit::.contact-form', async function(){
 xo.listener.on('fetch::root', async function(document){
    this.select(`//data/value/text()`).filter(text => text.value.match(/\n/)).forEach(data => data.textContent = data.textContent.replace(/([>:]\s*)\n/g,'$1').replace(/\n/g,'<br/>'));
 })
+//xo.listener.on('fetch?href=~eventos.resx::root', async function(document){
+//    this.select(`//data/value/text()`).filter(text => text.value.match(/\n/)).forEach(data => data.parentNode.replaceChildren(...xover.xml.createFragment(`<p>${data.textContent.replace(/([>:]\s*)\n/g, '$1').replace(/\n+/g, '</p><p>')}</p>`).childNodes));
+//    event.stopImmediatePropagation()
+//})

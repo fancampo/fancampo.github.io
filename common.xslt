@@ -1,8 +1,9 @@
 ﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:env="http://panax.io/state/environment" xmlns:xo="http://panax.io/xover">
 	<xsl:import href="keys.xslt"/>
 	<xsl:template mode="image-src" match="value">
+		<xsl:param name="path">/assets/</xsl:param>
 		<xsl:attribute name="src">
-			<xsl:text>/assets/</xsl:text>
+			<xsl:value-of select="$path"/>
 			<xsl:value-of select="translate(substring-before(.,';'),'\','/')"/>
 		</xsl:attribute>
 	</xsl:template>
