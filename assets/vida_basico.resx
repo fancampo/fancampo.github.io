@@ -117,25 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="cobertura_1" xml:space="preserve">
-    <value>Coberturas: Proporciona seguros de vida para productores, trabajadores del campo y sus familias, garantizando apoyo financiero en momentos críticos.</value>
-  </data>
-  <data name="cobertura_2" xml:space="preserve">
-    <value>Beneficiarios: Productores, trabajadores agrícolas, y sus familias. Este fondo se enfoca en asegurar la vida de aquellos cuya labor diaria sostiene el sector agropecuario.</value>
-  </data>
-  <data name="cobertura_3" xml:space="preserve">
-    <value>Operación: Se maneja bajo principios de mutualismo y solidaridad, ofreciendo coberturas adaptadas a las necesidades y realidades del sector rural. La operación del fondo se caracteriza por su enfoque humano y su adaptabilidad a las condiciones particulares de sus beneficiarios.</value>
-  </data>
   <data name="cover" xml:space="preserve">
     <value>vida_cover.jpg</value>
   </data>
   <data name="description" xml:space="preserve">
-    <value>Brindar protección financiera ante el fallecimiento de los productores y personas relacionadas con el sector agropecuario, asegurando el bienestar de sus familias y la continuidad de las operaciones en el campo.</value>
+    <value>Ampara al productor por el fallecimiento ocurrido durante la vigencia del seguro por accidente o enfermedad.
+
+La vigencia del seguro es anual.
+Sumas aseguradas desde $20,000 pesos hasta $50,000 pesos con edad de 18 años hasta 80 años.
+Sumas aseguradas desde $60,000 pesos hasta $500,000 pesos con edad de 18 años hasta 65 años, se deberá llenar un formulario médico.
+
+Beneficios:
+No requiere de exámenes médicos para su contratación.
+Puedes asegurar a familiares directos y trabajadores por la misma suma asegurada.
+No excluye enfermedades preexistentes en sumas de hasta $50,000 pesos.
+Periodo de espera de solo 60 días.
+Como persona activa agropecuaria, podrá afiliarse a través de la Administración y Transferencia de Riesgos del Campo (ATRC), la cuota de adhesión es adicional al costo del seguro.</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>Seguro de vida</value>
-  </data>
-  <data name="ventaja_1" xml:space="preserve">
-    <value>Importancia y Beneficios: FanVida cumple una función social fundamental al proporcionar seguridad financiera a las familias de los productores en caso de fallecimiento, contribuyendo a la estabilidad económica y social del entorno rural.</value>
   </data>
 </root>

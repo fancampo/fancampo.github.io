@@ -5,6 +5,7 @@
 	xmlns:state="http://panax.io/state"
 	xmlns:searchParams="http://panax.io/site/searchParams"
 	xmlns:selected="http://panax.io/state/selected"
+	xmlns:fixed="http://panax.io/state/fixed"
 >
 	<xsl:import href="headers.xslt"/>
 	<xsl:import href="wizard.xslt"/>
@@ -29,8 +30,13 @@
 	<xsl:key name="wizard.section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/detalle[not(@xsi:type='mock')]/@especie" use="4"/>
 	<xsl:key name="wizard.section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/detalle[not(@xsi:type='mock')]/@*[namespace-uri()=''][not(name()='especie')]" use="4.1"/>
 
+	<xsl:key name="wizard.section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/detalle[not(@xsi:type='mock')]/detalle[@fixed:tipo_cotizacion_vida]/@especie" use="4"/>
+
+
+	<xsl:key name="wizard.section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion][@type='maquinaria' or @type='transporte_bienes']/detalle/@*[namespace-uri()='']" use="3"/>
+
 	<!--<xsl:key name="wizard.section" match="/*/cotizaciones/cotizacion[not(@type='ganadero')][@type=../@tipo_cotizacion]/detalle/@*" use="4"/>-->
-	
+
 	<xsl:key name="invalid" match="/*/cotizaciones/@*[namespace-uri()=''][.='']" use="generate-id()"/>
 	<xsl:key name="invalid" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/@*[namespace-uri()=''][.='']" use="generate-id()"/>
 	<xsl:key name="invalid" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/detalle/@*[namespace-uri()=''][.='']" use="generate-id()"/>
@@ -39,6 +45,7 @@
 	<xsl:key name="hidden" match="detalle[not(@seguro=1)]/@riesgo" use="generate-id()"/>
 	<xsl:key name="hidden" match="detalle[not(@seguro=1)]/@origen_transporte" use="generate-id()"/>
 	<xsl:key name="hidden" match="detalle[not(@seguro=1)]/@destino_transporte" use="generate-id()"/>
+	<xsl:key name="hidden" match="@type" use="generate-id()"/>
 	<xsl:key name="readonly" match="@type" use="generate-id()"/>
 	<xsl:key name="readonly" match="@tipo_cotizacion" use="generate-id()"/>
 	<xsl:key name="readonly" match="@fecha" use="generate-id()"/>
@@ -423,9 +430,6 @@ li span.wizard-icon-step-completed {
 	</xsl:template>
 
 	<xsl:template match="@suma_asegurada_total">
-		<xsl:call-template name="format">
-			<xsl:with-param name="value" select="number(../@numero_cabezas) * number(../@suma_asegurada)"></xsl:with-param>
-		</xsl:call-template>
 	</xsl:template>
 
 	<xsl:template mode="control" match="@*[key('dim',name())]">
@@ -489,18 +493,25 @@ li span.wizard-icon-step-completed {
 	</xsl:template>
 
 	<xsl:template mode="control" match="@*[key('readonly',generate-id())]" priority="2">
-		<input type="text" readonly="" tabindex="-1" class="form-control-plaintext">
+		<input type="text" readonly="" tabindex="-1">
+			<xsl:attribute name="class">
+				<xsl:text/>form-control-plaintext <xsl:apply-templates mode="input-attributes-class" select="."/>
+			</xsl:attribute>
 			<xsl:attribute name="value">
 				<xsl:apply-templates select="."/>
 			</xsl:attribute>
 		</input>
 	</xsl:template>
 
+	<xsl:template mode="input-attributes-class" match="@tipo_cotizacion">
+		<xsl:text>text-capitalize </xsl:text>
+	</xsl:template>
+
 	<xsl:template mode="form.body.field"  match="@*[key('hidden',generate-id())]" priority="2">
 	</xsl:template>
 
 	<xsl:template mode="control_type" match="@correoelectronico">email</xsl:template>
-	<xsl:template mode="control_type" match="@fecha_siembra|@fecha_siembra|@fecha|@fecha_inicio|@fecha_fin">date</xsl:template>
+	<xsl:template mode="control_type" match="@fecha_siembra|@fecha_arraigo|@fecha|@fecha_inicio|@fecha_fin">date</xsl:template>
 	<xsl:template mode="control_type" match="@machosporasegurar|@hembrasporasegurar|@edad|@numero_cabezas|@suma_asegurada">number</xsl:template>
 
 	<xsl:template mode="control_type" match="@*">text</xsl:template>
