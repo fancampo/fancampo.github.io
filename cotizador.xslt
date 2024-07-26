@@ -420,7 +420,7 @@ li span.wizard-icon-step-completed {
 		</label>
 	</xsl:template>
 
-	<xsl:template mode="control" match="deducible|sexo|funcionzootecnica|duracion|riesgo|origen_destino_transporte|origen_racial|financiamiento|referencia_suma" priority="1">
+	<xsl:template mode="control" match="deducible|sexo|funcionzootecnica|duracion|riesgo|origen_destino_transporte|origen_racial|financiamiento|referencia_suma|*[count(row)&lt;5]" priority="1">
 		<xsl:param name="context" select="."/>
 		<div class="btn-group" role="group">
 			<xsl:apply-templates mode="control-radio" select="row">

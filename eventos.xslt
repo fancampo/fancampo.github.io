@@ -8,6 +8,7 @@
 
 	<xsl:key name="data" match="data[starts-with(@name,'evento_')]/value" use="concat('#',substring(substring-after(../@name,'_'),1,8))"/>
 	<xsl:template match="/">
+		<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async="" defer=""></script>
 		<section>
 			<xsl:apply-templates/>
 		</section>
@@ -38,11 +39,17 @@
 				-webkit-shape-outside: inset(0);
 				-webkit-clip-path: inset(0);
 				object-fit: cover;
-			}			
+			}
+			
+			.clearfix::after {
+				content: "";
+				clear: both;
+				display: table;
+			}
 			]]>
 		</style>
 		<div class="container">
-			<div class="row mb-2">
+			<div class="row g-4" data-masonry="{{&quot;percentPosition&quot;: true }}">
 				<xsl:choose>
 					<xsl:when test="key('data',concat('#',$searchParams:tag))">
 						<xsl:apply-templates select="key('data',concat('#',$searchParams:tag))"/>
@@ -75,11 +82,55 @@
 		</xsl:variable>
 
 		<xsl:variable name="single-note" select="key('data',concat('#',$searchParams:tag))"/>
-		<div class="nota col-md-6" xo-scope="data_8264da50_d9e4_4421_a595_abab434c7a9f">
+		<div class="nota col-md-6 ">
 			<xsl:if test="$single-note">
 				<xsl:attribute name="class">nota-completa col-12</xsl:attribute>
 			</xsl:if>
-			<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+			<div class="card">
+				<div class="p-4 d-flex flex-column position-static">
+					<strong class="d-inline-block mb-2 text-primary-emphasis">Evento</strong>
+					<h3 class="mb-0">
+						<xsl:value-of select="$title"/>
+					</h3>
+					<div class="mb-1 text-body-secondary">
+						<xsl:apply-templates mode="date" select="."/>
+					</div>
+					<div class="card-text mb-auto clearfix" style="min-height: 250px;">
+						<img src="./assets/img/evento.jpg" class="img-fluid rounded-start shape-image col-12 col-md-6" alt="...">
+							<xsl:apply-templates mode="image-src" select="ancestor-or-self::data[1]">
+								<xsl:with-param name="path">./assets/img</xsl:with-param>
+							</xsl:apply-templates>
+						</img>
+						<p>
+							<xsl:choose>
+								<xsl:when test="not($single-note)">
+									<xsl:value-of select="substring-before(concat($body,'&lt;wbr&gt;'),'&lt;wbr')" disable-output-escaping="yes"/>
+									<br/>
+									<a href="eventos.html?tag={@name}" class="btn btn-primary">
+										<xsl:choose>
+											<xsl:when test="contains($body,'&lt;wbr')">
+												<xsl:text>Leer más...</xsl:text>
+											</xsl:when>
+											<xsl:otherwise>
+												<xsl:text>Ver nota</xsl:text>
+											</xsl:otherwise>
+										</xsl:choose>
+									</a>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:value-of select="$body" disable-output-escaping="yes"/>
+								</xsl:otherwise>
+							</xsl:choose>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<div class="nota col-sm-6 col-lg-4 mb-4">
+			<xsl:if test="$single-note">
+				<xsl:attribute name="class">nota-completa col-12</xsl:attribute>
+			</xsl:if>
+			<div class="card">
 				<div class="col p-4 d-flex flex-column position-static">
 					<strong class="d-inline-block mb-2 text-primary-emphasis">Evento</strong>
 					<h3 class="mb-0">
@@ -116,7 +167,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div>-->
 
 	</xsl:template>
 
