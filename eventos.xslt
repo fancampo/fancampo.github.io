@@ -28,15 +28,18 @@
 			</div>
 		</div>-->
 		<style>
+			<![CDATA[
 			.shape-image {
-			float: left;
-			height: 250px;
-			margin: 0 20px 20px 0;
-			shape-outside: inset(0);
-			clip-path: inset(0);
-			-webkit-shape-outside: inset(0);
-			-webkit-clip-path: inset(0);
-			}
+				float: left;
+				height: 250px;
+				margin: 0 20px 20px 0;
+				shape-outside: inset(0);
+				clip-path: inset(0);
+				-webkit-shape-outside: inset(0);
+				-webkit-clip-path: inset(0);
+				object-fit: cover;
+			}			
+			]]>
 		</style>
 		<div class="container">
 			<div class="row mb-2">
@@ -86,7 +89,7 @@
 						<xsl:apply-templates mode="date" select="."/>
 					</div>
 					<div class="card-text mb-auto">
-						<img src="./assets/img/evento.jpg" class="img-fluid rounded-start shape-image" alt="...">
+						<img src="./assets/img/evento.jpg" class="img-fluid rounded-start shape-image col-12 col-md-6" alt="...">
 							<xsl:apply-templates mode="image-src" select="ancestor-or-self::data[1]">
 								<xsl:with-param name="path">./assets/img</xsl:with-param>
 							</xsl:apply-templates>
@@ -94,10 +97,17 @@
 						<xsl:choose>
 							<xsl:when test="not($single-note)">
 								<xsl:value-of select="substring-before(concat($body,'&lt;wbr&gt;'),'&lt;wbr')" disable-output-escaping="yes"/>
-								<xsl:if test="contains($body,'&lt;wbr')">
-									<br/>
-									<a href="eventos.html?tag={@name}" class="btn btn-primary">Leer más...</a>
-								</xsl:if>
+								<br/>
+								<a href="eventos.html?tag={@name}" class="btn btn-primary">
+									<xsl:choose>
+										<xsl:when test="contains($body,'&lt;wbr')">
+											<xsl:text>Leer más...</xsl:text>
+										</xsl:when>
+										<xsl:otherwise>
+											<xsl:text>Ver nota</xsl:text>
+										</xsl:otherwise>
+									</xsl:choose>
+								</a>
 							</xsl:when>
 							<xsl:otherwise>
 								<xsl:value-of select="$body" disable-output-escaping="yes"/>
