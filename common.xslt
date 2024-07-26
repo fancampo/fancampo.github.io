@@ -1,16 +1,19 @@
 ﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:env="http://panax.io/state/environment" xmlns:xo="http://panax.io/xover">
 	<xsl:import href="keys.xslt"/>
+	<xsl:variable name="lowercase" select="'abcdefghijklmnopqrstuvwxyz'" />
+	<xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'" />
 	<xsl:template mode="image-src" match="value">
 		<xsl:param name="path">/assets/</xsl:param>
 		<xsl:attribute name="src">
 			<xsl:value-of select="$path"/>
-			<xsl:value-of select="translate(substring-before(.,';'),'\','/')"/>
+			<xsl:value-of select="translate(translate(substring-before(.,';'),'\','/'), $uppercase, $lowercase)"/>
 		</xsl:attribute>
 	</xsl:template>
 
 	<xsl:template mode="image-src" match="data">
 		<xsl:comment>debug:info</xsl:comment>
 		<xsl:apply-templates mode="image-src" select="key('image', @name)"/>
+		<xsl:value-of select="translate(key('image', @name), $uppercase, $lowercase)"/>
 	</xsl:template>
 
 	<xsl:template mode="title" match="data">
