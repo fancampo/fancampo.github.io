@@ -2658,10 +2658,10 @@
 		<row id="10" desc="Hija"/>
 		<row id="11" desc="Otro"/>
 	</parentesco>
-	<tipo_cotizacion_vida>
+	<tipo_persona>
 		<row id="1" desc ="F&#xED;sica"/>
 		<row id="2" desc ="Moral"/>
-	</tipo_cotizacion_vida>
+	</tipo_persona>
 	<suma>
 		<row id="1" desc="B&#xE1;sico"/>
 		<row id="2" desc="Montos mayores"/>
@@ -2726,9 +2726,9 @@
 		<cotizacion fixed:tipo_cotizacion="2" type="ganadero" especie="">
 			<detalle xsi:type="mock" estado="" municipio="" especie="" origen_racial="" raza="" sexo="" funcion_zootecnica="" edad="" numero_cabezas="" suma_asegurada="" referencia_suma_asegurada="" financiamiento="" tipo_seguro="" deducible="" enfermedades_zona="" cabezas_totales_hato="" cabezas_muertas_anuales="" duracion="" riesgo_transporte="" estado_origen="" municipio_origen="" estado_destino="" municipio_destino=""/>
 		</cotizacion>
-		<cotizacion fixed:tipo_cotizacion="9" type="vida" tipo_cotizacion_vida="" fecha_inicio="" fecha_fin="" suma="" >
-			<detalle xsi:type="mock" fixed:tipo_cotizacion_vida="1" folio_pif="" ugr="" agl="" folio="" curp="" parentesco="" monto_deposito=""/>
-			<detalle xsi:type="mock" fixed:tipo_cotizacion_vida="2" suscripciones=""/>
+		<cotizacion fixed:tipo_cotizacion="9" type="vida" tipo_persona="" fecha_inicio="" fecha_fin="" suma="" >
+			<detalle xsi:type="mock" fixed:tipo_persona="1" folio_pif="" ugr="" agl="" folio="" curp="" parentesco="" monto_deposito=""/>
+			<detalle xsi:type="mock" fixed:tipo_persona="2" suscripciones=""/>
 		</cotizacion>
 		<cotizacion fixed:tipo_cotizacion="4" type="maquinaria">
 			<detalle xsi:type="mock" nombre_maquinaria="" numero_unidades="" descripcion="" valor_maquinaria="" anio_modelo="" riesgo_solicitado=""/>

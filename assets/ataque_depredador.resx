@@ -139,15 +139,6 @@
   <data name="ataque_depredador (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\ataque_depredador (4).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cobertura_1" xml:space="preserve">
-    <value>La muerte por enfermedad: es considerada como una alteración de las funciones orgánicas causadas por agentes físicos, químicos y/o biológicos, como la neumonía, rabia paralítica bovina, anaplasmosis, enteritis inespecífica, etcétera.</value>
-  </data>
-  <data name="cobertura_2" xml:space="preserve">
-    <value>Muerte por accidente: es un acontecimiento proveniente de una causa externa, súbita imprevista, fortuita y violenta, como la intoxicación por Plantas, traumatismo por desbarrancamiento, etcétera.</value>
-  </data>
-  <data name="cobertura_3" xml:space="preserve">
-    <value>La muerte originada por sacrificio forzoso del ganado: es la determinación de dar muerte a un animal autorizadas por el Médico Veterinario Zootecnista de FANCAMPO cuando el animal sufra una lesión o enfermedad irreversible originada por una causa cubierta que implique la inminencia de muerte.</value>
-  </data>
   <data name="depredador_1" xml:space="preserve">
     <value>Jaguar</value>
   </data>
