@@ -82,7 +82,7 @@
 		</xsl:variable>
 
 		<xsl:variable name="single-note" select="key('data',concat('#',$searchParams:tag))"/>
-		<div class="nota col-md-6 ">
+		<div class="nota col-lg-6 ">
 			<xsl:if test="$single-note">
 				<xsl:attribute name="class">nota-completa col-12</xsl:attribute>
 			</xsl:if>

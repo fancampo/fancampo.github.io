@@ -13,7 +13,6 @@
 	<xsl:template mode="image-src" match="data">
 		<xsl:comment>debug:info</xsl:comment>
 		<xsl:apply-templates mode="image-src" select="key('image', @name)"/>
-		<xsl:value-of select="translate(key('image', @name), $uppercase, $lowercase)"/>
 	</xsl:template>
 
 	<xsl:template mode="title" match="data">
