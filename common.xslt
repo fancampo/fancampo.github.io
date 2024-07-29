@@ -2,6 +2,19 @@
 	<xsl:import href="keys.xslt"/>
 	<xsl:variable name="lowercase" select="'abcdefghijklmnopqrstuvwxyz'" />
 	<xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'" />
+	<xsl:template mode="src-attribute" match="value">
+		<xsl:param name="path">/assets/</xsl:param>
+		<xsl:attribute name="src">
+			<xsl:value-of select="$path"/>
+			<xsl:value-of select="translate(translate(substring-before(.,';'),'\','/'), $uppercase, $lowercase)"/>
+		</xsl:attribute>
+	</xsl:template>
+
+	<xsl:template mode="src-attribute" match="data">
+		<xsl:comment>debug:info</xsl:comment>
+		<xsl:apply-templates mode="src-attribute" select="key('file', @name)"/>
+	</xsl:template>
+
 	<xsl:template mode="image-src" match="value">
 		<xsl:param name="path">/assets/</xsl:param>
 		<xsl:attribute name="src">

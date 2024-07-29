@@ -179,6 +179,9 @@ Se llevó a cabo la suscripción al "Programa de Sementales Bovinos dentro del M
   <data name="evento_20240729 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240729 (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="evento_20240729_2" xml:space="preserve">
+    <value>PROGRAMA AGRO-VIDA: FanVida y Agroinvic ponen en marcha el Programa "Agrovida" en beneficio de las personas del campo, te regalamos una póliza de seguro de vida al adquirir productos de Agroinvic para una ganadería regenerativa ayudar a la conservación del medio ambiente.</value>
+  </data>
   <data name="img:evento_20240623" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>img\comerciales.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -190,6 +193,9 @@ Se llevó a cabo la suscripción al "Programa de Sementales Bovinos dentro del M
   </data>
   <data name="img:evento_20240729" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240729 (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img:evento_20240729_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20240729_2.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>Eventos</value>

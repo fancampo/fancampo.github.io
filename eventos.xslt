@@ -32,7 +32,7 @@
 			<![CDATA[
 			.shape-image {
 				float: left;
-				height: 250px;
+				min-height: 250px;
 				margin: 0 20px 20px 0;
 				shape-outside: inset(0);
 				clip-path: inset(0);
@@ -64,7 +64,11 @@
 		</div>
 	</xsl:template>
 
-	<xsl:template match="*">
+	<xsl:template match="value">
+		<xsl:apply-templates select="parent::data"/>
+	</xsl:template>
+
+	<xsl:template match="data">
 		<xsl:variable name="title">
 			<xsl:apply-templates mode="title" select="."/>
 		</xsl:variable>
@@ -96,11 +100,7 @@
 						<xsl:apply-templates mode="date" select="."/>
 					</div>
 					<div class="card-text mb-auto clearfix" style="min-height: 250px;">
-						<img src="./assets/img/evento.jpg" class="img-fluid rounded-start shape-image col-12 col-md-6" alt="...">
-							<xsl:apply-templates mode="image-src" select="ancestor-or-self::data[1]">
-								<xsl:with-param name="path">./assets/img</xsl:with-param>
-							</xsl:apply-templates>
-						</img>
+						<xsl:apply-templates mode="widget" select="key('file', @name)"/>
 						<p>
 							<xsl:choose>
 								<xsl:when test="not($single-note)">
@@ -126,49 +126,6 @@
 				</div>
 			</div>
 		</div>
-		<!--<div class="nota col-sm-6 col-lg-4 mb-4">
-			<xsl:if test="$single-note">
-				<xsl:attribute name="class">nota-completa col-12</xsl:attribute>
-			</xsl:if>
-			<div class="card">
-				<div class="col p-4 d-flex flex-column position-static">
-					<strong class="d-inline-block mb-2 text-primary-emphasis">Evento</strong>
-					<h3 class="mb-0">
-						<xsl:value-of select="$title"/>
-					</h3>
-					<div class="mb-1 text-body-secondary">
-						<xsl:apply-templates mode="date" select="."/>
-					</div>
-					<div class="card-text mb-auto">
-						<img src="./assets/img/evento.jpg" class="img-fluid rounded-start shape-image col-12 col-md-6" alt="...">
-							<xsl:apply-templates mode="image-src" select="ancestor-or-self::data[1]">
-								<xsl:with-param name="path">./assets/img</xsl:with-param>
-							</xsl:apply-templates>
-						</img>
-						<xsl:choose>
-							<xsl:when test="not($single-note)">
-								<xsl:value-of select="substring-before(concat($body,'&lt;wbr&gt;'),'&lt;wbr')" disable-output-escaping="yes"/>
-								<br/>
-								<a href="eventos.html?tag={@name}" class="btn btn-primary">
-									<xsl:choose>
-										<xsl:when test="contains($body,'&lt;wbr')">
-											<xsl:text>Leer más...</xsl:text>
-										</xsl:when>
-										<xsl:otherwise>
-											<xsl:text>Ver nota</xsl:text>
-										</xsl:otherwise>
-									</xsl:choose>
-								</a>
-							</xsl:when>
-							<xsl:otherwise>
-								<xsl:value-of select="$body" disable-output-escaping="yes"/>
-							</xsl:otherwise>
-						</xsl:choose>
-					</div>
-				</div>
-			</div>
-		</div>-->
-
 	</xsl:template>
 
 	<xsl:template mode="image" match="data">
@@ -192,4 +149,23 @@
 		<xsl:value-of select="concat(substring($date, 7, 2), '-', substring($date, 5, 2), '-', substring($date, 1, 4))" />
 	</xsl:template>
 
+	<xsl:template mode="widget" match="*">
+		<comment>No mapeado</comment>
+	</xsl:template>
+
+	<xsl:template mode="widget" match="key('widget','video')">
+		<video src="./assets/img/evento.jpg" class="shape-image col-12 col-md-6" autoplay="true" muted="true" alt="..." controls="">
+			<xsl:apply-templates mode="src-attribute" select="ancestor-or-self::data[1]">
+				<xsl:with-param name="path">./assets/img</xsl:with-param>
+			</xsl:apply-templates>
+		</video>
+	</xsl:template>
+
+	<xsl:template mode="widget" match="key('widget','image')">
+		<img src="./assets/img/evento.jpg" class="img-fluid rounded-start shape-image col-12 col-md-6" alt="...">
+			<xsl:apply-templates mode="src-attribute" select="ancestor-or-self::data[1]">
+				<xsl:with-param name="path">./assets/img</xsl:with-param>
+			</xsl:apply-templates>
+		</img>
+	</xsl:template>
 </xsl:stylesheet>
