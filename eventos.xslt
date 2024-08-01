@@ -94,7 +94,7 @@
 				<div class="p-4 d-flex flex-column position-static">
 					<strong class="d-inline-block mb-2 text-primary-emphasis">Evento</strong>
 					<h3 class="mb-0">
-						<xsl:value-of select="$title"/>
+						<xsl:value-of select="$title" disable-output-escaping="yes"/>
 					</h3>
 					<div class="mb-1 text-body-secondary">
 						<xsl:apply-templates mode="date" select="."/>
