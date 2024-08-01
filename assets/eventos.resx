@@ -187,6 +187,11 @@ Se llevó a cabo la suscripción al "Programa de Sementales Bovinos dentro del M
 Puedes adquirir tu seguro de estancia temporal, transporte, adaptación y radicación para proteger a los sementales de muerte contra enfermedad, accidente y/o sacrificio forzoso.
 #CNOG #campo #campomexicano #rural #bovinos #bovinosdecarne #chiapasmexico #Chiapas2024 #SuresteMexicano #Sureste</value>
   </data>
+  <data name="evento_20240801_2" xml:space="preserve">
+    <value>SUSCRIPCION DEL SEGURO AGRICOLA: 
+En días pasados se llevó el aseguramiento de cultivos de maíz y sorgo del ciclo PV 2024 en municipios de Michoacán y Guanajuato.
+#CNOG #Michoacán #Guanajuato #pv2024 #maíz #sorgo</value>
+  </data>
   <data name="img:evento_20240623" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>img\comerciales.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -204,6 +209,9 @@ Puedes adquirir tu seguro de estancia temporal, transporte, adaptación y radica
   </data>
   <data name="img:evento_20240801" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240801.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img:evento_20240801_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20240801_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>Eventos</value>
