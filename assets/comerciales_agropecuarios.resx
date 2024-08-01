@@ -135,11 +135,6 @@ sacrificio forzoso. Vigencia hasta 365 días en el lugar de producción.</value>
   <data name="cobertura_5" xml:space="preserve">
     <value>Estancia Temporal: Período dónde los animales participan en exposiciones, exhibiciones, muestras, tianguis, subastas o concursos, el cual quedará definido en la vigencia. Vigencia desde 10 días hasta 20 días en el lugar del evento.</value>
   </data>
-  <data name="cobertura_6" xml:space="preserve">
-    <value>Alta Mortalidad: Cubre la muerte por enfermedad, accidente y/o sacrificio forzoso por la ocurrencia de eventos de alta mortalidad* del ganado identificado con arete SINIIGA.
-
-&lt;em&gt;*Aplica un mínimo de animales muertos por la misma causa denominado franquicia. En muerte ocasionada por mordedura de serpiente se debe cumplir franquicia.&lt;/em&gt;</value>
-  </data>
   <data name="description" xml:space="preserve">
     <value>Son de contratación particular enfocados a diversos programas de fomento ganadero y mejoramiento genético protegiendo la muerte contra enfermedad, accidentes y/o sacrificio forzoso de bovinos de reproducción, doble función, ordeña, engorda y de trabajo; ovinos y caprinos de reproducción; cerdos de reproducción y engorda.</value>
   </data>
