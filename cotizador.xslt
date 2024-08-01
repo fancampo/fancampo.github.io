@@ -32,8 +32,9 @@
 
 	<xsl:key name="wizard.section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/detalle[not(@xsi:type='mock')]/detalle[@fixed:tipo_cotizacion_vida]/@especie" use="4"/>
 
-
 	<xsl:key name="wizard.section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion][@type='maquinaria' or @type='transporte_bienes']/detalle/@*[namespace-uri()='']" use="3"/>
+
+	<xsl:key name="wizard.section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion][@type='vida']/detalle[@fixed:tipo_persona=../@tipo_persona]/@*[namespace-uri()='']" use="3"/>
 
 	<!--<xsl:key name="wizard.section" match="/*/cotizaciones/cotizacion[not(@type='ganadero')][@type=../@tipo_cotizacion]/detalle/@*" use="4"/>-->
 
