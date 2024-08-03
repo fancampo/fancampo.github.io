@@ -26,10 +26,10 @@ xmlns="http://www.w3.org/1999/xhtml"
 			</xsl:choose>
 		</xsl:variable>
 		<div>
-			<xsl:if test="$seguros/ancestor::*[@tag='seguros_vida']">
+			<xsl:if test="$seguros/ancestor::*[@tag='seguro_vida']">
 				<xsl:attribute name="class">fanvida-section</xsl:attribute>
 			</xsl:if>
-			<xsl:if test="not($seguros/ancestor-or-self::*[@tag='seguros_vida'])">
+			<xsl:if test="not($seguros/ancestor-or-self::*[@tag='seguro_vida'])">
 				<xsl:attribute name="class">fancampo-section</xsl:attribute>
 			</xsl:if>
 			<script>

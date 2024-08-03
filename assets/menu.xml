@@ -25,7 +25,7 @@
 		</item>
 		<item title="Comerciales" href="./seguro.html#comerciales" image="comerciales.jpg" tag="comerciales">
 			<item title="Bienes conexos" href="./seguro.html#bienes_conexos" image="bienes_conexos.jpg"/>
-			<item title="castróficos" href="./seguro.html#catastrofico" image="catastrofico.jpg"/>
+			<item title="Catastróficos" href="./seguro.html#catastrofico" image="catastrofico.jpg"/>
 			<item title="Acuícolas" href="./seguro.html#acuicola" image="acuicola.jpg"/>
 		</item>
 		<item title="Agrícola" href="./seguro.html#agricola" image="agricola.jpg" id_seguro="7" tag="agricolas">

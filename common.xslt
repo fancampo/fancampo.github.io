@@ -24,7 +24,6 @@
 	</xsl:template>
 
 	<xsl:template mode="image-src" match="data">
-		<xsl:comment>debug:info</xsl:comment>
 		<xsl:apply-templates mode="image-src" select="key('image', @name)"/>
 	</xsl:template>
 
