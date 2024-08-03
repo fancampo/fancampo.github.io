@@ -46,7 +46,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 
 	<xsl:template match="*[@href]|*[@href]/@*" mode="menu:item-link-attribute">
 		<xsl:variable name="element" select="ancestor-or-self::*[1]"/>
-		<xsl:attribute name="onclick">event.preventDefault(); window.location.href = this.href;</xsl:attribute>
+		<xsl:attribute name="onclick">navigate.call(this)</xsl:attribute>
 		<xsl:copy-of select="$element/@href|$element/@target|$element/@onclick"/>
 	</xsl:template>
 
@@ -102,9 +102,15 @@ xmlns="http://www.w3.org/1999/xhtml"
 					<xsl:attribute name="data-bs-toggle">dropdown</xsl:attribute>
 				</xsl:if>
 				<xsl:apply-templates mode="menu:item-link-attribute" select="."/>
+				<!--<xsl:attribute name="href">#</xsl:attribute>-->
 				<xsl:apply-templates mode="menu:item-icon" select="."/>
 				<xsl:apply-templates mode="menu:icon-badge" select="."/>
 				<xsl:apply-templates mode="menu:item-title" select="."/>
+				<!--<xsl:if test="contains($dropdown,'dropstart')">
+					<label style="width: 100%; text-align: -webkit-right; display: inline;" onclick="location.href='{@href}'">
+						<xsl:text> ver</xsl:text>
+					</label>
+				</xsl:if>-->
 			</a>
 			<xsl:if test="$dropdown!=''">
 				<xsl:apply-templates mode="menu:widget" select="."/>

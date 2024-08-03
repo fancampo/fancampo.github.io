@@ -5,6 +5,13 @@
                 event.preventDefault()
             }
         })
+
+        function navigate() {
+            event.preventDefault();
+            if (xo.site.width >= 991 || !this.parentNode.querySelector("ul")) {
+                window.location.href = this.href;
+            }
+        }
     </script>
     <nav id="navbar" class="navbar navbar-expand-lg">
         <div class="container d-flex" style="justify-content: space-between;">
