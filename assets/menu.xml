@@ -35,7 +35,8 @@
 		</item>
 		<item title="Seguro de Vida" href="./seguro.html#proteccion_integral" image="vida.jpg" tag="seguro_vida">
 			<item title="Vida" href="./seguro.html#vida_basico" image="vida_basico.jpg"/>
-			<item title="Protección Integral" href="./seguro.html#proteccion_integral" image="vida_proteccion_integral.jpg" tag="vida_integral">
+			<item title="Protección Integral" href="./seguro.html#proteccion_integral" image="vida_proteccion_integral.jpg">
+				<!-- tag="vida_integral"-->
 				<!--<item title="Seguro de Vida" href="./seguro.html#vida_integral" image="seguro_vida.jpg"/>
 				<item title="Asistencia médica y funeraria" href="./seguro.html#asistencia_medica" image="asistencia_medica.jpg"/>-->
 			</item>

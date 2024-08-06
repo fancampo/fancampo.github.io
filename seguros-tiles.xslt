@@ -58,7 +58,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 		</xsl:variable>
 		<xsl:variable name="tipo">
 			<xsl:choose>
-				<xsl:when test="@tag">
+				<xsl:when test="self::*[*]/@tag">
 					<xsl:text>?tipo=</xsl:text>
 					<xsl:value-of select="@tag"/>
 				</xsl:when>
