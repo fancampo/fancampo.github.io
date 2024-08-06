@@ -69,16 +69,21 @@
 
     <section id="video-container" class="d-flex" style="background: linear-gradient(to bottom, var(--fancampovida-blue-smoke) 40%, var(--fancampovida-creen-snow) 60%); flex-wrap: wrap; flex-direction: column; ">
         <style>
-            :has(video.main) #header:not(.header-scrolled) .logo {
-                visibility: hidden;
-                opacity: 0;
-            }
-            :has(video.main) #header:not(.header-scrolled) {
-                background-color: rgba(0, 0, 0, 0);
-            }
+
+            @media (min-width: 991px) {
+                :has(video.main) #header:not(.header-scrolled) .logo {
+                    visibility: hidden;
+                    opacity: 0;
+                }
+
+                :has(video.main) #header:not(.header-scrolled) {
+                    background-color: rgba(0, 0, 0, 0);
+                }
+
                 :has(video.main) #header:not(.header-scrolled) ul {
                     background-color: rgba(0, 0, 0, 0.1);
                 }
+            }
 
             #promocional .video-container {
                 position: relative;
@@ -86,33 +91,33 @@
                 cursor: pointer;
             }
 
-            #promocional .video-container video {
-                /*position: absolute;
+                #promocional .video-container video {
+                    /*position: absolute;
             visibility: hidden;*/
-            }
+                }
 
-            #promocional .video-container.playing video {
-                visibility: visible;
-            }
+                #promocional .video-container.playing video {
+                    visibility: visible;
+                }
 
-            #promocional .video-container.playing video {
-                visibility: visible;
-            }
+                #promocional .video-container.playing video {
+                    visibility: visible;
+                }
 
-            #promocional .video-container.playing .thumbnail {
-                display: none;
-            }
+                #promocional .video-container.playing .thumbnail {
+                    display: none;
+                }
 
-            #promocional .video-container .thumbnail {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                left: 0;
-            }
+                #promocional .video-container .thumbnail {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    left: 0;
+                }
 
-            #promocional .video-container.playing .play-button {
-                display: none;
-            }
+                #promocional .video-container.playing .play-button {
+                    display: none;
+                }
 
             .play-button {
                 position: absolute;
