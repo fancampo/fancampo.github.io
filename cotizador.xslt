@@ -35,6 +35,7 @@
 	<xsl:key name="wizard.section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion][@type='maquinaria' or @type='transporte_bienes']/detalle/@*[namespace-uri()='']" use="3"/>
 
 	<xsl:key name="wizard.section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion][@type='vida']/detalle[@fixed:tipo_persona=../@tipo_persona]/@*[namespace-uri()='']" use="3"/>
+	<xsl:key name="wizard.section.fieldset" match="@parentesco" use="4"/>
 
 	<!--<xsl:key name="wizard.section" match="/*/cotizaciones/cotizacion[not(@type='ganadero')][@type=../@tipo_cotizacion]/detalle/@*" use="4"/>-->
 
@@ -45,12 +46,16 @@
 	<xsl:key name="hidden" match="detalle[not(@seguro=1)]/@duracion" use="generate-id()"/>
 	<xsl:key name="hidden" match="detalle[not(@seguro=1)]/@riesgo" use="generate-id()"/>
 	<xsl:key name="hidden" match="detalle[not(@seguro=1)]/@origen_transporte" use="generate-id()"/>
+	<xsl:key name="hidden" match="cotizaciones/@fecha" use="generate-id()"/>
 	<xsl:key name="hidden" match="detalle[not(@seguro=1)]/@destino_transporte" use="generate-id()"/>
 	<xsl:key name="hidden" match="@type" use="generate-id()"/>
 	<xsl:key name="readonly" match="@type" use="generate-id()"/>
 	<xsl:key name="readonly" match="@tipo_cotizacion" use="generate-id()"/>
 	<xsl:key name="readonly" match="@fecha" use="generate-id()"/>
 	<xsl:key name="readonly" match="@suma_asegurada_total" use="generate-id()"/>
+	<xsl:key name="readonly" match="@fecha_fin" use="generate-id()"/>
+	<xsl:key name="readonly" match="cotizacion[@type='vida']/detalle/@edad" use="generate-id()"/>
+	<xsl:key name="readonly" match="cotizacion[@type='vida']/detalle/@fecha_nacimiento" use="generate-id()"/>
 
 	<xsl:key name="dim" match="/*/*" use="name()"/>
 	<xsl:key name="dim" match="/*/referencia_suma" use="'referencia_suma_asegurada'"/>
@@ -62,7 +67,29 @@
 	<xsl:param name="state:active">${xo.site.searchParams.has("tipo")?2:1}</xsl:param>
 
 	<xsl:template match="/*">
-		<main style="margin-top: 5rem;">
+		<main>
+			<script>
+				<![CDATA[
+				xo.listener.on('change::@fecha_inicio', function({ element }) {
+					event.preventDefault()
+					let fecha_inicio = new Date(`${this.value}T00:00`);
+					let fecha_fin = fecha_inicio.addDays(364);
+					element.setAttribute("fecha_fin", fecha_fin.toISOString().substring(0,10));
+				})
+				
+				xo.listener.on('change::@curp', function({ element }) {
+					let curp = this.value;
+					let fecha_nacimiento = curp.replace(/^[^\d]+/,"").substring(0,6).match(/\d{2}/g).join("-");
+					if (new Date(`19${fecha_nacimiento}T00:00`) < new Date()) {
+						fecha_nacimiento = new Date(`19${fecha_nacimiento}T00:00`);
+					} else {
+						fecha_nacimiento = new Date(`20${fecha_nacimiento}T00:00`);
+					}
+					element.setAttribute("fecha_nacimiento", fecha_nacimiento.toISOString().substring(0,10));
+					element.setAttribute("edad", datediff('year', fecha_nacimiento, new Date()));
+				})
+			]]>
+			</script>
 			<xsl:apply-templates mode="wizard" select=".">
 				<xsl:with-param name="active" select="$state:active"/>
 			</xsl:apply-templates>
@@ -396,13 +423,22 @@ li span.wizard-icon-step-completed {
 		</select>
 	</xsl:template>
 
-	<xsl:template mode="control" match="municipio" priority="1">
+	<xsl:template mode="control" match="municipio|ugr" priority="1">
 		<xsl:param name="context" select="."/>
+		<xsl:variable name="options" select="row[@edo=$context/ancestor::cotizacion[1]/@estado]"/>
 		<select class="form-select" xo-scope="{$context/../@xo:id}" xo-slot="{name($context)}" onchange="scope.set(this.value)">
 			<option></option>
-			<xsl:apply-templates mode="control" select="row[@edo=$context/../@estado]">
-				<xsl:with-param name="context" select="$context"/>
-			</xsl:apply-templates>
+			<xsl:choose>
+				<xsl:when test="$options">
+					<xsl:apply-templates mode="control" select="$options">
+						<xsl:with-param name="context" select="$context"/>
+					</xsl:apply-templates>
+				</xsl:when>
+				<xsl:otherwise>
+					<optgroup label="Primero selecciona un estado">
+					</optgroup>	
+				</xsl:otherwise>
+			</xsl:choose>
 		</select>
 	</xsl:template>
 
@@ -421,7 +457,7 @@ li span.wizard-icon-step-completed {
 		</label>
 	</xsl:template>
 
-	<xsl:template mode="control" match="deducible|sexo|funcionzootecnica|duracion|riesgo|origen_destino_transporte|origen_racial|financiamiento|referencia_suma|*[count(row)&lt;5]" priority="1">
+	<xsl:template mode="control" match="deducible|sexo|funcionzootecnica|duracion|riesgo|origen_destino_transporte|origen_racial|financiamiento|referencia_suma|*[key('dim',name())][count(row)&lt;5]" priority="1">
 		<xsl:param name="context" select="."/>
 		<div class="btn-group" role="group">
 			<xsl:apply-templates mode="control-radio" select="row">
@@ -495,6 +531,9 @@ li span.wizard-icon-step-completed {
 
 	<xsl:template mode="control" match="@*[key('readonly',generate-id())]" priority="2">
 		<input type="text" readonly="" tabindex="-1">
+			<xsl:attribute name="type">
+				<xsl:apply-templates mode="control_type" select="."/>
+			</xsl:attribute>
 			<xsl:attribute name="class">
 				<xsl:text/>form-control-plaintext <xsl:apply-templates mode="input-attributes-class" select="."/>
 			</xsl:attribute>
@@ -511,11 +550,13 @@ li span.wizard-icon-step-completed {
 	<xsl:template mode="form.body.field"  match="@*[key('hidden',generate-id())]" priority="2">
 	</xsl:template>
 
-	<xsl:template mode="control_type" match="@correoelectronico">email</xsl:template>
+	<xsl:template mode="control_type" match="@correo_electronico">email</xsl:template>
 	<xsl:template mode="control_type" match="@fecha_siembra|@fecha_arraigo|@fecha|@fecha_inicio|@fecha_fin">date</xsl:template>
 	<xsl:template mode="control_type" match="@machosporasegurar|@hembrasporasegurar|@edad|@numero_cabezas|@suma_asegurada">number</xsl:template>
 
 	<xsl:template mode="control_type" match="@*">text</xsl:template>
+
+	<xsl:template mode="headerText" match="cotizacion[@type='vida']/detalle/@edad">Edad (años)</xsl:template>
 
 	<xsl:template mode="desc" match="@*|*">
 		<xsl:value-of select="key('desc',concat(name(),'::',.))"/>

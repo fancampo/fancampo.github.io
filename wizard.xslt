@@ -156,7 +156,7 @@
 	<xsl:template match="*|@*" mode="wizard.step.panel" priority="-1">
 		<xsl:param name="step">1</xsl:param>
 		<xsl:variable name="step-class">aiia-wizard-step</xsl:variable>
-		<div id="container_{@xo:id}" class="{$step-class}" data-position="{count(preceding-sibling::*|self::*)}" style="position: absolute; min-height: 400px; width: 100%; margin-left: 0px;" xo-scope="inherit">
+		<div id="container_{@xo:id}" class="{$step-class}" data-position="{count(preceding-sibling::*|self::*)}" style="min-height: 400px; width: 100%; margin-left: 0px;" xo-scope="inherit">
 			<xsl:choose>
 				<xsl:when test="$step=1">
 					<xsl:attribute name="class">
@@ -218,33 +218,32 @@
 		<xsl:param name="active" select="1"/>
 		<xsl:variable name="current" select="current()"/>
 
-		<div class="outer-container">
 			<xsl:apply-templates mode="wizard.styles" select="."/>
-			<div id="wizard" class="aiia-wizard" style="display: block;">
-				<hr style="border-width: 4px; border-color: silver;"/>
-				<div class="aiia-wizard-progress-buttons-wrapper row" style="display: block;">
-					<div class="col-md-12">
-						<ul class="nav nav-pills nav-justified aiia-wizard-progress-buttons-placeholder">
-							<xsl:for-each select="(//@*)[position()&lt;20]">
-								<xsl:variable name="current-step" select="position()"/>
-								<xsl:variable name="items" select="key('wizard.section',$current-step)"/>
-								<xsl:apply-templates mode="wizard.step.title" select="$items[1]">
-									<xsl:with-param name="active" select="$active"/>
-									<xsl:with-param name="step" select="position()"/>
-								</xsl:apply-templates>
-							</xsl:for-each>
-						</ul>
+			<div id="wizard" class="aiia-wizard outer-container" style="display: flex; flex-direction: column;">
+				<div class="wizard-header sticky-top bg-white">
+					<hr style="border-width: 4px; border-color: silver;"/>
+					<div class="aiia-wizard-progress-buttons-wrapper row">
+						<div class="col-md-12">
+							<ul class="nav nav-pills nav-justified aiia-wizard-progress-buttons-placeholder">
+								<xsl:for-each select="(//@*)[position()&lt;20]">
+									<xsl:variable name="current-step" select="position()"/>
+									<xsl:variable name="items" select="key('wizard.section',$current-step)"/>
+									<xsl:apply-templates mode="wizard.step.title" select="$items[1]">
+										<xsl:with-param name="active" select="$active"/>
+										<xsl:with-param name="step" select="position()"/>
+									</xsl:apply-templates>
+								</xsl:for-each>
+							</ul>
+						</div>
 					</div>
+					<hr style="border-width: 4px; border-color: silver;"/>
 				</div>
-				<hr style="border-width: 4px; border-color: silver;"/>
-				<div class="aiia-wizard-steps-wrapper container" style="position: relative; overflow-y: scroll; width: 100%;
-    min-height: 500px; height: 500px; overflow-x: hidden;">
+				<div class="aiia-wizard-steps-wrapper container" style="position: relative; width: 100%; min-height: 500px; height: 500px; overflow-x: hidden; max-height: 100%; flex: 1;">
 					<xsl:apply-templates mode="wizard.step.panel" select="key('wizard.section',$active)[1]">
 						<xsl:with-param name="active" select="$active"/>
 						<xsl:with-param name="step" select="$active"/>
 					</xsl:apply-templates>
 				</div>
-			</div>
 		</div>
 	</xsl:template>
 

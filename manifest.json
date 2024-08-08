@@ -13,8 +13,18 @@
     "#nosotros": "./assets/nosotros.resx",
     "#mision": "#nosotros",
     "#vision": "#nosotros",
-    "#valores": "#nosotros"
+    "#valores": "#nosotros",
+    "#ws": {
+      "server:ws": [
+        "ws://localhost:8003",
+        {
+          "message": "#messages",
+          "changed": "reloadStylesheets"
+        }
+      ]
+    }
   },
+  "start": ["#ws"],
   "state": {
     "seguro": "${(xover.site.seed || '').replace(/^#/,'')}"
   },

@@ -246,3 +246,70 @@ xo.listener.on('fetch::root', async function(document){
 //    this.select(`//data/value/text()`).filter(text => text.value.match(/\n/)).forEach(data => data.parentNode.replaceChildren(...xover.xml.createFragment(`<p>${data.textContent.replace(/([>:]\s*)\n/g, '$1').replace(/\n+/g, '</p><p>')}</p>`).childNodes));
 //    event.stopImmediatePropagation()
 //})
+
+xover.server.ws = function (url, listeners = {}) {
+    try {
+        if (!window.io) return;
+        const socket_io = window.io(url, { transports: ['websocket'] });
+
+        for ([listener, handler] of Object.entries(listeners)) {
+            socket_io.on(listener, async function (...args) {
+                if (!handler) {
+                    return
+                } else if (existsFunction(handler)) {
+                    let fn = eval(handler);
+                    response = await fn.apply(this, args.length ? args : parameters);
+                } else if (handler[0] == '#') {
+                    let source = xo.sources[handler];
+                    await source.ready;
+                    source.documentElement.append(xo.xml.createNode(`<item/ >`).textContent = args.join())
+                }
+            })
+        }
+    } catch (e) {
+        return Promise.reject(e);
+    }
+}
+
+function reloadStylesheets() {
+    xo.site.stylesheets.reload()
+}
+
+var datediff = function (intervalType, first_date, last_date) {
+    // Parse the input dates
+    if (!(first_date && last_date)) return undefined;
+    const first = first_date instanceof Date ? first_date : first_date.parseDate();
+    const last = last_date instanceof Date ? last_date : last_date.parseDate();
+    intervalType = intervalType.replace(/s$/, '');
+
+    // Calculate the difference in milliseconds
+    const diffMs = last - first;
+
+    // Convert milliseconds to the specified interval type
+    let diffInterval;
+    switch (intervalType) {
+        case 'year':
+            diffInterval = diffMs / (1000 * 60 * 60 * 24 * 365.25);
+            break;
+        case 'month':
+            diffInterval = diffMs / (1000 * 60 * 60 * 24 * 30.44);
+            break;
+        case 'day':
+            diffInterval = diffMs / (1000 * 60 * 60 * 24);
+            break;
+        case 'hour':
+            diffInterval = diffMs / (1000 * 60 * 60);
+            break;
+        case 'minute':
+            diffInterval = diffMs / (1000 * 60);
+            break;
+        case 'second':
+            diffInterval = diffMs / 1000;
+            break;
+        default:
+            throw new Error('Invalid interval type');
+    }
+
+    // Return the result rounded to 2 decimal places
+    return Math.floor(Math.round(diffInterval * 100) / 100);
+}
