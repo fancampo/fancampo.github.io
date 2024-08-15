@@ -11,7 +11,7 @@
 		<row id="02" desc="Baja California"/>
 		<row id="03" desc="Baja California Sur"/>
 		<row id="04" desc="Campeche"/>
-		<row id="05" desc="Coahuila de Zaragoza"/>
+		<row id="05" desc="Coahuila"/>
 		<row id="06" desc="Colima"/>
 		<row id="07" desc="Chiapas"/>
 		<row id="08" desc="Chihuahua"/>
@@ -21,8 +21,8 @@
 		<row id="12" desc="Guerrero"/>
 		<row id="13" desc="Hidalgo"/>
 		<row id="14" desc="Jalisco"/>
-		<row id="15" desc="M&#xE9;xico"/>
-		<row id="16" desc="Michoac&#xE1;n de Ocampo"/>
+		<row id="15" desc="Estado de M&#xE9;xico"/>
+		<row id="16" desc="Michoac&#xE1;n"/>
 		<row id="17" desc="Morelos"/>
 		<row id="18" desc="Nayarit"/>
 		<row id="19" desc="Nuevo Le&#xF3;n"/>
@@ -36,7 +36,7 @@
 		<row id="27" desc="Tabasco"/>
 		<row id="28" desc="Tamaulipas"/>
 		<row id="29" desc="Tlaxcala"/>
-		<row id="30" desc="Veracruz de Ignacio de la Llave"/>
+		<row id="30" desc="Veracruz"/>
 		<row id="31" desc="Yucat&#xE1;n"/>
 		<row id="32" desc="Zacatecas"/>
 	</estado>
@@ -2517,6 +2517,55 @@
 		<row id="32057" desc="Trancoso" edo="32"/>
 		<row id="32058" desc="Santa Mar&#xED;a de la Paz" edo="32"/>
 	</municipio>
+	<ugr>
+		<row id="0" desc="UNION GANADERA REGIONAL DE AGUASCALIENTES" edo="01"/>
+		<row id="1" desc="UNION GANADERA REGIONAL DE BAJA CALIFORNIA" edo="02"/>
+		<row id="2" desc="UNION GANADERA REGIONAL DE BAJA CALIFORNIA SUR" edo="03"/>
+		<row id="4" desc="UNION GANADERA REGIONAL DE CAMPECHE" edo="04"/>
+		<row id="3" desc="UNION GANADERA REGIONAL DE COLIMA" edo="06"/>
+		<row id="5" desc="UNION GANADERA REGIONAL DE COAHUILA" edo="05"/>
+		<row id="6" desc="UNION GANADERA DE CHIAPAS" edo="07"/>
+		<row id="7" desc="UNION GANADERA REGIONAL DE CHIAPAS COSTA" edo="07"/>
+		<row id="8" desc="UNION GANADERA REGIONAL DE LA HUASTECA POTOSINA" edo="24"/>
+		<row id="9" desc="UNION GANADERA REGIONAL DE CATAZAJA" edo="07"/>
+		<row id="10" desc="UNION GANADERA REGIONAL DE HIDALGO" edo="13"/>
+		<row id="11" desc="UNION GANADERA REGIONAL DE LA ZONA CENTRAL, DEL ESTADO DE VERACRUZ" edo="30"/>
+		<row id="12" desc="UNION GANADERA REGIONAL DEL NORTE DE VERACRUZ" edo="30"/>
+		<row id="13" desc="UNION GANADERA REGIONAL DEL SUR DE VERACRUZ" edo="30"/>
+		<row id="14" desc="UNION GANADERA REGIONAL DE GUERRERO" edo="12"/>
+		<row id="15" desc="UNION GANADERA REGIONAL DE NAYARIT" edo="18"/>
+		<row id="16" desc="UNION GANADERA REGIONAL DE MICHOACAN" edo="16"/>
+		<row id="17" desc="UNION GANADERA REGIONAL GENERAL DEL ESTADO DE MORELOS" edo="17"/>
+		<row id="18" desc="UNION GANADERA REGIONAL DE NUEVO LEON" edo="19"/>
+		<row id="19" desc="UNION GANADERA REGIONAL DEL NORTE DE OAXACA" edo="20"/>
+		<row id="20" desc="UNION GANADERA REGIONAL DE LA COSTA DE OAXACA" edo="20"/>
+		<row id="21" desc="UNION GANADERA REGIONAL DE SONORA" edo="26"/>
+		<row id="22" desc="UNION GANADERA REGIONAL DE TABASCO" edo="27"/>
+		<row id="23" desc="UNION GANADERA REGIONAL DE TLAXCALA" edo="29"/>
+		<row id="24" desc="UNION GANADERA REGIONAL DE TAMAULIPAS" edo="28"/>
+		<row id="25" desc="UNION GANADERA REGIONAL ESPECIALIZADA DE TLAXCALA" edo="29"/>
+		<row id="26" desc="UNION GANADERA REGIONAL DE JALISCO" edo="14"/>
+		<row id="27" desc="UNION GANADERA REGIONAL DEL ISTMO DE TEHUANTEPEC" edo="20"/>
+		<row id="28" desc="UNION GANADERA REGIONAL DE LA LAGUNA" edo="05"/>
+		<row id="29" desc="UNION GANADERA REGIONAL DE CAPRINOCULTORES DE LA REGION LAGUNERA" edo="05"/>
+		<row id="30" desc="UNION GANADERA REGIONAL DEL ESTADO DE MEXICO" edo="15"/>
+		<row id="31" desc="UNION GANADERA REGIONAL DEL SUR, ESTADO DE MÉXICO" edo="15"/>
+		<row id="32" desc="UNION GANADERA REGIONAL DE PUEBLA" edo="21"/>
+		<row id="33" desc="UNION GANADERA REGIONAL DEL NORTE DE PUEBLA" edo="21"/>
+		<row id="34" desc="UNION GANADERA REGIONAL DE LA SIERRA ORIENTE DE PUEBLA" edo="21"/>
+		<row id="35" desc="UNION GANADERA REGIONAL DE QUERETARO" edo="22"/>
+		<row id="36" desc="UNION GANADERA REGIONAL DE QUINTANA ROO" edo="23"/>
+		<row id="37" desc="UNION GANADERA REGIONAL DE SAN LUIS POTOSI" edo="24"/>
+		<row id="38" desc="UNION GANADERA REGIONAL DE SINALOA" edo="25"/>
+		<row id="39" desc="UNION GANADERA REGIONAL DE YUCATAN" edo="31"/>
+		<row id="40" desc="UNION GANADERA REGIONAL DEL ORIENTE DE YUCATAN" edo="31"/>
+		<row id="41" desc="UNION GANADERA REGIONAL DE ZACATECAS" edo="32"/>
+		<row id="42" desc="UNION GANADERA REGIONAL DE CHIHUAHUA" edo="08"/>
+		<row id="43" desc="UNION GANADERA REGIONAL DE MORELOS" edo="17"/>
+		<row id="44" desc="UNION GANADERA REGIONAL DE DURANGO" edo="10"/>
+		<row id="45" desc="UNION GANADERA REGIONAL DEL NORTE DE DURANGO" edo="10"/>
+		<row id="46" desc="UNION GANADERA REGIONAL DE GUANAJUATO" edo="11"/>
+	</ugr>
 	<cultivo/>
 	<variedad/>
 	<ciclo>
@@ -2665,69 +2714,69 @@
 	<suma>
 		<row id="1" desc="B&#xE1;sico"/>
 		<row id="2" desc="Montos mayores"/>
-		<row id="3" desc="$20,000" suma="1"/>
-		<row id="4" desc="$50,000" suma="1"/>
-		<row id="5" desc="$30,000" suma="2"/>
-		<row id="6" desc="$40,000" suma="2"/>
-		<row id="7" desc="$50,000" suma="2"/>
-		<row id="8" desc="$60,000" suma="2"/>
-		<row id="9" desc="$70,000" suma="2"/>
-		<row id="10" desc="$80,000" suma="2"/>
-		<row id="11" desc="$90,000" suma="2"/>
-		<row id="12" desc="$100,000" suma="2"/>
-		<row id="13" desc="$110,000" suma="2"/>
-		<row id="14" desc="$120,000" suma="2"/>
-		<row id="15" desc="$130,000" suma="2"/>
-		<row id="16" desc="$140,000" suma="2"/>
-		<row id="17" desc="$150,000" suma="2"/>
-		<row id="18" desc="$160,000" suma="2"/>
-		<row id="19" desc="$170,000" suma="2"/>
-		<row id="20" desc="$180,000" suma="2"/>
-		<row id="21" desc="$190,000" suma="2"/>
-		<row id="22" desc="$200,000" suma="2"/>
-		<row id="23" desc="$210,000" suma="2"/>
-		<row id="24" desc="$220,000" suma="2"/>
-		<row id="25" desc="$230,000" suma="2"/>
-		<row id="26" desc="$240,000" suma="2"/>
-		<row id="27" desc="$250,000" suma="2"/>
-		<row id="28" desc="$260,000" suma="2"/>
-		<row id="29" desc="$270,000" suma="2"/>
-		<row id="30" desc="$280,000" suma="2"/>
-		<row id="31" desc="$290,000" suma="2"/>
-		<row id="32" desc="$300,000" suma="2"/>
-		<row id="33" desc="$310,000" suma="2"/>
-		<row id="34" desc="$320,000" suma="2"/>
-		<row id="35" desc="$330,000" suma="2"/>
-		<row id="36" desc="$340,000" suma="2"/>
-		<row id="37" desc="$350,000" suma="2"/>
-		<row id="38" desc="$360,000" suma="2"/>
-		<row id="39" desc="$370,000" suma="2"/>
-		<row id="40" desc="$380,000" suma="2"/>
-		<row id="41" desc="$390,000" suma="2"/>
-		<row id="42" desc="$400,000" suma="2"/>
-		<row id="43" desc="$410,000" suma="2"/>
-		<row id="44" desc="$420,000" suma="2"/>
-		<row id="45" desc="$430,000" suma="2"/>
-		<row id="46" desc="$440,000" suma="2"/>
-		<row id="47" desc="$450,000" suma="2"/>
-		<row id="48" desc="$460,000" suma="2"/>
-		<row id="49" desc="$470,000" suma="2"/>
-		<row id="50" desc="$480,000" suma="2"/>
-		<row id="51" desc="$490,000" suma="2"/>
-		<row id="52" desc="$500,000" suma="2"/>
+		<row id="3" desc="20,000" suma="1"/>
+		<row id="4" desc="50,000" suma="1"/>
+		<row id="5" desc="30,000" suma="2"/>
+		<row id="6" desc="40,000" suma="2"/>
+		<row id="7" desc="50,000" suma="2"/>
+		<row id="8" desc="60,000" suma="2"/>
+		<row id="9" desc="70,000" suma="2"/>
+		<row id="10" desc="80,000" suma="2"/>
+		<row id="11" desc="90,000" suma="2"/>
+		<row id="12" desc="100,000" suma="2"/>
+		<row id="13" desc="110,000" suma="2"/>
+		<row id="14" desc="120,000" suma="2"/>
+		<row id="15" desc="130,000" suma="2"/>
+		<row id="16" desc="140,000" suma="2"/>
+		<row id="17" desc="150,000" suma="2"/>
+		<row id="18" desc="160,000" suma="2"/>
+		<row id="19" desc="170,000" suma="2"/>
+		<row id="20" desc="180,000" suma="2"/>
+		<row id="21" desc="190,000" suma="2"/>
+		<row id="22" desc="200,000" suma="2"/>
+		<row id="23" desc="210,000" suma="2"/>
+		<row id="24" desc="220,000" suma="2"/>
+		<row id="25" desc="230,000" suma="2"/>
+		<row id="26" desc="240,000" suma="2"/>
+		<row id="27" desc="250,000" suma="2"/>
+		<row id="28" desc="260,000" suma="2"/>
+		<row id="29" desc="270,000" suma="2"/>
+		<row id="30" desc="280,000" suma="2"/>
+		<row id="31" desc="290,000" suma="2"/>
+		<row id="32" desc="300,000" suma="2"/>
+		<row id="33" desc="310,000" suma="2"/>
+		<row id="34" desc="320,000" suma="2"/>
+		<row id="35" desc="330,000" suma="2"/>
+		<row id="36" desc="340,000" suma="2"/>
+		<row id="37" desc="350,000" suma="2"/>
+		<row id="38" desc="360,000" suma="2"/>
+		<row id="39" desc="370,000" suma="2"/>
+		<row id="40" desc="380,000" suma="2"/>
+		<row id="41" desc="390,000" suma="2"/>
+		<row id="42" desc="400,000" suma="2"/>
+		<row id="43" desc="410,000" suma="2"/>
+		<row id="44" desc="420,000" suma="2"/>
+		<row id="45" desc="430,000" suma="2"/>
+		<row id="46" desc="440,000" suma="2"/>
+		<row id="47" desc="450,000" suma="2"/>
+		<row id="48" desc="460,000" suma="2"/>
+		<row id="49" desc="470,000" suma="2"/>
+		<row id="50" desc="480,000" suma="2"/>
+		<row id="51" desc="490,000" suma="2"/>
+		<row id="52" desc="500,000" suma="2"/>
 	</suma>
 	<clientes>
 		<row/>
 	</clientes>
-	<cotizaciones xmlns:fixed="http://panax.io/state/fixed" id="" tipo_cotizacion="" fecha="" coordinador="" solicitante="" beneficiario="" upp="" cliente="" telefono="" correo_electronico="" suma_asegurada_total="" costo_prima="">
+	<cotizaciones xmlns:fixed="http://panax.io/state/fixed" id="" tipo_cotizacion="" fecha="" upp="" coordinador="" solicitante="" beneficiario="" cliente="" telefono="" correo_electronico="" suma_asegurada_total="" costo_prima="">
 		<cotizacion fixed:tipo_cotizacion="7" type="agricola" cultivo="" variedad="" fecha_siembra="" fecha_arraigo="" ciclo="" modalidad="" riesgo_protegido="" esquema_proteccion="" metodo_ajuste="" financiamiento="" inversion_hectarea="" rendimiento_protegido="">
 			<detalle xsi:type="mock" nombre="" identificador="" estado="" municipio="" localidad="" superficie="" coordenada1="" coordenada2=""/>
 		</cotizacion>
 		<cotizacion fixed:tipo_cotizacion="2" type="ganadero" especie="">
 			<detalle xsi:type="mock" estado="" municipio="" especie="" origen_racial="" raza="" sexo="" funcion_zootecnica="" edad="" numero_cabezas="" suma_asegurada="" referencia_suma_asegurada="" financiamiento="" tipo_seguro="" deducible="" enfermedades_zona="" cabezas_totales_hato="" cabezas_muertas_anuales="" duracion="" riesgo_transporte="" estado_origen="" municipio_origen="" estado_destino="" municipio_destino=""/>
 		</cotizacion>
-		<cotizacion fixed:tipo_cotizacion="9" type="vida" tipo_persona="" fecha_inicio="" fecha_fin="" suma="" >
-			<detalle xsi:type="mock" fixed:tipo_persona="1" folio_pif="" ugr="" agl="" folio="" curp="" parentesco="" monto_deposito=""/>
+		<cotizacion fixed:tipo_cotizacion="9" type="vida" tipo_persona="" fecha_inicio="" fecha_fin="" estado="" municipio="" suma="">
+			<detalle xsi:type="mock" fixed:tipo_persona="1" folio_pif="" ugr="" agl="" folio="" curp="" fecha_nacimiento="" edad="" parentesco="" monto_deposito=""/>
 			<detalle xsi:type="mock" fixed:tipo_persona="2" suscripciones=""/>
 		</cotizacion>
 		<cotizacion fixed:tipo_cotizacion="4" type="maquinaria">
