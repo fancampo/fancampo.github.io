@@ -119,6 +119,7 @@
   </resheader>
   <data name="@agl" xml:space="preserve">
     <value>AGL</value>
+    <comment>Asociación Ganadera Regional</comment>
   </data>
   <data name="@anio_modelo" xml:space="preserve">
     <value>Modalo (Año)</value>
@@ -155,7 +156,7 @@
   </data>
   <data name="@fecha" xml:space="preserve">
     <value>Fecha</value>
-    <comment>Fecha del sistema</comment>
+    <comment>#Fecha del sistema</comment>
   </data>
   <data name="@fechacosecha" xml:space="preserve">
     <value>Fecha de cosecha</value>
@@ -174,7 +175,7 @@
   </data>
   <data name="@folio_pif" xml:space="preserve">
     <value>Folio PIF</value>
-    <comment>Folio consecutivo, generado por el sistema</comment>
+    <comment>#Número consecutivo e irrepetible de sistema, que no puede alterar el usuario</comment>
   </data>
   <data name="@funcionzootecnica" xml:space="preserve">
     <value>Función zootécnica</value>
@@ -207,7 +208,7 @@
     <value>Seguro a contratar</value>
   </data>
   <data name="@suma_asegurada" xml:space="preserve">
-    <value>Suma asegurada por cabeza</value>
+    <value>Suma asegurada</value>
   </data>
   <data name="@superficieha" xml:space="preserve">
     <value>Superficie (ha)</value>
@@ -216,18 +217,29 @@
     <value>Teléfono</value>
   </data>
   <data name="@tipo_cotizacion" xml:space="preserve">
-    <value>Tipo de cotización</value>
+    <value>Nombre del Seguro</value>
+  </data>
+  <data name="@tipo_persona" xml:space="preserve">
+    <value>Tipo de persona</value>
   </data>
   <data name="@ugr" xml:space="preserve">
     <value>UGR</value>
+    <comment>Unidad Ganadera Regional</comment>
   </data>
   <data name="@unidad_medida" xml:space="preserve">
     <value>Unidad de Medida</value>
   </data>
   <data name="@upp" xml:space="preserve">
     <value>UPP</value>
+    <comment>Unidad de Producción Pecuaria</comment>
   </data>
-  <data name="cotizacion/@fecha_inicio" xml:space="preserve">
-    <value>Inicio de seguro</value>
+  <data name="cotizacion[@type=&quot;ganadero&quot;]/@suma_asegurada" xml:space="preserve">
+    <value>Suma asegurada por cabeza</value>
+  </data>
+  <data name="cotizacion[@type=&quot;vida&quot;]/@fecha_fin" xml:space="preserve">
+    <value>Vigencia del seguro</value>
+  </data>
+  <data name="cotizacion[@type=&quot;vida&quot;]/@fecha_inicio" xml:space="preserve">
+    <value>Inicio del seguro</value>
   </data>
 </root>
