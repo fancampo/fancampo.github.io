@@ -112,6 +112,7 @@
 												<xsl:text>Leer más...</xsl:text>
 											</xsl:when>
 											<xsl:otherwise>
+												<xsl:attribute name="style">display:none;</xsl:attribute>
 												<xsl:text>Ver nota</xsl:text>
 											</xsl:otherwise>
 										</xsl:choose>
