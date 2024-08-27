@@ -197,6 +197,13 @@ Si no tienes tu ganado asegurado contra riesgos climatológicos en el Seguro Gan
 #FANCAMPO lleva a cabo inspecciones por aviso de siniestro a causa de exceso de lluvias en cultivos de cebada en Chignahuapan, Puebla.
 #CNOG #agricola #campo #rural #cebada #cultivos</value>
   </data>
+  <data name="evento_20240827_4" xml:space="preserve">
+    <value>EFECTOS CLIMATOLOGICOS EN EL GANADO: Por las constantes tormentas eléctricas en el país murieron 13 bovinos en Tonalá, Chiapas; ocasionado por Fulguración por Rayo. Afortunadamente el productor tenía asegurado su ganado con el "Seguro Ganadero Climático".
+
+
+En caso de no tener protegido tu patrimonio familiar te invitamos a asegurar tu ganado e instalaciones ganaderas.
+#CNOG #ganado #Chiapas #Sureste #bovinos #campo #rural</value>
+  </data>
   <data name="img:evento_20240623" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>img\comerciales.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -238,6 +245,9 @@ Si no tienes tu ganado asegurado contra riesgos climatológicos en el Seguro Gan
   </data>
   <data name="img:evento_20240827_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240827_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img:evento_20240827_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20240827_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>Eventos</value>
