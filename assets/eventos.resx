@@ -175,6 +175,28 @@ Como es el caso del aseguramiento de arándano realizado en el municipio de San 
     <value>ASEGURAMIENTO DE SEMENTALES: 
 Dentro del Programa de Fomento a la #Agricultura, #ganadería, #pesca y #acuacultura 2024 del Subcomponente Ganadería para el Bienestar de la #SADER durante julio de 2024, #FANCAMPO aseguró 207 sementales. #CNOG #bovinos #campo #rural #carne #ovinos #caprinos</value>
   </data>
+  <data name="evento_20240827" xml:space="preserve">
+    <value>SINIESTRO POR "FULGURACIÓN": de 10 BOVINOS
+#FANCAMPO atendió aviso de siniestro de muerte por "Fulguración" (#Rayo en #tormenta eléctrica) causando la muerte de 10 bovinos en potrero de las #Choapas, #Veracruz; siendo 8 vientres y 2 novillonas.
+Si no tienes tu ganado asegurado contra riesgos climatológicos en el Seguro Ganadero Climático, lo puedes adquirir al contratar el Seguro Multirriesgo; además, te cubre Alta Mortalidad, Ataque de Depredadores, Apícola Climático y Daños en Bienes Patrimoniales.
+#CNOG #campo #rural #pecuario #bovinos #tropicos</value>
+  </data>
+  <data name="evento_20240827_1" xml:space="preserve">
+    <value>EXPO CREDITO AGRICOLA METZTITLAN, HGO
+: #FANCAMPO estuvo presente en la Expo Crédito Agrícola Metztitlan organizada por FIRA, se realizó promoción sobre los seguros agrícolas a los habilitados y clientes directos.
+#CNOG #campo #agricola #rural #ValleDelMezquital #HGO #Hidalgo</value>
+  </data>
+  <data name="evento_20240827_2" xml:space="preserve">
+    <value>6° FORO APICOLA DEL ESTADO DE MEXICO: 
+#FanCampo asistió al "6° Foro Apícola del Estado de México, los polinizadores, pieza clave del ecosistema" impartiendo la platica sobre SEGUROS APICOLAS por la MVZ M. Dolores Ortega Larios.
+#CNOG #abejas #miel #mielpura #apicola #campo #rural
+&lt;img class="col-6" src="/assets/eventos/evento_20240827_2 (1).jpg" class="img-fluid" style="    object-fit: cover; width: 100%; height: 350px;"/&gt;</value>
+  </data>
+  <data name="evento_20240827_3" xml:space="preserve">
+    <value>SINIESTRO EN CULTIVO DE CEBADA POR EXCESO DE LLUVIA:
+#FANCAMPO lleva a cabo inspecciones por aviso de siniestro a causa de exceso de lluvias en cultivos de cebada en Chignahuapan, Puebla.
+#CNOG #agricola #campo #rural #cebada #cultivos</value>
+  </data>
   <data name="img:evento_20240623" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>img\comerciales.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -204,6 +226,18 @@ Dentro del Programa de Fomento a la #Agricultura, #ganadería, #pesca y #acuacu
   </data>
   <data name="img:evento_20240819" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240819.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img:evento_20240827" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20240827.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img:evento_20240827_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20240827_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img:evento_20240827_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20240827_2 (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img:evento_20240827_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20240827_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>Eventos</value>
