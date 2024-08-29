@@ -208,9 +208,20 @@ En caso de no tener protegido tu patrimonio familiar te invitamos a asegurar tu 
     <value>REUNIÓN DE CONSEJO DE ADMINISTRACIÓN DE LA CNOG: Se lleva a cabo la Sesión de Consejo de Administración de la CNOG, encabezado por el Presidente, Secretario y Tesrorero del Consejo de Administración y Presidente del Consejo de Vigilancia de #FanCampo y #FanVida. 
 Rendirá su informe operativo el Tesorero de FanCampo y FanVida. #CNOG #UGR #Sader #HOY #Ganaderos #campo #rural
 &lt;div class="row"&gt;
-&lt;img class="col-6" src="/assets/eventos/evento_20240828 (1).jpg" class="img-fluid"/&gt;
-&lt;img class="col-6" src="/assets/eventos/evento_20240828 (2).jpg" class="img-fluid"/&gt;
+&lt;img class="col-12 col-md-6 " src="/assets/eventos/evento_20240828 (1).jpg" class="img-fluid"/&gt;
+&lt;img class="col-12 col-md-6" src="/assets/eventos/evento_20240828 (2).jpg" class="img-fluid"/&gt;
 &lt;/div&gt;</value>
+  </data>
+  <data name="evento_20240829" xml:space="preserve">
+    <value>SINIESTRO POR #Rayo EN TECPAN DE GALEANA, GRO
+: #FANCAMPO realizó la inspección de campo por la muerte de 13 bovinos por #fulguración por rayo en el #ejido El Moreno de Técpan de Galeana, #Guerrero
+#CNOG #campo #rural #bovinos #catastróficos #Daños #ugrgro</value>
+  </data>
+  <data name="evento_20240829 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20240829 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="evento_20240829 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20240829 (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img:evento_20240623" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>img\comerciales.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
