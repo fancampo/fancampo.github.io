@@ -228,7 +228,7 @@ window.addEventListener('resize', function () {
     }
 });
 
-xo.listener.on('submit::.contact-form', async function(){
+xo.listener.on('submit::.contact-form', async function () {
     event.preventDefault();
     let formData = new FormData(this);
     try {
@@ -246,34 +246,6 @@ xo.listener.on('fetch::root', async function(document){
 //    this.select(`//data/value/text()`).filter(text => text.value.match(/\n/)).forEach(data => data.parentNode.replaceChildren(...xover.xml.createFragment(`<p>${data.textContent.replace(/([>:]\s*)\n/g, '$1').replace(/\n+/g, '</p><p>')}</p>`).childNodes));
 //    event.stopImmediatePropagation()
 //})
-
-xover.server.ws = function (url, listeners = {}) {
-    try {
-        if (!window.io) return;
-        const socket_io = window.io(url, { transports: ['websocket'] });
-
-        for ([listener, handler] of Object.entries(listeners)) {
-            socket_io.on(listener, async function (...args) {
-                if (!handler) {
-                    return
-                } else if (existsFunction(handler)) {
-                    let fn = eval(handler);
-                    response = await fn.apply(this, args.length ? args : parameters);
-                } else if (handler[0] == '#') {
-                    let source = xo.sources[handler];
-                    await source.ready;
-                    source.documentElement.append(xo.xml.createNode(`<item/ >`).textContent = args.join())
-                }
-            })
-        }
-    } catch (e) {
-        return Promise.reject(e);
-    }
-}
-
-function reloadStylesheets() {
-    xo.site.stylesheets.reload()
-}
 
 var datediff = function (intervalType, first_date, last_date) {
     // Parse the input dates
