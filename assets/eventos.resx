@@ -223,6 +223,11 @@ Rendirá su informe operativo el Tesorero de FanCampo y FanVida. #CNOG #UGR #Sad
   <data name="evento_20240829 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240829 (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="evento_20240902" xml:space="preserve">
+    <value>ASEGURAMIENTO DE SEMENTALES EN XILITLA, SLP: 
+#FanCampo con productores pecuarios llevó a cabo el aseguramiento de sementales bovinos en Xilitla, #SLP., para proteger la muerte por enfermedad, accidente y/o sacrificio forzoso y fortalecer su patrimonio familiar.
+ #CNOG #UGR #slpmx #rural#campo #bovinos #protección</value>
+  </data>
   <data name="img:evento_20240623" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>img\comerciales.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -267,6 +272,9 @@ Rendirá su informe operativo el Tesorero de FanCampo y FanVida. #CNOG #UGR #Sad
   </data>
   <data name="img:evento_20240827_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240827_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img:evento_20240902" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20240902.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>Eventos</value>
