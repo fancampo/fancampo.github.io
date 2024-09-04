@@ -228,6 +228,12 @@ Rendirá su informe operativo el Tesorero de FanCampo y FanVida. #CNOG #UGR #Sad
 #FanCampo con productores pecuarios llevó a cabo el aseguramiento de sementales bovinos en Xilitla, #SLP., para proteger la muerte por enfermedad, accidente y/o sacrificio forzoso y fortalecer su patrimonio familiar.
  #CNOG #UGR #slpmx #rural#campo #bovinos #protección</value>
   </data>
+  <data name="evento_20240904" xml:space="preserve">
+    <value>2° FORO DE AGRONEGOCIOS y AGRO-EXPO BOUTIQUE 2024: 
+#FANCAMPO y #FanVida están presentes 3 y 4 de septiembre en el 2° Foro de Agronegocios y Agro - Expo boutique 2024 en el Colegio de Postgraduados de campus Montecillos, Texcoco; #edomex.
+Ante la presencia de productores agropecuarios, despachos en agronegocios y público en general; los Fondos de Aseguramiento hacen actividades de promoción y difusión de los seguros en operación. 
+#CNOG #Texcoco #Colegiodepostgraduados #agro #agronegocio #AgroMercados #rural #campo #Ganaderos #agriculture</value>
+  </data>
   <data name="img:evento_20240623" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>img\comerciales.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -275,6 +281,9 @@ Rendirá su informe operativo el Tesorero de FanCampo y FanVida. #CNOG #UGR #Sad
   </data>
   <data name="img:evento_20240902" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240902.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img:evento_20240904" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20240904.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>Eventos</value>
