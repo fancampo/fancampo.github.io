@@ -18,7 +18,17 @@
 		<div class="album py-5 bg-body-tertiary">
 			<div class="container-fluid">
 				<div class="row {$class} gy-5">
-					<xsl:apply-templates select="key('data','*')"/>
+					<xsl:choose>
+						<xsl:when test="@env:store='#uniones'">
+							<xsl:apply-templates select="key('data','*')">
+								<xsl:sort select="value"/>
+							</xsl:apply-templates>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:apply-templates select="key('data','*')">
+							</xsl:apply-templates>
+						</xsl:otherwise>
+					</xsl:choose>
 				</div>
 			</div>
 		</div>
