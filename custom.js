@@ -1,36 +1,36 @@
-﻿const video = document.querySelector('video.main');
-const promocional = document.querySelector('#promocional video');
-    const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: .5
-    };
+﻿var video = document.querySelector('video.main');
+var promocional = document.querySelector('#promocional video');
+var options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: .5
+};
 
-    const callback = (entries, observer) => {
-        entries.forEach(entry => {
-            document.body.classList.remove('fanvida-is-active','fancampo-is-active');
-            let target = entry.target;
-            if (target.id) {
-                document.body.classList.remove(`${target.id}-active`);
-            }
-            if (target.id) {
-                document.body.classList[entry.isIntersecting ? "add" : "remove"](`${target.id}-active`);
-            }
-            if (target.matches('.fanvida-section')) {
-                document.body.classList[entry.isIntersecting ? "add" : "remove"]('fanvida-is-active');
-            }
-            if (target.matches('.fancampo-section')) {
-                document.body.classList[entry.isIntersecting ? "add" : "remove"]('fancampo-is-active');
-            }
-        });
-    };
+var callback = (entries, observer) => {
+    entries.forEach(entry => {
+        document.body.classList.remove('fanvida-is-active','fancampo-is-active');
+        let target = entry.target;
+        if (target.id) {
+            document.body.classList.remove(`${target.id}-active`);
+        }
+        if (target.id) {
+            document.body.classList[entry.isIntersecting ? "add" : "remove"](`${target.id}-active`);
+        }
+        if (target.matches('.fanvida-section')) {
+            document.body.classList[entry.isIntersecting ? "add" : "remove"]('fanvida-is-active');
+        }
+        if (target.matches('.fancampo-section')) {
+            document.body.classList[entry.isIntersecting ? "add" : "remove"]('fancampo-is-active');
+        }
+    });
+};
 
-    // Create intersection observer
-    const observer = new IntersectionObserver(callback, options);
+// Create intersection observer
+var observer = new IntersectionObserver(callback, options);
 
-    for (let section of document.querySelectorAll('.fanvida-section, .fancampo-section, main > *')) {
-        observer.observe(section);
-    }
+for (let section of document.querySelectorAll('.fanvida-section, .fancampo-section, main > *')) {
+    observer.observe(section);
+}
 
 if (video) {
     const viewportHeight = window.innerHeight;
@@ -71,15 +71,15 @@ if (video) {
 
 
 // Set the scroll position where you want to stop scrolling
-const stopScrollPosition = 500; // Change this value to your desired scroll position
+var stopScrollPosition = 500; // Change this value to your desired scroll position
 
 // Set the cooldown time in milliseconds
-const cooldownTime = 1000; // Change this value to your desired cooldown time
+var cooldownTime = 1000; // Change this value to your desired cooldown time
 
-let cooldownTimeout = null;
-let lastScrollTime = 0;
-let isScrollStopped = false;
-let lastScrollPosition = window.scrollY || window.pageYOffset;
+var cooldownTimeout = null;
+var lastScrollTime = 0;
+var isScrollStopped = false;
+var lastScrollPosition = window.scrollY || window.pageYOffset;
 
 // Function to handle the scroll event
 function handleScroll(event) {
@@ -239,9 +239,10 @@ xo.listener.on('submit::.contact-form', async function () {
     }
 })
 
-xo.listener.on('fetch::root', async function(document){
-   this.select(`//data/value/text()`).filter(text => text.value.match(/\n/)).forEach(data => data.textContent = data.textContent.replace(/([>:]\s*)\n/g,'$1').replace(/\n/g,'<br/>'));
+xo.listener.on('fetch::root', async function (document) {
+    this.select(`//data/value/text()`).filter(text => text.value.match(/\n/)).forEach(data => data.textContent = data.textContent.replace(/([>:]\s*)\n/g, '$1').replace(/\n/g, '<br/>'));
 })
+
 //xo.listener.on('fetch?href=~eventos.resx::root', async function(document){
 //    this.select(`//data/value/text()`).filter(text => text.value.match(/\n/)).forEach(data => data.parentNode.replaceChildren(...xover.xml.createFragment(`<p>${data.textContent.replace(/([>:]\s*)\n/g, '$1').replace(/\n+/g, '</p><p>')}</p>`).childNodes));
 //    event.stopImmediatePropagation()
