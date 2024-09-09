@@ -310,10 +310,6 @@
     <value>UNION GANADERA REGIONAL DE TLAXCALA: Calle Pablo Sidar Sur # 134, San Bartolomé de Villa Vicente Guerrero, San Pablo del Monte, Tlax., C.P. 90970</value>
     <comment>https://app.fondocnog.com/#tlaxcala</comment>
   </data>
-  <data name="img:socio_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>uniones/tlaxcala_especializada.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment>{lat:19.1153441, lng:-98.17395620000001, title:'UNION GANADERA REGIONAL DE TLAXCALA', address:'Calle Pablo Sidar Sur # 134, San Bartolomé de Villa Vicente Guerrero, San Pablo del Monte, Tlax., C.P. 90970', image:'assets/uniones/TLAXCALA_ESPECIALIZADA-3a495ac.jpg'}</comment>
-  </data>
   <data name="socio_25" xml:space="preserve">
     <value>UNION GANADERA REGIONAL DE TAMAULIPAS: Calzada General Luis Caballero No. 38, Col. Tamatan., Cd. Victoria, Tamps., C.P. 87060 A.P. 184</value>
     <comment>https://app.fondocnog.com/#tamaulipas</comment>
@@ -354,10 +350,6 @@
     <value>uniones/la_laguna.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>{lat:25.5584794, lng:-103.4096267, title:'UNION GANADERA REGIONAL DE LA LAGUNA', address:'Calz. Gral. Manuel Avila Camacho y, Calz. Moctezuma #3902,, Col. Aviación, Torreón, Coah., C.P.27040', image:'assets/uniones/LA_LAGUNA.jpg'}</comment>
   </data>
-  <data name="socio_30" xml:space="preserve">
-    <value>UNION GANADERA REGIONAL DE CAPRINOCULTORES DE LA REGION LAGUNERA: Pedro Camino No. 112, Col. Ampliación Los Ángeles, Torreón, Coah., C.P. 27148</value>
-    <comment>https://app.fondocnog.com/#coahuila</comment>
-  </data>
   <data name="img:socio_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>uniones/coahuila.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>{lat:25.5486256, lng:-103.4535842, title:'UNION GANADERA REGIONAL DE CAPRINOCULTORES DE LA REGION LAGUNERA', address:'Pedro Camino No. 112, Col. Ampliación Los Ángeles, Torreón, Coah., C.P. 27148', image:'assets/uniones/COAHUILA.jpg'}</comment>
@@ -366,7 +358,7 @@
     <value>UNION GANADERA REGIONAL DEL ESTADO DE MÉXICO: Av. 16 de Septiembre #318, Cuautitlán de Romero Rubio, Edo. de México, C.P.54800</value>
     <comment>https://app.fondocnog.com/#estado_mexico</comment>
   </data>
-  <data name="img:socio_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="img:socio_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>uniones/estado_de_mexico_sur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>{lat:19.4692652, lng:-99.2221378, title:'UNION GANADERA REGIONAL DEL ESTADO DE MÉXICO', address:'Av. 16 de Septiembre #318, Cuautitlán de Romero Rubio, Edo. de México, C.P.54800', image:'assets/uniones/ESTADO_DE_MEXICO_SUR-acfde99.jpg'}</comment>
   </data>
@@ -374,17 +366,13 @@
     <value>UNION GANADERA REGIONAL DEL SUR, ESTADO DE MÉXICO: Boulevard de los Planetas s/n Col. Del Sol, Tejupilco, Edo. DE  Méx. C.P. 51412</value>
     <comment>https://app.fondocnog.com/#estado_mexico</comment>
   </data>
-  <data name="img:socio_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="img:socio_320" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>uniones/veracruz_sur.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
     <comment>{lat:18.8915219, lng:-100.1427166, title:'UNION GANADERA REGIONAL DEL SUR, ESTADO DE MÉXICO', address:'Boulevard de los Planetas s/n Col. Del Sol, Tejupilco, Edo. DE  Méx. C.P. 51412', image:'assets/uniones/VERACRUZ_SUR-67d7e01.jpg'}</comment>
   </data>
   <data name="socio_33" xml:space="preserve">
     <value>UNION GANADERA REGIONAL DE PUEBLA: Calle 26 Oriente Núm. 1611 y 18 Norte., (a dos cuadras de la Fuente de los Muñecos), Col. Xonaca,, Puebla, Pue., C.P.72280</value>
     <comment>https://app.fondocnog.com/#puebla</comment>
-  </data>
-  <data name="img:socio_33" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>uniones/puebla_oriente.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment>{lat:19.0487219, lng:-98.18269989999999, title:'UNION GANADERA REGIONAL DE PUEBLA', address:'Calle 26 Oriente Núm. 1611 y 18 Norte., (a dos cuadras de la Fuente de los Muñecos), Col. Xonaca,, Puebla, Pue., C.P.72280', image:'assets/uniones/PUEBLA_ORIENTE.jpg'}</comment>
   </data>
   <data name="socio_34" xml:space="preserve">
     <value>UNION GANADERA REGIONAL DEL NORTE DE PUEBLA: Av. Zaragoza # 191, Col. Centro., Cd. Xicotepec de Juárez, Pue., C.P.73080</value>
@@ -478,10 +466,6 @@
     <value>UNION GANADERA REGIONAL DE DURANGO: Km.20 Autopista Durango –Gómez Palacio, Col. Malaga., Durango, Dgo., C.P. 34304 A.P. 616</value>
     <comment>https://app.fondocnog.com/#durango</comment>
   </data>
-  <data name="img:socio_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>uniones/durango_norte.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment>{lat:25.5891476, lng:-103.485862, title:'UNION GANADERA REGIONAL DE DURANGO', address:'Km.20 Autopista Durango –Gómez Palacio, Col. Malaga., Durango, Dgo., C.P. 34304 A.P. 616', image:'assets/uniones/DURANGO_NORTE.jpg'}</comment>
-  </data>
   <data name="socio_46" xml:space="preserve">
     <value>UNION GANADERA REGIONAL DEL NORTE DE  DURANGO: Blvd. Miguel Alemán y Terryzas S/N, Gómez Palacio, Dgo., C.P.35000, A.P.98</value>
     <comment>https://app.fondocnog.com/#durango</comment>
@@ -512,5 +496,17 @@
   </data>
   <data name="socio_99" xml:space="preserve">
     <value>ATRC</value>
+  </data>
+  <data name="img:socio_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>uniones\tlaxcala.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img:socio_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>uniones\estado_mexico.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img:socio_33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>uniones\puebla.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img:socio_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>uniones\durango.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
