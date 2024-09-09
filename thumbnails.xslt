@@ -21,7 +21,9 @@
 					<xsl:choose>
 						<xsl:when test="@env:store='#uniones'">
 							<xsl:apply-templates select="key('data','*')">
+								<xsl:sort select="boolean(@name='socio_00')" order="descending"/>
 								<xsl:sort select="boolean(@name='socio_99')"/>
+								<xsl:sort select="comment"/>
 								<xsl:sort select="value"/>
 							</xsl:apply-templates>
 						</xsl:when>
