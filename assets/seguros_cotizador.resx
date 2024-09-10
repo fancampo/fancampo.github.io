@@ -154,4 +154,10 @@
   <data name="vida" xml:space="preserve">
     <value>Vida</value>
   </data>
+  <data name="img:transporte_ganado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\transporte_ganado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="transporte_ganado" xml:space="preserve">
+    <value>Transporte de Ganado</value>
+  </data>
 </root>

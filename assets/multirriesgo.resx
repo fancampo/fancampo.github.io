@@ -133,9 +133,9 @@ Se protege el inventario nacional.
 &lt;a href="seguro.html#ataque_depredador" class="btn btn-primary btn-lg"&gt;Ver más...&lt;/a&gt;</value>
   </data>
   <data name="cobertura_3" xml:space="preserve">
-    <value>III. DAÑOS PATRIMONIALES A LA INFRAESTRUCTURA GANADERA: protege las instalaciones ganaderas dentro de la Unidades de Producción Pecuaria (UPP) aseguradas, que son afectadas por los daños de eventos climáticos y geológicos protegidos a lo largo del todo el año.
+    <value>III. GANADERO CLIMÁTICO: cubre la muerte, sacrificio forzoso o desaparición de animales y colmenas por la ocurrencia de eventos meteorológicos y geológicos protegidos.
 
-&lt;a href="seguro.html#bienes_patrimoniales" class="btn btn-primary btn-lg"&gt;Ver más...&lt;/a&gt;</value>
+&lt;a href="seguro.html#ganadero_climatico" class="btn btn-primary btn-lg"&gt;Ver más...&lt;/a&gt;</value>
   </data>
   <data name="cobertura_4" xml:space="preserve">
     <value>IV. APÍCOLA CLIMÁTICO: El Fondo cubre la falta de floración en época de la cosecha de miel más importante que ocurra en el estado o región, como consecuencia de la presentación de los riesgos cubiertos.
@@ -143,9 +143,9 @@ Se protege el inventario nacional.
 &lt;a href="seguro.html#apicola_climatico" class="btn btn-primary btn-lg"&gt;Ver más...&lt;/a&gt;</value>
   </data>
   <data name="cobertura_5" xml:space="preserve">
-    <value>V. GANADERO CLIMÁTICO: cubre la muerte, sacrificio forzoso o desaparición de animales y colmenas por la ocurrencia de eventos meteorológicos y geológicos protegidos.
+    <value>V. DAÑOS EN BIENES PATRIMONIALES A LA INFRAESTRUCTURA GANADERA: protege las instalaciones ganaderas dentro de la Unidades de Producción Pecuaria (UPP) aseguradas, que son afectadas por los daños de eventos climáticos y geológicos protegidos a lo largo del todo el año.
 
-&lt;a href="seguro.html#ganadero_climatico" class="btn btn-primary btn-lg"&gt;Ver más...&lt;/a&gt;</value>
+&lt;a href="seguro.html#bienes_patrimoniales" class="btn btn-primary btn-lg"&gt;Ver más...&lt;/a&gt;</value>
   </data>
   <data name="description" xml:space="preserve">
     <value>Contempla cinco seguros de manera integral para la protección de los ganaderos de México.</value>

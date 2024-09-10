@@ -164,174 +164,201 @@ aguas pluviales a consecuencia de la acumulación de granizo.&lt;/em&gt;</value>
     <value>gallery\ganadero_climatico (1).jfif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ganadero_climatico (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ganadero_climatico (1)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\ganadero_climatico (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ganadero_climatico (1)3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ganadero_climatico (10)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (10).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (10).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (101)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (101).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (103)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (103).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (104)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (104).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (105)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (105).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (106)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (106).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (107)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (107).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (108)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (108).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (109)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (109).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (11)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (11).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (11).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (111)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (111).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (112)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (112).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (113)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (113).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (114)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (114).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (12)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (12).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (12).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (13)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (13).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (13).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (14)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (14).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (14).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (15)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (15).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (15).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (16)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (16).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (16).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (17)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (17).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (17).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (18)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (18).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (18).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (19)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (19).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (19).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\ganadero_climatico (2).jfif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ganadero_climatico (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (2).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ganadero_climatico (2)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\ganadero_climatico (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (20)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (20).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (20).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (201)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (201).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (202)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (202).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (203)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (203).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (204)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (204).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (205)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (205).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (206)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (206).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ganadero_climatico (207)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\ganadero_climatico (207).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (21)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (21).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (21).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (22)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (22).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (22).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (23)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (23).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (23).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (24)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (24).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (24).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (25)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (25).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (25).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (26)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (26).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (26).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (27)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (27).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (27).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (28)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (28).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (28).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (29)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (29).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (29).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\ganadero_climatico (3).jfif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ganadero_climatico (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (3).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ganadero_climatico (3)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\ganadero_climatico (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (30)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (30).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (30).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (31)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (31).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (31).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (32)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (32).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (32).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (33)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (33).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (33).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (34)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (34).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (34).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (35)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (35).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (35).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (36)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (36).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (36).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (37)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (37).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (37).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (38)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (38).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (38).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (39)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (39).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (39).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\ganadero_climatico (4).jfif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ganadero_climatico (4)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (4).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ganadero_climatico (4)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\ganadero_climatico (4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (40)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (40).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (40).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (41)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (41).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (41).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (42)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (42).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\ganadero_climatico (42).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\ganadero_climatico (5).jfif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ganadero_climatico (5)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (5).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ganadero_climatico (5)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\ganadero_climatico (5).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\ganadero_climatico (6).jfif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ganadero_climatico (6)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (6).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ganadero_climatico (6)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\ganadero_climatico (6).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (7).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ganadero_climatico (7)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\ganadero_climatico (7).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (8).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ganadero_climatico (8)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\ganadero_climatico (8).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ganadero_climatico (9)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\ganadero_climatico (9).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ganadero_climatico (9)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\ganadero_climatico (9).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="title" xml:space="preserve">

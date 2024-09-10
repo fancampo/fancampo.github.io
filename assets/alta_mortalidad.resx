@@ -118,23 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="carousel_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="alta_mortalidad (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\alta_mortalidad (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\alta_mortalidad (1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="carousel_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="alta_mortalidad (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\alta_mortalidad (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="alta_mortalidad (201)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\alta_mortalidad (201).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alta_mortalidad (202)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\alta_mortalidad (202).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alta_mortalidad (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\alta_mortalidad (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="carousel_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\alta_mortalidad (1).jfif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="carousel_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\alta_mortalidad (2).jfif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="cobertura_1" xml:space="preserve">
     <value>La muerte por enfermedad: es considerada como una alteración de las funciones orgánicas causadas por agentes físicos, químicos y/o biológicos, como la neumonía, rabia paralítica bovina, anaplasmosis, enteritis inespecífica, etcétera.</value>

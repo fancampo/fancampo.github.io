@@ -119,49 +119,49 @@
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="agro_transporte (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_transporte (1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agro_transporte (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agro_transporte (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="agro_transporte (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_transporte (2).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="agro_transporte (101)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agro_transporte (101).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="agro_transporte (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="agro_transporte (103)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agro_transporte (103).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agro_transporte (104)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agro_transporte (104).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agro_transporte (105)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agro_transporte (105).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agro_transporte (106)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agro_transporte (106).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agro_transporte (107)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agro_transporte (107).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agro_transporte (108)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agro_transporte (108).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agro_transporte (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agro_transporte (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_transporte (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_transporte (3).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agro_transporte (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agro_transporte (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_transporte (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_transporte (4).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agro_transporte (4)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agro_transporte (4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_transporte (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_transporte (5).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agro_transporte (5)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agro_transporte (5).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_transporte (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_transporte (6).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agro_transporte (6)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agro_transporte (6).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_transporte (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_transporte (7).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agro_transporte (7)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agro_transporte (7).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_transporte (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_transporte (8).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\agro_transporte (8).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="description" xml:space="preserve">
     <value>Puede ser Transporte y Riesgos Ordinarios de Transito (inicia con embarque y termina con desembarque) o redondo (de un lugar a otro donde tendrá una estancia temporal y posteriormente trasladados de regreso a su lugar de origen). Vigencia desde 12, 24, 48 horas, dentro de territorio nacional.</value>

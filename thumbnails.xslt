@@ -39,7 +39,7 @@
 
 	<xsl:template match="data">
 		<div style="text-align: center; min-height: 91px; overflow: hidden;">
-			<a href="#" target="_blank">
+			<a href="#" target="_self">
 				<xsl:if test="comment!=''">
 					<xsl:attribute name="href">
 						<xsl:value-of select="comment"/>

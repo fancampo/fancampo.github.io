@@ -96,7 +96,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 		</xsl:variable>
 		<li class="{$dropdown} {local-name()}-menu">
 			<xsl:apply-templates mode="menu:item-attributes" select="."/>
-			<a class="{$dropdown}-toggle text-capitalize {$class}" href="#" role="button">
+			<a class="{$dropdown}-toggle {$class}" href="#" role="button">
 				<xsl:if test="$dropdown!=''">
 					<xsl:attribute name="aria-expanded">false</xsl:attribute>
 					<xsl:attribute name="data-bs-toggle">dropdown</xsl:attribute>

@@ -118,32 +118,26 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="agro_adaptacion (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_adaptacion (1).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agro_adaptacion (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_adaptacion (2).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agro_adaptacion (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_adaptacion (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agro_adaptacion (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_adaptacion (4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agro_adaptacion (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_adaptacion (5).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agro_adaptacion (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_adaptacion (6).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="agro_radicacion (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_radicacion (1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agro_radicacion (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agro_radicacion (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_radicacion (10)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agro_radicacion (10).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agro_radicacion (101)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agro_radicacion (101).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agro_radicacion (102)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agro_radicacion (102).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agro_radicacion (103)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agro_radicacion (103).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agro_radicacion (104)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agro_radicacion (104).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agro_radicacion (105)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agro_radicacion (105).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_radicacion (11)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agro_radicacion (11).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -152,45 +146,33 @@
     <value>gallery\agro_radicacion (12).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_radicacion (13)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_radicacion (13).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\agro_radicacion (13).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_radicacion (14)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_radicacion (14).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\agro_radicacion (14).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_radicacion (15)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_radicacion (15).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\agro_radicacion (15).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_radicacion (16)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_radicacion (16).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\agro_radicacion (16).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_radicacion (17)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_radicacion (17).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\agro_radicacion (17).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_radicacion (18)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_radicacion (18).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\agro_radicacion (18).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_radicacion (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_radicacion (2).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agro_radicacion (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agro_radicacion (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_radicacion (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_radicacion (3).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agro_radicacion (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agro_radicacion (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_radicacion (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_radicacion (4).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agro_radicacion (4)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agro_radicacion (4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_radicacion (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_radicacion (5).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agro_radicacion (5)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agro_radicacion (5).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_radicacion (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
