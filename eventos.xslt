@@ -174,13 +174,8 @@ xmlns:html="http://www.w3.org/1999/xhtml" xmlns:env="http://panax.io/state/envir
 	</xsl:template>
 
 	<xsl:template mode="widget" match="key('widget','image')">
-		<xsl:param name="html:class"/>
-		<img src="./assets/img/evento.jpg" class="img-fluid rounded-start shape-image col-12 col-md-6" alt="...">
-			<xsl:if test="$html:class!=''">
-				<xsl:attribute name="class">
-					<xsl:value-of select="$html:class"/>
-				</xsl:attribute>
-			</xsl:if>
+		<xsl:param name="html:class">img-fluid rounded-start shape-image col-12 col-md-6</xsl:param>
+		<img src="./assets/img/evento.jpg" class="{$html:class}" alt="...">
 			<xsl:apply-templates mode="src-attribute" select="ancestor-or-self::data[1]">
 				<xsl:with-param name="path">./assets/img</xsl:with-param>
 			</xsl:apply-templates>

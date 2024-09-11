@@ -43,12 +43,12 @@
 		</item>
 	</item>
 	<item title="Asociados">
-		<item title="Nuestros Socios" href="./socios.html"/>
+		<item title="Socios de los fondos" href="./socios.html"/>
 		<item title="Beneficiarios" href="./socios.html#beneficiarios"/>
 		<!--<item title="Nuestros Asegurados" href="./ligas.html#asegurados"/>-->
 		<item title="Ligas de interés" href="./ligas.html#interes"/>
-		<item title="Eventos" href="eventos.html"/>
 	</item>
+	<item title="Eventos" href="eventos.html"/>
 	<item title="Cotizar" href="./#" onclick="event.preventDefault(); cotizar()"/>
 	<!--<item title="Novedades" href="./novedades.html"/>-->
 </menu>
