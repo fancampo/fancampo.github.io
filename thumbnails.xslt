@@ -38,14 +38,15 @@
 	</xsl:template>
 
 	<xsl:template match="data">
-		<div style="text-align: center; min-height: 91px; overflow: hidden;">
+		<div style="min-height: 91px; overflow: hidden; align-items: center; display: flex; justify-content: center; margin-bottom: 3rem; text-align: center;">
 			<a href="#" target="_self">
 				<xsl:if test="comment!=''">
 					<xsl:attribute name="href">
 						<xsl:value-of select="comment"/>
 					</xsl:attribute>
 				</xsl:if>
-				<img src="{normalize-space(value)}" style="max-width: 25vw;">
+				<img src="{normalize-space(value)}" style="max-width: 25vw;
+        min-height: 110px; min-width: 110px;">
 					<xsl:apply-templates mode="image-src" select="."/>
 				</img>
 				<xsl:if test="not(starts-with(value,'http'))">
