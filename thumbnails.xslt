@@ -45,7 +45,8 @@
 						<xsl:value-of select="comment"/>
 					</xsl:attribute>
 				</xsl:if>
-				<img src="{normalize-space(value)}" style="max-width: 25vw;">
+				<img src="{normalize-space(value)}" style="max-width: 25vw;
+    min-width: 110px;">
 					<xsl:apply-templates mode="image-src" select="."/>
 				</img>
 				<xsl:if test="not(starts-with(value,'http'))">

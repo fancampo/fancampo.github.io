@@ -344,7 +344,7 @@
   </data>
   <data name="socio_29" xml:space="preserve">
     <value>UNION GANADERA REGIONAL DE LA LAGUNA: Calz. Gral. Manuel Avila Camacho y, Calz. Moctezuma #3902,, Col. Aviación, Torreón, Coah., C.P.27040</value>
-    <comment>https://app.fondocnog.com/#coahuila_laguna</comment>
+    <comment>https://app.fondocnog.com/#laguna</comment>
   </data>
   <data name="img:socio_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>uniones/la_laguna.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
