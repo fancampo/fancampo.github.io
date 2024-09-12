@@ -15,10 +15,23 @@
 				<xsl:otherwise>row-cols-2 row-cols-xl-6 row-cols-lg-5 row-cols-sm-3 row-cols-md-4</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<div class="album py-5 bg-body-tertiary">
+		<div class="album py-5">
 			<div class="container-fluid">
 				<div class="row {$class} gy-5">
-					<xsl:apply-templates select="key('data','*')"/>
+					<xsl:choose>
+						<xsl:when test="@env:store='#uniones'">
+							<xsl:apply-templates select="key('data','*')">
+								<xsl:sort select="boolean(@name='socio_00')" order="descending"/>
+								<xsl:sort select="boolean(@name='socio_99')"/>
+								<xsl:sort select="comment"/>
+								<xsl:sort select="value"/>
+							</xsl:apply-templates>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:apply-templates select="key('data','*')">
+							</xsl:apply-templates>
+						</xsl:otherwise>
+					</xsl:choose>
 				</div>
 			</div>
 		</div>

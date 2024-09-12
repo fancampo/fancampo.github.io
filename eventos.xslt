@@ -1,5 +1,5 @@
 ﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml"
- xmlns:env="http://panax.io/state/environment"
+xmlns:html="http://www.w3.org/1999/xhtml" xmlns:env="http://panax.io/state/environment"
  xmlns:searchParams="http://panax.io/site/searchParams"
 >
 	<xsl:import href="keys.xslt"/>
@@ -112,6 +112,7 @@
 												<xsl:text>Leer más...</xsl:text>
 											</xsl:when>
 											<xsl:otherwise>
+												<xsl:attribute name="style">display:none;</xsl:attribute>
 												<xsl:text>Ver nota</xsl:text>
 											</xsl:otherwise>
 										</xsl:choose>
@@ -122,9 +123,20 @@
 								</xsl:otherwise>
 							</xsl:choose>
 						</p>
+						<div class="row">
+							<xsl:apply-templates mode="gallery" select="key('file', concat('#',@name))"/>
+						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+	</xsl:template>
+
+	<xsl:template mode="gallery" match="*">
+		<div class="col-6">
+			<xsl:apply-templates mode="widget" select="key('file', ancestor-or-self::data[1]/@name)">
+				<xsl:with-param name="html:class">img-fluid</xsl:with-param>
+			</xsl:apply-templates>
 		</div>
 	</xsl:template>
 
@@ -162,7 +174,8 @@
 	</xsl:template>
 
 	<xsl:template mode="widget" match="key('widget','image')">
-		<img src="./assets/img/evento.jpg" class="img-fluid rounded-start shape-image col-12 col-md-6" alt="...">
+		<xsl:param name="html:class">img-fluid rounded-start shape-image col-12 col-md-6</xsl:param>
+		<img src="./assets/img/evento.jpg" class="{$html:class}" alt="...">
 			<xsl:apply-templates mode="src-attribute" select="ancestor-or-self::data[1]">
 				<xsl:with-param name="path">./assets/img</xsl:with-param>
 			</xsl:apply-templates>

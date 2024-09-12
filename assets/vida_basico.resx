@@ -117,24 +117,34 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="beneficio_1" xml:space="preserve">
+    <value>No requiere de exámenes médicos para su contratación.</value>
+  </data>
+  <data name="beneficio_2" xml:space="preserve">
+    <value>Puedes asegurar a familiares directos y trabajadores por la misma suma asegurada.</value>
+  </data>
+  <data name="beneficio_3" xml:space="preserve">
+    <value>No excluye enfermedades preexistentes en sumas de hasta $50,000 pesos.</value>
+  </data>
+  <data name="beneficio_4" xml:space="preserve">
+    <value>Período de espera de solo 60 días.</value>
+  </data>
+  <data name="beneficio_5" xml:space="preserve">
+    <value>Como persona activa agropecuaria, podrá afiliarse a través de la Administración y Transferencia de Riesgos del Campo (ATRC), la cuota de adhesión es adicional al costo del seguro.</value>
+  </data>
+  <data name="cobertura_1" xml:space="preserve">
+    <value>Sumas aseguradas desde $20,000 pesos hasta $50,000 pesos con edad de 18 años hasta 80 años.</value>
+  </data>
+  <data name="cobertura_2" xml:space="preserve">
+    <value>Sumas aseguradas desde $60,000 pesos hasta $500,000 pesos con edad de 18 años hasta 65 años, se deberá llenar un formulario médico.</value>
+  </data>
   <data name="cover" xml:space="preserve">
     <value>vida_cover.jpg</value>
   </data>
   <data name="description" xml:space="preserve">
     <value>Ampara al productor por el fallecimiento ocurrido durante la vigencia del seguro por accidente o enfermedad.
 
-La vigencia del seguro es anual.
-
-Sumas aseguradas desde $20,000 pesos hasta $50,000 pesos con edad de 18 años hasta 80 años.
-
-Sumas aseguradas desde $60,000 pesos hasta $500,000 pesos con edad de 18 años hasta 65 años, se deberá llenar un formulario médico.
-
-Beneficios:
-No requiere de exámenes médicos para su contratación.
-Puedes asegurar a familiares directos y trabajadores por la misma suma asegurada.
-No excluye enfermedades preexistentes en sumas de hasta $50,000 pesos.
-Periodo de espera de solo 60 días.
-Como persona activa agropecuaria, podrá afiliarse a través de la Administración y Transferencia de Riesgos del Campo (ATRC), la cuota de adhesión es adicional al costo del seguro.</value>
+La vigencia del seguro es anual.</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>Seguro de vida</value>

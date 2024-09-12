@@ -10,7 +10,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 
 	<xsl:template mode="mapa-coordenadas" match="*">
 		<xsl:if test="position()&gt;1">, </xsl:if>
-		<xsl:value-of select="../comment"/>
+		<xsl:value-of select="substring(../comment,1,string-length(../comment)-1)"/>,image:"assets/<xsl:value-of select="substring-before(.,';')"/>"}
 	</xsl:template>
 	
 	<xsl:template match="root">
@@ -28,9 +28,8 @@ xmlns="http://www.w3.org/1999/xhtml"
 				position: google.maps.ControlPosition.LEFT_BOTTOM
 				}
 			});
-
 			let uniones = []]>
-				<xsl:apply-templates mode="mapa-coordenadas" select="key('image','*')"/>
+				<xsl:apply-templates mode="mapa-coordenadas" select="key('image','*')[starts-with(../comment,'{')]"/>
 				<![CDATA[];
 
 			for (let point of uniones.filter(el => el)) {

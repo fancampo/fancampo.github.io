@@ -1,36 +1,36 @@
-﻿const video = document.querySelector('video.main');
-const promocional = document.querySelector('#promocional video');
-    const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: .5
-    };
+﻿var video = document.querySelector('video.main');
+var promocional = document.querySelector('#promocional video');
+var options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: .5
+};
 
-    const callback = (entries, observer) => {
-        entries.forEach(entry => {
-            document.body.classList.remove('fanvida-is-active','fancampo-is-active');
-            let target = entry.target;
-            if (target.id) {
-                document.body.classList.remove(`${target.id}-active`);
-            }
-            if (target.id) {
-                document.body.classList[entry.isIntersecting ? "add" : "remove"](`${target.id}-active`);
-            }
-            if (target.matches('.fanvida-section')) {
-                document.body.classList[entry.isIntersecting ? "add" : "remove"]('fanvida-is-active');
-            }
-            if (target.matches('.fancampo-section')) {
-                document.body.classList[entry.isIntersecting ? "add" : "remove"]('fancampo-is-active');
-            }
-        });
-    };
+var callback = (entries, observer) => {
+    entries.forEach(entry => {
+        document.body.classList.remove('fanvida-is-active','fancampo-is-active');
+        let target = entry.target;
+        if (target.id) {
+            document.body.classList.remove(`${target.id}-active`);
+        }
+        if (target.id) {
+            document.body.classList[entry.isIntersecting ? "add" : "remove"](`${target.id}-active`);
+        }
+        if (target.matches('.fanvida-section')) {
+            document.body.classList[entry.isIntersecting ? "add" : "remove"]('fanvida-is-active');
+        }
+        if (target.matches('.fancampo-section')) {
+            document.body.classList[entry.isIntersecting ? "add" : "remove"]('fancampo-is-active');
+        }
+    });
+};
 
-    // Create intersection observer
-    const observer = new IntersectionObserver(callback, options);
+// Create intersection observer
+var observer = new IntersectionObserver(callback, options);
 
-    for (let section of document.querySelectorAll('.fanvida-section, .fancampo-section, main > *')) {
-        observer.observe(section);
-    }
+for (let section of document.querySelectorAll('.fanvida-section, .fancampo-section, main > *')) {
+    observer.observe(section);
+}
 
 if (video) {
     const viewportHeight = window.innerHeight;
@@ -71,15 +71,15 @@ if (video) {
 
 
 // Set the scroll position where you want to stop scrolling
-const stopScrollPosition = 500; // Change this value to your desired scroll position
+var stopScrollPosition = 500; // Change this value to your desired scroll position
 
 // Set the cooldown time in milliseconds
-const cooldownTime = 1000; // Change this value to your desired cooldown time
+var cooldownTime = 1000; // Change this value to your desired cooldown time
 
-let cooldownTimeout = null;
-let lastScrollTime = 0;
-let isScrollStopped = false;
-let lastScrollPosition = window.scrollY || window.pageYOffset;
+var cooldownTimeout = null;
+var lastScrollTime = 0;
+var isScrollStopped = false;
+var lastScrollPosition = window.scrollY || window.pageYOffset;
 
 // Function to handle the scroll event
 function handleScroll(event) {
@@ -228,7 +228,7 @@ window.addEventListener('resize', function () {
     }
 });
 
-xo.listener.on('submit::.contact-form', async function(){
+xo.listener.on('submit::.contact-form', async function () {
     event.preventDefault();
     let formData = new FormData(this);
     try {
@@ -239,10 +239,50 @@ xo.listener.on('submit::.contact-form', async function(){
     }
 })
 
-xo.listener.on('fetch::root', async function(document){
-   this.select(`//data/value/text()`).filter(text => text.value.match(/\n/)).forEach(data => data.textContent = data.textContent.replace(/([>:]\s*)\n/g,'$1').replace(/\n/g,'<br/>'));
+xo.listener.on('fetch::root', async function (document) {
+    this.select(`//data/value/text()`).filter(text => text.value.match(/\n/)).forEach(data => data.textContent = data.textContent.replace(/([>:]\s*)\n/g, '$1').replace(/\n/g, '<br/>'));
 })
+
 //xo.listener.on('fetch?href=~eventos.resx::root', async function(document){
 //    this.select(`//data/value/text()`).filter(text => text.value.match(/\n/)).forEach(data => data.parentNode.replaceChildren(...xover.xml.createFragment(`<p>${data.textContent.replace(/([>:]\s*)\n/g, '$1').replace(/\n+/g, '</p><p>')}</p>`).childNodes));
 //    event.stopImmediatePropagation()
 //})
+
+var datediff = function (intervalType, first_date, last_date) {
+    // Parse the input dates
+    if (!(first_date && last_date)) return undefined;
+    const first = first_date instanceof Date ? first_date : first_date.parseDate();
+    const last = last_date instanceof Date ? last_date : last_date.parseDate();
+    intervalType = intervalType.replace(/s$/, '');
+
+    // Calculate the difference in milliseconds
+    const diffMs = last - first;
+
+    // Convert milliseconds to the specified interval type
+    let diffInterval;
+    switch (intervalType) {
+        case 'year':
+            diffInterval = diffMs / (1000 * 60 * 60 * 24 * 365.25);
+            break;
+        case 'month':
+            diffInterval = diffMs / (1000 * 60 * 60 * 24 * 30.44);
+            break;
+        case 'day':
+            diffInterval = diffMs / (1000 * 60 * 60 * 24);
+            break;
+        case 'hour':
+            diffInterval = diffMs / (1000 * 60 * 60);
+            break;
+        case 'minute':
+            diffInterval = diffMs / (1000 * 60);
+            break;
+        case 'second':
+            diffInterval = diffMs / 1000;
+            break;
+        default:
+            throw new Error('Invalid interval type');
+    }
+
+    // Return the result rounded to 2 decimal places
+    return Math.floor(Math.round(diffInterval * 100) / 100);
+}

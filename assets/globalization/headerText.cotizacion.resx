@@ -117,6 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="@agl" xml:space="preserve">
+    <value>AGL</value>
+    <comment>Asociación Ganadera Regional</comment>
+  </data>
   <data name="@anio_modelo" xml:space="preserve">
     <value>Modalo (Año)</value>
   </data>
@@ -132,6 +136,12 @@
   <data name="@correoelectronico" xml:space="preserve">
     <value>Correo electrónico</value>
   </data>
+  <data name="@correo_electronico" xml:space="preserve">
+    <value>Correo Electrónico</value>
+  </data>
+  <data name="@curp" xml:space="preserve">
+    <value>CURP</value>
+  </data>
   <data name="@densidadpoblacion" xml:space="preserve">
     <value>Densidad de población</value>
   </data>
@@ -144,6 +154,10 @@
   <data name="@edad" xml:space="preserve">
     <value>Edad (meses)</value>
   </data>
+  <data name="@fecha" xml:space="preserve">
+    <value>Fecha</value>
+    <comment>#Fecha del sistema</comment>
+  </data>
   <data name="@fechacosecha" xml:space="preserve">
     <value>Fecha de cosecha</value>
   </data>
@@ -153,6 +167,16 @@
   <data name="@fechasiembraprimerestanque" xml:space="preserve">
     <value>Fecha de siembra de primer estanque</value>
   </data>
+  <data name="@fecha_nacimiento" xml:space="preserve">
+    <value>Fecha de nacimiento</value>
+  </data>
+  <data name="@folio" xml:space="preserve">
+    <value>Folio</value>
+  </data>
+  <data name="@folio_pif" xml:space="preserve">
+    <value>Folio PIF</value>
+    <comment>#Número consecutivo e irrepetible de sistema, que no puede alterar el usuario</comment>
+  </data>
   <data name="@funcionzootecnica" xml:space="preserve">
     <value>Función zootécnica</value>
   </data>
@@ -161,6 +185,9 @@
   </data>
   <data name="@machosporasegurar" xml:space="preserve">
     <value>Machos por asegurar</value>
+  </data>
+  <data name="@monto_deposito" xml:space="preserve">
+    <value>Monto Depósito</value>
   </data>
   <data name="@nombrelaboratorio" xml:space="preserve">
     <value>Nombre de laboratorio</value>
@@ -181,7 +208,7 @@
     <value>Seguro a contratar</value>
   </data>
   <data name="@suma_asegurada" xml:space="preserve">
-    <value>Suma asegurada por cabeza</value>
+    <value>Suma asegurada</value>
   </data>
   <data name="@superficieha" xml:space="preserve">
     <value>Superficie (ha)</value>
@@ -190,12 +217,29 @@
     <value>Teléfono</value>
   </data>
   <data name="@tipo_cotizacion" xml:space="preserve">
-    <value>Tipo de cotización</value>
+    <value>Nombre del Seguro</value>
+  </data>
+  <data name="@tipo_persona" xml:space="preserve">
+    <value>Tipo de persona</value>
+  </data>
+  <data name="@ugr" xml:space="preserve">
+    <value>UGR</value>
+    <comment>Unidad Ganadera Regional</comment>
   </data>
   <data name="@unidad_medida" xml:space="preserve">
     <value>Unidad de Medida</value>
   </data>
   <data name="@upp" xml:space="preserve">
     <value>UPP</value>
+    <comment>Unidad de Producción Pecuaria</comment>
+  </data>
+  <data name="cotizacion[@type=&quot;ganadero&quot;]/@suma_asegurada" xml:space="preserve">
+    <value>Suma asegurada por cabeza</value>
+  </data>
+  <data name="cotizacion[@type=&quot;vida&quot;]/@fecha_fin" xml:space="preserve">
+    <value>Vigencia del seguro</value>
+  </data>
+  <data name="cotizacion[@type=&quot;vida&quot;]/@fecha_inicio" xml:space="preserve">
+    <value>Inicio del seguro</value>
   </data>
 </root>

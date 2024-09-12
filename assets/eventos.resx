@@ -250,6 +250,17 @@ La inspección nos demuestra que el exceso de #humedad provocó retraso de creci
 El día de ayer se llevó a cabo la sesión de Consejo de Administración de #FANCAMPO y #FanVida donde se vieron #avances operativos y administrativos de los diferentes tipos de #seguros especializados  durante el presente ejercicio; con la buena perspectiva de cumplir #metas al cierre de 2024 y se lleve a cabo la elaboración del Programa de Aseguramiento que ejercerá en 2025 en beneficio de los productores #Agropecuarios de #México.
 #CNOG #UGR #campo #SADER #rural #Ganaderos #agrícola #vida #pecuario #agricola #SHCP #CNSF</value>
   </data>
+  <data name="evento_20240912_3" xml:space="preserve">
+    <value>CURSO PARA TÉCNICOS IDENTIFICADORES AUTORIZADOS SINIIGA A PERSONAL TÉCNICO ESPECIALIZADO DE FANCAMPO Y FANVIDA
+: #Hoy se está llevando a cabo el "Curso para Técnicos Identificadores Autorizados, SINIIGA" al personal de campo especializados de #FANCAMPO ubicados en diferentes puntos de México; con el objetivo de fortalecer las operativas SINIIGA-FANCAMPO-FANVIDA en beneficio de los productores pecuarios del país.
+#CNOG #SINIIGA #rural #pecuario #rural #campo #ganado #agro #Agropecuarios</value>
+  </data>
+  <data name="evento_20240912_4" xml:space="preserve">
+    <value>FORO ESTATAL DE LA CAÑA VERACRUZ 2024: #FANCAMPO y #FanVida participará en el "Foro Estatal de la Caña #Veracruz 2024" que se llevará a cabo el 5 y 6 de diciembre del presente. Se estará proporcionando información y elaborando contrataciones de los #seguros vigentes para beneficio de los #cañeros de azúcar del #País. 
+
+Productores tomen en cuenta las fechas para que asistan y fortalezcan su conocimiento de la situación actual del sector y de la Administración de Riesgos para la protección de su patrimonio familiar.
+#CNOG #vida #rural #campo #Difusión #PROMOCIÓN #agro #agropecuario #Agropecuarios #Sureste #SuresteMexicano #cordoba #cordobaveracruz #Tamaulipas #Hidalgo #Morelos</value>
+  </data>
   <data name="img:evento_20240623" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>img\comerciales.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -309,6 +320,12 @@ El día de ayer se llevó a cabo la sesión de Consejo de Administración de #FA
   </data>
   <data name="img:evento_20240912_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240912_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img:evento_20240912_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20240912_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img:evento_20240912_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20240912_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>Eventos</value>
