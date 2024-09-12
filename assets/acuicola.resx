@@ -117,6 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="acuicola (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (1).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acuicola (103)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (103).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acuicola (104)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (104).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acuicola (105)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (105).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acuicola (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acuicola (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acuicola (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acuicola (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (5).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acuicola (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (6).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acuicola (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (7).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cobertura_1" xml:space="preserve">
     <value>Cobertura básica: Protege la muerte o fuga por daños climatológicos.</value>
   </data>

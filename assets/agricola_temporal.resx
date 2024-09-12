@@ -119,37 +119,28 @@
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="agricola_temporal (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agricola_temporal (1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agricola_temporal (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agricola_temporal (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="agricola_temporal (1)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agricola_temporal (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="agricola_temporal (103)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agricola_temporal (103).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agricola_temporal (104)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agricola_temporal (104).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agricola_temporal (105)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agricola_temporal (105).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agricola_temporal (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agricola_temporal (2).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agricola_temporal (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agricola_temporal (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="agricola_temporal (2)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agricola_temporal (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="agricola_temporal (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agricola_temporal (3).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="agricola_temporal (3)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agricola_temporal (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="agricola_temporal (3)2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agricola_temporal (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="agricola_temporal (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agricola_temporal (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\agricola_temporal (4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agricola_temporal (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agricola_temporal (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\agricola_temporal (5).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cobertura_1" xml:space="preserve">
     <value>Riesgos a la nacencia: depende el estado, región y cultivo para poder otorgar riesgos climatológicos y biológicos.</value>

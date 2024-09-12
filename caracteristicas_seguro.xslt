@@ -7,14 +7,14 @@
 >
 	<xsl:import href="keys.xslt"/>
 	<xsl:import href="common.xslt"/>
-	<xsl:key name="data" match="data[starts-with(@name,'cobertura_')]" use="'coberturas'"/>
-	<xsl:key name="data" match="data[starts-with(@name,'riesgo_')]" use="'riesgos'"/>
-	<xsl:key name="data" match="data[starts-with(@name,'beneficio_')]" use="'beneficios'"/>
-	<xsl:key name="data" match="data[starts-with(@name,'ventaja_')]" use="'ventajas'"/>
-	<xsl:key name="data" match="data[starts-with(@name,'especie_')]" use="'especies'"/>
-	<xsl:key name="data" match="data[starts-with(@name,'depredador_')]" use="'depredadores'"/>
-	<xsl:key name="data" match="data[starts-with(@name,'detalles_')]" use="'detalles'"/>
-	<xsl:key name="data" match="data[starts-with(@name,'carousel_')]" use="'carousel'"/>
+	<xsl:key name="data" match="data[starts-with(@name,'cobertura_')][value!='']" use="'coberturas'"/>
+	<xsl:key name="data" match="data[starts-with(@name,'riesgo_')][value!='']" use="'riesgos'"/>
+	<xsl:key name="data" match="data[starts-with(@name,'beneficio_')][value!='']" use="'beneficios'"/>
+	<xsl:key name="data" match="data[starts-with(@name,'ventaja_')][value!='']" use="'ventajas'"/>
+	<xsl:key name="data" match="data[starts-with(@name,'especie_')][value!='']" use="'especies'"/>
+	<xsl:key name="data" match="data[starts-with(@name,'depredador_')][value!='']" use="'depredadores'"/>
+	<xsl:key name="data" match="data[starts-with(@name,'detalles_')][value!='']" use="'detalles'"/>
+	<xsl:key name="data" match="data[starts-with(@name,'carousel_')][value!='']" use="'carousel'"/>
 
 	<xsl:param name="site:hash"></xsl:param>
 

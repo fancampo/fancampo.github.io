@@ -118,65 +118,68 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="carousel_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (1).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="carousel_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="apicola_climatico (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\apicola_climatico (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (10)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (10).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (10).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (102)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (102).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (11).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (103)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (103).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (12).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (105)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (105).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (13).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (106)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (106).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (14).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (107)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (107).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (2).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (11)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (11).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (111)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (111).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (3).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (112)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (112).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (12)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (12).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (4).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (13)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (13).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (4).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (14)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (14).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (5).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (5).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (6).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (7).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (5).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (8).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (6).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carousel_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\apicola_climatico (9).jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="apicola_climatico (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (7).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="apicola_climatico (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (8).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="apicola_climatico (9)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\apicola_climatico (9).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cobertura_1" xml:space="preserve">
     <value>Fenómenos metereológicos: &lt;ul&gt;

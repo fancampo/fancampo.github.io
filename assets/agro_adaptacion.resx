@@ -119,10 +119,10 @@
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="agro_adaptacion (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_adaptacion (1).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\agro_adaptacion (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_adaptacion (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_adaptacion (2).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\agro_adaptacion (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_adaptacion (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>gallery\agro_adaptacion (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -134,7 +134,7 @@
     <value>gallery\agro_adaptacion (5).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="agro_adaptacion (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>gallery\agro_adaptacion (6).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+    <value>gallery\agro_adaptacion (6).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="description" xml:space="preserve">
     <value>Cubre el riesgo de muerte por enfermedad, accidente y/o sacrificio forzoso. Vigencia hasta 45 días en la nueva explotación</value>

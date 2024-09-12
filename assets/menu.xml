@@ -9,22 +9,22 @@
 	</item>
 	<item title="Seguros">
 		<item title="Multirriesgo" href="./seguro.html#multirriesgo" image="multirriesgo.jpg" tag="multirriesgo">
-			<item title="Alta mortalidad" href="./seguro.html#alta_mortalidad" image="alta_mortalidad.jpg"/>
-			<item title="Ataque de depredador" href="./seguro.html#ataque_depredador" image="ataque_depredador.jpg"/>
-			<item title="Bienes patrimoniales en instalaciones ganaderas" href="./seguro.html#bienes_patrimoniales" image="bienes_patrimoniales.jpeg"/>
-			<item title="Apícola climático" href="./seguro.html#apicola_climatico" image="apicola_climatico.jpg"/>
+			<item title="Alta Mortalidad" href="./seguro.html#alta_mortalidad" image="alta_mortalidad.jpg"/>
+			<item title="Ataque de Depredador" href="./seguro.html#ataque_depredador" image="ataque_depredador.jpg"/>
 			<item title="Ganadero Climático" href="./seguro.html#ganadero_climatico" image="ganadero_climatico.jpg"/>
+			<item title="Apícola Climático" href="./seguro.html#apicola_climatico" image="apicola_climatico.jpg"/>
+			<item title="Daños en Bienes Patrimoniales a la Infraestructura Ganadera" href="./seguro.html#bienes_patrimoniales" image="bienes_patrimoniales.jpeg"/>
 		</item>
 		<item title="Comerciales Agropecuarios" href="./seguro.html#comerciales_agropecuarios" image="comerciales_agropecuarios.jpg" tag="comerciales_agropecuarios">
 			<item title="Transporte" href="./seguro.html#agro_transporte" image="agro_transporte.jpg"/>
 			<item title="Adaptación" href="./seguro.html#agro_adaptacion" image="agro_adaptacion.jpg"/>
 			<item title="Radicación" href="./seguro.html#agro_radicacion" image="agro_radicacion.jpg"/>
-			<item title="Estaciones cuarentenarias" href="./seguro.html#estaciones_cuarentenarias" image="estaciones_cuarentenarias.jpg"/>
-			<item title="Estancia temporal" href="./seguro.html#estancia_temporal" image="estancia_temporal.jpeg"/>
+			<item title="Estaciones Cuarentenarias" href="./seguro.html#estaciones_cuarentenarias" image="estaciones_cuarentenarias.jpg"/>
+			<item title="Estancia Temporal" href="./seguro.html#estancia_temporal" image="estancia_temporal.jpeg"/>
 			<item title="Maquinaria e Insumos Agropecuarios" href="./seguro.html#maquinaria_insumos_agropecuarios" image="maquinaria_insumos_agropecuarios.jpg"/>
 		</item>
 		<item title="Comerciales" href="./seguro.html#comerciales" image="comerciales.jpg" tag="comerciales">
-			<item title="Bienes conexos" href="./seguro.html#bienes_conexos" image="bienes_conexos.jpg"/>
+			<item title="Bienes Conexos" href="./seguro.html#bienes_conexos" image="bienes_conexos.jpg"/>
 			<item title="Catastróficos" href="./seguro.html#catastrofico" image="catastrofico.jpg"/>
 			<item title="Acuícolas" href="./seguro.html#acuicola" image="acuicola.jpg"/>
 		</item>
@@ -43,10 +43,10 @@
 		</item>
 	</item>
 	<item title="Asociados">
-		<item title="Socios de los fondos" href="./socios.html"/>
+		<item title="Socios de los Fondos" href="./socios.html"/>
 		<item title="Beneficiarios" href="./socios.html#beneficiarios"/>
 		<!--<item title="Nuestros Asegurados" href="./ligas.html#asegurados"/>-->
-		<item title="Ligas de interés" href="./ligas.html#interes"/>
+		<item title="Ligas de Interés" href="./ligas.html#interes"/>
 	</item>
 	<item title="Eventos" href="eventos.html"/>
 	<item title="Cotizar" href="./#" onclick="event.preventDefault(); cotizar()"/>
