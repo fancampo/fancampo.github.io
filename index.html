@@ -80,9 +80,9 @@
                     background-color: rgba(0, 0, 0, 0);
                 }
 
-                :has(video.main) #header:not(.header-scrolled) ul.navbar-nav {
-                    background-color: rgba(0, 0, 0, 0.3);
-                }
+                    :has(video.main) #header:not(.header-scrolled) ul.navbar-nav {
+                        background-color: rgba(0, 0, 0, 0.3);
+                    }
             }
 
             #promocional .video-container {
@@ -136,7 +136,7 @@
                 margin: auto;
             }
         </style>
-        <video class="col-md-6 col-12 main fancampo-section" autoplay muted loop style=" height: auto; bottom: -2rem; transition: transform 0.5s ease 0s, opacity 1s ease 0s; transform-origin: top right; z-index: 1;" src="assets/img/video1.mp4"></video>
+        <video class="col-md-6 col-12 main fancampo-section" autoplay muted loop style=" height: auto; bottom: -2rem; transition: transform 0.5s ease 0s, opacity 1s ease 0s; transform-origin: top right; z-index: 1; object-position: bottom;" src="assets/img/aniversario.mp4" controls="" ></video>
         <div class="aos-init aos-animate fancampo-section" style="top: 15vh; color: white; white-space: nowrap; padding-inline: 1rem;" data-aos="fade-up">
             <div style="padding-block: 2rem">
                 <h1 class="accent">Protección Integral para el</h1>
@@ -170,6 +170,9 @@
     </section>
 
     <main id="main" style="background-color: white; position: relative; z-index: 2">
+        <section>
+            <video class="col-md-6 col-12" autoplay muted loop style="height: 80vh; width: 100vw; object-fit: cover; object-position: bottom; " src="assets/img/video1.mp4"></video>
+        </section>
         <section id="seguros" class="section-bg">
             <div class="row g-4" data-aos="fade-up" xo-source="#menu" xo-stylesheet="seguros-tiles.xslt" title="Nuestros <em>Seguros</em>">
             </div>
@@ -189,8 +192,8 @@
         </section>
 
         <!--<section id="eventos">
-            <div data-aos="fade-up" xo-source="calendario.html"></div>
-        </section>-->
+        <div data-aos="fade-up" xo-source="calendario.html"></div>
+    </section>-->
 
         <section id="contact" class="contact">
             <div class="container" data-aos="fade-up">
