@@ -342,4 +342,12 @@ Productores tomen en cuenta las fechas para que asistan y fortalezcan su conocim
     <value>CNG 88 años 
 Impulsando la ganadería de México: &lt;video src="/assets/img/aniversario.mp4" class="shape-image col-12" autoplay="true" muted="true" alt="..." controls="" xo-scope="value_87354378_76d8_48fc_9cb9_9cbef3eb917a"&gt;&lt;/video&gt;</value>
   </data>
+  <data name="evento_20240917" xml:space="preserve">
+    <value>EXPO-FERIA GANADERA CAMPECHE 2024: 
+#FANCAMPO y #FanVida estuvieron presentes en la Expo-Feria Ganadera Campeche 2024 con actividades de difusión de los seguros vigentes y al servicio de los ganaderos para adquisiciones de seguros ganaderos y de vida.
+#CNOG #Campeche #campeche2024 #ganaderia #Sureste #campo #vida #Rural</value>
+  </data>
+  <data name="img:evento_20240917" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20240917.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
