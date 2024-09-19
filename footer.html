@@ -28,14 +28,31 @@
         </div>
     </div>-->
 
-    <div class="container footer-bottom clearfix">
+    <div class="container footer-bottom d-flex justify-content-between">
         <div class="social">
             <div class="social-links" xo-source="#redes" xo-stylesheet="iconos.xslt">
-                
+
             </div>
         </div>
-        <div class="copyright">
+        <div class="copyright text-center">
             Copyright © 2024 FanCampo | FanVida <br> Todos los derechos reservados.
+        </div>
+        <div style="width:20vw;">
+            <iframe id="chatbot">
+                <script type="text/javascript">
+                    (function (d, t) {
+                        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                        v.onload = function () {
+                            window.voiceflow.chat.load({
+                                verify: { projectID: '65fbcf426e596d247aeac24e' },
+                                url: 'https://general-runtime.voiceflow.com',
+                                versionID: 'production'
+                            });
+                        }
+                        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+                    })(document, 'script');
+                </script>
+            </iframe>
         </div>
     </div>
 </footer>

@@ -350,4 +350,14 @@ Impulsando la ganadería de México: &lt;video src="/assets/img/aniversario.mp
   <data name="img:evento_20240917" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240917.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="evento_20240919" xml:space="preserve">
+    <value>SEDAFOP ADQUIERE SEGURO MULTIRRIESGO: El gobierno del estado de Tabasco a través de la SEDAFOP Secretaría de Desarrollo Agropecuario, Forestal y Pesca, contrató el seguro Multirriesgo de FanCampo para productores del estado.
+
+Alta Mortalidad, Muerte por Ataque de Depredadores, Ganadero Climático, Apícola Climático, Daños Bienes Patrimoniales a la Infraestructura Ganadera 
+
+#CNOG #Rural #campo #Sureste #SuresteMexicano #surestealmomento #surestedemexico #Ganaderos</value>
+  </data>
+  <data name="img:evento_20240919" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20240919.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
