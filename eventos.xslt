@@ -101,7 +101,7 @@ xmlns:html="http://www.w3.org/1999/xhtml" xmlns:env="http://panax.io/state/envir
 					</div>
 					<div class="card-text mb-auto clearfix" style="min-height: 250px;">
 						<xsl:apply-templates mode="widget" select="key('file', @name)"/>
-						<p>
+						<p style="margin-bottom: 0;">
 							<xsl:choose>
 								<xsl:when test="not($single-note)">
 									<xsl:value-of select="substring-before(concat($body,'&lt;wbr&gt;'),'&lt;wbr')" disable-output-escaping="yes"/>

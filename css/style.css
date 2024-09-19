@@ -50,6 +50,21 @@
     --offcanvas-height: 90vh !important;
 }
 
+.toggle-audio {
+    bottom: 100px;
+    position: absolute !important;
+    z-index: 1000;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+body:has(header.header-scrolled):has(video) .toggle-audio {
+    visibility: hidden;
+}
+
 h1 em, h2 em, h3 em, h4 em {
     color: var(--fancampovida-creen-snow);
     font-style: normal;
@@ -447,9 +462,9 @@ blockquote {
 
 iframe#chatbot {
     position: fixed;
-    bottom: calc(var(--footer-height, 60px) - 30px);
+    bottom: calc(var(--footer-height, 60px) - 100px);
     right: 0;
-    height: 90px;
+    height: 75px;
     width: 400px;
     z-index: 1001;
     transition: height 0.5s ease-in-out;
@@ -609,6 +624,10 @@ main section p {
 }
 
 body:has(header:not(.header-scrolled)):has(video) #footer {
+    visibility: hidden;
+}
+
+body:has(header:not(.header-scrolled)):has(video) #chatbot {
     visibility: hidden;
 }
 
@@ -773,9 +792,9 @@ h6 {
     }
 }
 
-.fanvida-is-active:not(.fancampo-is-active) main, .fancampo-is-active:not(.fanvida-is-active) main {
+/*.fanvida-is-active:not(.fancampo-is-active) main, .fancampo-is-active:not(.fanvida-is-active) main {
     margin-top: 120px !important;
-}
+}*/
 
 .fancampo-section .accent {
     color: var(--fancampovida-creen-snow)
