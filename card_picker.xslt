@@ -287,7 +287,6 @@
 		<div class="_8ymTl a2TI- nUSAT">
 			<div class="card-content box-shadow">
 				<div class="position-relative banner-2" style="overflow: hidden; height: 300px;">
-					<xsl:value-of select="count(key('image', @name))"/>
 					<a href="#">
 						<img src="./assets/img/FanCampo.png" class="img-fluid rounded" alt="" style="width: 100%; object-fit: scale-down; clip-path: inset(0);">
 							<xsl:apply-templates mode="image-src" select="key('image', @name)"/>

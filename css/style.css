@@ -615,7 +615,7 @@ main section p {
 #footer {
     font-size: 14px;
     background: var(--fancampovida-blue-smoke);
-    z-index: 2;
+    z-index: 1030; /*1020 is sticky-top's default*/
     bottom: 0;
     position: fixed;
     width: 100vw;
@@ -722,15 +722,40 @@ h6 {
 --------------------------------------------------------------*/
 #header {
     transition: all 0.5s;
-    z-index: 1021;
+    z-index: 1030;
     padding: 5px 0;
 }
 
-    #header.header-inner-pages,
-    #header.solid-background {
-        /* background: rgba(40, 58, 90, 0.9); */
-        background-color: var(--fancampovida-blue-smoke);
-    }
+.wizard-header {
+    z-index: 1021
+}
+
+.wizard-header hr {
+    margin: revert;
+}
+
+.wizard-header .nav {
+    justify-content: space-evenly;
+    flex-wrap: initial;
+}
+
+.wizard-header .nav li {
+    padding: 0px 0px !important;
+}
+
+.wizard-header .nav li h1 {
+    margin-bottom: 0;
+}
+
+.wizard-header .aiia-wizard-progress-buttons-wrapper > * {
+    overflow: auto;
+}
+
+#header.header-inner-pages,
+#header.solid-background {
+    /* background: rgba(40, 58, 90, 0.9); */
+    background-color: var(--fancampovida-blue-smoke);
+}
 
 .fancampo-is-active:not(.fanvida-is-active) .logo-fanvida, :has(video.main) #header:not(.header-scrolled) .logo-fanvida {
     /* background: rgba(40, 58, 90, 0.9); */

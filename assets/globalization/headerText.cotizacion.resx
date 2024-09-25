@@ -122,7 +122,7 @@
     <comment>Asociación Ganadera Regional</comment>
   </data>
   <data name="@anio_modelo" xml:space="preserve">
-    <value>Modalo (Año)</value>
+    <value>Modelo (Año)</value>
   </data>
   <data name="@cabezas_muertas_anuales" xml:space="preserve">
     <value>Cabezas muertas y desechadas al año:</value>
@@ -139,6 +139,9 @@
   <data name="@correo_electronico" xml:space="preserve">
     <value>Correo Electrónico</value>
   </data>
+  <data name="@cp" xml:space="preserve">
+    <value>C.P.</value>
+  </data>
   <data name="@curp" xml:space="preserve">
     <value>CURP</value>
   </data>
@@ -153,6 +156,9 @@
   </data>
   <data name="@edad" xml:space="preserve">
     <value>Edad (meses)</value>
+  </data>
+  <data name="@fallas_sistema_refrigeracion" xml:space="preserve">
+    <value>Incluye fallas en sistema de refrigeración</value>
   </data>
   <data name="@fecha" xml:space="preserve">
     <value>Fecha</value>
@@ -182,6 +188,9 @@
   </data>
   <data name="@hembrasporasegurar" xml:space="preserve">
     <value>Hembras por asegurar</value>
+  </data>
+  <data name="@kilometros" xml:space="preserve">
+    <value>Distancia en kilómetros</value>
   </data>
   <data name="@machosporasegurar" xml:space="preserve">
     <value>Machos por asegurar</value>

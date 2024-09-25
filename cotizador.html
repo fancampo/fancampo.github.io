@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-signin-client_id" content="495385181511-f7sps2qg7o3g86noph4clgdoo917a90o.apps.googleusercontent.com" />
 
     <meta name="description"
           content="Fondo de Aseguramiento Nacional Agropecuario y Rural. Realizamos trajes a la medida, seguro de vida con cobertura a nivel Nacional. Diseñados especialmente para cuidar de tí y de los tuyos.">
@@ -62,15 +63,19 @@
             height: 100vh;
         }
 
-            body > .container, body > main {
-                /*overflow-y: scroll;*/
-                width: 100vw;
-                flex: 1;
-                max-height: calc(100vh - var(--header-height, 60px) - var(--footer-height, 60px));
-            }
+        body > .container, body > main {
+            /*overflow-y: scroll;*/
+            width: 100vw;
+            flex: 1;
+            max-height: calc(100vh - var(--header-height, 60px) - var(--footer-height, 60px));
+        }
 
         main {
             height: 100%;
+        }
+        
+        :focus-visible {
+            outline: none;
         }
     </style>
 </head>
