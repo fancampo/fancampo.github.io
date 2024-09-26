@@ -49,6 +49,6 @@
 		<item title="Ligas de Interés" href="./ligas.html#interes"/>
 	</item>
 	<item title="Eventos" href="eventos.html"/>
-	<item title="Cotizar" href="./#" onclick="event.preventDefault(); cotizar()"/>
+	<item title="Cotizar" href="#chatbot" target="_self" onclick="cotizar(); event.preventDefault(); "/>
 	<!--<item title="Novedades" href="./novedades.html"/>-->
 </menu>
