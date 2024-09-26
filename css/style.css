@@ -462,18 +462,18 @@ blockquote {
 
 iframe#chatbot {
     position: fixed;
-    bottom: calc(var(--footer-height, 60px) - 100px);
+    bottom: 0;
     right: 0;
-    height: 75px;
+    min-height: var(--footer-height, 60px);
     width: 400px;
-    z-index: 1001;
-    transition: height 0.5s ease-in-out;
+    z-index: 1031;
+    transition: min-height 0.5s ease-in-out;
     /*box-shadow: -1px 5px 20px 0px rgba(0,0,0,.5);*/
 }
 
-    iframe#chatbot:hover {
-        height: 80vh !important;
-    }
+iframe#chatbot:hover {
+    min-height: 90vh !important;
+}
 
 .circle-btn {
     width: 50px; /* Adjust size as needed */

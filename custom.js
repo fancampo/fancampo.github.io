@@ -8,7 +8,7 @@ var options = {
 
 var callback = (entries, observer) => {
     entries.forEach(entry => {
-        document.body.classList.remove('fanvida-is-active','fancampo-is-active');
+        document.body.classList.remove('fanvida-is-active', 'fancampo-is-active');
         let target = entry.target;
         if (target.id) {
             document.body.classList.remove(`${target.id}-active`);
@@ -135,52 +135,56 @@ async function cotizar() {
         window.document.location = 'cotizador.html';
         return;
     }
-    chatbot.contentDocument.documentElement.querySelector('#voiceflow-chat').shadowRoot.querySelector('button').click();
-    chatbot.style.height = '80vh';
-    let chat = chatbot && chatbot.contentDocument.documentElement.querySelector('#voiceflow-chat')
-    if (!chat) {
-        throw ("No se pudo inicializar el proceso de cotización. Intente más tarde, por favor");
-        return
-    }
-    let start_button = chat.shadowRoot.querySelector('article footer button');
-    if (start_button) {
-        start_button.click()
-    }
-    await xover.delay(1000);
-    let textarea = chat.shadowRoot.querySelector('textarea');
-
-    async function typeWriter(text, index, speed) {
-        if (index < text.length) {
-            const event = new Event('input', {
-                bubbles: true,
-                cancelable: true,
-            });
-            textarea.placeholder += text.charAt(index);
-            textarea.dispatchEvent(event);
-            index++;
-            setTimeout(() => {
-                typeWriter(text, index, speed);
-            }, speed);
-        } else {
-            //textarea.setAttribute("onkeyup", "event.keyCode == 32 && this.value == ' ' && (this.value = 'Cómo cotizar?') && (this.innerHTML = this.value)")
-            textarea.setAttribute("oninput", "this.placeholder = ''")
-            textarea.textContent = textarea.value;
-            //textarea.nextElementSibling.classList.add('c-iSWgdS-eHahlm-ready-true');
-            textarea.nextElementSibling.classList = 'vfrc-chat-input--button c-iSWgdS c-iSWgdS-eHahlm-ready-true'
-            await xover.delay(1000);
-            textarea.parentNode.style.boxShadow = 'none';
-            textarea.focus();
+    try {
+        chatbot.contentDocument.body.querySelector('#voiceflow-chat').shadowRoot.querySelector('button').click();
+        chatbot.style.height = '80vh';
+        let chat = chatbot && chatbot.contentDocument.documentElement.querySelector('#voiceflow-chat')
+        if (!chat) {
+            throw ("No se pudo inicializar el proceso de cotización. Intente más tarde, por favor");
+            return
         }
-    }
+        let start_button = chat.shadowRoot.querySelector('article footer button');
+        if (start_button) {
+            start_button.click()
+        }
+        await xover.delay(1000);
+        let textarea = chat.shadowRoot.querySelector('textarea');
 
-    // Start typing the phrase
-    function startTyping(text) {
-        const speed = 100; // Typing speed (milliseconds per character)
-        typeWriter(text, 0, speed);
+        async function typeWriter(text, index, speed) {
+            if (index < text.length) {
+                const event = new Event('input', {
+                    bubbles: true,
+                    cancelable: true,
+                });
+                textarea.placeholder += text.charAt(index);
+                textarea.dispatchEvent(event);
+                index++;
+                setTimeout(() => {
+                    typeWriter(text, index, speed);
+                }, speed);
+            } else {
+                //textarea.setAttribute("onkeyup", "event.keyCode == 32 && this.value == ' ' && (this.value = 'Cómo cotizar?') && (this.innerHTML = this.value)")
+                textarea.setAttribute("oninput", "this.placeholder = ''")
+                textarea.textContent = textarea.value;
+                //textarea.nextElementSibling.classList.add('c-iSWgdS-eHahlm-ready-true');
+                textarea.nextElementSibling.classList = 'vfrc-chat-input--button c-iSWgdS c-iSWgdS-eHahlm-ready-true'
+                await xover.delay(1000);
+                textarea.parentNode.style.boxShadow = 'none';
+                textarea.focus();
+            }
+        }
+
+        // Start typing the phrase
+        function startTyping(text) {
+            const speed = 100; // Typing speed (milliseconds per character)
+            typeWriter(text, 0, speed);
+        }
+        textarea.placeholder = '';
+        startTyping('Pregúntame cómo cotizar');// (O presiona espacio)
+        textarea.parentNode.style.boxShadow = '0 0 10px rgba(0, 0, 255, 0.5)';
+    } catch (e) {
+        window.document.location = 'cotizador.html';
     }
-    textarea.placeholder = '';
-    startTyping('Pregúntame cómo cotizar');// (O presiona espacio)
-    textarea.parentNode.style.boxShadow = '0 0 10px rgba(0, 0, 255, 0.5)';
 }
 
 function videoSelector() {
@@ -234,8 +238,8 @@ xo.listener.on('submit::.contact-form', async function () {
     try {
         await xover.server.requestInfo(new URLSearchParams(formData));
         alert("La solicitud ha sido recibida con éxito");
-    } catch(e) {
-        throw(e)
+    } catch (e) {
+        throw (e)
     }
 })
 
