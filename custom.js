@@ -290,7 +290,3 @@ var datediff = function (intervalType, first_date, last_date) {
     // Return the result rounded to 2 decimal places
     return Math.floor(Math.round(diffInterval * 100) / 100);
 }
-
-xover.listener.on(['unhandledrejection', 'error'], function () {
-    event.preventDefault()
-})
