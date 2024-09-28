@@ -360,4 +360,10 @@ Alta Mortalidad, Muerte por Ataque de Depredadores, Ganadero Climático, Apícol
   <data name="img:evento_20240919" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240919.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="evento_20240927" xml:space="preserve">
+    <value>EXPO AGRO ALIMENTARIA INTERNACIONAL ESTADO DE MEXICO 2024 (27 y 28 de septiembre): &lt;video src="/assets/eventos/evento_20240927.mp4" class="shape-image col-12" autoplay="true" muted="true" alt="..." controls=""&gt;&lt;/video&gt;
+#FANCAMPO y #FanVida serán parte de los 150 expositores que se presentarán en la EXPO AGRO ALIMENTARIA ESTADO DE MEXICO 2024 los días 27 y 28 de septiembre en Metepec; para ofrecer los servicios de protección para el patrimonio familiar de los productores, mediante los seguros agropecuarios que se tienen en operación al servicio de los ganaderos, agricultores y piscicultores del estado y del país.
+En paralelo se establecerá una mesa de contrataciones de los SEGUROS COMERCIALES AGROPECUARIOS dentro del PROGRAMA DE MEJORAMIENTO GENETICO DE BOVINOS, OVINOS Y CAPRINOS 2024 establecido por la Secretaría de Agricultura y Desarrollo Rural; amigo ganadero acércate a nosotros para la protección de tu semental y así asegurar el crecimiento de tu Unidad de producción Pecuaria.
+#CNOG #Ganaderos #bovinos #ovinos #caprinos #Edomex #EdoDeMexico #edomexnoticias #campo #Rural #bancos #institucionesfinancieras</value>
+  </data>
 </root>

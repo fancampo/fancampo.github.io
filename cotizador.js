@@ -11,6 +11,26 @@ xo.listener.on(`change::*[@xsi:type="mock"]/@*`, function ({ element }) {
     element.removeAttributeNS(xover.spaces["xsi"], "type");
 })
 
+xo.listener.on('change::@fallas_sistema_refrigeracion', async function ({ value, element, attribute }) {
+    if (value == null) {
+        element.setAttribute(attribute.nodeName, "")
+    }
+});
+
+xo.listener.on('change::@cantidad', async function ({ value, element }) {
+    let detalles = element.select('detalle[not(@xsi:type="mock")]')
+    let diferencia = value - detalles.length;
+    if (diferencia > 0) {
+        let mock = element.selectFirst(`detalle[@xsi:type='mock']`);
+        for (let i = 0; i < diferencia; ++i) {
+            let duplicate = mock.duplicate();
+            duplicate.removeAttributeNS(xover.spaces["xsi"], "type");
+        }
+    } else {
+        detalles.reduce((array, el) => { el.single("@*[.='']") && array.push(el); return array }, []).slice(diferencia).remove()
+    }
+});
+
 xo.listener.on(`agregarDetalle::cotizacion/@especie`, function({ selection, element }) {
     let detalle = element.selectFirst(`detalle[@especie='${selection.getAttribute("id")}']`);
     if (!detalle) {
@@ -245,12 +265,6 @@ async function exportHTML({ mappings = {} }, file_name) {
     fileDownload.click();
     document.body.removeChild(fileDownload);
 }
-
-xo.listener.on('change::@fallas_sistema_refrigeracion', async function ({ value, element, attribute}) {
-    if (value == null) {
-        element.setAttribute(attribute.nodeName, "")
-    }
-});
 
 cotizacion = {}
 

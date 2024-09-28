@@ -62,6 +62,11 @@
             font-family: 'Billie-DEMO-Bold';
         }
     </style>-->
+    <script>
+        xover.listener.on(['unhandledrejection', 'error'], function () {
+            event.preventDefault()
+        })
+    </script>
 </head>
 <body>
     <header id="header" class="fixed-top" xo-source="header.html">

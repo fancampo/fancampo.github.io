@@ -30,11 +30,13 @@
 	<xsl:key name="wizard-section" match="/*/cotizaciones[@tipo_cotizacion!='']/@*[namespace-uri()=''][not(name()='tipo_cotizacion')]" use="2"/>
 
 	<xsl:key name="wizard-section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/@*[namespace-uri()='']" use="3"/>
-	<xsl:key name="wizard-section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion][@type='maquinaria' or @type='transporte_bienes']/detalle/@*[namespace-uri()='']" use="3"/>
-	<xsl:key name="wizard-section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion][@type='transporte_ganado']/detalle/@*[namespace-uri()='']" use="3"/>
+	<xsl:key name="wizard-section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/detalle/@cantidad" use="3"/>
+	
 	<xsl:key name="wizard-section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion][@type='vida']/detalle[@fixed:tipo_persona=../@tipo_persona]/@*[namespace-uri()='']" use="3"/>
 
 	<xsl:key name="wizard-section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/detalle/@especie" use="4"/>
+	<xsl:key name="wizard-section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/detalle/@nombre_maquinaria" use="4"/>
+	<xsl:key name="wizard-section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/detalle/@nombre_bienes" use="4"/>
 	<xsl:key name="wizard-section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/detalle/detalle[@fixed:tipo_cotizacion_vida]/@especie" use="4"/>
 
 	<xsl:key name="wizard-section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/detalle/@*[namespace-uri()=''][not(name()='especie')]" use="4.1"/>
@@ -323,7 +325,7 @@ li span.wizard-icon-step-completed {
 		</div>
 	</xsl:template>
 
-	<xsl:template mode="wizard:step-panel-content" match="cotizacion[@type='ganadero']/detalle/@especie">
+	<xsl:template mode="wizard:step-panel-content" match="detalle/@especie|detalle/@nombre_maquinaria|detalle/@nombre_bienes">
 		<xsl:param name="step-number" select="0"/>
 		<div class="accordion" id="accordion_{../@xo:id}">
 			<xsl:for-each select="key('wizard-section',$step-number)[not(key('hidden',generate-id()))]">
@@ -405,7 +407,7 @@ li span.wizard-icon-step-completed {
 
 	<xsl:template mode="widget" match="@*">
 		<xsl:param name="headerText"/>
-		<div class="form-group form-floating" style="min-width: calc(6ch + 6rem);">
+		<div class="form-group" style="min-width: calc(6ch + 6rem);">
 			<input id="input_{@xo:id}" name="{name()}" class="form-control" type="text" placeholder="">
 				<xsl:attribute name="type">
 					<xsl:apply-templates mode="control_type" select="."/>
@@ -414,9 +416,9 @@ li span.wizard-icon-step-completed {
 					<xsl:apply-templates select="."/>
 				</xsl:attribute>
 			</input>
-			<label for="input_{@xo:id}" class="text-capitalize">
+			<!--<label for="input_{@xo:id}" class="text-capitalize">
 				<xsl:value-of select="$headerText"/>
-			</label>
+			</label>-->
 		</div>
 	</xsl:template>
 
@@ -723,6 +725,10 @@ li span.wizard-icon-step-completed {
 	<xsl:template match="@tipo_cotizacion[.='vida']">Protección Integral FanVida</xsl:template>
 
 	<xsl:template mode="desc" match="@*|*">
+		<xsl:value-of select="."/>
+	</xsl:template>
+
+	<xsl:template mode="desc" match="@*[key('desc',concat(name(),'::',.))]">
 		<xsl:value-of select="key('desc',concat(name(),'::',.))"/>
 	</xsl:template>
 
