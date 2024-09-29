@@ -7,6 +7,7 @@
 	xmlns:selected="http://panax.io/state/selected"
 	xmlns:wizard="http://widgets.panax.io/wizard"
 	xmlns:fixed="http://panax.io/state/fixed"
+	xmlns:container="http://panax.io/containers"
 >
 	<xsl:import href="headers.xslt"/>
 	<xsl:import href="wizard.xslt"/>
@@ -31,7 +32,7 @@
 
 	<xsl:key name="wizard-section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/@*[namespace-uri()='']" use="3"/>
 	<xsl:key name="wizard-section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/detalle/@cantidad" use="3"/>
-	
+
 	<xsl:key name="wizard-section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion][@type='vida']/detalle[@fixed:tipo_persona=../@tipo_persona]/@*[namespace-uri()='']" use="3"/>
 
 	<xsl:key name="wizard-section" match="/*/cotizaciones/cotizacion[@type=../@tipo_cotizacion]/detalle/@especie" use="4"/>
@@ -52,6 +53,8 @@
 	<xsl:key name="type" use="'money'" match="@suma"/>
 	<xsl:key name="type" use="'money'" match="@monto_asegurado"/>
 	<xsl:key name="type" use="'money'" match="@cuota_total"/>
+	<xsl:key name="type" use="'money'" match="@suma_asegurada_cabeza"/>
+	<xsl:key name="type" use="'percent'" match="deducible/row/@desc"/>
 
 	<!--<xsl:key name="wizard-section" match="/*/cotizaciones/cotizacion[not(@type='ganadero')][@type=../@tipo_cotizacion]/detalle/@*" use="4"/>-->
 
@@ -80,6 +83,12 @@
 	<xsl:key name="control" match="@fallas_sistema_refrigeracion" use="'switch'"/>
 	<xsl:key name="control" match="@a_granel" use="'switch'"/>
 
+	<xsl:key name="control" match="modelo/*[row][count(row)&gt;=6]" use="'select'"/>
+	<xsl:key name="control" match="modelo/*[row][count(row)&lt;6]" use="'radio'"/>
+	<xsl:key name="control" match="deducible|sexo|funcionzootecnica|duracion|riesgo|riesgo_solicitado|origen_destino_transporte|origen_racial|financiamiento|referencia_suma" use="'radio'"/>
+
+	<xsl:key name="container:fieldset" match="@nombre|@primer_apellido|@segundo_apellido|@curp|@fecha_nacimiento|cotizacion[@type='vida']/detalle/@edad" use="3"/>
+
 	<xsl:key name="wizard-state" match="@type" use="generate-id()"/>
 
 	<xsl:key name="dim" match="/*/*" use="name()"/>
@@ -95,28 +104,6 @@
 
 	<xsl:template match="/*">
 		<main>
-			<script>
-				<![CDATA[
-				xo.listener.on('change::@fecha_inicio', function({ element }) {
-					event.preventDefault()
-					let fecha_inicio = new Date(`${this.value}T00:00`);
-					let fecha_fin = fecha_inicio.addDays(364);
-					element.setAttribute("fecha_fin", fecha_fin.toISOString().substring(0,10));
-				})
-				
-				xo.listener.on('change::@curp', function({ element }) {
-					let curp = this.value;
-					let fecha_nacimiento = curp.replace(/^[^\d]+/,"").substring(0,6).match(/\d{2}/g).join("-");
-					if (new Date(`19${fecha_nacimiento}T00:00`) < new Date()) {
-						fecha_nacimiento = new Date(`19${fecha_nacimiento}T00:00`);
-					} else {
-						fecha_nacimiento = new Date(`20${fecha_nacimiento}T00:00`);
-					}
-					element.setAttribute("fecha_nacimiento", fecha_nacimiento.toISOString().substring(0,10));
-					element.setAttribute("edad", datediff('year', fecha_nacimiento, new Date()));
-				})
-			]]>
-			</script>
 			<xsl:apply-templates mode="wizard" select=".">
 				<xsl:with-param name="active" select="$state:active"/>
 				<xsl:with-param name="steps" select="//secciones/seccion/@id"/>
@@ -314,13 +301,34 @@ li span.wizard-icon-step-completed {
 		<xsl:text/>Seguro a cotizar<xsl:text/>
 	</xsl:template>
 
-	<xsl:template mode="wizard:step-panel-content" match="key('wizard-section','2')|key('wizard-section','3')|key('wizard-section','4')">
+	<xsl:template mode="join" match="@*|*">
+		<xsl:if test="position()!=1">,</xsl:if>
+		<xsl:value-of select="generate-id()"/>
+	</xsl:template>
+
+	<xsl:template name="wizard:step-panel-content" mode="wizard:step-panel-content" match="key('wizard-section','2')|key('wizard-section','3')|key('wizard-section','4')">
 		<xsl:param name="step-number" select="0"/>
+		<xsl:param name="items" select="key('wizard-section',$step-number)[not(key('hidden', generate-id()))]"/>
 		<div class="body">
-			<xsl:for-each select="key('wizard-section',$step-number)[not(key('hidden', generate-id()))]">
-				<xsl:apply-templates mode="form-body-field" select="current()[not(key('hidden', $step-number)[name()=name(current())])]">
-					<xsl:with-param name="step-number" select="$step-number"/>
-				</xsl:apply-templates>
+			<xsl:for-each select="$items">
+				<xsl:variable name="container-items" select="key('container:fieldset',$step-number)[../@xo:id=current()/../@xo:id]"/>
+				<xsl:variable name="containers">
+					<xsl:apply-templates mode="join" select="$container-items"/>
+				</xsl:variable>
+				<xsl:choose>
+					<xsl:when test="contains(substring-before($containers,','),generate-id())">
+						<xsl:apply-templates mode="form-body-container" select="current()">
+							<xsl:with-param name="step-number" select="$step-number"/>
+							<xsl:with-param name="items" select="$container-items"/>
+						</xsl:apply-templates>
+					</xsl:when>
+					<xsl:when test="contains($containers,generate-id())"></xsl:when>
+					<xsl:otherwise>
+						<xsl:apply-templates mode="form-body-field" select="current()[not(key('hidden', $step-number)[name()=name(current())])]">
+							<xsl:with-param name="step-number" select="$step-number"/>
+						</xsl:apply-templates>
+					</xsl:otherwise>
+				</xsl:choose>
 			</xsl:for-each>
 		</div>
 	</xsl:template>
@@ -346,7 +354,10 @@ li span.wizard-icon-step-completed {
 					</xsl:variable>
 					<div id="collapse_{position()}" class="accordion-collapse collapse {$show}" data-bs-parent="#accordion_{../@xo:id}">
 						<div class="accordion-body">
-							<xsl:apply-templates mode="form-body-field" select="key('wizard-section',number($step-number)+.1)[../@xo:id=current()/../@xo:id]"/>
+							<xsl:call-template name="wizard:step-panel-content">
+								<xsl:with-param name="step-number" select="$step-number"/>
+								<xsl:with-param name="items" select="key('wizard-section',number($step-number)+.1)[../@xo:id=current()/../@xo:id]"/>
+							</xsl:call-template>
 						</div>
 					</div>
 				</div>
@@ -366,6 +377,26 @@ li span.wizard-icon-step-completed {
 		<xsl:apply-templates mode="widget" select="key('dim',name())">
 			<xsl:with-param name="context" select="."/>
 		</xsl:apply-templates>
+	</xsl:template>
+
+	<xsl:template mode="container:headerText" match="@*">
+	</xsl:template>
+
+	<xsl:template mode="container:headerText" match="@*[1]">
+		<xsl:text>Datos de Asegurado</xsl:text>
+	</xsl:template>
+
+	<xsl:template mode="form-body-container" match="@*">
+		<xsl:param name="step-number"></xsl:param>
+		<xsl:param name="items" select="expect-items"></xsl:param>
+		<fieldset>
+			<legend>
+				<xsl:apply-templates mode="container:headerText" select="$items"/>
+			</legend>
+			<xsl:apply-templates mode="form-body-field" select="$items[not(key('hidden', $step-number)[name()=name(current())])]">
+				<xsl:with-param name="step-number" select="$step-number"/>
+			</xsl:apply-templates>
+		</fieldset>
 	</xsl:template>
 
 	<xsl:template mode="form-body-field" match="@*">
@@ -422,6 +453,12 @@ li span.wizard-icon-step-completed {
 		</div>
 	</xsl:template>
 
+	<xsl:template mode="widget" match="cotizacion[(@type='ganadero')]/detalle/@total_suma_asegurada">
+		<xsl:call-template name="format">
+			<xsl:with-param name="value" select="../@numero_cabezas * ../@suma_asegurada_cabeza"/>
+		</xsl:call-template>
+	</xsl:template>
+
 	<xsl:template mode="widget" match="*[key('dim',name())]/row|*[key('dim',name())]/row/@*">
 		<xsl:param name="context" select="."/>
 		<xsl:variable name="value" select="self::*/@id|current()[not(self::*)]"/>
@@ -443,7 +480,7 @@ li span.wizard-icon-step-completed {
 		<button class="btn btn-success" onclick="document.querySelector('#tarjeta_bosillo').dispatch('print')">Imprimir</button>
 	</xsl:template>
 
-	<xsl:template mode="widget" match="*[key('dim',name())]" priority="-1">
+	<xsl:template mode="widget" match="key('control','select')" priority="-1">
 		<xsl:param name="context" select="."/>
 		<xsl:variable name="tipo_cotizacion" select="$context/ancestor::*[@fixed:tipo_cotizacion]/@fixed:tipo_cotizacion"/>
 		<select class="form-select" xo-scope="{$context/../@xo:id}" xo-slot="{name($context)}" onchange="scope.set(this.value)">
@@ -454,19 +491,17 @@ li span.wizard-icon-step-completed {
 		</select>
 	</xsl:template>
 
-	<xsl:key name="detalle_vida" match="cotizacion[@type='vida']/detalle[@fixed:tipo_persona=../@tipo_persona]" use="generate-id(..)"/>
 	<xsl:key name="tarifas" match="tarifas/row/@suma" use="'suma_asegurada'"/>
 	<xsl:key name="tarifas" match="tarifas/row/@suma" use="concat('suma_asegurada::',../../@tipo,'::',../@tipo)"/>
 	<xsl:key name="tarifas" match="tarifas/row/@suma" use="concat('suma_asegurada::',../../@tipo,'::',../@edad)"/>
 	<xsl:key name="tarifas" match="tarifas/row/@cuota" use="concat('monto_deposito::',../../@tipo,'::',../@tipo,'::',../@suma)"/>
 	<xsl:key name="tarifas" match="tarifas/row/@cuota" use="concat('monto_deposito::',../../@tipo,'::',../@edad,'::',../@suma)"/>
 	<xsl:key name="tarifas" match="tarifas/row/@cuota" use="concat('tarifa::',../../@tipo_cotizacion,'::',../@tipo_transporte_ganado,'::',../@deducible,'::',../@vigencia,'::',../@riesgo_solicitado)"/>
+	<xsl:key name="detalle_vida" match="cotizacion[@type='vida']/detalle[@fixed:tipo_persona=../@tipo_persona]" use="generate-id(..)"/>
 
-	<row tipo_transporte_ganado="1" deducible="10" vigencia="12H" riesgo_solicitado="1" cuota="0.3136" />
-
-	<xsl:template mode="widget" match="suma_asegurada" priority="1">
+	<xsl:template mode="widget" match="cotizacion[@type='vida']/@suma_asegurada" priority="1">
 		<xsl:param name="context" select="."/>
-		<xsl:param name="person" select="key('detalle_vida',generate-id(../..))"/>
+		<xsl:param name="person" select="key('detalle_vida',generate-id(..))"/>
 		<xsl:variable name="tipo_cliente">
 			<xsl:choose>
 				<xsl:when test="$person/../@tipo_seguro_vida=2">
@@ -482,7 +517,7 @@ li span.wizard-icon-step-completed {
 				<xsl:with-param name="context" select="$context"/>
 			</xsl:apply-templates>
 		</select>
-		<!--<xsl:value-of select="concat('suma_asegurada::',$context/../@tipo_seguro_vida,'::',$tipo_cliente)"/>-->
+		<!--<xsl:value-of select="concat('suma_asegurada::',$context/../@tipo_seguro_vida,'::',$tipo_cliente)"/>: <xsl:value-of select="count($person)"/>-->
 	</xsl:template>
 
 	<xsl:template mode="widget" match="@monto_deposito" priority="1">
@@ -499,7 +534,10 @@ li span.wizard-icon-step-completed {
 		</xsl:variable>
 		<!--<xsl:value-of select="concat('monto_deposito::',$person/../@tipo_seguro_vida,'::',$tipo_cliente,'::',$person/../@suma_asegurada)"/>!!!-->
 		<!--<xsl:value-of select="name()"/>:-->
-		<xsl:apply-templates select="key('tarifas',concat('monto_deposito::',$person/../@tipo_seguro_vida,'::',$tipo_cliente,'::',$person/../@suma_asegurada))"/>
+		<xsl:variable name="tarifas" select="key('tarifas',concat('monto_deposito::',$person/../@tipo_seguro_vida,'::',$tipo_cliente,'::',$person/../@suma_asegurada))"/>
+		<xsl:if test="not($tarifas[2])">
+			<xsl:apply-templates select="$tarifas"/>
+		</xsl:if>
 	</xsl:template>
 
 	<xsl:template mode="widget" match="@tarifa" priority="1">
@@ -573,11 +611,11 @@ li span.wizard-icon-step-completed {
 			</xsl:if>
 		</input>
 		<label class="btn btn-outline-primary" for="{$context/../@xo:id}_{name($context)}_{position()}" xo-scope="{$context/../@xo:id}" xo-slot="{name($context)}">
-			<xsl:value-of select="@desc"/>
+			<xsl:apply-templates select="@desc"/>
 		</label>
 	</xsl:template>
 
-	<xsl:template mode="widget" match="deducible|sexo|funcionzootecnica|duracion|riesgo|riesgo_solicitado|origen_destino_transporte|origen_racial|financiamiento|referencia_suma|*[key('dim',name())][count(row)&lt;6]" priority="1">
+	<xsl:template mode="widget" match="key('control','radio')" priority="1">
 		<xsl:param name="context" select="."/>
 		<xsl:variable name="tipo_cotizacion" select="$context/ancestor::*[@fixed:tipo_cotizacion]/@fixed:tipo_cotizacion"/>
 		<div class="btn-group" role="group" xo-scope="{$context/../@xo:id}" xo-slot="{name($context)}">
@@ -585,10 +623,12 @@ li span.wizard-icon-step-completed {
 				<xsl:with-param name="context" select="$context"/>
 			</xsl:apply-templates>
 		</div>
-		<br/>
-		<em>
-			<xsl:value-of select="row[@id=$context]/@txt"/>
-		</em>
+		<xsl:if test="row[@id=$context]/@txt">
+			<br/>
+			<em>
+				<xsl:value-of select="row[@id=$context]/@txt"/>
+			</em>
+		</xsl:if>
 	</xsl:template>
 
 	<xsl:template mode="widget" match="riesgo_solicitado" priority="1">
@@ -714,6 +754,9 @@ li span.wizard-icon-step-completed {
 	<xsl:template mode="control_type" match="@*">text</xsl:template>
 
 	<xsl:template mode="headerText" match="cotizacion[@type='vida']/detalle/@edad">Edad (años)</xsl:template>
+	<xsl:template mode="headerText" match="@*[starts-with(name(),'tipo_')]" priority="0">
+		<xsl:text/>Tipo de <xsl:value-of select="substring(name(),6)"/>
+	</xsl:template>
 
 	<xsl:template match="@tipo_cotizacion">
 		<xsl:value-of select="translate(.,'_',' ')"/>
@@ -736,6 +779,13 @@ li span.wizard-icon-step-completed {
 		<xsl:call-template name="format">
 			<xsl:with-param name="value" select="."/>
 		</xsl:call-template>
+	</xsl:template>
+
+	<xsl:template match="key('type','percent')" priority="0">
+		<xsl:call-template name="format">
+			<xsl:with-param name="value" select="."/>
+			<xsl:with-param name="mask">##0.##;-##0.##</xsl:with-param>
+		</xsl:call-template>%
 	</xsl:template>
 
 	<xsl:template match="@cuota">
