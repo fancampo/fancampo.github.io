@@ -11,6 +11,29 @@ xo.listener.on(`change::*[@xsi:type="mock"]/@*`, function ({ element }) {
     element.removeAttributeNS(xover.spaces["xsi"], "type");
 })
 
+xo.listener.on('change::@fecha_inicio', function ({ element }) {
+    event.preventDefault()
+    let fecha_inicio = new Date(`${this.value}T00:00`);
+    let fecha_fin = fecha_inicio.addDays(364);
+    element.setAttribute("fecha_fin", fecha_fin.toISOString().substring(0, 10));
+})
+
+xo.listener.on('change::@curp', function ({ element }) {
+    let curp = this.value;
+    let fecha_nacimiento = [...curp.replace(/^[^\d]+/, "").substring(0, 6).match(/\d{2}/g) || []].join("-");
+    if (!fecha_nacimiento) {
+        element.setAttribute("fecha_nacimiento", "");
+        element.setAttribute("edad", "");
+        return
+    } else if (new Date(`19${fecha_nacimiento}T00:00`) < new Date()) {
+        fecha_nacimiento = new Date(`19${fecha_nacimiento}T00:00`);
+    } else {
+        fecha_nacimiento = new Date(`20${fecha_nacimiento}T00:00`);
+    }
+    element.setAttribute("fecha_nacimiento", fecha_nacimiento.toISOString().substring(0, 10));
+    element.setAttribute("edad", datediff('year', fecha_nacimiento, new Date()));
+})
+
 xo.listener.on('change::@fallas_sistema_refrigeracion', async function ({ value, element, attribute }) {
     if (value == null) {
         element.setAttribute(attribute.nodeName, "")

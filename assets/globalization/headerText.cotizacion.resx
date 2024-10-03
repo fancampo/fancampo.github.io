@@ -125,7 +125,7 @@
     <value>Modelo (Año)</value>
   </data>
   <data name="@cabezas_muertas_anuales" xml:space="preserve">
-    <value>Cabezas muertas y desechadas al año:</value>
+    <value>Cabezas muertas y desechadas al año</value>
   </data>
   <data name="@cabezas_totales_hato" xml:space="preserve">
     <value>Cabezas totales en el hato</value>
@@ -164,17 +164,17 @@
     <value>Fecha</value>
     <comment>#Fecha del sistema</comment>
   </data>
-  <data name="@fechacosecha" xml:space="preserve">
+  <data name="@fecha_cosecha" xml:space="preserve">
     <value>Fecha de cosecha</value>
-  </data>
-  <data name="@fechasiembra" xml:space="preserve">
-    <value>Fecha de siembra</value>
-  </data>
-  <data name="@fechasiembraprimerestanque" xml:space="preserve">
-    <value>Fecha de siembra de primer estanque</value>
   </data>
   <data name="@fecha_nacimiento" xml:space="preserve">
     <value>Fecha de nacimiento</value>
+  </data>
+  <data name="@fecha_siembra" xml:space="preserve">
+    <value>Fecha de siembra</value>
+  </data>
+  <data name="@fecha_siembra_primer_estanque" xml:space="preserve">
+    <value>Fecha de siembra de primer estanque</value>
   </data>
   <data name="@folio" xml:space="preserve">
     <value>Folio</value>
@@ -183,29 +183,29 @@
     <value>Folio PIF</value>
     <comment>#Número consecutivo e irrepetible de sistema, que no puede alterar el usuario</comment>
   </data>
-  <data name="@funcionzootecnica" xml:space="preserve">
+  <data name="@funcion_zootecnica" xml:space="preserve">
     <value>Función zootécnica</value>
   </data>
-  <data name="@hembrasporasegurar" xml:space="preserve">
+  <data name="@hembras_por_asegurar" xml:space="preserve">
     <value>Hembras por asegurar</value>
   </data>
   <data name="@kilometros" xml:space="preserve">
     <value>Distancia en kilómetros</value>
   </data>
-  <data name="@machosporasegurar" xml:space="preserve">
+  <data name="@machos_por_asegurar" xml:space="preserve">
     <value>Machos por asegurar</value>
   </data>
   <data name="@monto_deposito" xml:space="preserve">
     <value>Monto Depósito</value>
   </data>
-  <data name="@nombrelaboratorio" xml:space="preserve">
+  <data name="@nombre_laboratorio" xml:space="preserve">
     <value>Nombre de laboratorio</value>
-  </data>
-  <data name="@numeroestanques" xml:space="preserve">
-    <value>Número de estánques</value>
   </data>
   <data name="@numero_cabezas" xml:space="preserve">
     <value>Número de cabezas a asegurar</value>
+  </data>
+  <data name="@numero_estanques" xml:space="preserve">
+    <value>Número de estánques</value>
   </data>
   <data name="@numero_unidades" xml:space="preserve">
     <value>Número de Unidades</value>
@@ -219,7 +219,10 @@
   <data name="@suma_asegurada" xml:space="preserve">
     <value>Suma asegurada</value>
   </data>
-  <data name="@superficieha" xml:space="preserve">
+  <data name="@suma_asegurada_cabeza" xml:space="preserve">
+    <value>Suma asegurada por cabeza</value>
+  </data>
+  <data name="@superficie_ha" xml:space="preserve">
     <value>Superficie (ha)</value>
   </data>
   <data name="@telefono" xml:space="preserve">

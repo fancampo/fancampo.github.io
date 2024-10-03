@@ -507,6 +507,16 @@ main {
     /*padding-top: 30px;*/
 }
 
+fieldset {
+    min-width: revert;
+    padding: revert;
+    border: revert;
+}
+
+legend {
+
+}
+
 video.main {
     max-width: 100vw;
     min-width: 100%;
@@ -607,8 +617,7 @@ section {
 /*main {
     padding-bottom: 4rem;
 }*/
-
-main section p {
+    main section p {
     font-size: larger;
 }
 
