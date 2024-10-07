@@ -374,4 +374,22 @@ En paralelo se establecerá una mesa de contrataciones de los SEGUROS COMERCIALE
   <data name="img:evento_20241003" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20241003.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="evento_20241007_1" xml:space="preserve">
+    <value>EXPO HORTICOLA PUEBLA 2024
+: #FanCampo asistirá a la 16° edición de Expo Hortícola Puebla a desarrollarse del 9 al 11 de octubre de 2024 para fortalecimiento de los Agronegocios de México. Asiste amigo productor.
+#CNOG #horticolas #horticola #Puebla #pueblamexico #SADER #agronegocios</value>
+  </data>
+  <data name="evento_20241007_2" xml:space="preserve">
+    <value>32° REUNION ANUAL CONASA
+: "Enfermedades reemergentes, viejas amenazas y nuevas estrategias para Una Salud"
+#FANCAMPO presente en la 32 Reunión Anual de CONASA, brindando información sobre los diferentes esquemas de aseguramiento disponibles para PROTEGER CONTRA ENFERMEDADES al ganado; así mismo #segurosdevida de vida para productores y técnicos del campo.
+Del 7 al 9 de octubre de 2024 en el Hotel Holiday Inn Expo Guadalajara.
+#CNOG #saludanimal #conasa #SADER @seguidores &lt;div class="row"&gt;
+&lt;img class="col-12 col-md-6 " src="/assets/eventos/evento_20241007_2 (1).jpg" class="img-fluid"/&gt;
+&lt;img class="col-12 col-md-6 " src="/assets/eventos/evento_20241007_2 (2).jpg" class="img-fluid"/&gt;
+&lt;/div&gt;</value>
+  </data>
+  <data name="img:evento_20241007_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20241007_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
