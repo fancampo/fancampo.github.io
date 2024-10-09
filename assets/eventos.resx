@@ -130,10 +130,7 @@
     <value>Amigos y familia Ganadera:
 Se llevó a cabo la suscripción al "Programa de Sementales Bovinos dentro del Mejoramiento Genético" apoyado por el gobierno de San Luis Potosí a través de la Secretaria de Desarrollo Agropecuario y Recursos Hidráulicos SEDARTH, dentro del marco de la feria del municipio de Aquismón.
 #CNOG #campo #rural #SementalesBovinos #SLP #Pecuarios #carne
-&lt;div class="row"&gt;
-&lt;img class="col-6" src="/assets/eventos/evento_20240729 (1).jpg" class="img-fluid"/&gt;
-&lt;img class="col-6" src="/assets/eventos/evento_20240729 (3).jpg" class="img-fluid"/&gt;
-&lt;/div&gt;</value>
+</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="evento_20240729 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
@@ -391,5 +388,22 @@ Del 7 al 9 de octubre de 2024 en el Hotel Holiday Inn Expo Guadalajara.
   </data>
   <data name="img:evento_20241007_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20241007_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="evento_20241009_1" xml:space="preserve">
+    <value>2° CONGRESO DIALOGOS AZUCAREROS 2024
+: #FANCAMPO y #FanVida presentes en el 2do. Congreso Diálogos Azucareros del del 9 al 11 de octubre en el centro cultural, Ciudad Valles, SLP.  brindando información de los diferentes seguros que operan los fondos de aseguramiento, acércate a nosotros y protege  tu inversión y a tu familia como productor cañero.
+#CNOG #Cañeros #campo #rural #SADER #ganadería #GanaderíaMexicana</value>
+  </data>
+  <data name="evento_20241009_2" xml:space="preserve">
+    <value>ACCIONES PARA LA SUSTENTABILIDAD GANADERA
+ CNOG / GANADERIA SUSTENTABLE DE MEXICO / UGR DE JALISCO: 
+Durante el "Curso Taller Regional Jalisco" denominado "ACCIONES POR LA SUSTENTABILIDAD GANADERA", que se llevará a cabo los días 14 y 15 de octubre en la UGR de Expo Ganadera Jalisco OFICIAL; estará presente #FANCAMPO y #FanVida representado por el MVZ. Ezequiel González Reyes, Técnico Regional; quién estará a las órdenes de los ganaderos para contestar preguntas y/o aclarar dudas sobre los seguros agropecuarios y de vida vigentes, para la protección de su patrimonio familiar.
+#CNOG #GanaderíaMexicana #campo #rural #GanaderíaSustentable #Jalisco #jaliscomexico</value>
+  </data>
+  <data name="img:evento_20241009_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20241009_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img:evento_20241009_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20241009_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
