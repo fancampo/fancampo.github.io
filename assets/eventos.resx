@@ -406,4 +406,11 @@ Durante el "Curso Taller Regional Jalisco" denominado "ACCIONES POR LA SUSTENTAB
   <data name="img:evento_20241009_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20241009_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="evento_20241011" xml:space="preserve">
+    <value>SEDAFOP TABASCO / UGR TABASCO: Se tuvo reunión de trabajo en la UGR de Tabasco con la asistencia de Presidentes de las diferentes AGL's, Coordinador del SINIIGA, representantes del IICA y nuevos titulares de SEDAFOP encabezados por la Dra. Luisa del Carmen Camara Cabrales.
+Se da a conocer por medio de la MVZ. Anna Margarita Palacios Ocaña el portafolio de seguros vigentes de #FANCAMPO y #FanVida, con especial atención a los seguros catastróficos contratados por Gobierno del Estado de #Tabasco #CNOG #campo #rural #pecuario #agrícola #agro #agropecuario #tabascomexico</value>
+  </data>
+  <data name="img:evento_20241011" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20241011.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
