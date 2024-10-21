@@ -131,20 +131,23 @@ if (window.matchMedia("(min-width:576px)").matches) {
 					<i class="bi bi-quote"></i>
 				</div>
 				<div class="card-body d-flex flex-column">
-					<p class="card-text" style="flex: 1;">
-						<xsl:value-of select="$body"/>
-					</p>
-					<div class="d-flex align-items-center pt-2">
-						<img src="{$image}" alt="bootstrap testimonial carousel slider 2"/>
-						<div>
+					<div>
 							<h5 class="card-title fw-bold">
 								<xsl:value-of select="$title"/>
-							</h5>
+							</h5> 
 							<span class="text-secondary">
 								<xsl:value-of select="$subtitle"/>
 							</span>
 						</div>
+						<p class="card-text" style="flex: 1;">
+						<xsl:value-of select="$body"/>
+					</p>
+					<div class="d-flex align-items-center pt-2">
+						<!-- <img src="{$image}" alt="bootstrap testimonial carousel slider 2"/> -->
+						
+						<video src="{$image}"  controls="" class="width:50%"  alt="bootstrap testimonial carousel slider 2"/>
 					</div>
+					
 				</div>
 			</div>
 		</div>
