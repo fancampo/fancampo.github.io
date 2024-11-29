@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!--
-    Microsoft ResX Schema
-
+  <!-- 
+    Microsoft ResX Schema 
+    
     Version 2.0
-
-    The primary goals of this format is to allow a simple XML format
-    that is mostly human readable. The generation and parsing of the
-    various data types are done through the TypeConverter classes
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
     associated with the data types.
-
+    
     Example:
-
+    
     ... ado.net/XML headers & schema ...
     <resheader name="resmimetype">text/microsoft-resx</resheader>
     <resheader name="version">2.0</resheader>
@@ -26,79 +26,79 @@
         <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
         <comment>This is a comment</comment>
     </data>
-
-    There are any number of "resheader" rows that contain simple
+                
+    There are any number of "resheader" rows that contain simple 
     name/value pairs.
-
-    Each data row contains a name, and value. The row also contains a
-    type or mimetype. Type corresponds to a .NET class that support
-    text/value conversion through the TypeConverter architecture.
-    Classes that don't support this are serialized and stored with the
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
     mimetype set.
-
-    The mimetype is used for serialized objects, and tells the
-    ResXResourceReader how to depersist the object. This is currently not
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
     extensible. For a given mimetype the value must be set accordingly:
-
-    Note - application/x-microsoft.net.object.binary.base64 is the format
-    that the ResXResourceWriter will generate, however the reader can
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
     read any of the formats listed below.
-
+    
     mimetype: application/x-microsoft.net.object.binary.base64
-    value   : The object must be serialized with
+    value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
-
+    
     mimetype: application/x-microsoft.net.object.soap.base64
-    value   : The object must be serialized with
+    value   : The object must be serialized with 
             : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
             : and then encoded with base64 encoding.
 
     mimetype: application/x-microsoft.net.object.bytearray.base64
-    value   : The object must be serialized into a byte array
+    value   : The object must be serialized into a byte array 
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace"/>
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
           <xsd:element name="metadata">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string"/>
-              <xsd:attribute name="type" type="xsd:string"/>
-              <xsd:attribute name="mimetype" type="xsd:string"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
             <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string"/>
-              <xsd:attribute name="name" type="xsd:string"/>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="data">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1"/>
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3"/>
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4"/>
-              <xsd:attribute ref="xml:space"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
             <xsd:complexType>
               <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1"/>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required"/>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
             </xsd:complexType>
           </xsd:element>
         </xsd:choice>
@@ -122,49 +122,41 @@
 #FANCAMPO presente en el 14to Congreso Internacional Aneberries del 24 al 25 de julio en ExpoGuadalajara. Visítanos en el stand de FIRA Y conoce como afiliarte y gozar de nuestros servicios.
 &lt;wbr/&gt;
 &lt;img src="/assets/eventos/evento_20240725_2.jpg" class="img-fluid"/&gt;</value>
-    <comment/>
   </data>
   <data name="evento_20240726" xml:space="preserve">
     <value>Entrega de Material Didáctico sobre Seguro de Muerte por Depredadores en Yum Balam, Quintana Roo: Fuimos contactados por el MVZ. Francisco Javier Cab Ku de la CONANP en Quintana Roo, solicitando material didáctico para difundir el “Seguro de Muerte por Ataque de Depredadores” con productores pecuarios localizados en el polígono del Área de Protección de Flora y Fauna Yum Balam y su zona de influencia, en el norte de Quintana Roo; se proporcionó dicha información.</value>
-    <comment/>
   </data>
   <data name="evento_20240729" xml:space="preserve">
     <value>Amigos y familia Ganadera:
 Se llevó a cabo la suscripción al "Programa de Sementales Bovinos dentro del Mejoramiento Genético" apoyado por el gobierno de San Luis Potosí a través de la Secretaria de Desarrollo Agropecuario y Recursos Hidráulicos SEDARTH, dentro del marco de la feria del municipio de Aquismón.
 #CNOG #campo #rural #SementalesBovinos #SLP #Pecuarios #carne
 </value>
-    <comment/>
   </data>
-  <data name="evento_20240729 (1)" xml:space="preserve">
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="evento_20240729 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240729 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="evento_20240729 (3)" xml:space="preserve">
+  <data name="evento_20240729 (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240729 (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
   <data name="evento_20240729_2" xml:space="preserve">
     <value>PROGRAMA AGRO-VIDA: FanVida y Agroinvic ponen en marcha el Programa "Agrovida" en beneficio de las personas del campo, te regalamos una póliza de seguro de vida al adquirir productos de Agroinvic para una ganadería regenerativa ayudar a la conservación del medio ambiente.</value>
-    <comment/>
   </data>
   <data name="evento_20240801" xml:space="preserve">
     <value>FANCAMPO en Comitán Chiapas: Se participa dentro del Programa de Mejoramiento Genético de Bovinos de la #SADER cuyo objetivo es identificar individuos superiores con características de importancia económica y esquemas de cruzamiento que permitan producir carne de manera eficiente. 
 Puedes adquirir tu seguro de estancia temporal, transporte, adaptación y radicación para proteger a los sementales de muerte contra enfermedad, accidente y/o sacrificio forzoso.
 #CNOG #campo #campomexicano #rural #bovinos #bovinosdecarne #chiapasmexico #Chiapas2024 #SuresteMexicano #Sureste</value>
-    <comment/>
   </data>
   <data name="evento_20240801_2" xml:space="preserve">
     <value>SUSCRIPCION DEL SEGURO AGRICOLA: 
 En días pasados se llevó el aseguramiento de cultivos de maíz y sorgo del ciclo PV 2024 en municipios de Michoacán y Guanajuato.
 #CNOG #Michoacán #Guanajuato #pv2024 #maíz #sorgo</value>
-    <comment/>
   </data>
   <data name="evento_20240801_3" xml:space="preserve">
     <value>AGRICULTURA PROTEGIDA: El SEGURO AGRICOLA otorga protección a la agricultura protegida (invernaderos, macro túnel o malla con sombra) siendo una herramienta de administración de riesgos que coadyuba en el crecimiento de esta modalidad de producción y México se posicione como uno de los principales productores mundiales de frutas y hortalizas.
 
 Te protege los riesgos climatológicos: Helada, vientos fuertes, bajas temperatura, granizo, inundación, exceso de lluvia en Macro túnel.
 Como es el caso del aseguramiento de arándano realizado en el municipio de San Felipe Torres Mochas, Guanajuato.</value>
-    <comment/>
   </data>
   <data name="evento_20240802" xml:space="preserve">
     <value>Programa de Mejoramiento Genético de Sementales Bovinos: #amigosyfamilia #ganadera: 
@@ -175,38 +167,32 @@ Como es el caso del aseguramiento de arándano realizado en el municipio de San 
 &lt;img class="col-6" src="/assets/eventos/evento_20240802 (1).jpg" class="img-fluid"/&gt;
 &lt;img class="col-6" src="/assets/eventos/evento_20240802 (2).jpg" class="img-fluid"/&gt;
 &lt;/div&gt;</value>
-    <comment/>
   </data>
   <data name="evento_20240819" xml:space="preserve">
     <value>ASEGURAMIENTO DE SEMENTALES: 
 Dentro del Programa de Fomento a la #Agricultura, #ganadería, #pesca y #acuacultura 2024 del Subcomponente Ganadería para el Bienestar de la #SADER durante julio de 2024, #FANCAMPO aseguró 207 sementales. #CNOG #bovinos #campo #rural #carne #ovinos #caprinos</value>
-    <comment/>
   </data>
   <data name="evento_20240827" xml:space="preserve">
     <value>SINIESTRO POR "FULGURACIÓN": de 10 BOVINOS
 #FANCAMPO atendió aviso de siniestro de muerte por "Fulguración" (#Rayo en #tormenta eléctrica) causando la muerte de 10 bovinos en potrero de las #Choapas, #Veracruz; siendo 8 vientres y 2 novillonas.
 Si no tienes tu ganado asegurado contra riesgos climatológicos en el Seguro Ganadero Climático, lo puedes adquirir al contratar el Seguro Multirriesgo; además, te cubre Alta Mortalidad, Ataque de Depredadores, Apícola Climático y Daños en Bienes Patrimoniales.
 #CNOG #campo #rural #pecuario #bovinos #tropicos</value>
-    <comment/>
   </data>
   <data name="evento_20240827_1" xml:space="preserve">
     <value>EXPO CREDITO AGRICOLA METZTITLAN, HGO
 : #FANCAMPO estuvo presente en la Expo Crédito Agrícola Metztitlan organizada por FIRA, se realizó promoción sobre los seguros agrícolas a los habilitados y clientes directos.
 #CNOG #campo #agricola #rural #ValleDelMezquital #HGO #Hidalgo</value>
-    <comment/>
   </data>
   <data name="evento_20240827_2" xml:space="preserve">
     <value>6° FORO APICOLA DEL ESTADO DE MEXICO: 
 #FanCampo asistió al "6° Foro Apícola del Estado de México, los polinizadores, pieza clave del ecosistema" impartiendo la platica sobre SEGUROS APICOLAS por la MVZ M. Dolores Ortega Larios.
 #CNOG #abejas #miel #mielpura #apicola #campo #rural
 &lt;img class="col-6" src="/assets/eventos/evento_20240827_2 (1).jpg" class="img-fluid" style="    object-fit: cover; width: 100%; height: 350px;"/&gt;</value>
-    <comment/>
   </data>
   <data name="evento_20240827_3" xml:space="preserve">
     <value>SINIESTRO EN CULTIVO DE CEBADA POR EXCESO DE LLUVIA:
 #FANCAMPO lleva a cabo inspecciones por aviso de siniestro a causa de exceso de lluvias en cultivos de cebada en Chignahuapan, Puebla.
 #CNOG #agricola #campo #rural #cebada #cultivos</value>
-    <comment/>
   </data>
   <data name="evento_20240827_4" xml:space="preserve">
     <value>EFECTOS CLIMATOLÓGICOS EN EL GANADO: Por las constantes tormentas eléctricas en el país murieron 13 bovinos en Tonalá, Chiapas; ocasionado por Fulguración por Rayo. Afortunadamente el productor tenía asegurado su ganado con el "Seguro Ganadero Climático".
@@ -214,7 +200,6 @@ Si no tienes tu ganado asegurado contra riesgos climatológicos en el Seguro Gan
 
 En caso de no tener protegido tu patrimonio familiar te invitamos a asegurar tu ganado e instalaciones ganaderas.
 #CNOG #ganado #Chiapas #Sureste #bovinos #campo #rural</value>
-    <comment/>
   </data>
   <data name="evento_20240828" xml:space="preserve">
     <value>REUNIÓN DE CONSEJO DE ADMINISTRACIÓN DE LA CNOG: Se lleva a cabo la Sesión de Consejo de Administración de la CNOG, encabezado por el Presidente, Secretario y Tesrorero del Consejo de Administración y Presidente del Consejo de Vigilancia de #FanCampo y #FanVida. 
@@ -223,183 +208,144 @@ Rendirá su informe operativo el Tesorero de FanCampo y FanVida. #CNOG #UGR #Sad
 &lt;img class="col-12 col-md-6 " src="/assets/eventos/evento_20240828 (1).jpg" class="img-fluid"/&gt;
 &lt;img class="col-12 col-md-6" src="/assets/eventos/evento_20240828 (2).jpg" class="img-fluid"/&gt;
 &lt;/div&gt;</value>
-    <comment/>
   </data>
   <data name="evento_20240829" xml:space="preserve">
     <value>SINIESTRO POR #Rayo EN TECPAN DE GALEANA, GRO
 : #FANCAMPO realizó la inspección de campo por la muerte de 13 bovinos por #fulguración por rayo en el #ejido El Moreno de Técpan de Galeana, #Guerrero
 #CNOG #campo #rural #bovinos #catastróficos #Daños #ugrgro</value>
-    <comment/>
   </data>
-  <data name="evento_20240829 (1)" xml:space="preserve">
+  <data name="evento_20240829 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240829 (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="evento_20240829 (2)" xml:space="preserve">
+  <data name="evento_20240829 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240829 (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
   <data name="evento_20240902" xml:space="preserve">
     <value>ASEGURAMIENTO DE SEMENTALES EN XILITLA, SLP: 
 #FanCampo con productores pecuarios llevó a cabo el aseguramiento de sementales bovinos en Xilitla, #SLP., para proteger la muerte por enfermedad, accidente y/o sacrificio forzoso y fortalecer su patrimonio familiar.
  #CNOG #UGR #slpmx #rural#campo #bovinos #protección</value>
-    <comment/>
   </data>
   <data name="evento_20240904" xml:space="preserve">
     <value>2° FORO DE AGRONEGOCIOS y AGRO-EXPO BOUTIQUE 2024: 
 #FANCAMPO y #FanVida están presentes 3 y 4 de septiembre en el 2° Foro de Agronegocios y Agro - Expo boutique 2024 en el Colegio de Postgraduados de campus Montecillos, Texcoco; #edomex.
 Ante la presencia de productores agropecuarios, despachos en agronegocios y público en general; los Fondos de Aseguramiento hacen actividades de promoción y difusión de los seguros en operación. 
 #CNOG #Texcoco #Colegiodepostgraduados #agro #agronegocio #AgroMercados #rural #campo #Ganaderos #agriculture</value>
-    <comment/>
   </data>
   <data name="evento_20240911" xml:space="preserve">
     <value>CONGRESO INTERNACIONAL AGROALIMENTARIO 2024
 : #FANCAMPO está presente en el CIA 2024 los días 11 y 12 del presente realizando actividades de difusión invitando a los asistentes a informarse de los seguros en operación.
 #CNOG #Agro #Agroalimentario #Agropecuarios #campo #rural #agricultores</value>
-    <comment/>
   </data>
   <data name="evento_20240912_1" xml:space="preserve">
     <value>SINIESTROS EN CULTIVOS DE CEBADA POR EXCESO DE HUMEDAD:
 #FANCAMPO se encuentra realizando inspecciones de campo por avisos de #siniestro por exceso humedad (lluvia) en cultivos de cebada en los estados de #Tlaxcala, #Puebla e #Hidago. 
 La inspección nos demuestra que el exceso de #humedad provocó retraso de crecimiento, #plantas "raquíticas", espigas con escaso llenado de #grano, perdida de población; por lo que se produjo el  crecimiento de #malezas como el #nabo, #avena y otras #gramíneas campestres; que interfieren en el buen desarrollo de la cebada.
 #CNOG #campo #rural #agro #Agropecuarios #HOY #semillas #climatológicos #Clima</value>
-    <comment/>
   </data>
   <data name="evento_20240912_2" xml:space="preserve">
     <value>SESION DE CONSEJO DE ADMINISTRACIÓN: 
 El día de ayer se llevó a cabo la sesión de Consejo de Administración de #FANCAMPO y #FanVida donde se vieron #avances operativos y administrativos de los diferentes tipos de #seguros especializados  durante el presente ejercicio; con la buena perspectiva de cumplir #metas al cierre de 2024 y se lleve a cabo la elaboración del Programa de Aseguramiento que ejercerá en 2025 en beneficio de los productores #Agropecuarios de #México.
 #CNOG #UGR #campo #SADER #rural #Ganaderos #agrícola #vida #pecuario #agricola #SHCP #CNSF</value>
-    <comment/>
   </data>
   <data name="evento_20240912_3" xml:space="preserve">
     <value>CURSO PARA TÉCNICOS IDENTIFICADORES AUTORIZADOS SINIIGA A PERSONAL TÉCNICO ESPECIALIZADO DE FANCAMPO Y FANVIDA
 : #Hoy se está llevando a cabo el "Curso para Técnicos Identificadores Autorizados, SINIIGA" al personal de campo especializados de #FANCAMPO ubicados en diferentes puntos de México; con el objetivo de fortalecer las operativas SINIIGA-FANCAMPO-FANVIDA en beneficio de los productores pecuarios del país.
 #CNOG #SINIIGA #rural #pecuario #rural #campo #ganado #agro #Agropecuarios</value>
-    <comment/>
   </data>
   <data name="evento_20240912_4" xml:space="preserve">
     <value>FORO ESTATAL DE LA CAÑA VERACRUZ 2024: #FANCAMPO y #FanVida participará en el "Foro Estatal de la Caña #Veracruz 2024" que se llevará a cabo el 5 y 6 de diciembre del presente. Se estará proporcionando información y elaborando contrataciones de los #seguros vigentes para beneficio de los #cañeros de azúcar del #País. 
 
 Productores tomen en cuenta las fechas para que asistan y fortalezcan su conocimiento de la situación actual del sector y de la Administración de Riesgos para la protección de su patrimonio familiar.
 #CNOG #vida #rural #campo #Difusión #PROMOCIÓN #agro #agropecuario #Agropecuarios #Sureste #SuresteMexicano #cordoba #cordobaveracruz #Tamaulipas #Hidalgo #Morelos</value>
-    <comment/>
   </data>
   <data name="evento_20240912_5" xml:space="preserve">
     <value>CLAUSURA CURSO DEL SiniigaOficial A TECNICOS ESPECIALIZADOS DE #FANCAMPO
 : Los Técnicos Calificados de FanCampo al concluir el curso de "Identificadores Autorizados, SINIIGA" adquirieron conocimientos para enriquecer su perfil profesional y coadyuvar con El Fondo de Aseguramiento de la CNOG el servicio que se otorga a los ganaderos de México. 
 #CNOG #pecuaria #agro #SADER Unión Agrícola Regional del Norte de Tamaulipas Union Ganadera Regional Del Sur Del Estado De Mexico Unión Ganadera regional de la zona central del estado de Veracruz Unión Ganadera Regional del Estado de Baja California Sur #campo #rural Unión Ganadera Regional de Durango - UGRD UGR Catazajá Ugrcampeche</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240623" xml:space="preserve">
+  <data name="img:evento_20240623" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>img\comerciales.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240725" xml:space="preserve">
+  <data name="img:evento_20240725" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240725_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240726" xml:space="preserve">
+  <data name="img:evento_20240726" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240726.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240729" xml:space="preserve">
+  <data name="img:evento_20240729" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240729 (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240729_2" xml:space="preserve">
+  <data name="img:evento_20240729_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240729_2.mp4;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240801" xml:space="preserve">
+  <data name="img:evento_20240801" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240801.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240801_2" xml:space="preserve">
+  <data name="img:evento_20240801_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240801_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240801_3" xml:space="preserve">
+  <data name="img:evento_20240801_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240801_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240802" xml:space="preserve">
+  <data name="img:evento_20240802" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240802.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240819" xml:space="preserve">
+  <data name="img:evento_20240819" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240819.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240827" xml:space="preserve">
+  <data name="img:evento_20240827" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240827.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240827_1" xml:space="preserve">
+  <data name="img:evento_20240827_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240827_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240827_2" xml:space="preserve">
+  <data name="img:evento_20240827_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240827_2 (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240827_3" xml:space="preserve">
+  <data name="img:evento_20240827_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240827_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240827_4" xml:space="preserve">
+  <data name="img:evento_20240827_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240827_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240902" xml:space="preserve">
+  <data name="img:evento_20240902" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240902.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240904" xml:space="preserve">
+  <data name="img:evento_20240904" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240904.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240911" xml:space="preserve">
+  <data name="img:evento_20240911" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240911.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240912_1" xml:space="preserve">
+  <data name="img:evento_20240912_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240912_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240912_2" xml:space="preserve">
+  <data name="img:evento_20240912_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240912_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240912_3" xml:space="preserve">
+  <data name="img:evento_20240912_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240912_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240912_4" xml:space="preserve">
+  <data name="img:evento_20240912_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240912_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
   <data name="title" xml:space="preserve">
     <value>Eventos</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240912_5" xml:space="preserve">
+  <data name="img:evento_20240912_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240912_5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
   <data name="evento_20240914" xml:space="preserve">
     <value>CNG 88 años 
 Impulsando la ganadería de México: &lt;video src="/assets/img/aniversario.mp4" class="shape-image col-12" autoplay="true" muted="true" alt="..." controls="" xo-scope="value_87354378_76d8_48fc_9cb9_9cbef3eb917a"&gt;&lt;/video&gt;</value>
-    <comment/>
   </data>
   <data name="evento_20240917" xml:space="preserve">
     <value>EXPO-FERIA GANADERA CAMPECHE 2024: 
 #FANCAMPO y #FanVida estuvieron presentes en la Expo-Feria Ganadera Campeche 2024 con actividades de difusión de los seguros vigentes y al servicio de los ganaderos para adquisiciones de seguros ganaderos y de vida.
 #CNOG #Campeche #campeche2024 #ganaderia #Sureste #campo #vida #Rural</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240917" xml:space="preserve">
+  <data name="img:evento_20240917" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240917.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
   <data name="evento_20240919" xml:space="preserve">
     <value>SEDAFOP ADQUIERE SEGURO MULTIRRIESGO: El gobierno del estado de Tabasco a través de la SEDAFOP Secretaría de Desarrollo Agropecuario, Forestal y Pesca, contrató el seguro Multirriesgo de FanCampo para productores del estado.
@@ -407,34 +353,28 @@ Impulsando la ganadería de México: &lt;video src="/assets/img/aniversario.mp
 Alta Mortalidad, Muerte por Ataque de Depredadores, Ganadero Climático, Apícola Climático, Daños Bienes Patrimoniales a la Infraestructura Ganadera 
 
 #CNOG #Rural #campo #Sureste #SuresteMexicano #surestealmomento #surestedemexico #Ganaderos</value>
-    <comment/>
   </data>
-  <data name="img:evento_20240919" xml:space="preserve">
+  <data name="img:evento_20240919" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20240919.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
   <data name="evento_20240927" xml:space="preserve">
     <value>EXPO AGRO ALIMENTARIA INTERNACIONAL ESTADO DE MEXICO 2024 (27 y 28 de septiembre): &lt;video src="/assets/eventos/evento_20240927.mp4" class="shape-image col-12" autoplay="true" muted="true" alt="..." controls=""&gt;&lt;/video&gt;
 #FANCAMPO y #FanVida serán parte de los 150 expositores que se presentarán en la EXPO AGRO ALIMENTARIA ESTADO DE MEXICO 2024 los días 27 y 28 de septiembre en Metepec; para ofrecer los servicios de protección para el patrimonio familiar de los productores, mediante los seguros agropecuarios que se tienen en operación al servicio de los ganaderos, agricultores y piscicultores del estado y del país.
 En paralelo se establecerá una mesa de contrataciones de los SEGUROS COMERCIALES AGROPECUARIOS dentro del PROGRAMA DE MEJORAMIENTO GENETICO DE BOVINOS, OVINOS Y CAPRINOS 2024 establecido por la Secretaría de Agricultura y Desarrollo Rural; amigo ganadero acércate a nosotros para la protección de tu semental y así asegurar el crecimiento de tu Unidad de producción Pecuaria.
 #CNOG #Ganaderos #bovinos #ovinos #caprinos #Edomex #EdoDeMexico #edomexnoticias #campo #Rural #bancos #institucionesfinancieras</value>
-    <comment/>
   </data>
   <data name="evento_20241003" xml:space="preserve">
     <value>EN ESTA EPOCA DE HURACANES EXTREMAR CUIDADOS
 : México es un país expuesto a fenómenos naturales catastróficos y algunos extremos incluyen fenómenos inusuales, lluvias y muchas cataratas severas o impropios de la estación. Los riesgos hidrometeorológicos son parte de los riesgos catastróficos por lo que debemos tomar las medidas de precaución ​necesarias para resguardar a nuestra familia y su patrimonio.
 #CNOG #catastróficos #daños #riesgos #campo #Rural #SADER</value>
-    <comment/>
   </data>
-  <data name="img:evento_20241003" xml:space="preserve">
+  <data name="img:evento_20241003" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20241003.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
   <data name="evento_20241007_1" xml:space="preserve">
     <value>EXPO HORTICOLA PUEBLA 2024
 : #FanCampo asistirá a la 16° edición de Expo Hortícola Puebla a desarrollarse del 9 al 11 de octubre de 2024 para fortalecimiento de los Agronegocios de México. Asiste amigo productor.
 #CNOG #horticolas #horticola #Puebla #pueblamexico #SADER #agronegocios</value>
-    <comment/>
   </data>
   <data name="evento_20241007_2" xml:space="preserve">
     <value>32° REUNION ANUAL CONASA
@@ -445,44 +385,39 @@ Del 7 al 9 de octubre de 2024 en el Hotel Holiday Inn Expo Guadalajara.
 &lt;img class="col-12 col-md-6 " src="/assets/eventos/evento_20241007_2 (1).jpg" class="img-fluid"/&gt;
 &lt;img class="col-12 col-md-6 " src="/assets/eventos/evento_20241007_2 (2).jpg" class="img-fluid"/&gt;
 &lt;/div&gt;</value>
-    <comment/>
   </data>
-  <data name="img:evento_20241007_1" xml:space="preserve">
+  <data name="img:evento_20241007_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20241007_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
   <data name="evento_20241009_1" xml:space="preserve">
     <value>2° CONGRESO DIALOGOS AZUCAREROS 2024
 : #FANCAMPO y #FanVida presentes en el 2do. Congreso Diálogos Azucareros del del 9 al 11 de octubre en el centro cultural, Ciudad Valles, SLP.  brindando información de los diferentes seguros que operan los fondos de aseguramiento, acércate a nosotros y protege  tu inversión y a tu familia como productor cañero.
 #CNOG #Cañeros #campo #rural #SADER #ganadería #GanaderíaMexicana</value>
-    <comment/>
   </data>
   <data name="evento_20241009_2" xml:space="preserve">
     <value>ACCIONES PARA LA SUSTENTABILIDAD GANADERA
  CNOG / GANADERIA SUSTENTABLE DE MEXICO / UGR DE JALISCO: 
 Durante el "Curso Taller Regional Jalisco" denominado "ACCIONES POR LA SUSTENTABILIDAD GANADERA", que se llevará a cabo los días 14 y 15 de octubre en la UGR de Expo Ganadera Jalisco OFICIAL; estará presente #FANCAMPO y #FanVida representado por el MVZ. Ezequiel González Reyes, Técnico Regional; quién estará a las órdenes de los ganaderos para contestar preguntas y/o aclarar dudas sobre los seguros agropecuarios y de vida vigentes, para la protección de su patrimonio familiar.
 #CNOG #GanaderíaMexicana #campo #rural #GanaderíaSustentable #Jalisco #jaliscomexico</value>
-    <comment/>
   </data>
-  <data name="img:evento_20241009_1" xml:space="preserve">
+  <data name="img:evento_20241009_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20241009_1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
-  <data name="img:evento_20241009_2" xml:space="preserve">
+  <data name="img:evento_20241009_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20241009_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
   <data name="evento_20241011" xml:space="preserve">
     <value>SEDAFOP TABASCO / UGR TABASCO: Se tuvo reunión de trabajo en la UGR de Tabasco con la asistencia de Presidentes de las diferentes AGL's, Coordinador del SINIIGA, representantes del IICA y nuevos titulares de SEDAFOP encabezados por la Dra. Luisa del Carmen Camara Cabrales.
 Se da a conocer por medio de la MVZ. Anna Margarita Palacios Ocaña el portafolio de seguros vigentes de #FANCAMPO y #FanVida, con especial atención a los seguros catastróficos contratados por Gobierno del Estado de #Tabasco #CNOG #campo #rural #pecuario #agrícola #agro #agropecuario #tabascomexico</value>
-    <comment/>
   </data>
-  <data name="img:evento_20241011" xml:space="preserve">
+  <data name="img:evento_20241011" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20241011.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-    <comment/>
   </data>
   <data name="evento_20241128" xml:space="preserve">
-    <value>INDEMNIZACIONES A PEQUEÑOS GANADEROS AFECTADOS POR EL HURACAN JOHN: &lt;video src="/assets/eventos/sanmarcos.mp4" class="shape-image col-12" autoplay="true" muted="true" alt="..." controls=""&gt;&lt;/video&gt; #Fancampo se encuentra en la #AGL de San Marcos; Ometepec, #Guerrero; entregando indemnizaciones a pequeños ganaderos que fueron afectados en su patrimonio familiar  por el “Huracán John”; por lo que recuperan sus bienes para continuar su producción pecuaria. #CNOG #rural #campo #pecuario @seguidores</value>
-    <comment/>
+    <value>INDEMNIZACIONES A PEQUEÑOS GANADEROS AFECTADOS POR EL HURACAN JOHN: #Fancampo se encuentra en la #AGL de San Marcos; Ometepec, #Guerrero; entregando indemnizaciones a pequeños ganaderos que fueron afectados en su patrimonio familiar  por el “Huracán John”; por lo que recuperan sus bienes para continuar su producción pecuaria.
+#CNOG #rural #campo #pecuario @seguidores</value>
+  </data>
+  <data name="img:evento_20241128" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20241128.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
