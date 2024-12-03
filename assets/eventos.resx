@@ -420,4 +420,11 @@ Se da a conocer por medio de la MVZ. Anna Margarita Palacios Ocaña el portafoli
   <data name="img:evento_20241128" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20241128.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="evento_20241203" xml:space="preserve">
+    <value>PLENO NACIONAL DE DIRIGENTES CAÑEROS CNPR 2024: #FANCAMPO Y #FanVida realizan actividades de promoción de los seguros para cultivo de caña de azúcar y de vida para productores, sus familias y trabajadores; durante el evento SUMAR ESFUERZOS PARA DETONAR EL CAMBIO desarrollado por el Pleno Nacional de Dirigentes Cañeros CNPR 2024, en la delegación Tlalpan, CDMX.
+#CNOG #campo #cañadeazucar #agrícola #rural Seguidores Instagram @seguidores UGRNV MUGAM Mujeres Ganaderas de Mexico Unión Ganadera Regional de Tamaulipas</value>
+  </data>
+  <data name="img:evento_20241203" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20241203.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
