@@ -117,25 +117,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  
   <data name="beneficio_1" xml:space="preserve">
-    <value>Único seguro que protege a los asegurados hasta los 75 años.</value>
+    <value>ASISTENCIA FUNERARIA: incluye Traslado de cuerpo, arreglo estético, ataúd básico, cremación/urna para cenizas. Hasta por $25,000 pesos. Un evento por familia.</value>
   </data>
   <data name="beneficio_2" xml:space="preserve">
-    <value>Para contratación no requiere exámenes médicos.</value>
+    <value>MÉDICO EN CASA: Visita a domicilio de un médico general. Tres eventos por familia.</value>
   </data>
   <data name="beneficio_3" xml:space="preserve">
-    <value>El seguro de vida no excluye enfermedades preexistentes para la suma de hasta $50,000 pesos.</value>
+    <value>REEMBOLSO DE MÉDICAMENTOS: Hasta por $500.00 pesos por evento. Tres eventos por familia.</value>
   </data>
   <data name="beneficio_4" xml:space="preserve">
-    <value>Periodo de espera de 60 días para el seguro de vida.</value>
+    <value>ANÁLISIS CLÍNICOS: Química Sanguínea 27 elementos o examen general de orina. Un evento por familia.</value>
   </data>
   <data name="beneficio_5" xml:space="preserve">
-    <value>Cobertura para las asistencias médicas desde el primer día.</value>
+    <value>AMBULANCIA POR EMERGENCIA: Hasta por $1,500 pesos. Un evento por familia.</value>
   </data>
+  <data name="beneficio_6" xml:space="preserve">
+    <value>ASISTENCIA TELEMEDICINA: Ilimitada que conecta pacientes con médicos generales a través de videollamadas y chat. Ilimitado para la familia.</value>
+  </data>
+  <data name="beneficio_7" xml:space="preserve">
+    <value>DESCUENTOS EN COMERCIOS: Farmacias, Laboratorios, Hospitales. Ilimitado para la familia. Para verificar los establecimientos participantes, pueden consultar la página: ahorramas.mx</value>
+  </data>
+  <data name="beneficio_8" xml:space="preserve">
+    <value>EDAD LIMITE: La edad límite de aseguramiento es de 75 años.</value>
+  </data>
+
   <data name="cobertura_1" xml:space="preserve">
-    <value>SEGURO DE VIDA: Que ampara durante un año a la persona contratante, por el fallecimiento por accidente o enfermedad. La suma asegurada puede ser de $20,000 pesos o $50,000 pesos con límite de edad de 75 años.</value>
+    <value>SEGURO DE VIDA: Se cubre el riesgo de fallecimiento por enfermedad y accidente, no se excluyen enfermedades preexistentes para sumas aseguradas de hasta $50,000. El periodo de espera es de 60 días para enfermedades crónicas.</value>
   </data>
-  <data name="cobertura_2" xml:space="preserve">
+  <!-- <data name="cobertura_2" xml:space="preserve">
     <value>ASISTENCIA FUNERARIA: Cubre por hasta $25,000 pesos, un evento por familia, que pueda incluir traslado del cuerpo, arreglo estético, ataúd básico sala de espera para 20 personas o cremación/urna.</value>
   </data>
   <data name="cobertura_3" xml:space="preserve">
@@ -156,12 +167,12 @@
   <data name="cobertura_8" xml:space="preserve">
     <value>DESCUENTOS COMERCIALES: La familia tiene descuentos en farmacias, laboratorios y hospitales.
 Consulta los descuentos en &lt;a href="https://ahorramas.mx"&gt;ahorramas.mx&lt;/a&gt;</value>
-  </data>
+  </data> -->
   <data name="cover" xml:space="preserve">
     <value>vida_cover.jpg</value>
   </data>
   <data name="description" xml:space="preserve">
-    <value>Es un seguro de Vida con asistencias médicas y funerarias para toda la familia en una sola membresía anual.</value>
+    <value>Es un seguro ampara al productor por el riesgo de fallecimiento ocurrido durante la vigencia del seguro.</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="proteccion_integral (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
