@@ -146,6 +146,9 @@
   <data name="cobertura_1" xml:space="preserve">
     <value>SEGURO DE VIDA: Se cubre el riesgo de fallecimiento por enfermedad y accidente, no se excluyen enfermedades preexistentes para sumas aseguradas de hasta $50,000. El periodo de espera es de 60 días para enfermedades crónicas.</value>
   </data>
+  <data name="cobertura_2" xml:space="preserve">
+    <value>Nota: Para los reportes de fallecimiento, será necesario llenar un formulario de “Declaración de fallecimiento” en el cual solicitamos información relacionada al productor finado, causas de defunción y datos generales del médico que certifico la muerte, así como la información de beneficiario(s).</value>
+  </data>
   <!-- <data name="cobertura_2" xml:space="preserve">
     <value>ASISTENCIA FUNERARIA: Cubre por hasta $25,000 pesos, un evento por familia, que pueda incluir traslado del cuerpo, arreglo estético, ataúd básico sala de espera para 20 personas o cremación/urna.</value>
   </data>
