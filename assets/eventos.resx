@@ -449,4 +449,29 @@ PROTEGE TU GANADO!.</value>
   <data name="img:evento_20241207" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>eventos\evento_20241207.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+
+  <data name="evento_20250122" xml:space="preserve">
+    <value>FANCAMPO Y FANVIDA, OPERAN SEGUROS QUE PROTEGEN TU INVERSIÓN Y VIDA, Fondo de Aseguramiento Nacional Agropecuario y Rural, Fondo de Aseguramiento de Vida Rural Nacional: El sector agropecuario enfrenta una variedad de riesgos que pueden comprometer su sostenibilidad. Esta nota analiza cómo gestionar tu administración de riesgos estratégicamente para fortalecer la resiliencia y garantizar un futuro más seguro en tu unidad de producción.
+    Los ganaderos y productores agropecuarios de México sufren pérdidas originadas por diversos eventos especialmente catastróficos naturales, biológicos, geológicos y accidentales, que pueden incidir en su porvenir y de manera particular, afectan su economía.
+    &lt;wbr/&gt;<p>El Fondo de Aseguramiento Nacional Agropecuario y Rural protege los principales riesgos a los que se encuentra expuesta la actividad agropecuaria,
+por lo que beneficia a los productores ganaderos, agrícolas, acuícolas y silvícolas afectados por inclemencias climáticas, biológicas y geológicos que son dañados en su infraestructura productiva que atentan contra su estabilidad económica y social. El Fondo de Aseguramiento de Vida Rural Nacional te ofrece un seguro de vida integral con asistencias médicas y funerarias para toda la familia y trabajadores.</p>
+<p>Protege durante un año de vigencia a la persona contratante por el fallecimiento por accidente o enfermedad.</p>
+<p>BENEFICIOS:</p>
+<p>a.  Único seguro que protege a los asegurados hasta los 75 años.</p>
+<p>b. Para ser contratado el seguro de vida no se requiere exámenes médicos.</p>
+<p>c. El seguro de vida no excluye enfermedades preexistentes para las sumas aseguradas de hasta $50,000 pesos.</p>
+<p>d. Desde el primer día de protección se tiene derecho a las asistencias médicas.</p>
+<p>Para este 2025 Los Fondos de Aseguramiento de la CNOG continuarán ofreciendo ofrece el siguiente portafolio de seguros:</p>
+<p>1.SEGURO MULTIRRIESGO: Alta Mortalidad, Ataque de Depredadores, Bienes Patrimoniales y Ganadero Climático.</p>
+<p>2.SEGURO AGRÍCOLA: Agrícola Tradicional y Agrícola a la Inversión con Ajuste al Rendimiento.</p>
+<p>3.SEGUROS COMERCIALES AGROPECUARIOS: Transporte, Adaptación, Radicación, Estaciones Cuarentenarias, Estancia Temporal, Maquinaria, Equipo e Insumos Agropecuarios y Acuícola.</p>
+<p>4.SEGUROS CATASTRÓFICOS: Agrícola, Pecuario y Daños Climáticos en Agostaderos “SECA”.</p>
+<p>5.SEGUROS APÍCOLAS: Apícola Climático y Daños por Plaguicidas y Herbicidas.</p>
+<p>6.SEGURO DE VIDA: Asistencias Médicas y Funerarias.</p>
+&lt;img src="/assets/eventos/evento_20250122_1.jpg" class="img-fluid"/&gt;
+    </value>
+  </data>
+  <data name="img:evento_20250122" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>eventos\evento_20250122.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>  
+  </data>
 </root>
