@@ -1945,5 +1945,13 @@ por lo que beneficia a los productores ganaderos, agrícolas, acuícolas y silv�
 <data name="img:evento_20250718-23" type="System.Resources.ResXFileRef, System.Windows.Forms">
 <value>eventos\evento_20250718-23.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
 </data>
-
+<data name="evento_20250721" xml:space="preserve">
+    <value>Hoy la ganadería mexicana enfrenta momentos difíciles, pero nuestra fortaleza está en la unidad. Somos más de 2,000 asociaciones ganaderas, 45 uniones ..... : &lt;video src="/assets/eventos/video2.mp4" class="shape-image col-12" autoplay="true" muted="true" alt="..." controls=""&gt;&lt;/video&gt;
+</value>
+  </data>
+<data name="evento_20250722" xml:space="preserve">
+    <value>Los rumores dañan más que cualquier crisis. : &lt;video src="/assets/eventos/v3.mp4" class="shape-image col-12" autoplay="true" muted="true" alt="..." controls=""&gt;&lt;/video&gt;
+</value>
+  </data>
+ 
 </root>
