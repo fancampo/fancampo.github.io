@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="mision" xml:space="preserve">
-    <value>Consolidar un sector con capacidad, recursos y cultura para administrar los riesgos que afectan a la actividad rural nacional.</value>
+    <value>Proteger el patrimonio de los productores agropecuarios de México y la continuidad operativa de sus unidades de producción.</value>
     <comment>1</comment>
   </data>
   <data name="title" xml:space="preserve">
@@ -129,7 +129,7 @@
     <comment>3</comment>
   </data>
   <data name="vision" xml:space="preserve">
-    <value>Proteger el patrimonio de los productores agropecuarios de México y la continuidad operativa de sus unidades de producción.</value>
+    <value>Consolidar un sector con capacidad, recursos y cultura para administrar los riesgos que afectan a la actividad rural nacional.</value>
     <comment>2</comment>
   </data>
 </root>
