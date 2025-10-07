@@ -1,4 +1,4 @@
-﻿<menu>
+﻿﻿<menu>
 	<item title="Inicio" href="./#"/>
 	<item title="Nosotros">
 		<item title="Conócenos" href="./nosotros.html#"/>
@@ -49,6 +49,23 @@
 		<item title="Ligas de Interés" href="./ligas.html#interes"/>
 	</item>
 	<item title="Eventos" href="eventos.html"/>
+	<item title="Condiciones Generales">
+		<item title="FANCAMPO" href="">
+			<item title="Alta Mortalidad" href="./assets/condicionesGenerales/AltaMortalidad.pdf" target="_blank"/>
+			<item title="Ataque Depredadores" href="./assets/condicionesGenerales/AtaqueDepredador.pdf" target="_blank"/>
+			<item title="Transporte con Declaracion Mensual" href="./assets/condicionesGenerales/TransporteConDeclaracionMensual.pdf" target="_blank"/>
+			<item title="Daños Climaticos" href="./assets/condicionesGenerales/DanosClimaticos.pdf" target="_blank"/>
+			<item title="Pecuario de Transportes Comerciales" href="./assets/condicionesGenerales/PecuariodeTransporteComercial.pdf" target="_blank"/>
+			<item title="Patrimoniales" href="./assets/condicionesGenerales/Patrimoniales.pdf" target="_blank"/>
+			<item title="Bienes Patrimoniales" href="./assets/condicionesGenerales/BienesPatrimoniales.pdf" target="_blank"/>
+			<item title="Maquinaria Limpia" href="./assets/condicionesGenerales/MaquinariasLimpia.pdf" target="_blank"/>
+			<item title="Transporte de Bienes" href="./assets/condicionesGenerales/TransportedeBienes.pdf" target="_blank"/>
+			<item title="Pecuario Multiriesgo" href="./assets/condicionesGenerales/PecuarioMultiriesgo.pdf" target="_blank"/>
+			<item title="Agricultura Protegida" href="./assets/condicionesGenerales/AgriculturaPortegida.pdf" target="_blank"/>
+		</item>
+		<item title="FANVIDA" href="./assets/condicionesGenerales/Fanvida.pdf" target="_blank"/>
+
+	</item>
 	<item title="Cotizar" href="#chatbot" target="_self" onclick="cotizar(); event.preventDefault(); "/>
 	<!--<item title="Novedades" href="./novedades.html"/>-->
 </menu>
