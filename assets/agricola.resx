@@ -118,40 +118,133 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="agricola_hd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>img\agricola_hd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="agricola (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agricola (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="beneficio_1" xml:space="preserve">
-    <value>Asesoramiento Agronómico: FanCampo proporciona servicios de asesoramiento agronómico para ayudar a los agricultores a implementar prácticas de manejo de cultivos que reduzcan el riesgo de siniestros.</value>
+  <data name="agricola (103)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agricola (103).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="beneficio_2" xml:space="preserve">
-    <value>Soluciones Tecnológicas: Uso de tecnología para monitorear condiciones climáticas y alertar a los agricultores sobre posibles riesgos, permitiendo la toma de decisiones proactivas para proteger los cultivos.</value>
+  <data name="agricola (104)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agricola (104).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="beneficio_3" xml:space="preserve">
-    <value>Procesos de Reclamación Simplificados: FanCampo se compromete a ofrecer procesos de reclamación rápidos y eficientes, minimizando el tiempo de inactividad y permitiendo a los agricultores recuperarse más rápidamente de los siniestros.</value>
+  <data name="agricola (105)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agricola (105).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agricola (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agricola (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agricola (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agricola (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agricola (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agricola (4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agricola (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agricola (5).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agricola (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agricola (6).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agricola (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agricola (7).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agricola (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\agricola (8).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cobertura_1" xml:space="preserve">
-    <value>Daños a los cultivos: Esta cobertura compensa a los agricultores por las pérdidas en la producción causadas directamente por eventos climáticos adversos, ataques de plagas, o enfermedades no prevenibles.</value>
+    <value>RIESGOS CUBIERTOS:
+&lt;ul&gt;
+  &lt;li&gt;Climatológicos.&lt;/li&gt;
+  &lt;li&gt;Biológicos.&lt;/li&gt;
+  &lt;li&gt;Antes de la Nacencia (RAN).&lt;/li&gt;
+&lt;/ul&gt;
+</value>
   </data>
   <data name="cobertura_2" xml:space="preserve">
-    <value>Pérdida de ingresos: Algunas pólizas ofrecen protección contra la pérdida de ingresos debido a la disminución de los precios del mercado, asegurando un ingreso estable a pesar de las fluctuaciones del mercado.</value>
+    <value>MODALIDADES:
+&lt;ul&gt;
+  &lt;li&gt;Riego.&lt;/li&gt;
+  &lt;li&gt;Temporal.&lt;/li&gt;
+  &lt;li&gt;Agricultura protegida.&lt;/li&gt;
+&lt;/ul&gt;</value>
   </data>
   <data name="cobertura_3" xml:space="preserve">
-    <value>Replantación: En caso de que un cultivo asegurado sea destruido por un riesgo cubierto y sea necesario replantar, esta cobertura puede cubrir los costos asociados a la replantación.</value>
+    <value>PROTECCION A LA INVERSION EN ESQUEMAS:
+&lt;ul&gt;
+  &lt;li&gt;Daño físico directo (DFD)&lt;/li&gt;
+  &lt;li&gt;Rendimiento (R)&lt;/li&gt;
+  &lt;li&gt;Mixto (DFD + R)&lt;/li&gt;
+  &lt;li&gt;Por planta.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="cobertura_4" xml:space="preserve">
+    <value>CULTIVOS ASEGURABLES:
+&lt;ul&gt;
+  &lt;li&gt;Granos básicos.&lt;/li&gt;
+  &lt;li&gt;Hortalizas.&lt;/li&gt;
+  &lt;li&gt;Frutales.&lt;/li&gt;
+  &lt;li&gt;Plantaciones.&lt;/li&gt;
+&lt;/ul&gt;</value>
   </data>
   <data name="description" xml:space="preserve">
-    <value>Los seguros agrícolas de FanCampo están diseñados para proteger a los agricultores contra las pérdidas financieras causadas por una amplia gama de riesgos. Estos riesgos incluyen condiciones climáticas adversas como sequías, inundaciones, heladas, y granizo; así como daños por plagas y enfermedades que afectan a los cultivos.</value>
+    <value>Es de contratación particular y protege a diferentes cultivos cubriendo las pérdidas de las inversiones realizadas en la Unidad de Riesgo ocasionada por los riesgos protegidos. Siendo un instrumento financiero esencial que ayuda al crecimiento del sector.
+
+&lt;p&gt;RIESGOS CUBIERTOS:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Climatológicos.&lt;/li&gt;
+  &lt;li&gt;Biológicos.&lt;/li&gt;
+  &lt;li&gt;Antes de la Nacencia (RAN).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;MODALIDADES:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Riego.&lt;/li&gt;
+  &lt;li&gt;Temporal.&lt;/li&gt;
+  &lt;li&gt;Agricultura protegida.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;PROTECCION A LA INVERSION EN ESQUEMAS:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Daño físico directo (DFD)&lt;/li&gt;
+  &lt;li&gt;Rendimiento (R)&lt;/li&gt;
+  &lt;li&gt;Mixto (DFD + R)&lt;/li&gt;
+  &lt;li&gt;Por planta.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;CULTIVOS ASEGURABLES:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Granos básicos.&lt;/li&gt;
+  &lt;li&gt;Hortalizas.&lt;/li&gt;
+  &lt;li&gt;Frutales.&lt;/li&gt;
+  &lt;li&gt;Plantaciones.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="especie_1" xml:space="preserve">
+    <value>Cultivos susceptibles de aseguramiento en los ciclos Primavera – Verano y Otoño – Invierno: 
+&lt;ul&gt;
+  &lt;li&gt;Maíz grano.&lt;/li&gt;
+  &lt;li&gt;Trigo grano.&lt;/li&gt;
+  &lt;li&gt;Frijol.&lt;/li&gt;
+  &lt;li&gt;Cebada grano.&lt;/li&gt;
+  &lt;li&gt;Sorgo grano.&lt;/li&gt;
+  &lt;li&gt;Cártamo.&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="especie_2" xml:space="preserve">
+    <value>Cultivos perennes:&lt;ul&gt;
+  &lt;li&gt;Aguacate.&lt;/li&gt;
+  &lt;li&gt;Cítricos (naranja, limón y mandarina).&lt;/li&gt;
+  &lt;li&gt;Manzana.&lt;/li&gt;
+  &lt;li&gt;Nogal.&lt;/li&gt;
+  &lt;li&gt;Mango.&lt;/li&gt;
+  &lt;li&gt;Caña de azúcar.&lt;/li&gt;
+  &lt;li&gt;Palma africana.&lt;/li&gt;
+  &lt;li&gt;Agave.&lt;/li&gt;
+  &lt;li&gt;Cocotero.&lt;/li&gt;
+  &lt;li&gt;Forestales.&lt;/li&gt;
+&lt;/ul&gt;</value>
   </data>
   <data name="title" xml:space="preserve">
-    <value>Seguro Agrícola</value>
-  </data>
-  <data name="ventaja_1" xml:space="preserve">
-    <value>Comprensión Profunda del Sector Agrícola: FanCampo entiende las complejidades y desafíos específicos de la agricultura, ofreciendo productos que reflejan las necesidades reales de los agricultores.</value>
-  </data>
-  <data name="ventaja_2" xml:space="preserve">
-    <value>Personalización de Coberturas: La capacidad de adaptar las pólizas a diferentes tipos de cultivos, escalas de producción y niveles de riesgo específicos de cada agricultor.</value>
-  </data>
-  <data name="ventaja_3" xml:space="preserve">
-    <value>Compromiso con el Cliente: Más allá de la relación aseguradora-asegurado, FanCampo actúa como un socio estratégico para los agricultores, brindando soporte y asesoría constante.</value>
+    <value>Agrícola</value>
   </data>
 </root>

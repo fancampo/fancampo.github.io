@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="acuicola" xml:space="preserve">
+    <value>Acuícola: protege la muerte o fuga para cubrir daños por fenómenos climatológicos y sísmicos. En granjas de camarón se protege la infraestructura, contenidos, transporte.</value>
+  </data>
+  <data name="adaptacion" xml:space="preserve">
+    <value>Adaptación: Cubre el riesgo de muerte por enfermedad, accidente y/o sacrificio forzoso. Vigencia hasta 45 días en la nueva explotación.</value>
+  </data>
+  <data name="agricola" xml:space="preserve">
+    <value>Seguro Agrícola: Protege cualquier tipo de cultivos por inversiones realizadas ante los diversos riesgos que está expuesto el campo, como son: Climatológicos, Biológicos y Riesgos Antes de la Nacencia (RAN) que cubren pérdidas parciales y totales. Los cultivos susceptibles de aseguramiento en los ciclos Primavera – Verano y Otoño – Invierno son: maíz grano, trigo grano, frijol, cebada grano, sorgo grano y cártamo. Los cultivos perennes son: Aguacate, cítricos (naranja, limón y mandarina), manzana, nogal, mango, caña de azúcar, palma africana, agave, cocotero y forestales.</value>
+  </data>
+  <data name="apicola_climatico" xml:space="preserve">
+    <value>Apícola Climático: cubre la disminución de la producción de miel de los apiarios, como consecuencia de la falta o disminución de la floración durante la cosecha de miel más importante que se registra en el estado o región, debida a los efectos de eventos climáticos protegidos</value>
+  </data>
+  <data name="ataque_depredador" xml:space="preserve">
+    <value>Ataque de Depredador: protege la muerte y/o sacrificio forzoso del inventario nacional de bovinos de reproducción, doble función, ordeña y trabajo, caprinos y ovinos de reproducción, equinos, porcinos y perdida de miel en colmenas; cuando el siniestro sea ocasionado por el ataque de depredadores. Se considera que los depredadores son mamíferos carnívoros, generalmente silvestres, que atacan, matan al ganado y consumen miel con la finalidad de obtener alimento para subsistir. Es un seguro desarrollado por los ganaderos organizados de México, creado por el FANCAMPO para la conservación de mamíferos en peligro de extinción. Si el productor mata al depredador pierde todo derecho a ser indemnizado</value>
+  </data>
+  <data name="bienes_patrimoniales" xml:space="preserve">
+    <value>Bienes Patrimoniales en Instalaciones Ganaderas: protege las instalaciones ganaderas dentro de las Unidades de Producción Pecuaria (UPP) aseguradas, que son afectadas por los daños de eventos climáticos y geológicos protegidos a lo largo de todo el año. Actualmente este seguro cuenta con una suma asegurada hasta 400,000 por evento. Con reinstalación automática.</value>
+  </data>
+  <data name="catastroficos" xml:space="preserve">
+    <value>Se protegen grandes superficies a nivel estatal contra eventos climatológicos que causen fuertes daños a los cultivos, dirigido a pequeños productores (granos, oleaginosas, frutales y cultivos industriales)</value>
+  </data>
+  <data name="comerciales_agropecuario" xml:space="preserve">
+    <value>Comerciales Agropecuarios: seguros de contratación programa de Fomento, Mejoramiento Genético, particular (transporte, adaptación, radicación, estancia temporal y alta mortalidad) protegen contra muerte por enfermedad, accidentes y/o sacrificio forzoso de bovinos de reproducción, doble función, ordeña, engorda y de trabajo; ovinos y caprinos de reproducción; cerdos de reproducción y engorda.</value>
+  </data>
+  <data name="estaciones_cuarentenarias" xml:space="preserve">
+    <value>Estaciones cuarentenarias: Se pueden proteger animales en estaciones cuarentenarias con vigencia desde 3 días hasta 9 días.</value>
+  </data>
+  <data name="estancia_temporal" xml:space="preserve">
+    <value>Estancia temporal: Período dónde los animales participan en exposiciones, exhibiciones, muestras, tianguis, subastas o concursos, el cual quedará definido en la vigencia. Vigencia desde 10 días hasta 20 días en el lugar del evento.</value>
+  </data>
+  <data name="ganadero_climatico" xml:space="preserve">
+    <value>Ganadero Climático: cubre la muerte, sacrificio forzoso o desaparición de bovinos en sus funciones zootécnicas de reproducción, doble función, ordeña y trabajo, ovinos y caprinos de reproducción, colmenas de producción de miel, équidos de trabajo, inscritos en el Padrón Ganadero Nacional (PGN); por la ocurrencia de eventos meteorológicos y geológicos; con el riesgo adicional de contratación para proteger la insuficiencia de pasto.</value>
+  </data>
+  <data name="insumos_agropecuarios" xml:space="preserve">
+    <value>Insumos agropecuarios, maquinaria, equipo y productos agropecuarios; contra: riesgos básicos: incendio y/o rayo, explosión, colisión o volcadura del vehículo de carga, descarrilamiento de vagones del ferrocarril y accidente durante el transporte. Riesgos adicionales: extravío o robo con motivo de un accidente durante el transporte y/o Robo total con violencia.</value>
+  </data>
+  <data name="radicacion" xml:space="preserve">
+    <value>Radicación: cubre el riesgo de muerte por enfermedad, accidente y/o sacrificio forzoso. Vigencia hasta 365 días en el lugar de producción.</value>
+  </data>
+  <data name="transporte" xml:space="preserve">
+    <value>Transporte: puede ser Transporte y Riesgos Ordinarios de Transito (inicia con embarque y termina con desembarque) o redondo (de un lugar a otro donde tendrá una estancia temporal y posteriormente trasladados de regreso a su lugar de origen). Vigencia desde 12, 24, 48 horas, dentro de territorio nacional.</value>
+  </data>
+  <data name="vida" xml:space="preserve">
+    <value>Seguro de vida: cubre el fallecimiento del asegurado por enfermedad o accidente, con beneficios adicionales</value>
+  </data>
+  <data name="vida:beneficio_01" xml:space="preserve">
+    <value>Anticipo del 50% de la suma asegurada por enfermedad grave</value>
+  </data>
+  <data name="vida:beneficio_02" xml:space="preserve">
+    <value>Doble indemnización en caso de muerte accidental.</value>
+  </data>
+  <data name="vida:nota_01" xml:space="preserve">
+    <value>Edad máxima asegurable mayor que las aseguradoras comerciales</value>
+  </data>
+  <data name="vida:nota_02" xml:space="preserve">
+    <value>No requiere de exámenes médicos para su contratación</value>
+  </data>
+  <data name="vida:nota_03" xml:space="preserve">
+    <value>Asegurar a familiares directos y trabajadores por la misma suma asegurada</value>
+  </data>
+  <data name="vida:nota_04" xml:space="preserve">
+    <value>No excluye enfermedades preexistentes.</value>
+  </data>
+  <data name="vida:nota_05" xml:space="preserve">
+    <value>Período de espera para COVID-19 y enfermedades crónicas de hasta 60 días según la edad de aseguramiento contratado.</value>
+  </data>
+  <data name="vida:nota_06" xml:space="preserve">
+    <value>Sumas aseguradas desde $30,000 hasta $500,000* y edades de aseguramiento mayores a las tradicionales* (*Aplica restricciones).</value>
+  </data>
+</root>

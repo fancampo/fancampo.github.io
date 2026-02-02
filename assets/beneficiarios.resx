@@ -117,62 +117,65 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="socio_01" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/cropped-logo_porcicultores-2.png/:/rs=h:100,cg:true,m</value>
+  <data name="socio_01.1" xml:space="preserve">
+    <value>assets/beneficiarios/socio_01.1.png</value>
   </data>
-  <data name="socio_02" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/VePorMa_20170504-161337_1.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
+  <data name="socio_01.2" xml:space="preserve">
+    <value>assets/beneficiarios/socio_01.2.png</value>
+  </data>
+  <data name="socio_01.3" xml:space="preserve">
+    <value>assets/beneficiarios/socio_01.3.png</value>
+  </data>
+  <data name="socio_01.4" xml:space="preserve">
+    <value>assets/beneficiarios/gobierno_chihuahua.jpg</value>
+  </data>
+  <data name="socio_02.1" xml:space="preserve">
+    <value>assets/beneficiarios/socio_02.1.png</value>
+  </data>
+  <data name="socio_02.2" xml:space="preserve">
+    <value>assets/beneficiarios/socio_02.2.png</value>
   </data>
   <data name="socio_03" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/logo.png/:/rs=h:100,cg:true,m</value>
+    <value>assets/beneficiarios/socio_03.png</value>
   </data>
   <data name="socio_04" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/arda.PNG/:/rs=h:100,cg:true,m</value>
+    <value>assets/beneficiarios/socio_04.png</value>
   </data>
   <data name="socio_05" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/Logo_de_Financiera_Rural.svg.png/:/rs=h:100,cg:true,m</value>
+    <value>assets/beneficiarios/socio_05.png</value>
   </data>
   <data name="socio_06" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/blob-41d8397.png/:/rs=h:100,cg:true,m</value>
+    <value>assets/beneficiarios/socio_06.png</value>
   </data>
   <data name="socio_07" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/blob-419a31d.png/:/rs=h:100,cg:true,m</value>
+    <value>assets/beneficiarios/socio_07.png</value>
   </data>
   <data name="socio_08" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/caja%20valle%20logotipo2x.png/:/rs=h:100,cg:true,m</value>
+    <value>assets/beneficiarios/socio_08.png</value>
   </data>
   <data name="socio_09" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/logoSMG.png/:/rs=h:100,cg:true,m</value>
+    <value>assets/beneficiarios/socio_09.png</value>
   </data>
   <data name="socio_10" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/unagra-sociedad-financiera.png/:/rs=h:100,cg:true,m</value>
+    <value>assets/beneficiarios/socio_10.png</value>
   </data>
   <data name="socio_11" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/logo-caja-pio.png/:/rs=h:100,cg:true,m</value>
+    <value>assets/beneficiarios/socio_11.png</value>
   </data>
   <data name="socio_12" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/ANG-logo.png/:/rs=h:100,cg:true,m</value>
+    <value>assets/beneficiarios/socio_12.png</value>
   </data>
   <data name="socio_13" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/blob-110d9e7.png/:/rs=h:100,cg:true,m</value>
+    <value>assets/beneficiarios/socio_13.png</value>
   </data>
   <data name="socio_14" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/logo%20dimasur.jpg/:/rs=h:100,cg:true,m</value>
+    <value>assets/beneficiarios/socio_14.jpg</value>
   </data>
   <data name="socio_15" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/blob-cac6927.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="socio_16" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/blob-9340a3d.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=h:100,cg:true</value>
-  </data>
-  <data name="socio_17" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/Gobierno%20de%20Nuevo%20Le%C3%B3n.png/:/rs=h:100,cg:true,m</value>
-  </data>
-  <data name="socio_18" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/SEDAFOP%20-TABASCO-fd9d873.png/:/rs=h:100,cg:true,m</value>
+    <value>assets/beneficiarios/agroinvic.jpg</value>
   </data>
   <data name="socio_19" xml:space="preserve">
-    <value>https://img1.wsimg.com/isteam/ip/528457ab-aae3-409e-9e6a-db456d43ca04/FIRA.png/:/rs=h:100,cg:true,m</value>
+    <value>assets/beneficiarios/socio_19.png</value>
   </data>
   <data name="title" xml:space="preserve">
     <value>Nuestros Beneficiarios</value>

@@ -1,0 +1,31 @@
+{
+  "server": {
+    "login": "https://server.panax.io/login.asp",
+    "download": "https://server.panax.io/download.asp"
+  },
+  "sources": {
+    "#": "#cotizacion",
+    "#cotizacion": {
+      "server:download": {
+        "file": "cotizacion.xml",
+        "^authorization": "${xover.session.encodeCredential(xover.session.user_login, xover.session.id_token) || ''}"
+      }
+    },
+    "#tarjeta_bolsillo": "tarjeta_bolsillo.xslt",
+    "#ganadero": "#cotizacion",
+    "#agricola": "#cotizacion",
+    "#acuicola": "#cotizacion",
+    "#globalization": [ "assets/globalization/headerText.cotizacion.${xo.session.locale.split('-').shift()}.resx", "assets/globalization/headerText.cotizacion.resx" ],
+    "#login":  null
+  },
+  "settings": {
+    "#cotizacion": {
+      "hash": ""
+    },
+    "#tarjeta_bolsillo": {
+      "stylesheets": [
+        { "target": "body" }
+      ]
+    }
+  }
+}

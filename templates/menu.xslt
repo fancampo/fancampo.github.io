@@ -1,7 +1,8 @@
 ﻿<xsl:stylesheet version="1.0"
 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-xmlns:xo="http://xover.dev"
+xmlns:xo="http://panax.io/xover"
 xmlns:menu="http://xover.dev/widgets/menu"
+xmlns:site="http://panax.io/site"
 xmlns="http://www.w3.org/1999/xhtml"
 >
 	<xsl:template match="/">
@@ -9,7 +10,10 @@ xmlns="http://www.w3.org/1999/xhtml"
 	</xsl:template>
 
 	<xsl:attribute-set name="menu:dropdown">
-		<xsl:attribute name="class">dropdown-menu</xsl:attribute>
+		<xsl:attribute name="class">
+			<xsl:text>dropdown-menu </xsl:text>
+			<xsl:value-of select="ancestor-or-self::*[1]/@tag"/>
+		</xsl:attribute>
 	</xsl:attribute-set>
 
 	<xsl:attribute-set name="menu:icon-badge">
@@ -37,12 +41,13 @@ xmlns="http://www.w3.org/1999/xhtml"
 	</xsl:template>
 
 	<xsl:template match="@*|*" mode="menu:item-icon" priority="-1"/>
-	
+
 	<xsl:template match="@*|*" mode="menu:item-link-attribute" priority="-1"/>
 
 	<xsl:template match="*[@href]|*[@href]/@*" mode="menu:item-link-attribute">
 		<xsl:variable name="element" select="ancestor-or-self::*[1]"/>
-		<xsl:copy-of select="$element/@href|$element/@target"/>
+		<xsl:attribute name="onclick">navigate.call(this)</xsl:attribute>
+		<xsl:copy-of select="$element/@href|$element/@target|$element/@onclick"/>
 	</xsl:template>
 
 	<xsl:template mode="menu:item-attributes" match="@*|*"></xsl:template>
@@ -78,6 +83,7 @@ xmlns="http://www.w3.org/1999/xhtml"
 
 	<xsl:template match="@*|*" mode="menu:item">
 		<xsl:variable name="dropdown">
+			<xsl:if test="* and ancestor-or-self::*[1]/ancestor::item">dropstart </xsl:if>
 			<xsl:if test="*">dropdown</xsl:if>
 		</xsl:variable>
 		<xsl:variable name="class">
@@ -96,9 +102,15 @@ xmlns="http://www.w3.org/1999/xhtml"
 					<xsl:attribute name="data-bs-toggle">dropdown</xsl:attribute>
 				</xsl:if>
 				<xsl:apply-templates mode="menu:item-link-attribute" select="."/>
+				<!--<xsl:attribute name="href">#</xsl:attribute>-->
 				<xsl:apply-templates mode="menu:item-icon" select="."/>
 				<xsl:apply-templates mode="menu:icon-badge" select="."/>
 				<xsl:apply-templates mode="menu:item-title" select="."/>
+				<!--<xsl:if test="contains($dropdown,'dropstart')">
+					<label style="width: 100%; text-align: -webkit-right; display: inline;" onclick="location.href='{@href}'">
+						<xsl:text> ver</xsl:text>
+					</label>
+				</xsl:if>-->
 			</a>
 			<xsl:if test="$dropdown!=''">
 				<xsl:apply-templates mode="menu:widget" select="."/>

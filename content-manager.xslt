@@ -6,7 +6,7 @@
 	<xsl:key name="valid-model" match="root[@env:store='#mision']" use="generate-id()"/>
 	<xsl:key name="valid-model" match="root[@env:store='#vision']" use="generate-id()"/>
 	<xsl:key name="valid-model" match="root[@env:store='#valores']" use="generate-id()"/>
-	<xsl:key name="valid-model" match="root[@env:store='#conocenos']" use="generate-id()"/>
+	<!--<xsl:key name="valid-model" match="root[@env:store='#conocenos']" use="generate-id()"/>-->
 	<xsl:key name="valid-model" match="root[@env:store='#terminos_condiciones']" use="generate-id()"/>
 
 	<xsl:key name="data" match="root[@env:store='#mision']/data[not(contains(@name,':'))]" use="'mision_vision_valores'"/>
@@ -79,12 +79,12 @@
 	</xsl:template>
 
 	<xsl:template match="data[comment mod 2=0]" mode="feature-header-class">
-		<xsl:attribute name="class">col-md-4 order-md-2</xsl:attribute>
+		<xsl:attribute name="class">col-md-5 order-md-2</xsl:attribute>
 	</xsl:template>
 
 	<xsl:template match="data" mode="feature-body-class">
 		<xsl:attribute name="class">
-			<xsl:text>col-md-2 </xsl:text>
+			<xsl:text>col-md-6 </xsl:text>
 			<xsl:if test="count(preceding-sibling::data) mod 2 = 1">
 				<xsl:text/>order-md-1<xsl:text/>
 			</xsl:if>
@@ -97,16 +97,12 @@
 		</h5>
 	</xsl:template>
 
-	<xsl:template mode="headerText" match="key('data','mision')">
+	<xsl:template mode="headerText" match="key('data','mision')/@name">
 		<xsl:text>Misión</xsl:text>
 	</xsl:template>
 
-	<xsl:template mode="headerText" match="key('data','vision')">
+	<xsl:template mode="headerText" match="key('data','vision')/@name">
 		<xsl:text>Visión</xsl:text>
-	</xsl:template>
-
-	<xsl:template mode="headerText" match="key('data','conocenos')">
-		<xsl:text>Conócenos</xsl:text>
 	</xsl:template>
 
 	<xsl:template mode="subtitle" match="@*|*">
@@ -119,7 +115,9 @@
 			<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 		</div>
 		<div class="offcanvas-body small">
-			<xsl:apply-templates select="key('data','body')"/>
+			<xsl:apply-templates select="key('data','body')">
+				<xsl:sort select="comment"/>
+			</xsl:apply-templates>
 		</div>
 	</xsl:template>
 

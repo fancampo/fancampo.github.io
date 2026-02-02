@@ -8,7 +8,7 @@
 	<xsl:param name="title"></xsl:param>
 	<xsl:template match="/*">
 		<div>
-			<form action="contact.asp" method="post" role="form" class="contact-form">
+			<form method="post" role="form" class="contact-form">
 				<div class="row">
 					<xsl:apply-templates mode="field" select="key('data','*')">
 						<xsl:sort select="comment" data-type="number"/>
@@ -32,9 +32,8 @@
 	</xsl:template>
 
 	<xsl:template mode="input" match="key('input','select')">
-		<select name="{@name}" class="form-select" xo-slot="value" required="">
+		<select name="{@name}" class="form-select" xo-slot="value" required="" xo-source="#menu" xo-stylesheet="seguros-combobox.xslt">
 			<option selected=""> </option>
-			<option>Seguro </option>
 		</select>
 	</xsl:template>
 

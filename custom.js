@@ -1,34 +1,41 @@
-﻿const video = document.querySelector('video');
+﻿var video = document.querySelector('video.main');
+var promocional = document.querySelector('#promocional video');
+var options = {
+    root: null,
+    rootMargin: '0px',
+    threshold: .5
+};
+
+var callback = (entries, observer) => {
+    entries.forEach(entry => {
+        document.body.classList.remove('fanvida-is-active', 'fancampo-is-active');
+        let target = entry.target;
+        if (target.id) {
+            document.body.classList.remove(`${target.id}-active`);
+        }
+        if (target.id) {
+            document.body.classList[entry.isIntersecting ? "add" : "remove"](`${target.id}-active`);
+        }
+        if (target.matches('.fanvida-section')) {
+            document.body.classList[entry.isIntersecting ? "add" : "remove"]('fanvida-is-active');
+        }
+        if (target.matches('.fancampo-section')) {
+            document.body.classList[entry.isIntersecting ? "add" : "remove"]('fancampo-is-active');
+        }
+    });
+};
+
+// Create intersection observer
+var observer = new IntersectionObserver(callback, options);
+
+for (let section of document.querySelectorAll('.fanvida-section, .fancampo-section, main > *')) {
+    observer.observe(section);
+}
+
 if (video) {
-    // Options for the intersection observer
-    //const options = {
-    //  root: null,
-    //  rootMargin: '0px',
-    //  threshold: .2
-    //};
-
-    //// Intersection Observer callback function
-    //const callback = (entries, observer) => {
-    //  entries.forEach(entry => {
-    //    if (entry.isIntersecting) {
-    //      video.play();
-    //      //video.style.transform = 'scale(1)'; // Example rescaling value
-    //    } else {
-    //        console.log(`Scrolling`)
-    //      video.pause();
-    //      //video.style.transform = 'scale(.4)';
-    //    }
-    //  });
-    //};
-
-    //// Create intersection observer
-    //const observer = new IntersectionObserver(callback, options);
-
-    //// Observe the video
-    //observer.observe(video);
-
     const viewportHeight = window.innerHeight;
     const viewportWidth = window.innerWidth;
+    //promocional.pause();
 
     window.addEventListener('scroll', function () {
         const scrollPosition = window.scrollY;
@@ -47,25 +54,32 @@ if (video) {
         //    video.style.transform = `translate(0, 0) scale(1)`;
         //    video.style.top = '0';
         //}
-        if (scrollPosition) {
+        if (scrollPosition > 100) {
             video.closest('section').classList.add('scrolled');
+            video.pause()
+            /*try {
+                playVideo.call(promocional, true);
+            } catch(e) {
+                console.log(e)
+            }*/
         } else {
             video.closest('section').classList.remove('scrolled');
+            video.play()
         }
     });
 }
 
 
 // Set the scroll position where you want to stop scrolling
-const stopScrollPosition = 500; // Change this value to your desired scroll position
+var stopScrollPosition = 500; // Change this value to your desired scroll position
 
 // Set the cooldown time in milliseconds
-const cooldownTime = 1000; // Change this value to your desired cooldown time
+var cooldownTime = 1000; // Change this value to your desired cooldown time
 
-let cooldownTimeout = null;
-let lastScrollTime = 0;
-let isScrollStopped = false;
-let lastScrollPosition = window.scrollY || window.pageYOffset;
+var cooldownTimeout = null;
+var lastScrollTime = 0;
+var isScrollStopped = false;
+var lastScrollPosition = window.scrollY || window.pageYOffset;
 
 // Function to handle the scroll event
 function handleScroll(event) {
@@ -101,7 +115,7 @@ function handleScroll(event) {
 }
 
 // Add scroll event listener
-window.addEventListener('scroll', handleScroll);
+//window.addEventListener('scroll', handleScroll);
 
 
 
@@ -117,50 +131,162 @@ function initialize_carousel() {
 
 async function cotizar() {
     let chatbot = document.querySelector("#chatbot");
-    chatbot.contentDocument.documentElement.querySelector('#voiceflow-chat').shadowRoot.querySelector('button').click();
-    chatbot.style.height = '80vh';
-    let chat = chatbot && chatbot.contentDocument.documentElement.querySelector('#voiceflow-chat')
-    if (!chat) {
-        throw ("No se pudo inicializar el proceso de cotización. Intente más tarde, por favor");
-        return
+    if (!chatbot) {
+        window.document.location = 'cotizador.html';
+        return;
     }
-    let start_button = chat.shadowRoot.querySelector('article footer button');
-    if (start_button) {
-        start_button.click()
-    }
-    await xover.delay(1000);
-    let textarea = chat.shadowRoot.querySelector('textarea');
-
-    async function typeWriter(text, index, speed) {
-        if (index < text.length) {
-            const event = new Event('input', {
-                bubbles: true,
-                cancelable: true,
-            });
-            textarea.placeholder += text.charAt(index);
-            textarea.dispatchEvent(event);
-            index++;
-            setTimeout(() => {
-                typeWriter(text, index, speed);
-            }, speed);
-        } else {
-            //textarea.setAttribute("onkeyup", "event.keyCode == 32 && this.value == ' ' && (this.value = 'Cómo cotizar?') && (this.innerHTML = this.value)")
-            textarea.setAttribute("oninput", "this.placeholder = ''")
-            textarea.textContent = textarea.value;
-            //textarea.nextElementSibling.classList.add('c-iSWgdS-eHahlm-ready-true');
-            textarea.nextElementSibling.classList='vfrc-chat-input--button c-iSWgdS c-iSWgdS-eHahlm-ready-true'
-            await xover.delay(1000);
-            textarea.parentNode.style.boxShadow = 'none';
-            textarea.focus();
+    try {
+        chatbot.contentDocument.body.querySelector('#voiceflow-chat').shadowRoot.querySelector('button').click();
+        chatbot.style.height = '80vh';
+        let chat = chatbot && chatbot.contentDocument.documentElement.querySelector('#voiceflow-chat')
+        if (!chat) {
+            throw ("No se pudo inicializar el proceso de cotización. Intente más tarde, por favor");
+            return
         }
+        let start_button = chat.shadowRoot.querySelector('article footer button');
+        if (start_button) {
+            start_button.click()
+        }
+        await xover.delay(1000);
+        let textarea = chat.shadowRoot.querySelector('textarea');
+
+        async function typeWriter(text, index, speed) {
+            if (index < text.length) {
+                const event = new Event('input', {
+                    bubbles: true,
+                    cancelable: true,
+                });
+                textarea.placeholder += text.charAt(index);
+                textarea.dispatchEvent(event);
+                index++;
+                setTimeout(() => {
+                    typeWriter(text, index, speed);
+                }, speed);
+            } else {
+                //textarea.setAttribute("onkeyup", "event.keyCode == 32 && this.value == ' ' && (this.value = 'Cómo cotizar?') && (this.innerHTML = this.value)")
+                textarea.setAttribute("oninput", "this.placeholder = ''")
+                textarea.textContent = textarea.value;
+                //textarea.nextElementSibling.classList.add('c-iSWgdS-eHahlm-ready-true');
+                textarea.nextElementSibling.classList = 'vfrc-chat-input--button c-iSWgdS c-iSWgdS-eHahlm-ready-true'
+                await xover.delay(1000);
+                textarea.parentNode.style.boxShadow = 'none';
+                textarea.focus();
+            }
+        }
+
+        // Start typing the phrase
+        function startTyping(text) {
+            const speed = 100; // Typing speed (milliseconds per character)
+            typeWriter(text, 0, speed);
+        }
+        textarea.placeholder = '';
+        startTyping('Pregúntame cómo cotizar');// (O presiona espacio)
+        textarea.parentNode.style.boxShadow = '0 0 10px rgba(0, 0, 255, 0.5)';
+    } catch (e) {
+        window.document.location = 'cotizador.html';
+    }
+}
+
+function videoSelector() {
+    let panel = this.closest('.nav-pills');
+    panel.querySelectorAll('.active').forEach(el => el.classList.remove('active'));
+    let target = this.closest('.nav-item').querySelector('.nav-link');
+    target.classList.add('active');
+    let class_name = [...target.classList].find(item => item.indexOf('video-') != -1);
+    let video = this.closest('div').querySelector('video');
+    video.src = `${video.src.replace(/[^\/]+$/, '')}promocional_${class_name.replace(/^video-/, '')}.mp4`
+    video.muted = false;
+    playVideo.call(this, true);
+    event && event.preventDefault()
+}
+
+function playVideo(play) {
+    try {
+        let wrapper = document.querySelector("#promocional"); //this.closest('div:has(.video-container)');
+        let video = wrapper.querySelector('video');
+        let container = wrapper.querySelector('.video-container');
+        if (play || !video.paused) {
+            container.classList.add('playing');
+        } else {
+            container.classList.remove('playing');
+        }
+        container.classList.contains('playing') ? video.play() : video.pause()
+        event && event.preventDefault();
+    } catch (e) {
+        console.warn(e)
+    }
+}
+
+//xo.listener.on('click::*[ancestor-or-self::a[@href]]', function () {
+//    let section = this.closest('[id]');
+//    xover.site.hash = section.id
+//})
+
+window.addEventListener('resize', function () {
+    if (window.innerHeight > window.innerWidth) {
+        document.body.classList.add('portrait');
+        document.body.classList.remove('landscape');
+    } else {
+        document.body.classList.add('landscape');
+        document.body.classList.remove('portrait');
+    }
+});
+
+xo.listener.on('submit::.contact-form', async function () {
+    event.preventDefault();
+    let formData = new FormData(this);
+    try {
+        await xover.server.requestInfo(new URLSearchParams(formData));
+        alert("La solicitud ha sido recibida con éxito");
+    } catch (e) {
+        throw (e)
+    }
+})
+
+xo.listener.on('fetch::root', async function (document) {
+    this.select(`//data/value/text()`).filter(text => text.value.match(/\n/)).forEach(data => data.textContent = data.textContent.replace(/([>:]\s*)\n/g, '$1').replace(/\n/g, '<br/>'));
+})
+
+//xo.listener.on('fetch?href=~eventos.resx::root', async function(document){
+//    this.select(`//data/value/text()`).filter(text => text.value.match(/\n/)).forEach(data => data.parentNode.replaceChildren(...xover.xml.createFragment(`<p>${data.textContent.replace(/([>:]\s*)\n/g, '$1').replace(/\n+/g, '</p><p>')}</p>`).childNodes));
+//    event.stopImmediatePropagation()
+//})
+
+var datediff = function (intervalType, first_date, last_date) {
+    // Parse the input dates
+    if (!(first_date && last_date)) return undefined;
+    const first = first_date instanceof Date ? first_date : first_date.parseDate();
+    const last = last_date instanceof Date ? last_date : last_date.parseDate();
+    intervalType = intervalType.replace(/s$/, '');
+
+    // Calculate the difference in milliseconds
+    const diffMs = last - first;
+
+    // Convert milliseconds to the specified interval type
+    let diffInterval;
+    switch (intervalType) {
+        case 'year':
+            diffInterval = diffMs / (1000 * 60 * 60 * 24 * 365.25);
+            break;
+        case 'month':
+            diffInterval = diffMs / (1000 * 60 * 60 * 24 * 30.44);
+            break;
+        case 'day':
+            diffInterval = diffMs / (1000 * 60 * 60 * 24);
+            break;
+        case 'hour':
+            diffInterval = diffMs / (1000 * 60 * 60);
+            break;
+        case 'minute':
+            diffInterval = diffMs / (1000 * 60);
+            break;
+        case 'second':
+            diffInterval = diffMs / 1000;
+            break;
+        default:
+            throw new Error('Invalid interval type');
     }
 
-    // Start typing the phrase
-    function startTyping(text) {
-        const speed = 100; // Typing speed (milliseconds per character)
-        typeWriter(text, 0, speed);
-    }
-    textarea.placeholder = '';
-    startTyping('Pregunta cómo cotizar');// (O presiona espacio)
-    textarea.parentNode.style.boxShadow = '0 0 10px rgba(0, 0, 255, 0.5)';
+    // Return the result rounded to 2 decimal places
+    return Math.floor(Math.round(diffInterval * 100) / 100);
 }

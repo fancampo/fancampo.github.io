@@ -117,40 +117,107 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="beneficio_1" xml:space="preserve">
-    <value>Respuesta Rápida: FanCampo se compromete a ofrecer una respuesta rápida en la evaluación de daños y el desembolso de indemnizaciones para facilitar una recuperación eficiente.</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="catastrofico (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="beneficio_2" xml:space="preserve">
-    <value>Asesoramiento en Gestión de Riesgos: Además de la cobertura financiera, FanCampo proporciona asesoramiento en gestión de riesgos para ayudar a los clientes a implementar medidas preventivas y mitigar los efectos de futuros eventos catastróficos.</value>
+  <data name="catastrofico (100)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (100).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="beneficio_3" xml:space="preserve">
-    <value>Apoyo en la Reconstrucción Sostenible: Orientación en la reconstrucción de operaciones agropecuarias de manera sostenible, promoviendo prácticas que reduzcan la vulnerabilidad a futuros desastres.</value>
+  <data name="catastrofico (101)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (101).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (102)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (102).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (104)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (104).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (105)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (105).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (107)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (107).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (108)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (108).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (109)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (109).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (11)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (11).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (110)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (110).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (111)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (111).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (112)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (112).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (113)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (113).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (114)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (114).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (115)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (115).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (116)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (116).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (12)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (12).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (201)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (201).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (5).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (6).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (7).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (8).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catastrofico (9)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\catastrofico (9).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cobertura_1" xml:space="preserve">
-    <value>Daños Directos: Compensación por daños directos a cultivos, ganado, infraestructura agrícola y equipos causados por eventos catastróficos.</value>
+    <value>Seguro Multirriesgo.</value>
   </data>
   <data name="cobertura_2" xml:space="preserve">
-    <value>Pérdida de Ingresos: Protección contra la pérdida de ingresos que resulta de la disminución o paralización de la producción agropecuaria debido a desastres naturales.</value>
+    <value>Agrícola (SAC).</value>
   </data>
   <data name="cobertura_3" xml:space="preserve">
-    <value>Gastos de Recuperación: Cobertura para los gastos necesarios para la recuperación y reinicio de las actividades agropecuarias, incluyendo limpieza de terrenos, reparación de infraestructuras y reposición de equipos dañados.</value>
+    <value>Pecuario (Enfermedades exóticas).</value>
   </data>
-  <data name="cover" xml:space="preserve">
-    <value>catastrofico_cover.jpeg</value>
+  <data name="cobertura_4" xml:space="preserve">
+    <value>Daños Climáticos en los Agostaderos (SECA).</value>
+  </data>
+  <data name="cobertura_5" xml:space="preserve">
+    <value>Apícola Climático.</value>
   </data>
   <data name="description" xml:space="preserve">
-    <value>Las coberturas contra eventos catastróficos de FanCampo están diseñadas para proteger a agricultores, ganaderos y productores acuícolas de las devastadoras consecuencias financieras que pueden resultar de desastres naturales de gran escala, como huracanes, terremotos, inundaciones extensas y sequías prolongadas. Estos seguros son vitales para garantizar la recuperación y continuidad de las operaciones agropecuarias después de eventos imprevistos y severos.</value>
+    <value>Derivados de daños ocasionados por diferentes fenómenos que se dan en la naturaleza y altamente impredecibles que ocasionan daños con graves costos económicos en pérdidas materiales. Como en los ramos pecuario: animales, instalaciones ganaderas, equipos, etcétera. Agrícola: los cultivos, maquinaria, transporte, instalaciones, producción, etcétera. Pesquero en sus granjas acuícolas, equipo, instalaciones, etcétera. Y desafortunadamente también pérdida de vidas humanas y animales.</value>
   </data>
   <data name="title" xml:space="preserve">
-    <value>Eventos Catastróficos</value>
-  </data>
-  <data name="ventaja_1" xml:space="preserve">
-    <value>Experiencia en Riesgos Complejos: FanCampo tiene una profunda comprensión de la complejidad y el impacto de eventos catastróficos en el sector agropecuario, ofreciendo soluciones de seguros que reflejan esta experiencia.</value>
-  </data>
-  <data name="ventaja_2" xml:space="preserve">
-    <value>Personalización de Coberturas: La capacidad de FanCampo para personalizar las coberturas asegura que cada cliente reciba la protección más adecuada para sus necesidades específicas y su perfil de riesgo.</value>
-  </data>
-  <data name="ventaja_3" xml:space="preserve">
-    <value>Compromiso con la Resiliencia Agropecuaria: FanCampo no solo busca proteger financieramente a sus clientes, sino también contribuir a la construcción de un sector agropecuario más resiliente y preparado para enfrentar desafíos futuros.</value>
+    <value>Catastróficos</value>
   </data>
 </root>

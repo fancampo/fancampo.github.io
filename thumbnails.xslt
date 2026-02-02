@@ -1,4 +1,4 @@
-﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:env="http://panax.io/state/environment" xmlns:xo="http://panax.io/xover">
+﻿<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns="http://www.w3.org/1999/xhtml" xmlns:env="http://panax.io/state/environment">
 	<xsl:import href="keys.xslt"/>
 	<xsl:import href="common.xslt"/>
 
@@ -15,43 +15,46 @@
 				<xsl:otherwise>row-cols-2 row-cols-xl-6 row-cols-lg-5 row-cols-sm-3 row-cols-md-4</xsl:otherwise>
 			</xsl:choose>
 		</xsl:variable>
-		<div class="album py-5 bg-body-tertiary">
+		<div class="album py-5">
 			<div class="container-fluid">
 				<div class="row {$class} gy-5">
-					<xsl:apply-templates select="key('data','body')"/>
+					<xsl:choose>
+						<xsl:when test="@env:store='#uniones'">
+							<xsl:apply-templates select="key('data','*')">
+								<xsl:sort select="boolean(@name='socio_00')" order="descending"/>
+								<xsl:sort select="boolean(@name='socio_99')"/>
+								<xsl:sort select="comment"/>
+								<xsl:sort select="value"/>
+							</xsl:apply-templates>
+						</xsl:when>
+						<xsl:otherwise>
+							<xsl:apply-templates select="key('data','*')">
+							</xsl:apply-templates>
+						</xsl:otherwise>
+					</xsl:choose>
 				</div>
 			</div>
 		</div>
 	</xsl:template>
 
 	<xsl:template match="data">
-		<div class="col">
-			<div class="card shadow-sm">
-				<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-					<title>Placeholder</title>
-					<rect width="100%" height="100%" fill="#55595c"></rect>
-					<text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-				</svg>
-				<div class="card-body">
-					<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-					<div class="d-flex justify-content-between align-items-center">
-						<div class="btn-group">
-							<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-							<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-						</div>
-						<small class="text-body-secondary">9 mins</small>
-					</div>
-				</div>
-			</div>
-		</div>
-	</xsl:template>
-
-	<xsl:template match="data">
-		<div style="text-align: center; min-height: 91px;">
-			<img src="{normalize-space(value)}" style="max-width: 25vw;"/>
-			<!--<p>
-				<a class="btn btn-secondary" href="#">Visitar »</a>
-			</p>-->
+		<div style="min-height: 91px; overflow: hidden; align-items: center; display: flex; justify-content: center; margin-bottom: 3rem; text-align: center;">
+			<a href="#" target="_self">
+				<xsl:if test="comment!=''">
+					<xsl:attribute name="href">
+						<xsl:value-of select="comment"/>
+					</xsl:attribute>
+				</xsl:if>
+				<img src="{normalize-space(value)}" style="max-width: 25vw;
+        min-height: 110px; min-width: 110px;">
+					<xsl:apply-templates mode="image-src" select="."/>
+				</img>
+				<xsl:if test="not(starts-with(value,'http'))">
+					<label>
+						<xsl:apply-templates mode="title" select="."/>
+					</label>
+				</xsl:if>
+			</a>
 		</div>
 	</xsl:template>
 

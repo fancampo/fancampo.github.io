@@ -1,0 +1,7 @@
+{
+  "sources": {
+    "#": "#eventos",
+    "#eventos": "./assets/eventos.resx?id=${Date.now()}"
+  },
+  "settings": { "#eventos": {"hash": ""} }
+}

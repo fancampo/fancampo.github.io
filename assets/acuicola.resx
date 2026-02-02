@@ -117,40 +117,55 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="beneficio_1" xml:space="preserve">
-    <value>Asesoría Especializada: FanCampo ofrece asesoría especializada en acuicultura, brindando a los productores recomendaciones para mejorar la gestión de riesgos y la bioseguridad en sus operaciones.</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="acuicola (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (1).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="beneficio_2" xml:space="preserve">
-    <value>Innovaciones Tecnológicas: Implementación de tecnología para el monitoreo en tiempo real de parámetros críticos del agua y la salud de las especies, permitiendo intervenciones tempranas para prevenir pérdidas.</value>
+  <data name="acuicola (103)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (103).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="beneficio_3" xml:space="preserve">
-    <value>Respuesta Rápida a Reclamaciones: Compromiso con un proceso de reclamación eficiente y ágil, facilitando una recuperación rápida ante la ocurrencia de siniestros.</value>
+  <data name="acuicola (104)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (104).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acuicola (105)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (105).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acuicola (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (2).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acuicola (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (3).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acuicola (4)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (4).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acuicola (5)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (5).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acuicola (6)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (6).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acuicola (7)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>gallery\acuicola (7).JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cobertura_1" xml:space="preserve">
-    <value>Mortalidad de Especies: Compensación por la pérdida de stock debido a enfermedades, condiciones climáticas extremas, y otros riesgos específicos para el sector acuícola.</value>
+    <value>Cobertura básica: Protege la muerte o fuga por daños climatológicos.</value>
   </data>
   <data name="cobertura_2" xml:space="preserve">
-    <value>Daño a Infraestructura: Cobertura para daños a jaulas, sistemas de recirculación, y otros equipos esenciales para la producción acuícola debido a eventos naturales o accidentes.</value>
-  </data>
-  <data name="cobertura_3" xml:space="preserve">
-    <value>Interrupción del Negocio: Protección contra pérdidas económicas resultantes de una interrupción temporal de la producción acuícola, asegurando continuidad y estabilidad financiera.</value>
-  </data>
-  <data name="cover" xml:space="preserve">
-    <value>acuicola_cover.jpg</value>
+    <value>Coberturas Adicionales: para cubrir daños por fenómenos sísmicos, efectos fisicoquímicos por acarreo de sustancias tóxicas, exceso de materia orgánica, cambios extremos de salinidad, temperaturas y pérdida de flujo del agua.
+
+&lt;p&gt;CAMARON:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Infraestructura.&lt;/li&gt;
+  &lt;li&gt;Engorda.&lt;/li&gt;
+  &lt;li&gt;Transporte.&lt;/li&gt;
+  &lt;li&gt;Congelado.&lt;/li&gt;
+&lt;/ul&gt;</value>
   </data>
   <data name="description" xml:space="preserve">
-    <value>Los seguros acuícolas de FanCampo están diseñados específicamente para la industria acuícola, proporcionando cobertura a los productores de especies marinas y de agua dulce contra una amplia gama de riesgos. Estos seguros buscan proteger contra las pérdidas económicas derivadas de eventos como enfermedades, cambios ambientales adversos, contaminación, y ataques de depredadores, que pueden afectar significativamente la producción.</value>
+    <value>Cubre las inversiones de los costos de producción con coberturas diversas que aminoran los daños climáticos, geológicos y fisicoquímicos que afectan al sector acuícola.</value>
   </data>
   <data name="title" xml:space="preserve">
-    <value>Seguro Acuícola</value>
-  </data>
-  <data name="ventaja_1" xml:space="preserve">
-    <value>Experiencia Sectorial: FanCampo reconoce las particularidades y desafíos únicos de la acuicultura, ofreciendo soluciones aseguradoras que abordan directamente estos retos.</value>
-  </data>
-  <data name="ventaja_2" xml:space="preserve">
-    <value>Coberturas Personalizadas: Capacidad para personalizar las pólizas según el tipo de especie cultivada, tamaño de la operación, y riesgos específicos de la ubicación, asegurando una protección completa.</value>
-  </data>
-  <data name="ventaja_3" xml:space="preserve">
-    <value>Enfoque en la Sostenibilidad: Promoción de prácticas sostenibles en acuicultura a través de incentivos en las pólizas de seguro, alineándose con los objetivos de conservación y producción responsable.</value>
+    <value>Acuícola</value>
   </data>
 </root>
